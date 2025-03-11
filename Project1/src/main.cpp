@@ -12,6 +12,32 @@
 #include "Ballots.h"
 
 /**
+ * @brief Take arguments and check for shuffle-off flag
+ * @param argc Number of arguments
+ * @param argv Arguments
+ * @param shuffle Boolean of shuffle indicating whether to shuffle or not
+ * @return 0 on success 1 on error
+ */
+int shuffleOffFlag(int argc, char **argv, bool &shuffle) {
+    shuffle = true;
+    if (argc > 2) {
+        std::cout << "Too many arguments" << std::endl;
+        return 1;
+    } else if (argc == 2) {
+        std::string first_arg = std::string(argv[1]);
+        // shuffle-off flag
+        if (first_arg.compare("shuffle-off") != 0) {
+            std::cout << "Invalid flag" << std::endl;
+            return 1;
+        } else {
+            std::cout << "Shuffle is off" << std::endl;
+            shuffle = false;
+        }
+    }
+    return 0;
+}
+
+/**
  * @brief Open a ballot file with the correct file name or else keep prompting
  * @param file The file variable to store opened file
  */
@@ -90,19 +116,9 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
 int main(int argc, char **argv) {
 
     // Check shuffle flag
-    bool shuffle = false;
-    if (argc > 2) {
-        std::cout << "Too many arguments" << std::endl;
+    bool shuffle;
+    if (shuffleOffFlag(argc, argv, shuffle) != 0) {
         return 1;
-    } else if (argc == 2) {
-        std::string first_arg = std::string(argv[1]);
-        // shuffle-off flag
-        if (first_arg.compare("shuffle-off") != 0) {
-            std::cout << "Invalid flag" << std::endl;
-        } else {
-            std::cout << "Shuffle is off" << std::endl;
-            shuffle = true;
-        }
     }
 
     // Try opening file until a valid file name is provided

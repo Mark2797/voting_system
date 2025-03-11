@@ -22,13 +22,13 @@ GTEST_DIR = -lgtest -lgtest_main -pthread
 
 # Source Files
 SRCS = Ballots.cpp Candidate.cpp Election.cpp main.cpp Plurality.cpp STV.cpp
-OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o, main_test.o
-OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d main_test.d
+OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o
+OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d
 
 # Test Files
 TEST_SRCS = $(TEST_DIR)/testBallots.cpp $(TEST_DIR)/testCandidate.cpp $(TEST_DIR)/testMain.cpp
-TEST_OBJS = $(TEST_DIR)/testBallots.o $(TEST_DIR)/testCandidate.o $(TEST_DIR)/testMain.o
-TEST_OBJS_D = $(TEST_DIR)/testBallots.d $(TEST_DIR)/testCandidate.d $(TEST_DIR)/testMain.d
+TEST_OBJS = $(TEST_DIR)/testBallots.o $(TEST_DIR)/testCandidate.o $(TEST_DIR)/testMain.o main_test.o
+TEST_OBJS_D = $(TEST_DIR)/testBallots.d $(TEST_DIR)/testCandidate.d $(TEST_DIR)/testMain.d main_test.d
 TEST_EXECUTABLES = $(TEST_DIR)/testBallots $(TEST_DIR)/testCandidate $(TEST_DIR)/testMain
 
 # Target executable
