@@ -26,10 +26,10 @@ OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o
 OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d
 
 # Test Files
-TEST_SRCS = $(TEST_DIR)/testBallots.cpp $(TEST_DIR)/testCandidate.cpp
-TEST_OBJS = $(TEST_DIR)/testBallots.o $(TEST_DIR)/testCandidate.o
-TEST_OBJS_D = $(TEST_DIR)/testBallots.d $(TEST_DIR)/testCandidate.d
-TEST_EXECUTABLES = $(TEST_DIR)/testBallots $(TEST_DIR)/testCandidate
+TEST_SRCS = $(TEST_DIR)/testBallots.cpp $(TEST_DIR)/testCandidate.cpp $(TEST_DIR)/testMain.cpp
+TEST_OBJS = $(TEST_DIR)/testBallots.o $(TEST_DIR)/testCandidate.o $(TEST_DIR)/testMain.o
+TEST_OBJS_D = $(TEST_DIR)/testBallots.d $(TEST_DIR)/testCandidate.d $(TEST_DIR)/testMain.d
+TEST_EXECUTABLES = $(TEST_DIR)/testBallots $(TEST_DIR)/testCandidate $(TEST_DIR)/testMain
 
 # Target executable
 TARGET = voting_system
@@ -61,11 +61,22 @@ $(TEST_DIR)/testBallots.o:
 $(TEST_DIR)/testCandidate.o:
 	$(CXX) $(CXXFLAGS) -c $(TEST_DIR)/testCandidate.cpp -o $(TEST_DIR)/testCandidate.o
 
+$(TEST_DIR)/testMain.o:
+	$(CXX) $(CXXFLAGS) -c $(TEST_DIR)/testMain.cpp -o $(TEST_DIR)/testMain.o
+
 $(TEST_DIR)/testBallots: $(TEST_DIR)/testBallots.o Ballots.o
 	$(CXX) $(CXXFLAGS) $(TEST_DIR)/testBallots.o Ballots.o -o $(TEST_DIR)/testBallots $(GTEST_DIR)
 
 $(TEST_DIR)/testCandidate: $(TEST_DIR)/testCandidate.o Candidate.o
 	$(CXX) $(CXXFLAGS) $(TEST_DIR)/testCandidate.o Candidate.o -o $(TEST_DIR)/testCandidate $(GTEST_DIR)
+
+# enable TESTING flag in main
+$(TEST_DIR)/testMain: $(TEST_DIR)/testMain.o Ballots.o main_test.o
+	$(CXX) $(CXXFLAGS) $(TEST_DIR)/testMain.o Ballots.o main_test.o -o $(TEST_DIR)/testMain $(GTEST_DIR) -DTESTING
+
+# main for testing
+main_test.o:: main.cpp
+	$(CXX) $(CXXFLAGS) -DTESTING -c main.cpp -o main_test.o
 
 # Link object files to the target executable
 $(TARGET): $(OBJS)

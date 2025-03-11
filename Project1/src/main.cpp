@@ -11,6 +11,10 @@
 
 #include "Ballots.h"
 
+/**
+ * @brief Open a ballot file with the correct file name or else keep prompting
+ * @param file The file variable to store opened file
+ */
 void open_file(std::ifstream& file) {
     std::string file_name;
     std::cout << "Please enter the csv file name that contains the candidates and ballots" << std::endl;
@@ -25,13 +29,19 @@ void open_file(std::ifstream& file) {
             std::cout << "2. File is not in the directory" << std::endl;
             std::cout << "3. .csv extension is not included" << std::endl;
             std::cout << "Please re-enter the file name:" << std::endl;
-            std::cin >> file_name;
+            std::getline(std::cin, file_name);
         } else {
             break;
         }
     }
 }
 
+/**
+ * @brief Read the ballot file
+ * @param file The file variable that stores the opened file
+ * @param shuffle Whether shuffle the ballots or not
+ * @return A Ballots class ballots that contain the ballot file information
+ */
 Ballots read_file(std::ifstream& file, bool shuffle) {
     std::string line;
     std::vector<std::string> candidates;
@@ -42,6 +52,8 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
         std::stringstream ss(line);
         std::string name;
         while (std::getline(ss, name, ',')) {
+            // Prevent \n or \r at the end of the line
+            name.erase(name.find_last_not_of("\r\n") + 1);
             candidates.push_back(name);
         }
     }
@@ -52,24 +64,29 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
         std::vector<int> ballot;
         std::string value;
         while (std::getline(ss, value, ',')) {
+            // Prevent \n or \r at the end of the line
+            value.erase(value.find_last_not_of("\r\n") + 1);
             if (value.empty()) {
                 ballot.push_back(0); // 0 represents empty slot
             } else {
-                if (isdigit(value[0])) { // Prevent newline at the end of the line
-                    ballot.push_back(std::stoi(value));
-                } else {
-                    ballot.push_back(0); // Last slot in the ballot could be empty with newline
-                }
+                ballot.push_back(std::stoi(value));
             }
         }
         ballots_vector.push_back(ballot);
     }
-
+    
+    file.close();
     Ballots ballots(candidates, ballots_vector, shuffle);
-
     return ballots;
 }
 
+// Only include main() if not being tested
+#ifndef TESTING
+
+/**
+ * @brief The main function of the program.
+ * @return 0 on successful execution and 1 on failed execution.
+ */
 int main(int argc, char **argv) {
 
     // Check shuffle flag
@@ -109,3 +126,5 @@ int main(int argc, char **argv) {
     
     return 0;
 }
+
+#endif
