@@ -11,7 +11,7 @@ CXX = g++
 # -I: Include path
 # -I.: Add the correct directory to the include search path
 # CFLAGS for the C compiler, CXXFLAGS for C++, and CPPFLAGS for both
-CXXFLAGS = -Wall -g -pthread -I.
+CXXFLAGS = -Wall -g -pthread -I. -MMD -MP
 
 # Directories
 SRC_DIR = .
@@ -23,6 +23,19 @@ GTEST_DIR = -lgtest -lgtest_main -pthread
 # Source Files
 SRCS = Ballots.cpp Candidate.cpp Election.cpp main.cpp Plurality.cpp STV.cpp
 OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o
+OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d
+
+# Test Files
+TEST_SRCS = $(TEST_DIR)/testBallots.cpp $(TEST_DIR)/testCandidate.cpp
+TEST_OBJS = $(TEST_DIR)/testBallots.o $(TEST_DIR)/testCandidate.o
+TEST_OBJS_D = $(TEST_DIR)/testBallots.d $(TEST_DIR)/testCandidate.d
+TEST_EXECUTABLES = $(TEST_DIR)/testBallots $(TEST_DIR)/testCandidate
+
+# Target executable
+TARGET = voting_system
+
+# Default target
+all: $(OBJS) $(TEST_OBJS) $(TARGET) $(TEST_EXECUTABLES)
 
 Ballots.o:
 	$(CXX) $(CXXFLAGS) -c Ballots.cpp -o Ballots.o
@@ -42,11 +55,6 @@ Plurality.o:
 STV.o:
 	$(CXX) $(CXXFLAGS) -c STV.cpp -o STV.o
 
-# Test Files
-TEST_SRCS = $(TEST_DIR)/testBallots.cpp $(TEST_DIR)/testCandidate.cpp
-TEST_OBJS = $(TEST_DIR)/testBallots.o $(TEST_DIR)/testCandidate.o
-TEST_EXECUTABLES = $(TEST_DIR)/testBallots $(TEST_DIR)/testCandidate
-
 $(TEST_DIR)/testBallots.o:
 	$(CXX) $(CXXFLAGS) -c $(TEST_DIR)/testBallots.cpp -o $(TEST_DIR)/testBallots.o 
 
@@ -58,12 +66,6 @@ $(TEST_DIR)/testBallots: $(TEST_DIR)/testBallots.o Ballots.o
 
 $(TEST_DIR)/testCandidate: $(TEST_DIR)/testCandidate.o Candidate.o
 	$(CXX) $(CXXFLAGS) $(TEST_DIR)/testCandidate.o Candidate.o -o $(TEST_DIR)/testCandidate $(GTEST_DIR)
-
-# Target executable
-TARGET = voting_system
-
-# Default target
-all: $(TARGET)
 
 # Link object files to the target executable
 $(TARGET): $(OBJS)
@@ -78,7 +80,7 @@ test: $(TEST_EXECUTABLES)
 
 # Clean compiled files
 clean:
-	rm -f $(TARGET) $(OBJS) $(TEST_OBJS) $(TEST_EXECUTABLES)
+	rm -f $(TARGET) $(OBJS) $(TEST_OBJS) $(TEST_EXECUTABLES) $(OBJS_D) $(TEST_OBJS_D)
 
 # Rule to run the executable
 run: $(TARGET)
