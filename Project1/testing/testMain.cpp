@@ -10,10 +10,6 @@
 
 #include "Ballots.h"
 
-// Use optional to delay initialization
-// Google test requires a default constructor
-#include <optional>
-
 extern void open_file(std::ifstream& file);
 extern Ballots read_file(std::ifstream& file, bool shuffle);
 

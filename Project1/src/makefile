@@ -22,8 +22,8 @@ GTEST_DIR = -lgtest -lgtest_main -pthread
 
 # Source Files
 SRCS = Ballots.cpp Candidate.cpp Election.cpp main.cpp Plurality.cpp STV.cpp
-OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o
-OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d
+OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o, main_test.o
+OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d main_test.d
 
 # Test Files
 TEST_SRCS = $(TEST_DIR)/testBallots.cpp $(TEST_DIR)/testCandidate.cpp $(TEST_DIR)/testMain.cpp
