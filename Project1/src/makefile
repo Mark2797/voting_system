@@ -8,14 +8,10 @@ CXX = g++
 # Compiler flags
 # -g: gdb
 # -pthread: enable multithreading for Google test
-# -I: Include path
-# -I.: Add the correct directory to the include search path
+# -MMD: generate dependency files, only user header files not system header files
+# -MP: make dependency file has a dummy target to prevent make error if a header is not there
 # CFLAGS for the C compiler, CXXFLAGS for C++, and CPPFLAGS for both
-CXXFLAGS = -Wall -g -pthread -I. -MMD -MP
-
-# Directories
-SRC_DIR = .
-TEST_DIR = ../testing
+CXXFLAGS = -Wall -g -pthread -MMD -MP
 
 # Google Test Library Path
 GTEST_DIR = -lgtest -lgtest_main -pthread
@@ -26,10 +22,10 @@ OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o
 OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d
 
 # Test Files
-TEST_SRCS = $(TEST_DIR)/testBallots.cpp $(TEST_DIR)/testCandidate.cpp $(TEST_DIR)/testMain.cpp
-TEST_OBJS = $(TEST_DIR)/testBallots.o $(TEST_DIR)/testCandidate.o $(TEST_DIR)/testMain.o main_test.o
-TEST_OBJS_D = $(TEST_DIR)/testBallots.d $(TEST_DIR)/testCandidate.d $(TEST_DIR)/testMain.d main_test.d
-TEST_EXECUTABLES = $(TEST_DIR)/testBallots $(TEST_DIR)/testCandidate $(TEST_DIR)/testMain
+TEST_SRCS = testBallots.cpp testCandidate.cpp testMain.cpp
+TEST_OBJS = testBallots.o testCandidate.o testMain.o main_test.o
+TEST_OBJS_D = testBallots.d testCandidate.d testMain.d main_test.d
+TEST_EXECUTABLES = testBallots testCandidate testMain
 
 # Target executable
 TARGET = voting_system
@@ -55,24 +51,24 @@ Plurality.o:
 STV.o:
 	$(CXX) $(CXXFLAGS) -c STV.cpp -o STV.o
 
-$(TEST_DIR)/testBallots.o:
-	$(CXX) $(CXXFLAGS) -c $(TEST_DIR)/testBallots.cpp -o $(TEST_DIR)/testBallots.o 
+testBallots.o:
+	$(CXX) $(CXXFLAGS) -c testBallots.cpp -o testBallots.o 
 
-$(TEST_DIR)/testCandidate.o:
-	$(CXX) $(CXXFLAGS) -c $(TEST_DIR)/testCandidate.cpp -o $(TEST_DIR)/testCandidate.o
+testCandidate.o:
+	$(CXX) $(CXXFLAGS) -c testCandidate.cpp -o testCandidate.o
 
-$(TEST_DIR)/testMain.o:
-	$(CXX) $(CXXFLAGS) -c $(TEST_DIR)/testMain.cpp -o $(TEST_DIR)/testMain.o
+testMain.o:
+	$(CXX) $(CXXFLAGS) -c testMain.cpp -o testMain.o
 
-$(TEST_DIR)/testBallots: $(TEST_DIR)/testBallots.o Ballots.o
-	$(CXX) $(CXXFLAGS) $(TEST_DIR)/testBallots.o Ballots.o -o $(TEST_DIR)/testBallots $(GTEST_DIR)
+testBallots: testBallots.o Ballots.o
+	$(CXX) $(CXXFLAGS) testBallots.o Ballots.o -o testBallots $(GTEST_DIR)
 
-$(TEST_DIR)/testCandidate: $(TEST_DIR)/testCandidate.o Candidate.o
-	$(CXX) $(CXXFLAGS) $(TEST_DIR)/testCandidate.o Candidate.o -o $(TEST_DIR)/testCandidate $(GTEST_DIR)
+testCandidate: testCandidate.o Candidate.o
+	$(CXX) $(CXXFLAGS) testCandidate.o Candidate.o -o testCandidate $(GTEST_DIR)
 
 # enable TESTING flag in main
-$(TEST_DIR)/testMain: $(TEST_DIR)/testMain.o Ballots.o main_test.o
-	$(CXX) $(CXXFLAGS) $(TEST_DIR)/testMain.o Ballots.o main_test.o -o $(TEST_DIR)/testMain $(GTEST_DIR) -DTESTING
+testMain: testMain.o Ballots.o main_test.o
+	$(CXX) $(CXXFLAGS) testMain.o Ballots.o main_test.o -o testMain $(GTEST_DIR) -DTESTING
 
 # main for testing
 main_test.o:: main.cpp
