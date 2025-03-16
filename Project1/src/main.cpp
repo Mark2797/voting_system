@@ -8,6 +8,7 @@
 #include <vector>
 #include <sstream>
 #include <cctype>
+#include <limits>
 
 #include "Ballots.h"
 
@@ -106,6 +107,63 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
     return ballots;
 }
 
+/**
+ * @brief Prompt user for seat number and algorithm
+ * @param seatNum Number of seat to be elected
+ * @param alg Algorithm to use
+ */
+void prompt_user_seatNum(int& seatNum) {
+    int num;
+    while(true) {
+        std::cout << "Please enter a positive integer for the number of seat to be elected: " << std::endl;
+        std::cin >> num;
+        if (std::cin.fail()) {
+            std::cout << "Invalid input!" << std::endl;
+            std::cout << "Please enter a positive integer!" << std::endl;
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        } else if (num <= 0) {
+            std::cout << "Invalid input!" << std::endl;
+            std::cout << "Please enter a positive integer!" << std::endl;
+        } else {
+            break;
+        }
+    }
+    seatNum = num;
+}
+
+/**
+ * @brief Prompt user for seat number and algorithm
+ * @param seatNum Number of seat to be elected
+ * @param alg Algorithm to use
+ */
+void prompt_user_alg(std::string& alg) {
+    int num;
+    while(true) {
+        std::cout << "Please choose an algorithm from the following options:" << std::endl;
+        std::cout << "1. Plurality Algorithm" << std::endl;
+        std::cout << "2. Single Transferable Vote (STV) Algorithm" << std::endl;
+        std::cout << "Please select by entering the number 1 or 2:" << std::endl;
+        std::cin >> num;
+        if (std::cin.fail()) {
+            std::cout << "Invalid input!" << std::endl;
+            std::cout << "Please enter 1 or 2!" << std::endl;
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        } else if (num != 1 && num != 2) {
+            std::cout << "Invalid input!" << std::endl;
+            std::cout << "Please enter 1 or 2!" << std::endl;
+        } else {
+            break;
+        }
+    }
+    if (num == 1) {
+        alg = "Plurality";
+    } else {
+        alg = "STV";
+    }
+}
+
 // Only include main() if not being tested
 #ifndef TESTING
 
@@ -124,10 +182,21 @@ int main(int argc, char **argv) {
     // Try opening file until a valid file name is provided
     std::ifstream file;
     open_file(file);
+    
+    // Get number of seat and algorithm choice from user
+    int seatNum;
+    std::string alg;
+    prompt_user_seatNum(seatNum);
+    prompt_user_alg(alg);
+
+    // Just for testing, printing out seat number and algorithm
+    std::cout << "Number of seat: " << seatNum << std::endl;
+    std::cout << "Algorithm: " << alg << std::endl;
 
     // Read the file and create a Ballot object
     Ballots ballots = read_file(file, shuffle);
 
+    // Just for testing, printing out the content in ballots
     for (int i = 0; i < ballots.getCandidateCount(); i++) {
         std::cout << ballots.getCandidates().at(i) << std::endl;
     }

@@ -14,6 +14,8 @@
 extern void open_file(std::ifstream& file);
 extern Ballots read_file(std::ifstream& file, bool shuffle);
 extern int shuffleOffFlag(int argc, char **argv, bool &shuffle);
+extern void prompt_user_seatNum(int& seatNum);
+extern void prompt_user_alg(std::string& alg);
 
 void userInput(std::vector<std::string> input) {
     // Use pipe as user input
@@ -27,7 +29,7 @@ void userInput(std::vector<std::string> input) {
     close(pipe_fds[0]);
 }
 
-void restore_fd(int old_stdin) {
+void restore_stdin_fd(int old_stdin) {
     // restore the original FILENO
     dup2(old_stdin, STDIN_FILENO);
 }
@@ -47,6 +49,11 @@ class MainTest : public ::testing::Test {
         std::vector<std::string> plurality_file_name;
         std::vector<std::string> stv_file_name;
         std::vector<std::string> bad_file_name;
+        std::vector<std::string> bad_seatNum;
+        std::vector<std::string> good_seatNum;
+        std::vector<std::string> bad_alg;
+        std::vector<std::string> good_alg_one;
+        std::vector<std::string> good_alg_two;
         int old_stdout;
         int old_stdin;
         int null_fd;
@@ -93,6 +100,11 @@ class MainTest : public ::testing::Test {
         plurality_file_name = {"../testing/plurality.csv\n"};
         stv_file_name = {"../testing/stv.csv\n"};
         bad_file_name = {"12343\n", "../testing/asdasd/\n", ".csv\n", "../testing/stv.csv\n"};
+        bad_seatNum = {"abc\n", "0\n", "-123123\n", "5\n"};
+        good_seatNum = {"10\n"};
+        bad_alg = {"abc\n", "0\n", "-123123\n", "5\n", "1\n"};
+        good_alg_one = {"1\n"};
+        good_alg_two = {"2\n"};
         old_stdout = dup(STDOUT_FILENO);
         old_stdin = dup(STDIN_FILENO);
         null_fd = open("/dev/null", O_WRONLY);
@@ -169,7 +181,7 @@ TEST_F(MainTest, OpenFileTest) {
     open_file(file_bad);
     EXPECT_TRUE(file_bad.is_open());
     file_bad.close();
-    restore_fd(old_stdout);
+    restore_stdin_fd(old_stdin);
 
     // Test with corret input
     userInput(plurality_file_name);
@@ -177,7 +189,7 @@ TEST_F(MainTest, OpenFileTest) {
     open_file(file_plurality);
     EXPECT_TRUE(file_plurality.is_open());
     file_plurality.close();
-    restore_fd(old_stdout);
+    restore_stdin_fd(old_stdin);
 
     // Test with corret input
     userInput(stv_file_name);
@@ -185,7 +197,7 @@ TEST_F(MainTest, OpenFileTest) {
     open_file(file_stv);
     EXPECT_TRUE(file_stv.is_open());
     file_stv.close();
-    restore_fd(old_stdout);
+    restore_stdin_fd(old_stdin);
 }
 
 TEST_F(MainTest, ReadFileTest) {
@@ -195,7 +207,7 @@ TEST_F(MainTest, ReadFileTest) {
     open_file(file_plurality);
     Ballots ballots_plurality_temp = read_file(file_plurality, false);
     file_plurality.close();
-    restore_fd(old_stdout);
+    restore_stdin_fd(old_stdin);
     EXPECT_EQ(ballots_plurality_temp.getCandidates(), candidates);
     for (int i = 0; i < static_cast<int>(ballots_plurality.size()); i++) {
         EXPECT_EQ(ballots_plurality_temp.getBallot(i), ballots_plurality.at(i));
@@ -207,11 +219,44 @@ TEST_F(MainTest, ReadFileTest) {
     open_file(file_stv);
     Ballots ballots_stv_temp = read_file(file_stv, false);
     file_stv.close();
-    restore_fd(old_stdout);
+    restore_stdin_fd(old_stdin);
     EXPECT_EQ(ballots_stv_temp.getCandidates(), candidates);
     for (int i = 0; i < static_cast<int>(ballots_stv.size()); i++) {
         EXPECT_EQ(ballots_stv_temp.getBallot(i), ballots_stv.at(i));
     }
+}
+
+TEST_F(MainTest, SeatNumTest) {
+    int seatNum;
+    
+    userInput(bad_seatNum);
+    prompt_user_seatNum(seatNum);
+    restore_stdin_fd(old_stdin);
+    EXPECT_EQ(seatNum, 5);
+
+    userInput(good_seatNum);
+    prompt_user_seatNum(seatNum);
+    restore_stdin_fd(old_stdin);
+    EXPECT_EQ(seatNum, 10);
+}
+
+TEST_F(MainTest, AlgTest) {
+    std::string alg;
+
+    userInput(bad_alg);
+    prompt_user_alg(alg);
+    restore_stdin_fd(old_stdin);
+    EXPECT_EQ(alg, "Plurality");
+
+    userInput(good_alg_one);
+    prompt_user_alg(alg);
+    restore_stdin_fd(old_stdin);
+    EXPECT_EQ(alg, "Plurality");
+
+    userInput(good_alg_two);
+    prompt_user_alg(alg);
+    restore_stdin_fd(old_stdin);
+    EXPECT_EQ(alg, "STV");
 }
 
 
