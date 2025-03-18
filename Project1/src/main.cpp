@@ -90,16 +90,21 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
         std::stringstream ss(line);
         std::vector<int> ballot;
         std::string value;
-        while (std::getline(ss, value, ',')) {
+        unsigned long count = 0;
+        while (count != candidates.size()) {
             // Prevent \n or \r at the end of the line
+            std::getline(ss, value, ',');
             value.erase(value.find_last_not_of("\r\n") + 1);
-            if (value.empty()) {
-                ballot.push_back(0); // 0 represents empty slot
+            if (!value.empty()) {
+                ballot.push_back(std::stoi(value));// 0 represents empty slot
+                count++;
             } else {
-                ballot.push_back(std::stoi(value));
+                ballot.push_back(0); 
+                count++;
             }
         }
         ballots_vector.push_back(ballot);
+        count = 0;
     }
     
     file.close();
