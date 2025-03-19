@@ -80,7 +80,7 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
         std::string name;
         while (std::getline(ss, name, ',')) {
             // Prevent \n or \r at the end of the line
-            name.erase(name.find_last_not_of("\r\n") + 1);
+            name.erase(std::remove(name.begin(), name.end(), '\n'), name.end());
             candidates.push_back(name);
         }
     }
@@ -92,7 +92,7 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
         std::string value;
         while (std::getline(ss, value, ',')) {
             // Prevent \n or \r at the end of the line
-            value.erase(value.find_last_not_of("\r\n") + 1);
+            value.erase(std::remove(value.begin(), value.end(), '\n'), value.end());
             if (value.empty()) {
                 ballot.push_back(0); // 0 represents empty slot
             } else {
