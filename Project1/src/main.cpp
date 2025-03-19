@@ -11,6 +11,8 @@
 #include <limits>
 
 #include "Ballots.h"
+#include "Election.h"
+#include "STV.h"
 
 /**
  * @brief Take arguments and check for shuffle-off flag
@@ -200,6 +202,11 @@ int main(int argc, char **argv) {
 
     // Read the file and create a Ballot object
     Ballots ballots = read_file(file, shuffle);
+    Ballots* test = &ballots;
+
+    STV* stvpls;
+    stvpls = new STV(test, seatNum);
+    stvpls->runElection();
 
     // Just for testing, printing out the content in ballots
     for (int i = 0; i < ballots.getCandidateCount(); i++) {

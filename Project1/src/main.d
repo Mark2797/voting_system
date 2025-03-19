@@ -1,2 +1,5 @@
-main.o: main.cpp Ballots.h
+main.o: main.cpp Ballots.h Election.h Candidate.h STV.h
 Ballots.h:
+Election.h:
+Candidate.h:
+STV.h:
