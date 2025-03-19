@@ -7,8 +7,8 @@ STV::STV(Ballots* ballots, int seats) : Election(ballots, seats) {
 
 STV::~STV() {}
 
-void STV::runElection() override {
-
+void STV::runElection() {
+    /*
     droopQuota = ballots->getBallotCount() / (this->seats + 1);
     int voter_choice = 1;
 
@@ -28,6 +28,8 @@ void STV::runElection() override {
             std::cout << "\nCandidate " << j << " assigned ballotID: " << bruh.at(j);
         }
     }
+
+    */
 
 }
 
