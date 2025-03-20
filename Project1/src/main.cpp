@@ -172,7 +172,7 @@ void prompt_user_alg(std::string& alg) {
 }
 
 // Only include main() if not being tested
-#ifndef TESTING
+#ifndef TESTING 
 
 /**
  * @brief The main function of the program.
@@ -202,11 +202,16 @@ int main(int argc, char **argv) {
 
     // Read the file and create a Ballot object
     Ballots ballots = read_file(file, shuffle);
-/*
-    STV* stvpls;
-    stvpls = new STV(test, seatNum);
-    stvpls->runElection();
-*/
+
+    if (alg == "STV") {
+        STV* election = new STV(&ballots, seatNum);
+        election->runElection();
+    }
+    else {
+        std::cout << "\n LMAO";
+    }
+
+
 
     // Just for testing, printing out the content in ballots
     for (int i = 0; i < ballots.getCandidateCount(); i++) {
