@@ -31,7 +31,7 @@ class Election {
         /**
          * @brief Display the details of the election to the terminal
          */
-        virtual void displayElectionDetials() = 0;
+        virtual void displayElectionDetails() = 0;
 
     protected:
         /**

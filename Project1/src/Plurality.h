@@ -17,7 +17,7 @@ class Plurality : public Election {
         Plurality(Ballots* ballots, int seats);
         ~Plurality();
         void runElection();
-        void displayElectionDetials();
+        void displayElectionDetails();
 };
 
 #endif

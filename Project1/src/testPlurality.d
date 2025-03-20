@@ -1,0 +1,1 @@
+testPlurality.o: testPlurality.cpp
