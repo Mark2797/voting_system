@@ -11,87 +11,102 @@ STV::~STV() {}
 void STV::runElection() {
     
     int seatsElected = 0;
-    droopQuota = ballots->getBallotCount() / (this->seats + 1);
-    int voter_choice = 1;
-    
-    // Traverse through the vector of ballots
-    // for (int ballotId = 0; ballotId < ballots->getBallotCount(); ballotId++) {
-    //     std::vector<int> current_ballot = ballots->getBallot(ballotId);
-    //     // For each vote in the current ballot
-    //     for (unsigned long candidateNum = 0; candidateNum < current_ballot.size(); candidateNum++) {
-    //         // If the current vote is a 1, assign the ballot the candidate that recieved it
-    //         if (current_ballot.at(candidateNum) == voter_choice) {
-    //             candidates.at(candidateNum).assignBallot(ballotId);
-    //         }
-    //     }
-    // }
+    droopQuota = (ballots->getBallotCount() / (this->seats + 1)) + 1;
+    std::cout << "\nDroop QUOTA: " << droopQuota;
 
-    // traverse through the vector of ballots
+    int voter_choice = 1;
+
+    // traverse through the vector of ballots [first pass]
     for (int ballotId = 0; ballotId < ballots->getBallotCount(); ballotId++) {
         std::vector<int> current_ballot = ballots->getBallot(ballotId);
         unsigned long ballotWinner;
+        
         // for each vote in the current ballot
         for (unsigned long candidateNum = 0; candidateNum < current_ballot.size(); candidateNum++) {
+            
             // if the current vote is a 1, assign the ballot the candidate that recieved it
-            if (current_ballot.at(candidateNum) == voter_choice) {
+            if (current_ballot.at(candidateNum) == voter_choice && candidates.at(candidateNum).getAssignedBallots().size() < droopQuota) {
                 candidates.at(candidateNum).assignBallot(ballotId);
+                
+                // if assigning the ballot means that the candidate hits droop quota, then immediately add them to the winners list
+                if (candidates.at(candidateNum).getAssignedBallots().size() == droopQuota) {
+                    winners.push_back(candidates.at(candidateNum));
+                    seatsElected++;
+                }
                 ballotWinner = candidateNum;
+            }
+            
+            // if the ballot was going to be assigned to a candidate at droop quota, instead give the ballot to the next option
+            else if (current_ballot.at(candidateNum) == voter_choice && candidates.at(candidateNum).getAssignedBallots().size() >= droopQuota) {
+                std::cout << "\nCandidate: " << candidates.at(candidateNum).getName() << " has " << candidates.at(candidateNum).getAssignedBallots().size() << " votes, reassigning ballot #" << ballotId;
+                for (int currentPick = voter_choice + 1; currentPick < current_ballot.size(); currentPick++) {
+                    std::cout << "\nFinding the #" << currentPick << " choice for ballotID: " << ballotId;
+                    bool reassigned = false;
+                    for (unsigned long candidateNum = 0; candidateNum < current_ballot.size(); candidateNum++) {
+                        // if the current vote is a 1, assign the ballot the candidate that recieved it
+                        if (current_ballot.at(candidateNum) == currentPick && candidates.at(candidateNum).getAssignedBallots().size() < droopQuota) {
+                            candidates.at(candidateNum).assignBallot(ballotId);
+                            ballotWinner = candidateNum;
+                            std::cout << "\nBallot " << ballotId << " was reassigned to the candidate: " << candidates.at(candidateNum).getName();
+                            
+                            // if assigning the ballot means that the candidate hits droop quota, then immediately add them to the winners list
+                            if (candidates.at(candidateNum).getAssignedBallots().size() == droopQuota) {
+                                winners.push_back(candidates.at(candidateNum));
+                                seatsElected++;
+                            }                                    
+
+                            reassigned = true;
+                            break;
+                        }
+                    }
+                    if (reassigned == true) {
+                        break;
+                    }
+                }
             }
         }
 
-        if (candidates.at(ballotWinner).getAssignedBallots().size() == droopQuota) {
-            winners.push_back(candidates.at(ballotWinner));
-            seatsElected++;
-        }
-        else if (candidates.at(ballotWinner).getAssignedBallots().size() > droopQuota) {
-            // if the candidate has ballots {1, 3, 5, 7, 9} and only 3 votes are needed, ballots {7, 9} need to have their votes redistributed
-            // the for loop should be within this conditional, so that the rest of the vote redistribution doesn't happen until this is solved
-            
+            // for (unsigned long candidateNum = 0; candidateNum < current_ballot.size(); candidateNum++) {
+            //     // if the current vote is a 1, assign the ballot the candidate that recieved it
+            //     if (current_ballot.at(candidateNum) == 2 && candidates.at(candidateNum).getAssignedBallots().size() < droopQuota) {
+            //         candidates.at(candidateNum).assignBallot(ballotId);
+            //         std::cout << "\nBallot " << ballotId << " was reassigned to the candidate: " << candidates.at(candidateNum).getName();
+            //         //reassigned = true;
+            //         break;
+            //     }
+            // }
 
             // loop through the ballot to find the second (next) choice, and if the next choice already has droop, find the third choice... etc.
         }
 
-        // after the ballot is assigned, see if any of the candidates reached droop because of it... this could be more efficient if we only check
-        // // the candidate that recieved the most recent ballot, but C++ is efficient and it'll be okay :)
-        // for (unsigned long i = 0; i < candidates.size(); i++) {
-        //     if (candidates.at(i).getAssignedBallots().size() == droopQuota) {
-        //         winners.push_back(candidates.at(i));
-        //         seatsElected++;
-        //     }
-        //     else if (candidates.at(i).getAssignedBallots().size() > droopQuota) {
-        //         // if the candidate has ballots {1, 3, 5, 7, 9} and only 3 votes are needed, ballots {7, 9} need to have their votes redistributed
-        //         // the for loop should be within this conditional, so that the rest of the vote redistribution doesn't happen until this is solved
-        //     }
-        // }
-
-    }
     
-    // while there are still seats that need to be filled after all ballots are distributed
-    while (seatsElected < seats) {
+    // after all of the votes are distributed, if there are still seats that need to be filled
+    // while (seatsElected < seats) {
 
-        // if seatsElected < seats... the case that there are still seats needed to be filled after the first pass
-        // find candidate with lowest number of votes - this could be a tie (random)
-        // redistribute their votes
+    //     // if seatsElected < seats... the case that there are still seats needed to be filled after the first pass
+    //     // find candidate with lowest number of votes - this could be a tie (random)
+    //     // redistribute their votes
 
-        // Traverse through each candidate and display their recieved ballots [testing]
-        // for (unsigned long i = 0; i < candidates.size(); i++) {
-        //     std::cout << "\nCandidate " << candidates.at(i).getName() << " recieved ballot number: ";
-        //     for (unsigned long j = 0; j < candidates.at(i).getAssignedBallots().size(); j++) {
-        //         std::cout << candidates.at(i).getAssignedBallots().at(j) << ", ";
-        //     }
-        // }
+    //     // Traverse through each candidate and display their recieved ballots [testing]
+    //     // for (unsigned long i = 0; i < candidates.size(); i++) {
+    //     //     std::cout << "\nCandidate " << candidates.at(i).getName() << " recieved ballot number: ";
+    //     //     for (unsigned long j = 0; j < candidates.at(i).getAssignedBallots().size(); j++) {
+    //     //         std::cout << candidates.at(i).getAssignedBallots().at(j) << ", ";
+    //     //     }
+    //     // }
+    // }
+    
+    if (winners.size() < seats) {
+        std::cout << "\n" << winners.size() << " candidates were elected, but we needed " << seats << ", here are the winners: ";
     }
 
-    for (unsigned long w = 0; w < seats; w++) {
+    for (unsigned long w = 0; w < winners.size(); w++) {
         std::cout << "\nCandidate " << winners.at(w).getName() << " won with ballot numbers: ";
         for (unsigned long j = 0; j < winners.at(w).getAssignedBallots().size(); j++) {
             std::cout << winners.at(w).getAssignedBallots().at(j) << ", ";
         }
     }
 
-    std::cout << "\nDroop QUOTA: " << droopQuota;
-
-    
 }
 
 void STV::displayElectionDetials() {
