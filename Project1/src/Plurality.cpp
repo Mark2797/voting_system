@@ -8,9 +8,18 @@
 #include <bits/stdc++.h>
 #include <vector>
 
-Plurality::Plurality(Ballots* ballots, int seats) : Election(ballots, seats) {}
+Plurality::Plurality(Ballots* ballots, int seats) : Election(ballots, seats) {
+    this->candidates = {};
+    for (long unsigned int i = 0; i < this->ballots->getCandidates().size(); i++) {
+        this->candidates.push_back(Candidate(this->ballots->getCandidates().at(i)));
+    }
+    this->winners = {};
+    this->losers = {};
+}
 
-Plurality::~Plurality() {}
+Plurality::~Plurality() {
+    delete this->ballots;
+}
 
 void Plurality::runElection() {
     // iterate through the ballots
@@ -88,16 +97,41 @@ void Plurality::displayElectionDetails() {
     std::cout << "Number of ballots: " << std::to_string(this->ballots->getBallotCount()) << std::endl;
     std::cout << "Number of candidates: " << std::to_string(this->candidates.size()) << std::endl;
     std::cout << "Winners:" << std::endl;
-    for (int i = 0; i < this->winners.size(); i++) {
+    for (long unsigned int i = 0; i < this->winners.size(); i++) {
         std::cout << this->winners.at(i).getName() << std::endl;
     }
     std::cout << "Losers:" << std::endl;
-    for (int i = 0; i < this->losers.size(); i++) {
+    for (long unsigned int i = 0; i < this->losers.size(); i++) {
         std::cout << this->losers.at(i).getName() << std::endl;
     }
     std::cout << "Percentage of votes:" << std::endl;
-    for (int i = 0; i < this->candidates.size(); i++) {
+    for (long unsigned int i = 0; i < this->candidates.size(); i++) {
         double percentage = this->candidates.at(i).getBallotNum() * 100 / this->ballots->getBallotCount();
         std::cout << this->candidates.at(i).getName() << " (" << std::fixed << std::setprecision(2) << percentage << ")" << std::endl;
     }
+}
+
+Ballots* Plurality::getBallots() {
+    return this->ballots;
+}
+
+void Plurality::setBallots(Ballots* ballots) {
+    if (this->ballots) delete this->ballots;
+    this->ballots = ballots;
+}
+
+int Plurality::getSeats() {
+    return this->seats;
+}
+
+std::vector<Candidate> Plurality::getCandidates() {
+    return this->candidates;
+}
+
+std::vector<Candidate> Plurality::getWinners() {
+    return this->winners;
+}
+
+std::vector<Candidate> Plurality::getLosers() {
+    return this->losers;
 }
