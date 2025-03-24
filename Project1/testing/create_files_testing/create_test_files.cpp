@@ -55,16 +55,15 @@ int main() {
         } else if (type[i] == "P") {
             vector<vector<int>> vals(ballots[i], vector<int>(length.size(), 0));
             uniform_int_distribution<int> distribution(0, length.size() - 1);
-            for (int b = 0; b < ballots[i]; b++) {
-                int random_index = distribution(rd);
-                vals[b][random_index] = 1;
-            }
             for (vector<int> row : vals) {
+                int random_index = distribution(rd);
+                row[random_index] = 1;
                 for (int k = 0; k < row.size(); k++) {
-                    f << row[k];
-                    if (k < row.size() - 1) f << ",";
+                    str += to_string(row[k]) + ",";
                 }
-                f << "\n";
+                str.pop_back();
+                f << str << '\n';
+                str = "";
             }
         }
         f.close();
