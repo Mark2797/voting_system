@@ -33,11 +33,12 @@ class Election {
          */
         virtual void displayElectionDetials() = 0;
 
-    protected:
         /**
          * @brief Run the election with an voting algorithm
          */
         virtual void runElection() = 0;
+
+    protected:
         Ballots* ballots;
         int seats;
         std::vector<Candidate> candidates;
