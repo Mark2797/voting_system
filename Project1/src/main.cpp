@@ -209,7 +209,7 @@ int main(int argc, char **argv) {
         election->runElection();
     }
     else {
-        std::cout << "\n LMAO";
+        // code for running plurality
     }
 
 
