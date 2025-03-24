@@ -19,9 +19,7 @@ class Plurality : public Election {
         void runElection();
         void displayElectionDetails();
         Ballots* getBallots();
-        void setBallots(Ballots* ballots);
         int getSeats();
-        void setSeats(int seats);
         std::vector<Candidate> getCandidates();
         std::vector<Candidate> getWinners();
         std::vector<Candidate> getLosers();
