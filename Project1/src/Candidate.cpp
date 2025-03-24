@@ -18,7 +18,7 @@ void Candidate::assignBallot(int ballotID) {
 }
 
 void Candidate::removeBallot(int ballotID) {
-    for (int i = 0; i < assignedBallots.size(); i++) {
+    for (unsigned long i = 0; i < assignedBallots.size(); i++) {
         if (assignedBallots.at(i) == ballotID) {
             assignedBallots.erase(assignedBallots.begin() + i);
             //std::cout << "\n[inside candidate]Ballot #" << ballotID << " removed from " << this->name;
