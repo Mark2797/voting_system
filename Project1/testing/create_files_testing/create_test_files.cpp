@@ -7,6 +7,10 @@
 #include <iomanip>
 #include <algorithm>
 
+// Created by Manan Chaturvedi
+// March 24th, 2025
+// Purpose is to create random CSV files to test for.
+
 int main() {
     std::vector<std::string> names1 = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", "Micheal Ashton", "Joe Cool", "Jimmy Donaldson", "John Kennedy", "Patrick Star", "Robot Iam", "Alice Wonder"};
     std::vector<std::string> names2(names1.begin(), names1.begin() + 5);

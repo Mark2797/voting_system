@@ -1,3 +1,4 @@
+# THIS EXISTS AS A FRAME WORK FOR create_test_files.cpp AND SHOULD NOT BE USED.
 import numpy as np
 import sys 
 import time as t
