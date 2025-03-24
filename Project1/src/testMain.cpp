@@ -97,9 +97,9 @@ class MainTest : public ::testing::Test {
             {2, 3, 4, 5, 6, 1},
             {0, 0, 0, 1, 2, 3}
         };
-        plurality_file_name = {"../testing/plurality.csv\n"};
-        stv_file_name = {"../testing/stv.csv\n"};
-        bad_file_name = {"12343\n", "../testing/asdasd/\n", ".csv\n", "../testing/stv.csv\n"};
+        plurality_file_name = {"../testing/pluralityTestMain.csv\n"};
+        stv_file_name = {"../testing/stvTestMain.csv\n"};
+        bad_file_name = {"12343\n", "../testing/asdasd/\n", ".csv\n", "../testing/stvTestMain.csv\n"};
         bad_seatNum = {"abc\n", "0\n", "-123123\n", "5\n"};
         good_seatNum = {"10\n"};
         bad_alg = {"abc\n", "0\n", "-123123\n", "5\n", "1\n"};
