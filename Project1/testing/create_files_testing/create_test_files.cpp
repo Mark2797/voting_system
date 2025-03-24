@@ -49,9 +49,9 @@ int main() {
                     str += to_string(length[k]) + ",";
                 }
                 str.pop_back();
-                f << str;
+                f << str << '\n';
+                str = "";
             }
-            f << "\n";
         } else if (type[i] == "P") {
             vector<vector<int>> vals(ballots[i], vector<int>(length.size(), 0));
             uniform_int_distribution<int> distribution(0, length.size() - 1);
