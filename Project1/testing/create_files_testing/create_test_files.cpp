@@ -29,7 +29,7 @@ int main() {
             length[j] = j + 1;
         }
         std::string string = "";
-        for (auto& name : names_list[i]) {
+        for (auto name : names_list[i]) {
             string += name + ",";
         }
         string.pop_back();
@@ -42,7 +42,7 @@ int main() {
                     vals[b][k] = length[k];
                 }
             }
-            for (auto& row : vals) {
+            for (auto row : vals) {
                 for (size_t k = 0; k < row.size(); ++k) {
                     f << row[k];
                     if (k < row.size() - 1) f << ",";
@@ -56,7 +56,7 @@ int main() {
                 int random_index = distribution(generator);
                 vals[b][random_index] = 1;
             }
-            for (const auto& row : vals) {
+            for (auto row : vals) {
                 for (size_t k = 0; k < row.size(); ++k) {
                     f << row[k];
                     if (k < row.size() - 1) f << ",";
