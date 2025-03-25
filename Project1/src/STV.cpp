@@ -199,7 +199,7 @@ void STV::runElection() {
     }
 }
 
-void STV::displayElectionDetials() {
+void STV::displayElectionDetails() {
 
 }
 void STV::outputAuditFile() {
