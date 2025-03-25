@@ -20,7 +20,7 @@ class STV : public Election {
         STV(Ballots* ballots, int seats);
         ~STV();
         void runElection() override;
-        void displayElectionDetials();
+        void displayElectionDetails();
         void outputAuditFile();
     private:
         int droopQuota;
