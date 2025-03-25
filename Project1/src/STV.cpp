@@ -14,7 +14,7 @@ static void writeVotesToAudit(std::vector<std::string>& electionProgress, std::v
         outputString = "\n" + candidates.at(i).getName() + ",";
 
         for (unsigned long j = 0; j < candidates.at(i).getAssignedBallots().size(); j++) {
-            std::cout << candidates.at(i).getAssignedBallots().at(j) << ", ";
+            //std::cout << candidates.at(i).getAssignedBallots().at(j) << ", ";
             outputString += std::to_string(candidates.at(i).getAssignedBallots().at(j)) + ",";
         }
         electionProgress.push_back(outputString);
@@ -150,7 +150,7 @@ void STV::runElection() {
 
     int seatsElected = 0;
     droopQuota = (ballots->getBallotCount() / (this->seats + 1)) + 1;
-    std::cout << "\nDroop QUOTA: " << droopQuota;
+    //std::cout << "\nDroop QUOTA: " << droopQuota;
     int voter_choice = 1;
     int voteDistributionRound = 1;
 
@@ -243,13 +243,13 @@ void STV::runElection() {
             std::vector<int> currentBallot = ballots->getBallot(currentBallotID);
 
             int loserChoice = findLoserChoice(candidates, currentBallot, redistributionLoser);
-            std::cout << "\nCandidate " << redistributionLoser->getName() << " was ballot #" << currentBallotID << "'s " << loserChoice << "st pick";
+            //std::cout << "\nCandidate " << redistributionLoser->getName() << " was ballot #" << currentBallotID << "'s " << loserChoice << "st pick";
 
 
             
             // choice #, i.e. looking for the 2nd choice after the first choice has lost
             for (int currentPick = loserChoice + 1; currentPick <  static_cast<int>(currentBallot.size()) + 1; currentPick++) {
-                std::cout << "\n[inside 2nd round]Finding the #" << currentPick << " choice for ballotID: " << currentBallotID;
+                //std::cout << "\n[inside 2nd round]Finding the #" << currentPick << " choice for ballotID: " << currentBallotID;
                 bool reassigned = false;
                 
                 // same code as above for assigning the vote to the current pick
@@ -258,7 +258,7 @@ void STV::runElection() {
                     // if the current vote is a 1, assign the ballot the candidate that recieved it
                     if ( static_cast<int>(currentBallot.at(candidateNum)) == currentPick &&  static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) < droopQuota) {
                         candidates.at(candidateNum).assignBallot(currentBallotID);
-                        std::cout << "\nBallot " << currentBallotID << " was reassigned to the candidate: " << candidates.at(candidateNum).getName();
+                        //std::cout << "\nBallot " << currentBallotID << " was reassigned to the candidate: " << candidates.at(candidateNum).getName();
                         outputString = "\n" + redistributionLoser->getName() + " lost- redistributing ballot #" + std::to_string(currentBallotID) + " to " + candidates.at(candidateNum).getName();
                         electionProgress.push_back(outputString);
 
@@ -274,7 +274,7 @@ void STV::runElection() {
                         // if assigning the ballot means that the candidate hits droop quota, then immediately add them to the winners list
                         if (static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) == droopQuota) {
                             // maybe remove them from the candidates- HOWEVER, because the candidates vector doesn't have ids, the voter's choices require them to still be in the vector
-                            std::cout << "\nAssigning ballot #" << currentBallotID << " means that " << candidates.at(candidateNum).getName() << " hit Droop Quota... adding them to winners list.";
+                            //std::cout << "\nAssigning ballot #" << currentBallotID << " means that " << candidates.at(candidateNum).getName() << " hit Droop Quota... adding them to winners list.";
                             winners.push_back(candidates.at(candidateNum));
                             seatsElected++;
                         }                                    
