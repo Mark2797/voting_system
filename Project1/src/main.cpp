@@ -114,21 +114,23 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
 /**
  * @brief Prompt user for seat number and algorithm
  * @param seatNum Number of seat to be elected
- * @param alg Algorithm to use
+ * @param candidateNum Number of candidates
  */
-void prompt_user_seatNum(int& seatNum) {
+void prompt_user_seatNum(int& seatNum, int candidateNum) {
     int num;
     while(true) {
         std::cout << "Please enter a positive integer for the number of seat to be elected: " << std::endl;
         std::cin >> num;
         if (std::cin.fail()) {
             std::cout << "Invalid input!" << std::endl;
-            std::cout << "Please enter a positive integer!" << std::endl;
+            std::cout << "Please enter a positive integer smaller than the number of candidates!" << std::endl;
+            std::cout << "Number of candidates: " << candidateNum << std::endl;
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        } else if (num <= 0) {
+        } else if (num <= 0 || num > candidateNum) {
             std::cout << "Invalid input!" << std::endl;
-            std::cout << "Please enter a positive integer!" << std::endl;
+            std::cout << "Please enter a positive integer smaller than the number of candidates!" << std::endl;
+            std::cout << "Number of candidates: " << candidateNum << std::endl;
         } else {
             break;
         }
@@ -186,19 +188,15 @@ int main(int argc, char **argv) {
     // Try opening file until a valid file name is provided
     std::ifstream file;
     open_file(file);
+
+    // Read the file and create a Ballot object
+    Ballots ballots = read_file(file, shuffle);
     
     // Get number of seat and algorithm choice from user
     int seatNum;
     std::string alg;
-    prompt_user_seatNum(seatNum);
+    prompt_user_seatNum(seatNum, ballots.getCandidateCount());
     prompt_user_alg(alg);
-
-    // Just for testing, printing out seat number and algorithm
-    std::cout << "Number of seat: " << seatNum << std::endl;
-    std::cout << "Algorithm: " << alg << std::endl;
-
-    // Read the file and create a Ballot object
-    Ballots ballots = read_file(file, shuffle);
 
     // Just for testing, printing out the content in ballots
     for (int i = 0; i < ballots.getCandidateCount(); i++) {
@@ -212,6 +210,10 @@ int main(int argc, char **argv) {
         }
         std::cout << std::endl;
     }
+
+    // Just for testing, printing out seat number and algorithm
+    std::cout << "Number of seat: " << seatNum << std::endl;
+    std::cout << "Algorithm: " << alg << std::endl;
     
     return 0;
 }

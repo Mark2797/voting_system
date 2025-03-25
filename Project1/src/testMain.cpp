@@ -14,7 +14,7 @@
 extern void open_file(std::ifstream& file);
 extern Ballots read_file(std::ifstream& file, bool shuffle);
 extern int shuffleOffFlag(int argc, char **argv, bool &shuffle);
-extern void prompt_user_seatNum(int& seatNum);
+extern void prompt_user_seatNum(int& seatNum, int candidateNum);
 extern void prompt_user_alg(std::string& alg);
 
 void userInput(std::vector<std::string> input) {
@@ -100,8 +100,8 @@ class MainTest : public ::testing::Test {
         plurality_file_name = {"../testing/pluralityTestMain.csv\n"};
         stv_file_name = {"../testing/stvTestMain.csv\n"};
         bad_file_name = {"12343\n", "../testing/asdasd/\n", ".csv\n", "../testing/stvTestMain.csv\n"};
-        bad_seatNum = {"abc\n", "0\n", "-123123\n", "5\n"};
-        good_seatNum = {"10\n"};
+        bad_seatNum = {"abc\n", "0\n", "-123123\n", "10\n", "5\n"};
+        good_seatNum = {"5\n"};
         bad_alg = {"abc\n", "0\n", "-123123\n", "5\n", "1\n"};
         good_alg_one = {"1\n"};
         good_alg_two = {"2\n"};
@@ -230,14 +230,14 @@ TEST_F(MainTest, SeatNumTest) {
     int seatNum;
     
     userInput(bad_seatNum);
-    prompt_user_seatNum(seatNum);
+    prompt_user_seatNum(seatNum, 6);
     restore_stdin_fd(old_stdin);
     EXPECT_EQ(seatNum, 5);
 
     userInput(good_seatNum);
-    prompt_user_seatNum(seatNum);
+    prompt_user_seatNum(seatNum, 6);
     restore_stdin_fd(old_stdin);
-    EXPECT_EQ(seatNum, 10);
+    EXPECT_EQ(seatNum, 5);
 }
 
 TEST_F(MainTest, AlgTest) {
