@@ -1,0 +1,60 @@
+Vote Distribution Round #1
+Bill Jones hit Droop quota- adding to winners list
+Bill Jones,2,3,4,
+Alice Mix,
+Sally Ride,0,1,
+Ahmed Mohamed,
+Siyang Xiong,5,
+Preeti Banerjee,
+Winners: Bill Jones,
+Losers: 
+
+Vote Distribution Round #2
+Adding Alice Mix to the losers list because they recieved 0 ballots.
+Adding Ahmed Mohamed to the losers list because they recieved 0 ballots.
+Adding Preeti Banerjee to the losers list because they recieved 0 ballots.
+Siyang Xiong lost- redistributing ballot #5 to Preeti Banerjee
+Bill Jones,2,3,4,
+Alice Mix,
+Sally Ride,0,1,
+Ahmed Mohamed,
+Siyang Xiong,
+Preeti Banerjee,5,
+Winners: Bill Jones,
+Losers: Alice Mix,Ahmed Mohamed,
+
+Vote Distribution Round #3
+Adding Siyang Xiong to the losers list because they recieved 0 ballots.
+Preeti Banerjee lost- redistributing ballot #5 to Alice Mix
+Bill Jones,2,3,4,
+Alice Mix,5,
+Sally Ride,0,1,
+Ahmed Mohamed,
+Siyang Xiong,
+Preeti Banerjee,
+Winners: Bill Jones,
+Losers: Ahmed Mohamed,Siyang Xiong,
+
+Vote Distribution Round #4
+Adding Preeti Banerjee to the losers list because they recieved 0 ballots.
+Alice Mix lost- redistributing ballot #5 to Ahmed Mohamed
+Bill Jones,2,3,4,
+Alice Mix,
+Sally Ride,0,1,
+Ahmed Mohamed,5,
+Siyang Xiong,
+Preeti Banerjee,
+Winners: Bill Jones,
+Losers: Siyang Xiong,Preeti Banerjee,
+
+Vote Distribution Round #5
+Adding Alice Mix to the losers list because they recieved 0 ballots.
+Ahmed Mohamed lost- redistributing ballot #5 to Sally Ride
+Bill Jones,2,3,4,
+Alice Mix,
+Sally Ride,0,1,5,
+Ahmed Mohamed,
+Siyang Xiong,
+Preeti Banerjee,
+Winners: Bill Jones,Sally Ride,
+Losers: Siyang Xiong,Preeti Banerjee,Alice Mix,
