@@ -21,12 +21,12 @@
  */
 int shuffleOffFlag(int argc, char **argv, bool &shuffle) {
     shuffle = true;
-    if (argc > 2) {
+    if (argc > 2) { // too many arguments
         std::cout << "Too many arguments" << std::endl;
         return 1;
     } else if (argc == 2) {
         std::string first_arg = std::string(argv[1]);
-        // shuffle-off flag
+        // check for shuffle-off flag
         if (first_arg.compare("shuffle-off") != 0) {
             std::cout << "Invalid flag" << std::endl;
             return 1;
@@ -49,7 +49,7 @@ void open_file(std::ifstream& file) {
     std::cin >> file_name;
     while (true) {
         file.open(file_name);
-        if (!file.is_open()) {
+        if (!file.is_open()) { // file is not opened
             std::cout << "Invalid file name" << std::endl;
             std::cout << "Following are the common mistakes:" << std::endl;
             std::cout << "1. Wrong file name" << std::endl;
@@ -57,7 +57,7 @@ void open_file(std::ifstream& file) {
             std::cout << "3. .csv extension is not included" << std::endl;
             std::cout << "Please re-enter the file name:" << std::endl;
             std::getline(std::cin, file_name);
-        } else {
+        } else { // file is opened
             break;
         }
     }
@@ -120,12 +120,12 @@ void prompt_user_seatNum(int& seatNum) {
     while(true) {
         std::cout << "Please enter a positive integer for the number of seat to be elected: " << std::endl;
         std::cin >> num;
-        if (std::cin.fail()) {
+        if (std::cin.fail()) { // input is not an integer
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter a positive integer!" << std::endl;
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        } else if (num <= 0) {
+        } else if (num <= 0) { // input is not a positive integer
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter a positive integer!" << std::endl;
         } else {
@@ -147,12 +147,12 @@ void prompt_user_alg(std::string& alg) {
         std::cout << "2. Single Transferable Vote (STV) Algorithm" << std::endl;
         std::cout << "Please select by entering the number 1 or 2:" << std::endl;
         std::cin >> num;
-        if (std::cin.fail()) {
+        if (std::cin.fail()) { // input is not an integer
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter 1 or 2!" << std::endl;
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        } else if (num != 1 && num != 2) {
+        } else if (num != 1 && num != 2) { // input is not a valid option
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter 1 or 2!" << std::endl;
         } else {
