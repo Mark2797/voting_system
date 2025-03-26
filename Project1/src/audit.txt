@@ -1,0 +1,28 @@
+[STV Election]: Droop: 3, Seats: 2, Candidates: 6
+Bill Jones hit Droop quota- adding to winners list
+Bill Jones,1,2,5,
+Alice Mix,
+Sally Ride,3,4,
+Ahmed Mohamed,
+Siyang Xiong,0,
+Preeti Banerjee,
+Winners: Bill Jones,
+Losers: 
+Adding Alice Mix to the losers list because they recieved 0 ballots.
+Adding Ahmed Mohamed to the losers list because they recieved 0 ballots.
+Adding Preeti Banerjee to the losers list because they recieved 0 ballots.
+
+Vote Redistribution Round #1
+Sally Ride hit Droop quota- adding to winners list
+Bill Jones,1,2,5,
+Alice Mix,
+Sally Ride,3,4,0,
+Ahmed Mohamed,
+Siyang Xiong,
+Preeti Banerjee,
+Winners: Bill Jones,Sally Ride,
+Losers: Alice Mix,Ahmed Mohamed,Preeti Banerjee,Siyang Xiong,
+
+Final Election Results:
+Winners: Bill Jones,Sally Ride,
+Losers: Alice Mix,Ahmed Mohamed,Preeti Banerjee,Siyang Xiong,

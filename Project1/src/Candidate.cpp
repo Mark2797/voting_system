@@ -17,9 +17,9 @@ void Candidate::assignBallot(int ballotID) {
     ballotNum++;
 }
 
-// void Candidate::clearAssignedBallots() {
-//     assignedBallots.clear();
-// }
+void Candidate::clearAssignedBallots() {
+    assignedBallots.clear();
+}
 
 std::string Candidate::getName() {
     return name;
