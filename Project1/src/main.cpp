@@ -114,7 +114,6 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
 /**
  * @brief Prompt user for seat number and algorithm
  * @param seatNum Number of seat to be elected
- * @param alg Algorithm to use
  */
 void prompt_user_seatNum(int& seatNum) {
     int num;
@@ -138,7 +137,6 @@ void prompt_user_seatNum(int& seatNum) {
 
 /**
  * @brief Prompt user for seat number and algorithm
- * @param seatNum Number of seat to be elected
  * @param alg Algorithm to use
  */
 void prompt_user_alg(std::string& alg) {
