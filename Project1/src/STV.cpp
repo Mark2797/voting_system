@@ -8,32 +8,35 @@ static std::string auditFileName;
 static std::string outputString;
 static std::ofstream file;
 
+// write out each candidate and what ballot IDs they recieved... this causes slowdown but may be nice for auditing
 static void writeVotesToAudit(std::vector<std::string>& electionProgress, std::vector<Candidate>& candidates) {
 
-    for (unsigned long i = 0; i < candidates.size(); i++) {
+    for (int i = 0; i < static_cast<int>(candidates.size()); i++) {
         outputString = "\n" + candidates.at(i).getName() + ",";
 
-        for (unsigned long j = 0; j < candidates.at(i).getAssignedBallots().size(); j++) {
+        for (int j = 0; j < static_cast<int>(candidates.at(i).getAssignedBallots().size()); j++) {
             outputString += std::to_string(candidates.at(i).getAssignedBallots().at(j)) + ",";
         }
         electionProgress.push_back(outputString);
     }
 }
 
+// display the winners and losers at the time of being called
 static void displayWinnersLosers(std::vector<std::string>& electionProgress, std::vector<Candidate>& winners, std::vector<Candidate>& losers) {
     outputString = "\nWinners: ";
-    for (unsigned long i = 0; i < winners.size(); i++) {
+    for (int i = 0; i < static_cast<int>(winners.size()); i++) {
         outputString += winners.at(i).getName() + ",";
     }
     electionProgress.push_back(outputString);
 
     outputString = "\nLosers: ";
-    for (unsigned long i = 0; i < losers.size(); i++) {
+    for (int i = 0; i < static_cast<int>(losers.size()); i++) {
         outputString += losers.at(i).getName() + ",";
     }
     electionProgress.push_back(outputString);
 }
 
+// finds what number choice the loser was given a ballot... so if the loser was the ballot's 2nd choice, this function will return 2
 static int findLoserChoice(std::vector<Candidate>& candidates, std::vector<int>& currentBallot, int& loserId) {
     int loserChoice;
     for (int j = 0; j < static_cast<int>(currentBallot.size()); j++) {
@@ -44,8 +47,9 @@ static int findLoserChoice(std::vector<Candidate>& candidates, std::vector<int>&
     return loserChoice;
 }
 
+// when given a candidate, finds whether that candidate shows up within the losers vector... returns a bool (true) if the candidate is indeed a loser
 static bool isLoser(Candidate& candidate, std::vector<Candidate>& losers) {
-    for (unsigned int i = 0; i < losers.size(); i++) {
+    for (int i = 0; i < static_cast<int>(losers.size()); i++) {
         if (losers.at(i).getName() == candidate.getName()) {
             return true;
         }
@@ -53,6 +57,17 @@ static bool isLoser(Candidate& candidate, std::vector<Candidate>& losers) {
     return false;
 }
 
+// when given a candidate, finds whether that candidate shows up within the winners vector... returns a bool (true) if the candidate is indeed a winner
+static bool isWinner(Candidate& candidate, std::vector<Candidate>& winners) {
+    for (int i = 0; i < static_cast<int>(winners.size()); i++) {
+        if (winners.at(i).getName() == candidate.getName()) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// shuffles the vector of tied losers and returns the loser that ends up at the front of the vector (randomly)
 static int tieBreaker(std::vector<std::string>& electionProgress, std::vector<int>& lowestVoteCandidates) {
 
     std::random_device rd;
@@ -60,21 +75,19 @@ static int tieBreaker(std::vector<std::string>& electionProgress, std::vector<in
     std::shuffle(lowestVoteCandidates.begin(), lowestVoteCandidates.end(), g);
     
     int redistributionLoser = lowestVoteCandidates.at(0);
-        
-    // outputString = "\nThere was a tie between " + lowestVoteCandidates.at(0)->getName() + " and " + lowestVoteCandidates.at(1)->getName(); 
-    // outputString += "\nLoser was randomly selected to be: " + lowestVoteCandidates.at(0)->getName();
 
     return redistributionLoser;
 } 
 
+// finds the candidate with the fewest (non-zero) votes and returns their ID
 static int findLoser(std::vector<std::string>& electionProgress, std::vector<Candidate>& candidates, std::vector<Candidate>& losers) {
     // create a vector to store candidates that are tied for lowest votes, and keep track of the current lowest vote number with lowestVotes    
     std::vector<int> lowestVoteCandidates;
-    unsigned long lowestVotes = LONG_MAX;
+    int lowestVotes = INT_MAX;
     int redistributionLoser = -99;
     
     // traverse through the candidate list and find the candidate with the lowest number of ballots
-    for (unsigned long i = 0; i < candidates.size(); i++) {
+    for (int i = 0; i < static_cast<int>(candidates.size()); i++) {
 
         // if after the first pass a candidate didn't recieve any votes, add them to the losers list... their votes cannot be redistributed because they didn't get any
         if (candidates.at(i).getAssignedBallots().size() == 0) {
@@ -82,33 +95,25 @@ static int findLoser(std::vector<std::string>& electionProgress, std::vector<Can
             // before adding the candidate to the losers vector, check if they're already there
             if (isLoser(candidates.at(i), losers) == false) {
                 losers.push_back(candidates.at(i));
-                //std::cout << "\nAdded " << candidates.at(i).getName() << " to the losers list because they recieved 0 votes";
                 outputString = "\nAdding " + candidates.at(i).getName() + " to the losers list because they recieved " + std::to_string(candidates.at(i).getAssignedBallots().size()) + " ballots.";
                 electionProgress.push_back(outputString);
             }
         }
         
         // if there's a tie in losers and they're not already, add them to the tie list
-        else if (candidates.at(i).getAssignedBallots().size() == lowestVotes && isLoser(candidates.at(i), losers) == false) {
-            if (isLoser(candidates.at(i), losers) == false) {
-                lowestVoteCandidates.push_back(i);
-                lowestVotes = candidates.at(i).getAssignedBallots().size(); //technically not needed bc lowestvotes will already be this value but :)
-            }
+        else if (static_cast<int>(candidates.at(i).getAssignedBallots().size()) == lowestVotes && isLoser(candidates.at(i), losers) == false) {
+            lowestVoteCandidates.push_back(i);
+            lowestVotes = candidates.at(i).getAssignedBallots().size(); //technically not needed bc lowestvotes will already be this value but :)
         }
         
         // If a 'new' losing amount of ballots is achieved, then clear out the losingCandidates vector and add the NEW loser
-        else if (candidates.at(i).getAssignedBallots().size() < lowestVotes && candidates.at(i).getAssignedBallots().size() > 0 && isLoser(candidates.at(i), losers) == false) {
+        else if (static_cast<int>(candidates.at(i).getAssignedBallots().size()) < lowestVotes && candidates.at(i).getAssignedBallots().size() > 0 && isLoser(candidates.at(i), losers) == false) {
             if (isLoser(candidates.at(i), losers) == false) {
                 lowestVoteCandidates.clear();
                 lowestVoteCandidates.push_back(i);
                 lowestVotes = candidates.at(i).getAssignedBallots().size();
             }
         }     
-        
-        // else {
-        //     std::cout << "\nMYSTEROUS OTHER CASE";
-        //     std::cout << "\nCandidate: " << candidates.at(i).getName() << " has " << candidates.at(i).getAssignedBallots().size() << " ballots, and their loser status is: " << isLoser(candidates.at(i), losers);
-        // }
     }       
 
     redistributionLoser = lowestVoteCandidates.at(0);
@@ -118,7 +123,6 @@ static int findLoser(std::vector<std::string>& electionProgress, std::vector<Can
         redistributionLoser = tieBreaker(electionProgress, lowestVoteCandidates);
     }
 
-    //std::cout << "\nSelected " << candidates.at(redistributionLoser).getName();
     return redistributionLoser;
 }
 
@@ -161,7 +165,6 @@ void STV::runElection() {
 
     int seatsElected = 0;
     droopQuota = (ballots->getBallotCount() / (this->seats + 1)) + 1;
-    //std::cout << "\nDroop QUOTA: " << droopQuota;
     int voter_choice = 1;
     int voteDistributionRound = 1;
 
@@ -173,10 +176,10 @@ void STV::runElection() {
         std::vector<int> current_ballot = ballots->getBallot(ballotId);
         
         // for each vote in the current ballot
-        for (unsigned long candidateNum = 0; candidateNum < current_ballot.size(); candidateNum++) {
+        for (int candidateNum = 0; candidateNum < static_cast<int>(current_ballot.size()); candidateNum++) {
             
             // if the current vote is a 1, assign the ballot the candidate that recieved it
-            if (current_ballot.at(candidateNum) == voter_choice &&  static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) < droopQuota) {
+            if (current_ballot.at(candidateNum) == voter_choice && static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) < droopQuota) {
                 candidates.at(candidateNum).assignBallot(ballotId);
                 
                 // if assigning the ballot means that the candidate hits droop quota, then immediately add them to the winners list
@@ -200,7 +203,7 @@ void STV::runElection() {
                     bool reassigned = false;
                     
                     // traverse through the ballot and find which candidate corresponds to the vote priority... if we're on 1st choice give to the first candidate
-                    for (unsigned long candidateNum = 0; candidateNum < current_ballot.size(); candidateNum++) {
+                    for (int candidateNum = 0; candidateNum < static_cast<int>(current_ballot.size()); candidateNum++) {
                         
                         // if the current vote is a 1, assign the ballot to the candidate that recieved it
                         if (static_cast<int>(current_ballot.at(candidateNum)) == currentPick &&  static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) < droopQuota) {
@@ -210,7 +213,6 @@ void STV::runElection() {
 
                             // if assigning the ballot means that the candidate hits droop quota, then immediately add them to the winners list
                             if (static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) == droopQuota) {
-                                // maybe remove them from the candidates- HOWEVER, because the candidates vector doesn't have ids, the voter's choices require them to still be in the vector
                                 outputString = "\n" + candidates.at(candidateNum).getName() + " hit Droop quota- adding to winners list";
                                 electionProgress.push_back(outputString);
                                 std::cout << "\nAssigning ballot #" << ballotId << " means that " << candidates.at(candidateNum).getName() << " hit Droop Quota... adding them to winners list.";
@@ -248,48 +250,29 @@ void STV::runElection() {
             losers.push_back(candidates.at(loserId));
         }
         
-        //std::cout << "\nloser ballots: " << candidates.at(loserId).getAssignedBallots().size();
-
-        // std::cout << "\nMister " << candidates.at(loserId).getName() << " has ballots: ";
-        // for (int i = 0; i < candidates.at(loserId).getAssignedBallots().size(); i++) {
-        //     std::cout << candidates.at(loserId).getAssignedBallots().at(i) << ", ";
-        // }
-
-        int numLoserBallots = static_cast<int>(candidates.at(loserId).getAssignedBallots().size());
         // for each of the losing candidates ballots
-        for (int i = 0; i < numLoserBallots; i++) {
+        for (int i = 0; i < static_cast<int>(candidates.at(loserId).getAssignedBallots().size()); i++) {
+            
             bool reassigned = false;
-            // find what number choice we're on, in the case that the ballot has already been assigned to its 2nd/3rd/etc choice or if the 2nd/3rd/etc choice has already hit Droop
-            // this might need to be the LAST added ballot
             int currentBallotID = candidates.at(loserId).getAssignedBallots().at(i);
-            //candidates.at(i).removeBallot(currentBallotID);
-            //std::cout << "\nCandidate " << candidates.at(loserId).getName() << " ballot #" << currentBallotID << " at position " << i;
-
             std::vector<int> currentBallot = ballots->getBallot(currentBallotID);
-
             int loserChoice = findLoserChoice(candidates, currentBallot, loserId);
-            //std::cout << "\nCandidate " << redistributionLoser->getName() << " was ballot #" << currentBallotID << "'s " << loserChoice << "st pick";
                     
             // choice #, i.e. looking for the 2nd choice after the first choice has lost
-            for (int currentPick = loserChoice + 1; currentPick <  static_cast<int>(currentBallot.size()) + 1; currentPick++) {
-                //std::cout << "\n[inside 2nd round]Finding the #" << currentPick << " choice for ballotID: " << currentBallotID;
+            for (int currentPick = loserChoice + 1; currentPick < static_cast<int>(currentBallot.size()) + 1; currentPick++) {
                 
-                
-                // same code as above for assigning the vote to the current pick
-                for (unsigned long candidateNum = 0; candidateNum < currentBallot.size(); candidateNum++) {
+                // for each candidate ranking, look for the candidate that matches the current choice search
+                for (int candidateNum = 0; candidateNum < static_cast<int>(currentBallot.size()); candidateNum++) {
                     
                     // if the current vote is a 1, assign the ballot the candidate that recieved it
                     if (static_cast<int>(currentBallot.at(candidateNum)) == currentPick &&  static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) < droopQuota && isLoser(candidates.at(candidateNum), losers) == false) {
                         candidates.at(candidateNum).assignBallot(currentBallotID);
-                        //std::cout << "\nBallot " << currentBallotID << " was reassigned to the candidate: " << candidates.at(candidateNum).getName();
                         outputString = "\n" + candidates.at(loserId).getName() + " lost- redistributing ballot #" + std::to_string(currentBallotID) + " to " + candidates.at(candidateNum).getName();
                         electionProgress.push_back(outputString);
 
 
                         // if assigning the ballot means that the candidate hits droop quota, then immediately add them to the winners list
                         if (static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) == droopQuota) {
-                            // maybe remove them from the candidates- HOWEVER, because the candidates vector doesn't have ids, the voter's choices require them to still be in the vector
-                            //std::cout << "\nAssigning ballot #" << currentBallotID << " means that " << candidates.at(candidateNum).getName() << " hit Droop Quota... adding them to winners list.";
                             winners.push_back(candidates.at(candidateNum));
                             seatsElected++;
                         }                                    
@@ -307,17 +290,24 @@ void STV::runElection() {
             }
         }
 
-        candidates.at(loserId).removeBallot(0);
-        //std::cout << "\nDROOP: " << droopQuota;
+        // remove the redistributed ballots from the loser
+        //candidates.at(loserId).clearAssignedBallots();
 
         //writeVotesToAudit(electionProgress, candidates);
         displayWinnersLosers(electionProgress, winners, losers);
     }
     
-    // code has been created to not hit this conditional statment, but here for testing [testing]
-    if (static_cast<int>(winners.size()) < seats) {
-        std::cout << "\n" << winners.size() << " candidates were elected, but we needed " << seats << ", here are the winners: ";
+    outputString = "\n\nFinal Election Results:";
+    electionProgress.push_back(outputString);
+
+    // after all seats are elected, all candidates who haven't won a seat are deemed losers
+    for (unsigned long i = 0; i < candidates.size(); i++) {  
+        if (isWinner(candidates.at(i), winners) == false && isLoser(candidates.at(i), losers) == false) {
+            losers.push_back(candidates.at(i));
+        }
     }
+    
+    displayWinnersLosers(electionProgress, winners, losers);
 
     displayElectionDetails();
     outputAuditFile();
@@ -341,7 +331,6 @@ void STV::displayElectionDetails() {
         double percentage = this->candidates.at(i).getBallotNum() * 100.0 / this->ballots->getBallotCount();
         std::cout << this->candidates.at(i).getName() << " (" << std::fixed << std::setprecision(2) << percentage << "%)" << std::endl;
     }
-
 }
 
 void STV::outputAuditFile() {
