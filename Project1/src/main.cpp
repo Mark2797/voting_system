@@ -171,6 +171,8 @@ void prompt_user_alg(std::string& alg) {
 
 /**
  * @brief The main function of the program.
+ * @param argc Number of arguments
+ * @param argv Arguments
  * @return 0 on successful execution and 1 on failed execution.
  */
 int main(int argc, char **argv) {
