@@ -17,10 +17,31 @@
  */
 class STV : public Election {
     public:
+        /**
+         * @brief STV Constructor
+         * @param ballots Pointer to the Ballots that contain the ballots information
+         * @param seats Number of seats to be elected
+         */
         STV(Ballots* ballots, int seats);
+        
+        /**
+         * @brief STV destructor
+         */
         ~STV();
+
+        /**
+         * @brief Runs an STV election using the STV algorithm 
+         */
         void runElection() override;
+
+        /**
+         * @brief Displays election information
+         */
         void displayElectionDetails();
+
+        /**
+         * @brief Creates an audit file that contains election information after each vote distribution round
+         */
         void outputAuditFile();
     private:
         int droopQuota;
