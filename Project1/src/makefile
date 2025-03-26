@@ -62,6 +62,9 @@ testMain.o:
 testPlurality.o:
 	$(CXX) $(CXXFLAGS) -c testPlurality.cpp -o testPlurality.o
 
+testSTV.o:
+	$(CXX) $(CXXFLAGS) -c testSTV.cpp -o testSTV.o
+
 testBallots: testBallots.o Ballots.o
 	$(CXX) $(CXXFLAGS) testBallots.o Ballots.o -o testBallots $(GTEST_DIR)
 
