@@ -1,6 +1,6 @@
-// Plurality.h
+// STV.h
 // Perform a single transferable vote (STV) election
-// Author: Mark Tsai
+// Author: Mark Tsai, Michael Dunn
 
 #ifndef STV_H_
 #define STV_H_

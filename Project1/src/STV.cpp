@@ -1,3 +1,7 @@
+// STV.cpp
+// Performs an STV election
+// Author: Michael Dunn
+
 #include "STV.h"
 #include <iostream>
 #include <climits>
