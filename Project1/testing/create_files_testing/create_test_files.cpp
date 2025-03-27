@@ -7,6 +7,7 @@
 #include <iomanip>
 #include <numeric>
 #include <algorithm>
+#include <cmath>
 
 using namespace std;
 
@@ -15,25 +16,49 @@ using namespace std;
 // Purpose is to create random CSV files to test for.
 
 int main() {
-    vector<string> names1 = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", "Micheal Ashton", "Joe Cool", "Jimmy Donaldson", "John Kennedy", "Patrick Star", "Robot Iam", "Alice Wonder"};
+    int test_value = 4;
+    // To keep it easier to change, this value corresponds to the total number of tests
+    // divided by 2. Increasing this value doubles the total amount of tests ran.
+    vector<string> names1 = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", 
+        "Micheal Ashton", "Joe Cool", "Jimmy Donaldson", "John Kennedy", 
+        "Patrick Star", "Robot Iam", "Alice Wonder"};
+    // Add or subtract names from here - keep in mind that this will be the total number
+    // of candidates to be chosen as well.
     vector<string> names2(names1.begin(), names1.begin() + 5);
-    vector<vector<string>> names_list(4, names2);
-    names_list.insert(names_list.end(), 4, names1);
-    vector<int> ballots(4, 100);
-    ballots.insert(ballots.end(), 4, 100000);
-    vector<string> type = {"S", "P", "S", "P", "S", "P", "S", "P"};
+    // A second names vector set to be a subset of the original names1 vector.
+    // Ideally could be changed to a whole new vector, but kept this because it's easier.
+    vector<vector<string>> names_list(test_value, names2);
+    // This vector is dedicated to keeping track of all of the name lists to refer back to.
+    names_list.insert(names_list.end(), test_value, names1);
+    vector<int> ballots(test_value, 100);
+    // This refers to the total number of ballots. The right value can be changed without
+    // concern, however the left value should be alligned with the total amount of 
+    // tests we want to run.
+    ballots.insert(ballots.end(), test_value, 100000);
+    // 100,000 is chosen as it is the maximu amount of ballots we expect to run.
+    static vector<string> types = {"S", "P"};
+    vector<string> type_list(test_value * 2);
+    for (int i = 0; i < test_value * 2; i++) {
+        type_list.at(i) = types[i % 2];
+    }
+    // Interchanging types of algorithms to run. 
+    // DO NOT TOUCH TYPES. IT SHOULD ONLY HAVE S AND P.
     vector<string> path;
     for (int n = 1; n <= names_list.size(); n++) {
         path.push_back("test_file" + to_string(n) + ".csv");
     }
+    // Creates the total amount of test files as csv files to output.
+
+    // DO NOT EDIT CODE BELOW.
 
     auto t0 = chrono::high_resolution_clock::now();
     random_device generator;
     mt19937 rd(generator());
+    // Creates a random generator based on hardware.
     for (int i = 0; i < path.size(); i++) {
-        ofstream f(path[i]);
+        ofstream f(path[i]); // Start output stream
         vector<int> length(names_list[i].size());
-        iota(length.begin(), length.end(), 1);
+        iota(length.begin(), length.end(), 1); // Gets length vector ready for being randomized
         string str = "";
         for (string name : names_list[i]) {
             str += name + ",";
@@ -41,20 +66,32 @@ int main() {
         str.pop_back();
         f << str << "\n";
         str = "";
-        if (type[i] == "S") {
-            uniform_int_distribution<> distribution(1, length.size());
+        // Prints out names at the top of the file.
+        if (type_list[i] == "S") {
+            // STV ALGORITHM
+            // Randomzies order & number of non-votes, then writes to the file.
+            uniform_int_distribution<> distribution(0, length.size() / 2);
             vector<vector<int>> vals(ballots[i], vector<int>(length.size()));
             for (int b = 0; b < ballots[i]; b++) {
-                shuffle(length.begin(), length.end(), rd);
-                // candidates = 
-                for (int k = 0; k < length.size(); k++) {
-                    str += to_string(length[k]) + ",";
+                int not_voted = distribution(rd);
+                vector<int> copy(length);
+                fill(copy.end() - not_voted, copy.end(), 0);
+                shuffle(copy.begin(), copy.end(), rd);
+                for (int k = 0; k < copy.size(); k++) {
+                    if (copy[k] != 0) {
+                        str += to_string(copy[k]) + ",";
+                    }
+                    else {
+                        str += ",";
+                    }
                 }
                 str.pop_back();
                 f << str << '\n';
                 str = "";
             }
-        } else if (type[i] == "P") {
+        } else if (type_list[i] == "P") {
+            // PLURALITY ALGORITHM
+            // Ranomizes what candidate (index) gets the vote, then writes to the file.
             vector<vector<int>> vals(ballots[i], vector<int>(length.size()));
             uniform_int_distribution<int> distribution(0, length.size() - 1);
             for (vector<int> row : vals) {
@@ -78,6 +115,7 @@ int main() {
     auto t1 = chrono::high_resolution_clock::now();
     chrono::duration<double> diff = t1 - t0;
     cout << fixed << setprecision(2) << diff.count() << " seconds to generate " << path.size() << " test files." << endl;
+    // Prints out total number of files & total time taken to generate files.
 
     return 0;
 }
