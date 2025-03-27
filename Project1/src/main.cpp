@@ -11,6 +11,9 @@
 #include <limits>
 
 #include "Ballots.h"
+#include "Election.h"
+#include "Plurality.h"
+#include "STV.h"
 
 /**
  * @brief Take arguments and check for shuffle-off flag
@@ -90,20 +93,22 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
         std::stringstream ss(line);
         std::vector<int> ballot;
         std::string value;
-        int count = 0;
-        while (count != static_cast<int>(candidates.size())) {
-            std::getline(ss, value, ',');
+        unsigned long count = 0;
+        while (count != candidates.size()) {
+            //std::getline(ss, value, ',');
             // Prevent \n or \r at the end of the line
+            std::getline(ss, value, ',');
             value.erase(value.find_last_not_of("\r\n") + 1);
-            if (value.empty()) {
-                ballot.push_back(0); // 0 represents empty slot
+            if (!value.empty()) {
+                ballot.push_back(std::stoi(value));// 0 represents empty slot
                 count++;
             } else {
-                ballot.push_back(std::stoi(value));
+                ballot.push_back(0); 
                 count++;
             }
         }
         ballots_vector.push_back(ballot);
+        count = 0;
     }
     
     file.close();
@@ -167,7 +172,7 @@ void prompt_user_alg(std::string& alg) {
 }
 
 // Only include main() if not being tested
-#ifndef TESTING
+#ifndef TESTING 
 
 /**
  * @brief The main function of the program.
@@ -199,6 +204,18 @@ int main(int argc, char **argv) {
 
     // Read the file and create a Ballot object
     Ballots ballots = read_file(file, shuffle);
+
+    if (alg == "STV") {
+        STV* election = new STV(&ballots, seatNum);
+        election->runElection();
+    }
+    else {
+        Plurality* election = new Plurality(&ballots, seatNum);
+        election->runElection();
+        election->displayElectionDetails();
+    }
+
+
 
     // Just for testing, printing out the content in ballots
     for (int i = 0; i < ballots.getCandidateCount(); i++) {

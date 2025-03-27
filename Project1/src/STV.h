@@ -19,12 +19,13 @@ class STV : public Election {
     public:
         STV(Ballots* ballots, int seats);
         ~STV();
-        void runElection();
-        void displayElectionDetials();
+        void runElection() override;
+        void displayElectionDetails();
         void outputAuditFile();
     private:
         int droopQuota;
         std::vector<std::string> electionProgress;
+        Ballots* stv_ballots;
 };
 
 #endif

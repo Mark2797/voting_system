@@ -31,6 +31,12 @@ class Candidate {
          * @param ballotID Ballot's ID
          */
         void assignBallot(int ballotID);
+        
+        /**
+         * @brief Remove the ballot to the candidate by its ID
+         * @param ballotID Ballot's ID
+         */
+        void removeBallot(int ballotID);
 
         /**
          * @brief Get candidate's name
