@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['_7eballots_0',['~Ballots',['../classBallots.html#ad5829e389e32e5a8ade85a1664147ad9',1,'Ballots']]],
-  ['_7ecandidate_1',['~Candidate',['../classCandidate.html#a61ad4ae35e7a3ce5e5b91204b55c0b55',1,'Candidate']]],
-  ['_7eelection_2',['~Election',['../classElection.html#aceebb69f0fdf9a5d8981ef93b6664a6a',1,'Election']]],
-  ['_7eplurality_3',['~Plurality',['../classPlurality.html#a0f79fb6a57260916f0f0c3aa6b8d9810',1,'Plurality']]]
+  ['plurality_0',['Plurality',['../classPlurality.html#ad9d17868be20534155ba3450e1564223',1,'Plurality']]],
+  ['prompt_5fuser_5falg_1',['prompt_user_alg',['../main_8cpp.html#a7bb0a952c81c288c14709957f3e1fdf3',1,'main.cpp']]],
+  ['prompt_5fuser_5fseatnum_2',['prompt_user_seatNum',['../main_8cpp.html#a1121155b4c6abf7dbdb7038601166fde',1,'main.cpp']]]
 ];
