@@ -22,10 +22,10 @@ OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o
 OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d
 
 # Test Files
-TEST_SRCS = testBallots.cpp testCandidate.cpp testMain.cpp testPlurality.cpp
-TEST_OBJS = testBallots.o testCandidate.o testMain.o main_test.o testPlurality.o
-TEST_OBJS_D = testBallots.d testCandidate.d testMain.d main_test.d testPlurality.d
-TEST_EXECUTABLES = testBallots testCandidate testMain testPlurality
+TEST_SRCS = testBallots.cpp testCandidate.cpp testMain.cpp testPlurality.cpp testSTV.cpp
+TEST_OBJS = testBallots.o testCandidate.o testMain.o main_test.o testPlurality.o testSTV.o
+TEST_OBJS_D = testBallots.d testCandidate.d testMain.d main_test.d testPlurality.d testSTV.d
+TEST_EXECUTABLES = testBallots testCandidate testMain testPlurality testSTV
 # Target executable
 TARGET = voting_system
 
@@ -62,6 +62,9 @@ testMain.o:
 testPlurality.o:
 	$(CXX) $(CXXFLAGS) -c testPlurality.cpp -o testPlurality.o
 
+testSTV.o:
+	$(CXX) $(CXXFLAGS) -c testSTV.cpp -o testSTV.o
+
 testBallots: testBallots.o Ballots.o
 	$(CXX) $(CXXFLAGS) testBallots.o Ballots.o -o testBallots $(GTEST_DIR)
 
@@ -70,6 +73,9 @@ testCandidate: testCandidate.o Candidate.o
 
 testPlurality: testPlurality.o Plurality.o Ballots.o Candidate.o Election.o
 	$(CXX) $(CXXFLAGS) testPlurality.o Plurality.o Ballots.o Candidate.o Election.o -o testPlurality $(GTEST_DIR)
+
+testSTV: testSTV.o STV.o Ballots.o Candidate.o Election.o
+	$(CXX) $(CXXFLAGS) testSTV.o STV.o Ballots.o Candidate.o Election.o -o testSTV $(GTEST_DIR)
 
 # enable TESTING flag in main
 testMain: testMain.o Ballots.o main_test.o

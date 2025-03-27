@@ -216,7 +216,7 @@ int main(int argc, char **argv) {
     }
 
 
-
+/*
     // Just for testing, printing out the content in ballots
     for (int i = 0; i < ballots.getCandidateCount(); i++) {
         std::cout << ballots.getCandidates().at(i) << std::endl;
@@ -230,6 +230,7 @@ int main(int argc, char **argv) {
         std::cout << std::endl;
     }
     
+*/
     return 0;
 }
 
