@@ -3,6 +3,8 @@
 // Author: Mark Tsai
 
 #include "Candidate.h"
+#include <iostream>
+
 
 Candidate::Candidate(std::string name) {
     this->name = name;
@@ -13,6 +15,10 @@ Candidate::~Candidate() {}
 void Candidate::assignBallot(int ballotID) {
     assignedBallots.push_back(ballotID);
     ballotNum++;
+}
+
+void Candidate::clearAssignedBallots() {
+    assignedBallots.clear();
 }
 
 std::string Candidate::getName() {

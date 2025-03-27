@@ -57,13 +57,13 @@ TEST_F(BallotTest, GetCandidateTest) {
 }
 
 TEST_F(BallotTest, GetBallotCountTest) {   
-    EXPECT_EQ(notShuffleBallots->getBallotCount(), 4);
-    EXPECT_EQ(shuffleBallots->getBallotCount(), 6);
+    EXPECT_EQ(notShuffleBallots->getBallotCount(), notShuffleBallotsVector.size());
+    EXPECT_EQ(shuffleBallots->getBallotCount(), shuffleBallotsVector.size());
 }
 
 TEST_F(BallotTest, GetCandidateCountTest) {   
-    EXPECT_EQ(notShuffleBallots->getCandidateCount(), 4);
-    EXPECT_EQ(shuffleBallots->getCandidateCount(), 6);
+    EXPECT_EQ(notShuffleBallots->getCandidateCount(), notShuffleCandidatesVector.size());
+    EXPECT_EQ(shuffleBallots->getCandidateCount(), shuffleCandidatesVector.size());
 }
 
 TEST_F(BallotTest, GetShuffleTest) {   

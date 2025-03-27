@@ -1,0 +1,119 @@
+\doxysection{Election Class Reference}
+\hypertarget{classElection}{}\label{classElection}\index{Election@{Election}}
+
+
+The abstract class for \doxylink{classPlurality}{Plurality} and \doxylink{classSTV}{STV} algorithm inheritance.  
+
+
+
+
+{\ttfamily \#include $<$Election.\+h$>$}
+
+
+
+Inheritance diagram for Election\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classElection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Election\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classElection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classElection_acc559d4bf95045f86e06fe8c0fa05baf}{Election}} (\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}ballots, int seats)
+\begin{DoxyCompactList}\small\item\em \doxylink{classElection}{Election} Constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classElection_aceebb69f0fdf9a5d8981ef93b6664a6a}\label{classElection_aceebb69f0fdf9a5d8981ef93b6664a6a} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Election} ()=0
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classElection_afba360a69e902856a43ed3b4625abab6}{display\+Election\+Details}} ()=0
+\begin{DoxyCompactList}\small\item\em Display the details of the election to the terminal. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}{run\+Election}} ()=0
+\begin{DoxyCompactList}\small\item\em Run the election with an voting algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classElection_a9142adf6dd0d42a18a424edf2fddd5ce}\label{classElection_a9142adf6dd0d42a18a424edf2fddd5ce} 
+\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*} {\bfseries ballots}
+\item 
+\Hypertarget{classElection_a95e25f027c6077f9e9df8d6eec9cdd88}\label{classElection_a95e25f027c6077f9e9df8d6eec9cdd88} 
+int {\bfseries seats}
+\item 
+\Hypertarget{classElection_abae0ef542b0a2ce1bcb8c23c4aa4b05b}\label{classElection_abae0ef542b0a2ce1bcb8c23c4aa4b05b} 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries candidates}
+\item 
+\Hypertarget{classElection_aec1d74f43aaf91361e23a3de7e7ba9d8}\label{classElection_aec1d74f43aaf91361e23a3de7e7ba9d8} 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries winners}
+\item 
+\Hypertarget{classElection_ab393f031c23707f162d4b11dd53b6cc3}\label{classElection_ab393f031c23707f162d4b11dd53b6cc3} 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries losers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The abstract class for \doxylink{classPlurality}{Plurality} and \doxylink{classSTV}{STV} algorithm inheritance. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classElection_acc559d4bf95045f86e06fe8c0fa05baf}\label{classElection_acc559d4bf95045f86e06fe8c0fa05baf} 
+\index{Election@{Election}!Election@{Election}}
+\index{Election@{Election}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{Election()}{Election()}}
+{\footnotesize\ttfamily Election\+::\+Election (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}}]{ballots,  }\item[{int}]{seats }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classElection}{Election} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballots} & Pointer to the \doxylink{classBallots}{Ballots} that contain the ballots information \\
+\hline
+{\em seats} & Number of seats to be elected \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classElection_afba360a69e902856a43ed3b4625abab6}\label{classElection_afba360a69e902856a43ed3b4625abab6} 
+\index{Election@{Election}!displayElectionDetails@{displayElectionDetails}}
+\index{displayElectionDetails@{displayElectionDetails}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{displayElectionDetails()}{displayElectionDetails()}}
+{\footnotesize\ttfamily virtual void Election\+::display\+Election\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Display the details of the election to the terminal. 
+
+
+
+Implemented in \mbox{\hyperlink{classPlurality_ad1f055cbf287e974579b3bfba66d71b9}{Plurality}}, and \mbox{\hyperlink{classSTV_afb2ab691a9164924a2fcddd2758ca43b}{STV}}.
+
+\Hypertarget{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}\label{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f} 
+\index{Election@{Election}!runElection@{runElection}}
+\index{runElection@{runElection}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{runElection()}{runElection()}}
+{\footnotesize\ttfamily virtual void Election\+::run\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Run the election with an voting algorithm. 
+
+
+
+Implemented in \mbox{\hyperlink{classPlurality_ad44af8dbd101ce91504edf587d2beb1a}{Plurality}}, and \mbox{\hyperlink{classSTV_a004373572830f75615db580a7bada82d}{STV}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/Election.\+h\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/Election.\+cpp\end{DoxyCompactItemize}

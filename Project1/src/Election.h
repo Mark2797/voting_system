@@ -31,13 +31,14 @@ class Election {
         /**
          * @brief Display the details of the election to the terminal
          */
-        virtual void displayElectionDetials() = 0;
+        virtual void displayElectionDetails() = 0;
 
-    protected:
         /**
          * @brief Run the election with an voting algorithm
          */
         virtual void runElection() = 0;
+
+    protected:
         Ballots* ballots;
         int seats;
         std::vector<Candidate> candidates;

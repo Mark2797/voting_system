@@ -31,6 +31,11 @@ class Candidate {
          * @param ballotID Ballot's ID
          */
         void assignBallot(int ballotID);
+        
+        /**
+         * @brief Remove all ballots that are assigned to the candidate
+         */
+        void clearAssignedBallots();
 
         /**
          * @brief Get candidate's name
