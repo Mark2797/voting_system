@@ -228,7 +228,6 @@ void STV::runElection() {
         }
     }
 
-    writeVotesToAudit(electionProgress, candidates);
     displayWinnersLosers(electionProgress, winners, losers);
 
     // after all of the votes are distributed, if there are still seats that need to be filled
@@ -259,25 +258,29 @@ void STV::runElection() {
             int loserChoice = findLoserChoice(candidates, currentBallot, loserId);
                     
             // choice #, i.e. looking for the 2nd choice after the first choice has lost
-            for (int currentPick = loserChoice + 1; currentPick < static_cast<int>(currentBallot.size()) + 1; currentPick++) {
+            for (int currentPick = loserChoice + 1; currentPick < static_cast<int>(currentBallot.size()) + 1; currentPick++)
+            {
                 outputString = "\nReassigning ballot: " + std::to_string(currentBallotID) + " looking for the #" + std::to_string(currentPick) + " choice.";
 
                 // for each candidate ranking, look for the candidate that matches the current choice search
-                for (int candidateNum = 0; candidateNum < static_cast<int>(currentBallot.size()); candidateNum++) {
-                    
+                for (int candidateNum = 0; candidateNum < static_cast<int>(currentBallot.size()); candidateNum++)
+                {
+
                     // if the current vote is a 1, assign the ballot the candidate that recieved it
-                    if (static_cast<int>(currentBallot.at(candidateNum)) == currentPick &&  static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) < droopQuota && isInList(candidates.at(candidateNum), losers) == false) {
+                    if (static_cast<int>(currentBallot.at(candidateNum)) == currentPick && static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) < droopQuota && isInList(candidates.at(candidateNum), losers) == false)
+                    {
                         outputString += "- it was: " + candidates.at(candidateNum).getName();
                         electionProgress.push_back(outputString);
-                        // assign the ballot, and once the ballot is reassigned, break out of the assignment loop      
+                        // assign the ballot, and once the ballot is reassigned, break out of the assignment loop
                         assignBallot(electionProgress, candidateNum, currentBallotID, droopQuota, seatsElected, candidates, winners);
                         reassigned = true;
                         break;
                     }
                 }
-                
+
                 // if the ballot is already reassigned, no need to keep looking for next choices, eg. 3rd, 4th...
-                if (reassigned == true) {
+                if (reassigned == true)
+                {
                     break;
                 }
             }
@@ -314,7 +317,8 @@ void STV::runElection() {
     outputAuditFile();
 }
 
-void STV::displayElectionDetails() {
+void STV::displayElectionDetails()
+{
     std::cout << "Election type: STV" << std::endl;
     std::cout << "Number of seats: " << std::to_string(this->seats) << std::endl;
     std::cout << "Number of ballots: " << std::to_string(this->ballots->getBallotCount()) << std::endl;
