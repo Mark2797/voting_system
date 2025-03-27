@@ -100,7 +100,6 @@ TEST_F(PluralityTest, RunElectionTest) {
 TEST_F(PluralityTest, DisplayElectionDetailsTest) {
     testing::internal::CaptureStdout();
     plurality->runElection();
-    plurality->displayElectionDetails();
     std::string correct = "Election type: Plurality\nNumber of seats: 2\nNumber of ballots: 11\nNumber of candidates: 6\nWinners:\nBill Jones\nAlice Mix\nLosers:\nSally Ride\nAhmed Mohamed\nSiyang Xiong\nPreeti Banerjee\nPercentage of votes:\nBill Jones (45.45%)\nAlice Mix (18.18%)\nSally Ride (9.09%)\nAhmed Mohamed (9.09%)\nSiyang Xiong (9.09%)\nPreeti Banerjee (9.09%)\n";
     EXPECT_EQ(testing::internal::GetCapturedStdout(), correct);
 }
