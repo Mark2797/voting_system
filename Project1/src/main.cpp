@@ -12,6 +12,7 @@
 
 #include "Ballots.h"
 #include "Election.h"
+#include "Plurality.h"
 #include "STV.h"
 
 /**
@@ -209,7 +210,9 @@ int main(int argc, char **argv) {
         election->runElection();
     }
     else {
-        // code for running plurality
+        Plurality* election = new Plurality(&ballots, seatNum);
+        election->runElection();
+        election->displayElectionDetails();
     }
 
 

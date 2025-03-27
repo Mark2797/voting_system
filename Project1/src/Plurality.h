@@ -25,7 +25,7 @@ class Plurality : public Election {
         /// @brief Runs a plurality election
         void runElection();
 
-        /// @brief 
+        /// @brief Display the details of the election to the terminal
         void displayElectionDetails();
 
         /// @brief Getter function for ballots

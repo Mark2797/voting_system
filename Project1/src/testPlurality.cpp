@@ -19,10 +19,10 @@ class PluralityTest : public ::testing::Test {
         std::optional<Ballots> ballots;
         std::vector<std::string> candidates;
         std::vector<std::vector<int>> ballots_plurality;
-        std::optional<Plurality> plurality_two;
-        std::optional<Ballots> ballots_two;
-        std::vector<std::string> candidates_two;
-        std::vector<std::vector<int>> ballots_plurality_two;
+        std::optional<Plurality> plurality_three;
+        std::optional<Ballots> ballots_three;
+        std::vector<std::string> candidates_three;
+        std::vector<std::vector<int>> ballots_plurality_three;
     
     void SetUp() override {
         candidates = {
@@ -48,33 +48,29 @@ class PluralityTest : public ::testing::Test {
         };
         ballots.emplace(candidates, ballots_plurality, false);
         plurality.emplace(&(ballots.value()), 2);
-        candidates_two = {
-            "one",
-            "two",
-            "three",
-            "four",
-            "five",
-            "six",
-            "seven",
-            "eight",
-            "nine",
-            "ten",
+        candidates_three = {
+            "Bill Jones",
+            "Alice Mix",
+            "Sally Ride",
+            "Ahmed Mohamed",
+            "Siyang Xiong",
+            "Preeti Banerjee"
         };
-        ballots_plurality_two = {};
-        for (int i = 0; i < 100000; i = i + 10) {
-            ballots_plurality_two.push_back({1, 0, 0, 0, 0, 0, 0, 0, 0, 0});
-            ballots_plurality_two.push_back({0, 1, 0, 0, 0, 0, 0, 0, 0, 0});
-            ballots_plurality_two.push_back({0, 0, 1, 0, 0, 0, 0, 0, 0, 0});
-            ballots_plurality_two.push_back({0, 0, 0, 1, 0, 0, 0, 0, 0, 0});
-            ballots_plurality_two.push_back({0, 0, 0, 0, 1, 0, 0, 0, 0, 0});
-            ballots_plurality_two.push_back({0, 0, 0, 0, 0, 1, 0, 0, 0, 0});
-            ballots_plurality_two.push_back({0, 0, 0, 0, 0, 0, 1, 0, 0, 0});
-            ballots_plurality_two.push_back({0, 0, 0, 0, 0, 0, 0, 1, 0, 0});
-            ballots_plurality_two.push_back({0, 0, 0, 0, 0, 0, 0, 0, 1, 0});
-            ballots_plurality_two.push_back({0, 0, 0, 0, 0, 0, 0, 0, 0, 1});
-        }
-        ballots_two.emplace(candidates_two, ballots_plurality_two, false);
-        plurality_two.emplace(&(ballots_two.value()), 5);
+        ballots_plurality_three = {
+            {1, 0, 0, 0, 0, 0},
+            {0, 1, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {0, 1, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {0, 1, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {0, 0, 1, 0, 0, 0},
+            {0, 0, 0, 1, 0, 0},
+            {0, 0, 1, 0, 0, 0},
+            {0, 0, 0, 1, 0, 0}
+        };
+        ballots_three.emplace(candidates_three, ballots_plurality_three, false);
+        plurality_three.emplace(&(ballots_three.value()), 3);
     }
 };
 
@@ -111,6 +107,37 @@ TEST_F(PluralityTest, DisplayElectionDetailsTest) {
 
 TEST_F(PluralityTest, ElectionTimeLimit) {
     auto start = std::chrono::high_resolution_clock::now();
+    std::optional<Plurality> plurality_two;
+    std::optional<Ballots> ballots_two;
+    std::vector<std::string> candidates_two;
+    std::vector<std::vector<int>> ballots_plurality_two;
+    candidates_two = {
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+    };
+    ballots_plurality_two = {};
+    for (int i = 0; i < 100000; i = i + 10) {
+        ballots_plurality_two.push_back({1, 0, 0, 0, 0, 0, 0, 0, 0, 0});
+        ballots_plurality_two.push_back({0, 1, 0, 0, 0, 0, 0, 0, 0, 0});
+        ballots_plurality_two.push_back({0, 0, 1, 0, 0, 0, 0, 0, 0, 0});
+        ballots_plurality_two.push_back({0, 0, 0, 1, 0, 0, 0, 0, 0, 0});
+        ballots_plurality_two.push_back({0, 0, 0, 0, 1, 0, 0, 0, 0, 0});
+        ballots_plurality_two.push_back({0, 0, 0, 0, 0, 1, 0, 0, 0, 0});
+        ballots_plurality_two.push_back({0, 0, 0, 0, 0, 0, 1, 0, 0, 0});
+        ballots_plurality_two.push_back({0, 0, 0, 0, 0, 0, 0, 1, 0, 0});
+        ballots_plurality_two.push_back({0, 0, 0, 0, 0, 0, 0, 0, 1, 0});
+        ballots_plurality_two.push_back({0, 0, 0, 0, 0, 0, 0, 0, 0, 1});
+    }
+    ballots_two.emplace(candidates_two, ballots_plurality_two, false);
+    plurality_two.emplace(&(ballots_two.value()), 5);
     plurality_two->runElection();
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
@@ -122,6 +149,33 @@ TEST_F(PluralityTest, ElectionTimeLimit) {
     }
     EXPECT_EQ(plurality_two->getWinners().size(), 5);
     EXPECT_EQ(plurality_two->getLosers().size(), 5);
+}
+
+TEST_F(PluralityTest, RandomFinalWinner) {
+    EXPECT_EQ(plurality_three->getBallots(), &(ballots_three.value()));
+    EXPECT_EQ(plurality_three->getSeats(), 3);
+    for (long unsigned int i = 0; i < plurality_three->getCandidates().size(); i++) {
+        EXPECT_EQ(plurality_three->getCandidates().at(i).getName(), candidates_three.at(i));
+    }
+    EXPECT_EQ(plurality_three->getWinners().size(), 0);
+    EXPECT_EQ(plurality_three->getLosers().size(), 0);
+    plurality_three->runElection();
+    plurality_three->displayElectionDetails();
+    EXPECT_EQ(plurality_three->getBallots(), &(ballots_three.value()));
+    EXPECT_EQ(plurality_three->getSeats(), 3);
+    for (long unsigned int i = 0; i < plurality_three->getCandidates().size(); i++) {
+        EXPECT_EQ(plurality_three->getCandidates().at(i).getName(), candidates_three.at(i));
+    }
+    EXPECT_EQ(plurality_three->getWinners().size(), 3);
+    EXPECT_EQ(plurality_three->getLosers().size(), 3);
+    std::vector<std::string> confirmed_winners = {"Bill Jones", "Alice Mix"};
+    std::vector<std::string> confirmed_losers = {"Siyang Xiong", "Preeti Banerjee"};
+    for (long unsigned int i = 0; i < 2; i++) {
+        EXPECT_EQ(plurality_three->getWinners().at(i).getName(), confirmed_winners.at(i));
+    }
+    for (long unsigned int i = 0; i < 2; i++) {
+        EXPECT_EQ(plurality_three->getLosers().at(i).getName(), confirmed_losers.at(i));
+    }
 }
 
 int main(int argc, char **argv) {
