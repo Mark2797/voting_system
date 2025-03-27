@@ -254,16 +254,13 @@ void STV::runElection() {
             break;
         }
         
+        // otherwise, add the loser to the losers list
+        losers.push_back(candidates.at(loserId));
+
+        // begin the next redistribution round
         outputString = "\n\nVote Redistribution Round #" + std::to_string(voteRedistributionRound);
         electionProgress.push_back(outputString);
-        
-
-        // if (isInList(candidates.at(loserId), losers) == false) {
-        //     losers.push_back(candidates.at(loserId));
-        // }
-        
-
-        losers.push_back(candidates.at(loserId));
+  
         // for each of the losing candidates ballots
         for (int i = 0; i < static_cast<int>(candidates.at(loserId).getAssignedBallots().size()); i++) {
             
