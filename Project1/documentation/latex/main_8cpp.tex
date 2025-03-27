@@ -1,0 +1,156 @@
+\doxysection{/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project1/src/main.cpp@{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project1/src/main.cpp}}
+
+
+The main of the software system.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include "{}Ballots.\+h"{}}\newline
+{\ttfamily \#include "{}Election.\+h"{}}\newline
+{\ttfamily \#include "{}Plurality.\+h"{}}\newline
+{\ttfamily \#include "{}STV.\+h"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0bddad9ebecc91e3f0f139bc49940747}{shuffle\+Off\+Flag}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, bool \&shuffle)
+\begin{DoxyCompactList}\small\item\em Take arguments and check for shuffle-\/off flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a2306f004342d678705c999c778ef5593}{open\+\_\+file}} (std\+::ifstream \&file)
+\begin{DoxyCompactList}\small\item\em Open a ballot file with the correct file name or else keep prompting. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallots}{Ballots}} \mbox{\hyperlink{main_8cpp_a2badd177c46bb9ed7b609a599615789c}{read\+\_\+file}} (std\+::ifstream \&file, bool shuffle)
+\begin{DoxyCompactList}\small\item\em Read the ballot file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a1121155b4c6abf7dbdb7038601166fde}{prompt\+\_\+user\+\_\+seat\+Num}} (int \&seat\+Num)
+\begin{DoxyCompactList}\small\item\em Prompt user for seat number and algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a7bb0a952c81c288c14709957f3e1fdf3}{prompt\+\_\+user\+\_\+alg}} (std\+::string \&alg)
+\begin{DoxyCompactList}\small\item\em Prompt user for seat number and algorithm. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\begin{DoxyCompactList}\small\item\em The main function of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main of the software system. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv }\end{DoxyParamCaption})}
+
+
+
+The main function of the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of arguments \\
+\hline
+{\em argv} & Arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on successful execution and 1 on failed execution. 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a2306f004342d678705c999c778ef5593}\label{main_8cpp_a2306f004342d678705c999c778ef5593} 
+\index{main.cpp@{main.cpp}!open\_file@{open\_file}}
+\index{open\_file@{open\_file}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{open\_file()}{open\_file()}}
+{\footnotesize\ttfamily void open\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{file }\end{DoxyParamCaption})}
+
+
+
+Open a ballot file with the correct file name or else keep prompting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file variable to store opened file \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a7bb0a952c81c288c14709957f3e1fdf3}\label{main_8cpp_a7bb0a952c81c288c14709957f3e1fdf3} 
+\index{main.cpp@{main.cpp}!prompt\_user\_alg@{prompt\_user\_alg}}
+\index{prompt\_user\_alg@{prompt\_user\_alg}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{prompt\_user\_alg()}{prompt\_user\_alg()}}
+{\footnotesize\ttfamily void prompt\+\_\+user\+\_\+alg (\begin{DoxyParamCaption}\item[{std\+::string \&}]{alg }\end{DoxyParamCaption})}
+
+
+
+Prompt user for seat number and algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alg} & Algorithm to use \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a1121155b4c6abf7dbdb7038601166fde}\label{main_8cpp_a1121155b4c6abf7dbdb7038601166fde} 
+\index{main.cpp@{main.cpp}!prompt\_user\_seatNum@{prompt\_user\_seatNum}}
+\index{prompt\_user\_seatNum@{prompt\_user\_seatNum}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{prompt\_user\_seatNum()}{prompt\_user\_seatNum()}}
+{\footnotesize\ttfamily void prompt\+\_\+user\+\_\+seat\+Num (\begin{DoxyParamCaption}\item[{int \&}]{seat\+Num }\end{DoxyParamCaption})}
+
+
+
+Prompt user for seat number and algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seat\+Num} & Number of seat to be elected \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a2badd177c46bb9ed7b609a599615789c}\label{main_8cpp_a2badd177c46bb9ed7b609a599615789c} 
+\index{main.cpp@{main.cpp}!read\_file@{read\_file}}
+\index{read\_file@{read\_file}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBallots}{Ballots}} read\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{file,  }\item[{bool}]{shuffle }\end{DoxyParamCaption})}
+
+
+
+Read the ballot file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file variable that stores the opened file \\
+\hline
+{\em shuffle} & Whether shuffle the ballots or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{classBallots}{Ballots} class ballots that contain the ballot file information 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a0bddad9ebecc91e3f0f139bc49940747}\label{main_8cpp_a0bddad9ebecc91e3f0f139bc49940747} 
+\index{main.cpp@{main.cpp}!shuffleOffFlag@{shuffleOffFlag}}
+\index{shuffleOffFlag@{shuffleOffFlag}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{shuffleOffFlag()}{shuffleOffFlag()}}
+{\footnotesize\ttfamily int shuffle\+Off\+Flag (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv,  }\item[{bool \&}]{shuffle }\end{DoxyParamCaption})}
+
+
+
+Take arguments and check for shuffle-\/off flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of arguments \\
+\hline
+{\em argv} & Arguments \\
+\hline
+{\em shuffle} & Boolean of shuffle indicating whether to shuffle or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 1 on error 
+\end{DoxyReturn}

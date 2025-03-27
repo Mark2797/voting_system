@@ -1,3 +1,6 @@
+/// @file main.cpp
+/// @brief The main of the software system
+
 // main.cpp
 // The main of the software system
 // Author: Mark Tsai

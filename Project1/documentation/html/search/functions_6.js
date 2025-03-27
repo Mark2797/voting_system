@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plurality_0',['Plurality',['../classPlurality.html#ad9d17868be20534155ba3450e1564223',1,'Plurality']]]
+  ['main_0',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]]
 ];
