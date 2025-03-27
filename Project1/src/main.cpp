@@ -4,6 +4,9 @@
 // main.cpp
 // The main of the software system
 // Author: Mark Tsai
+// Bug: 
+// This part of the system is handled procedural when collecting information
+// OOP when information is collected and election object is created and called
 
 #include <iostream>
 #include <fstream>
