@@ -4,6 +4,9 @@
 // main.cpp
 // The main of the software system
 // Author: Mark Tsai
+// Bug: 
+// This part of the system is handled procedural when collecting information
+// OOP when information is collected and election object is created and called
 
 #include <iostream>
 #include <fstream>
@@ -201,39 +204,20 @@ int main(int argc, char **argv) {
     prompt_user_seatNum(seatNum);
     prompt_user_alg(alg);
 
-    // Just for testing, printing out seat number and algorithm
-    std::cout << "Number of seat: " << seatNum << std::endl;
-    std::cout << "Algorithm: " << alg << std::endl;
-
     // Read the file and create a Ballot object
     Ballots ballots = read_file(file, shuffle);
 
+    // Create Election object and start the elction with collected information
+    Election* election;
     if (alg == "STV") {
-        STV* election = new STV(&ballots, seatNum);
-        election->runElection();
+        election = new STV(&ballots, seatNum);
     }
     else {
-        Plurality* election = new Plurality(&ballots, seatNum);
-        election->runElection();
-        election->displayElectionDetails();
+        election = new Plurality(&ballots, seatNum);
     }
+    election->runElection();
+    delete election;
 
-
-/*
-    // Just for testing, printing out the content in ballots
-    for (int i = 0; i < ballots.getCandidateCount(); i++) {
-        std::cout << ballots.getCandidates().at(i) << std::endl;
-    }
-
-    for (int i = 0; i < ballots.getBallotCount(); i++) {
-        std::vector<int> ballot = ballots.getBallot(i);
-        for (int j = 0; j < ballots.getCandidateCount(); j++) {
-            std::cout << ballot.at(j) << " ";
-        }
-        std::cout << std::endl;
-    }
-    
-*/
     return 0;
 }
 

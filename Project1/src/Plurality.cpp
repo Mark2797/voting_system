@@ -82,6 +82,8 @@ void Plurality::runElection() {
     if (potentialWinners.size() > 0) {
         this->losers.insert(this->losers.end(), potentialWinners.begin(), potentialWinners.end());
     }
+    
+    displayElectionDetails();
 }
 
 void Plurality::displayElectionDetails() {
