@@ -1,0 +1,199 @@
+\doxysection{Plurality Class Reference}
+\hypertarget{classPlurality}{}\label{classPlurality}\index{Plurality@{Plurality}}
+
+
+Perform a plurality election.  
+
+
+
+
+{\ttfamily \#include $<$Plurality.\+h$>$}
+
+
+
+Inheritance diagram for Plurality\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{classPlurality__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Plurality\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classPlurality__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlurality_ad9d17868be20534155ba3450e1564223}{Plurality}} (\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}ballots, int seats)
+\begin{DoxyCompactList}\small\item\em \doxylink{classPlurality}{Plurality} constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classPlurality_a0f79fb6a57260916f0f0c3aa6b8d9810}\label{classPlurality_a0f79fb6a57260916f0f0c3aa6b8d9810} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Plurality} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlurality_ad44af8dbd101ce91504edf587d2beb1a}{run\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Runs a plurality election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlurality_ad1f055cbf287e974579b3bfba66d71b9}{display\+Election\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Display the details of the election to the terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPlurality_a6ec8a57408b3e630d83e063c5ee74b4a}{get\+Ballots}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for ballots. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlurality_aafbcbf9e5c71cbd1ed63177a11c95332}{get\+Seats}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for seats. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classPlurality_a0554f9a5c0499459100eeda26c29105a}{get\+Candidates}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for candidates. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classPlurality_a455b0b4ba9ee0590abe97b98d615bcdf}{get\+Winners}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for winners. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classPlurality_ab3679dfbafa67b9c5e5a141c0ec10c61}{get\+Losers}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for losers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classElection}{Election}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classElection_acc559d4bf95045f86e06fe8c0fa05baf}{Election}} (\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}ballots, int seats)
+\begin{DoxyCompactList}\small\item\em \doxylink{classElection}{Election} Constructor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Election} ()=0
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classElection}{Election}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*} {\bfseries ballots}
+\item 
+int {\bfseries seats}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries candidates}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries winners}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries losers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Perform a plurality election. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPlurality_ad9d17868be20534155ba3450e1564223}\label{classPlurality_ad9d17868be20534155ba3450e1564223} 
+\index{Plurality@{Plurality}!Plurality@{Plurality}}
+\index{Plurality@{Plurality}!Plurality@{Plurality}}
+\doxysubsubsection{\texorpdfstring{Plurality()}{Plurality()}}
+{\footnotesize\ttfamily Plurality\+::\+Plurality (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}}]{ballots,  }\item[{int}]{seats }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classPlurality}{Plurality} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballots} & Pointer to the \doxylink{classBallots}{Ballots} that contain the ballots information \\
+\hline
+{\em seats} & Number of seats to be elected \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPlurality_ad1f055cbf287e974579b3bfba66d71b9}\label{classPlurality_ad1f055cbf287e974579b3bfba66d71b9} 
+\index{Plurality@{Plurality}!displayElectionDetails@{displayElectionDetails}}
+\index{displayElectionDetails@{displayElectionDetails}!Plurality@{Plurality}}
+\doxysubsubsection{\texorpdfstring{displayElectionDetails()}{displayElectionDetails()}}
+{\footnotesize\ttfamily void Plurality\+::display\+Election\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Display the details of the election to the terminal. 
+
+
+
+Implements \mbox{\hyperlink{classElection_afba360a69e902856a43ed3b4625abab6}{Election}}.
+
+\Hypertarget{classPlurality_a6ec8a57408b3e630d83e063c5ee74b4a}\label{classPlurality_a6ec8a57408b3e630d83e063c5ee74b4a} 
+\index{Plurality@{Plurality}!getBallots@{getBallots}}
+\index{getBallots@{getBallots}!Plurality@{Plurality}}
+\doxysubsubsection{\texorpdfstring{getBallots()}{getBallots()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*} Plurality\+::get\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for ballots. 
+
+\begin{DoxyReturn}{Returns}
+the ballots attribute 
+\end{DoxyReturn}
+\Hypertarget{classPlurality_a0554f9a5c0499459100eeda26c29105a}\label{classPlurality_a0554f9a5c0499459100eeda26c29105a} 
+\index{Plurality@{Plurality}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!Plurality@{Plurality}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ Plurality\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for candidates. 
+
+\begin{DoxyReturn}{Returns}
+the ballots candidates 
+\end{DoxyReturn}
+\Hypertarget{classPlurality_ab3679dfbafa67b9c5e5a141c0ec10c61}\label{classPlurality_ab3679dfbafa67b9c5e5a141c0ec10c61} 
+\index{Plurality@{Plurality}!getLosers@{getLosers}}
+\index{getLosers@{getLosers}!Plurality@{Plurality}}
+\doxysubsubsection{\texorpdfstring{getLosers()}{getLosers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ Plurality\+::get\+Losers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for losers. 
+
+\begin{DoxyReturn}{Returns}
+the ballots losers 
+\end{DoxyReturn}
+\Hypertarget{classPlurality_aafbcbf9e5c71cbd1ed63177a11c95332}\label{classPlurality_aafbcbf9e5c71cbd1ed63177a11c95332} 
+\index{Plurality@{Plurality}!getSeats@{getSeats}}
+\index{getSeats@{getSeats}!Plurality@{Plurality}}
+\doxysubsubsection{\texorpdfstring{getSeats()}{getSeats()}}
+{\footnotesize\ttfamily int Plurality\+::get\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for seats. 
+
+\begin{DoxyReturn}{Returns}
+the seats attribute 
+\end{DoxyReturn}
+\Hypertarget{classPlurality_a455b0b4ba9ee0590abe97b98d615bcdf}\label{classPlurality_a455b0b4ba9ee0590abe97b98d615bcdf} 
+\index{Plurality@{Plurality}!getWinners@{getWinners}}
+\index{getWinners@{getWinners}!Plurality@{Plurality}}
+\doxysubsubsection{\texorpdfstring{getWinners()}{getWinners()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ Plurality\+::get\+Winners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for winners. 
+
+\begin{DoxyReturn}{Returns}
+the ballots winners 
+\end{DoxyReturn}
+\Hypertarget{classPlurality_ad44af8dbd101ce91504edf587d2beb1a}\label{classPlurality_ad44af8dbd101ce91504edf587d2beb1a} 
+\index{Plurality@{Plurality}!runElection@{runElection}}
+\index{runElection@{runElection}!Plurality@{Plurality}}
+\doxysubsubsection{\texorpdfstring{runElection()}{runElection()}}
+{\footnotesize\ttfamily void Plurality\+::run\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Runs a plurality election. 
+
+
+
+Implements \mbox{\hyperlink{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}{Election}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/Plurality.\+h\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/Plurality.\+cpp\end{DoxyCompactItemize}

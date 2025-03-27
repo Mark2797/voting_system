@@ -1,0 +1,105 @@
+\doxysection{STV Class Reference}
+\hypertarget{classSTV}{}\label{classSTV}\index{STV@{STV}}
+
+
+Perform a single transferable vote (\doxylink{classSTV}{STV}) election.  
+
+
+
+
+{\ttfamily \#include $<$STV.\+h$>$}
+
+
+
+Inheritance diagram for STV\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classSTV__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for STV\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classSTV__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classSTV_a0d8c8dbce0473a0ca2ee39f0e19d25a0}\label{classSTV_a0d8c8dbce0473a0ca2ee39f0e19d25a0} 
+{\bfseries STV} (\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}ballots, int seats)
+\item 
+void \mbox{\hyperlink{classSTV_a004373572830f75615db580a7bada82d}{run\+Election}} () override
+\begin{DoxyCompactList}\small\item\em Run the election with an voting algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSTV_afb2ab691a9164924a2fcddd2758ca43b}{display\+Election\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Display the details of the election to the terminal. \end{DoxyCompactList}\item 
+\Hypertarget{classSTV_a1a62c76c650a932de5acbf63c4a00b9a}\label{classSTV_a1a62c76c650a932de5acbf63c4a00b9a} 
+void {\bfseries output\+Audit\+File} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classElection}{Election}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classElection_acc559d4bf95045f86e06fe8c0fa05baf}{Election}} (\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}ballots, int seats)
+\begin{DoxyCompactList}\small\item\em \doxylink{classElection}{Election} Constructor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Election} ()=0
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classElection}{Election}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*} {\bfseries ballots}
+\item 
+int {\bfseries seats}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries candidates}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries winners}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries losers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Perform a single transferable vote (\doxylink{classSTV}{STV}) election. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSTV_afb2ab691a9164924a2fcddd2758ca43b}\label{classSTV_afb2ab691a9164924a2fcddd2758ca43b} 
+\index{STV@{STV}!displayElectionDetails@{displayElectionDetails}}
+\index{displayElectionDetails@{displayElectionDetails}!STV@{STV}}
+\doxysubsubsection{\texorpdfstring{displayElectionDetails()}{displayElectionDetails()}}
+{\footnotesize\ttfamily void STV\+::display\+Election\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Display the details of the election to the terminal. 
+
+
+
+Implements \mbox{\hyperlink{classElection_afba360a69e902856a43ed3b4625abab6}{Election}}.
+
+\Hypertarget{classSTV_a004373572830f75615db580a7bada82d}\label{classSTV_a004373572830f75615db580a7bada82d} 
+\index{STV@{STV}!runElection@{runElection}}
+\index{runElection@{runElection}!STV@{STV}}
+\doxysubsubsection{\texorpdfstring{runElection()}{runElection()}}
+{\footnotesize\ttfamily void STV\+::run\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Run the election with an voting algorithm. 
+
+
+
+Implements \mbox{\hyperlink{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}{Election}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/STV.\+h\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/STV.\+cpp\end{DoxyCompactItemize}

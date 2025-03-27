@@ -1,0 +1,128 @@
+\doxysection{Candidate Class Reference}
+\hypertarget{classCandidate}{}\label{classCandidate}\index{Candidate@{Candidate}}
+
+
+Represents one candidate in the election, storing the name and the ballots assigned (ID).  
+
+
+
+
+{\ttfamily \#include $<$Candidate.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCandidate_a99c1eda1eeecf4bbd054049449954c90}{Candidate}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em \doxylink{classCandidate}{Candidate} Constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classCandidate_a61ad4ae35e7a3ce5e5b91204b55c0b55}\label{classCandidate_a61ad4ae35e7a3ce5e5b91204b55c0b55} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Candidate} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCandidate_af90f1f9dce35d39ca686d022c683c413}{assign\+Ballot}} (int ballot\+ID)
+\begin{DoxyCompactList}\small\item\em Assign the ballot to the candidate by its ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCandidate_a0d2f2e69403f81bc48a0fab072480308}{remove\+Ballot}} (int ballot\+ID)
+\begin{DoxyCompactList}\small\item\em Remove the ballot to the candidate by its ID. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCandidate_af862d92e21d66d74f1d5cae92937d3da}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get candidate\textquotesingle{}s name. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCandidate_a268058e18630d022fdb192bb2494aba8}{get\+Assigned\+Ballots}} ()
+\begin{DoxyCompactList}\small\item\em Get all ballots (ID) assigned to the candidate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCandidate_a0f5f8d47de128ea14f3032d952440dc2}{get\+Ballot\+Num}} ()
+\begin{DoxyCompactList}\small\item\em Get total number of ballots assigned to the candidate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents one candidate in the election, storing the name and the ballots assigned (ID). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCandidate_a99c1eda1eeecf4bbd054049449954c90}\label{classCandidate_a99c1eda1eeecf4bbd054049449954c90} 
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{Candidate()}{Candidate()}}
+{\footnotesize\ttfamily Candidate\+::\+Candidate (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classCandidate}{Candidate} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the candidate \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCandidate_af90f1f9dce35d39ca686d022c683c413}\label{classCandidate_af90f1f9dce35d39ca686d022c683c413} 
+\index{Candidate@{Candidate}!assignBallot@{assignBallot}}
+\index{assignBallot@{assignBallot}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{assignBallot()}{assignBallot()}}
+{\footnotesize\ttfamily void Candidate\+::assign\+Ballot (\begin{DoxyParamCaption}\item[{int}]{ballot\+ID }\end{DoxyParamCaption})}
+
+
+
+Assign the ballot to the candidate by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+ID} & Ballot\textquotesingle{}s ID \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCandidate_a268058e18630d022fdb192bb2494aba8}\label{classCandidate_a268058e18630d022fdb192bb2494aba8} 
+\index{Candidate@{Candidate}!getAssignedBallots@{getAssignedBallots}}
+\index{getAssignedBallots@{getAssignedBallots}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getAssignedBallots()}{getAssignedBallots()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Candidate\+::get\+Assigned\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all ballots (ID) assigned to the candidate. 
+
+\begin{DoxyReturn}{Returns}
+Vector of ballot IDs 
+\end{DoxyReturn}
+\Hypertarget{classCandidate_a0f5f8d47de128ea14f3032d952440dc2}\label{classCandidate_a0f5f8d47de128ea14f3032d952440dc2} 
+\index{Candidate@{Candidate}!getBallotNum@{getBallotNum}}
+\index{getBallotNum@{getBallotNum}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getBallotNum()}{getBallotNum()}}
+{\footnotesize\ttfamily int Candidate\+::get\+Ballot\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get total number of ballots assigned to the candidate. 
+
+\begin{DoxyReturn}{Returns}
+Number of assigned ballots 
+\end{DoxyReturn}
+\Hypertarget{classCandidate_af862d92e21d66d74f1d5cae92937d3da}\label{classCandidate_af862d92e21d66d74f1d5cae92937d3da} 
+\index{Candidate@{Candidate}!getName@{getName}}
+\index{getName@{getName}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Candidate\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get candidate\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{classCandidate}{Candidate}\textquotesingle{}s name 
+\end{DoxyReturn}
+\Hypertarget{classCandidate_a0d2f2e69403f81bc48a0fab072480308}\label{classCandidate_a0d2f2e69403f81bc48a0fab072480308} 
+\index{Candidate@{Candidate}!removeBallot@{removeBallot}}
+\index{removeBallot@{removeBallot}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{removeBallot()}{removeBallot()}}
+{\footnotesize\ttfamily void Candidate\+::remove\+Ballot (\begin{DoxyParamCaption}\item[{int}]{ballot\+ID }\end{DoxyParamCaption})}
+
+
+
+Remove the ballot to the candidate by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+ID} & Ballot\textquotesingle{}s ID \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/Candidate.\+h\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/Candidate.\+cpp\end{DoxyCompactItemize}
