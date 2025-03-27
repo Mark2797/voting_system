@@ -43,6 +43,19 @@ class STV : public Election {
          * @brief Creates an audit file that contains election information after each vote distribution round
          */
         void outputAuditFile();
+
+        Ballots* getBallots();
+        
+        int getSeats();
+        
+        std::vector<Candidate> getCandidates();
+        
+        std::vector<Candidate> getWinners();
+        
+        std::vector<Candidate> getLosers();
+
+        int getDroopQuota();
+
     private:
         int droopQuota;
         std::vector<std::string> electionProgress;
