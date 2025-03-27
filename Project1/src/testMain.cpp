@@ -99,7 +99,7 @@ class MainTest : public ::testing::Test {
         };
         plurality_file_name = {"../testing/pluralityTestMain.csv\n"};
         stv_file_name = {"../testing/stvTestMain.csv\n"};
-        bad_file_name = {"12343\n", "../testing/asdasd.csv\n", "1231.csv\n", "../testing/stvTestMain.csv\n"};
+        bad_file_name = {"12343\n", "../testing/asdasd\n", "../testing/asdasd.csv\n", "1231.csv\n", "../testing/stvTestMain.csv\n"};
         bad_seatNum = {"abc\n", "0\n", "-123123\n", "5\n"};
         good_seatNum = {"10\n"};
         bad_alg = {"abc\n", "0\n", "-123123\n", "5\n", "1\n"};
