@@ -156,7 +156,6 @@ TEST_F(STVTest, DisplayElectionDetailsTest) {
 }
 
 TEST_F(STVTest, EmptySeats) {
-    //testing::internal::CaptureStdout(); // catch previous prompt
     std::optional<STV> stv;
     std::optional<Ballots> ballots;
     ballots.emplace(candidates, basic_win, false);
