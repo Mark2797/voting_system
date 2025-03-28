@@ -16,29 +16,38 @@ using namespace std;
 // Purpose is to create random CSV files to test for.
 
 int main() {
-    int test_value = 4;
+    int test_value = 2;
     // To keep it easier to change, this value corresponds to the total number of tests
     // divided by 2. Increasing this value doubles the total amount of tests ran.
     vector<string> names1 = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", 
         "Micheal Ashton", "Joe Cool", "Jimmy Donaldson", "John Kennedy", 
-        "Patrick Star", "Robot Iam", "Alice Wonder"};
+        "Patrick Star", "Robot Iam", "Alice Wonder", "Barack Obama", "James Lancaster", "Haley Welsh", 
+        "James Blake", "Johnny Bravo", "Adam Sandler", "Holly Summers", "Polly Cracker", "Albert Wesk", "Leon Kennedy"};
     // Add or subtract names from here - keep in mind that this will be the total number
     // of candidates to be chosen as well.
-    vector<string> names2(names1.begin(), names1.begin() + 5);
+    vector<string> names2(names1.begin(), names1.begin() + 10);
     // A second names vector set to be a subset of the original names1 vector.
     // Ideally could be changed to a whole new vector, but kept this because it's easier.
-    vector<vector<string>> names_list(test_value, names2);
+    vector<string> names3(names1.begin(), names1.begin() + 5);
+    // A third names vector set to be a subset of the original names1 vector.
+    vector<string> names4(names1.begin(), names1.begin() + 2);
+    // A fourth names vector set to be a subset of the original names1 vector.
+    vector<vector<string>> names_list(test_value, names4);
     // This vector is dedicated to keeping track of all of the name lists to refer back to.
+    names_list.insert(names_list.end(), test_value, names3);
+    names_list.insert(names_list.end(), test_value, names2);
     names_list.insert(names_list.end(), test_value, names1);
-    vector<int> ballots(test_value, 100);
+    vector<int> ballots(test_value, 15);
     // This refers to the total number of ballots. The right value can be changed without
     // concern, however the left value should be alligned with the total amount of 
     // tests we want to run.
+    ballots.insert(ballots.end(), test_value, 100);
+    ballots.insert(ballots.end(), test_value, 1000);
     ballots.insert(ballots.end(), test_value, 100000);
-    // 100,000 is chosen as it is the maximu amount of ballots we expect to run.
+    // 100,000 is chosen as it is the maximum amount of ballots we expect to run.
     static vector<string> types = {"S", "P"};
-    vector<string> type_list(test_value * 2);
-    for (int i = 0; i < test_value * 2; i++) {
+    vector<string> type_list(names_list.size());
+    for (int i = 0; i < names_list.size(); i++) {
         type_list.at(i) = types[i % 2];
     }
     // Interchanging types of algorithms to run. 

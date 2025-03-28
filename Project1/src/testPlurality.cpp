@@ -5,7 +5,7 @@
 #include "gtest/gtest.h"
 
 #include "Plurality.h"
-
+//
 // Use optional to delay initialization
 // Google test requires a default constructor
 #include <optional>
