@@ -62,17 +62,63 @@ class SysTest : public ::testing::Test {
         file_names = {{"../testing/STV1.csv\n"}, {"../testing/Plurality1.csv\n"}, {"../testing/STV2.csv\n"},
         {"../testing/Plurality2.csv\n"}, {"../testing/STV3.csv\n"}, {"../testing/Plurality3.csv\n"},
         {"../testing/STV4.csv\n"}, {"../testing/Plurality4.csv\n"}, {"../testing/STV5.csv\n"},
-        {"../testing/Plurality5.csv\n"}, {"../testing/pluralityTie.csv\n"}, {"../testing/stvTie.csv\n"}};
+        {"../testing/Plurality5.csv\n"}, {"../testing/pluralityTie.csv\n"}, {"../testing/stvTie.csv\n"},
+        {"../testing/seatLowPlurality.csv\n"}, {"../testing/seatLowSTV.csv\n"}};
         seatNums = {{"21\n"}, {"5\n"}, {"1\n"}, {"3\n"}, {"10\n"}};
         auditFile = {{"../testing/audits/seatValid.txt\n"}, {"../testing/audits/noShuffle.txt\n"}, {"../testing/audits/withShuffle.txt\n"}, 
-        {"../testing/audits/minSTV.txt\n"}, {"../testing/audits/regSTV.txt\n"}, {"../testing/audits/timeTest.txt\n"}, {"../testing/audits/stvTie.txt\n"}};
+        {"../testing/audits/minSTV.txt\n"}, {"../testing/audits/regSTV.txt\n"}, {"../testing/audits/timeTest.txt\n"}, 
+        {"../testing/audits/stvTie.txt\n"}, {"../testing/audits/lowVoteValid.txt\n"}};
     }
     void TearDown() override {
         
     }
 };
 
-TEST_F(SysTest, seatValidity) {
+TEST_F(SysTest, seatValidityDefecit) {
+    int seatNum;
+    userInput(file_names.at(13));
+    ifstream file;
+    open_file(file);
+    EXPECT_TRUE(file.is_open());
+    restore_stdin_fd(old_stdin);
+    Ballots ballots = read_file(file, false);
+    file.close();
+
+    userInput(file_names.at(12));
+    ifstream file2;
+    open_file(file2);
+    EXPECT_TRUE(file2.is_open());
+    restore_stdin_fd(old_stdin);
+    Ballots ballotp = read_file(file2, false);
+    file2.close();
+
+    userInput(seatNums.at(0));
+    prompt_user_seatNum(seatNum);
+    EXPECT_EQ(seatNum, 21);
+    restore_stdin_fd(old_stdin);
+
+    STVelection = new STV(&ballots, seatNum);
+    userInput(auditFile.at(7));
+    STVelection->runElection(); 
+    restore_stdin_fd(old_stdin);
+
+    int winners_size = STVelection->getWinners().size();
+    int losers_size = STVelection->getLosers().size();
+    int candidates_size = STVelection->getCandidates().size() - 1;
+    EXPECT_EQ(winners_size, 1);
+    EXPECT_EQ(losers_size, candidates_size);
+
+    pluralityElection = new Plurality(&ballotp, seatNum);
+    
+    pluralityElection->runElection();
+    winners_size = pluralityElection->getWinners().size();
+    losers_size = pluralityElection->getLosers().size();
+    candidates_size = pluralityElection->getCandidates().size() - 1;
+    EXPECT_EQ(winners_size, 1);
+    EXPECT_EQ(losers_size, candidates_size);
+};
+
+TEST_F(SysTest, seatValiditySurplus) {
     int seatNum;
     userInput(file_names.at(8));
     ifstream file;
@@ -87,7 +133,7 @@ TEST_F(SysTest, seatValidity) {
     open_file(file2);
     EXPECT_TRUE(file2.is_open());
     restore_stdin_fd(old_stdin);
-    Ballots ballots2 = read_file(file2, false);
+    Ballots ballotp = read_file(file2, false);
     file2.close();
 
     userInput(seatNums.at(0));
@@ -105,7 +151,9 @@ TEST_F(SysTest, seatValidity) {
     int candidates_size = STVelection->getCandidates().size();
     EXPECT_EQ(winners_size, candidates_size);
     EXPECT_EQ(losers_size, 0);
-    pluralityElection = new Plurality(&ballots2, seatNum);
+
+    pluralityElection = new Plurality(&ballotp, seatNum);
+
     pluralityElection->runElection();
     winners_size = pluralityElection->getWinners().size();
     losers_size = pluralityElection->getLosers().size();
@@ -256,7 +304,7 @@ TEST_F(SysTest, minElectionValidity) {
     open_file(file2);
     EXPECT_TRUE(file2.is_open());
     restore_stdin_fd(old_stdin);
-    Ballots ballots2 = read_file(file2, false);
+    Ballots ballotp = read_file(file2, false);
     file2.close();
 
     userInput(seatNums.at(2));
@@ -274,7 +322,7 @@ TEST_F(SysTest, minElectionValidity) {
     Candidate winner = winners.at(0);
     EXPECT_EQ(winner.getBallotNum(), STVelection->getDroopQuota()); // Droop Quote, not total ballots!
 
-    pluralityElection = new Plurality(&ballots2, seatNum);
+    pluralityElection = new Plurality(&ballotp, seatNum);
     pluralityElection->runElection();
 
     winners = pluralityElection->getWinners();

@@ -1,267 +1,520 @@
 [STV Election]: Droop: 51, Seats: 3, Candidates: 5
-Winners: Sally Ride,Ahmed Mohamed,Siyang Xiong,
-Losers: Alice Mix,Bill Jones,
-ID 0: 1, 2, 3, 4, 5, 
-ID 1: 5, 1, 2, 3, 4, 
-ID 2: 4, 5, 1, 2, 3, 
-ID 3: 3, 4, 5, 1, 2, 
-ID 4: 2, 3, 4, 5, 1, 
-ID 5: 1, 2, 3, 4, 5, 
-ID 6: 5, 1, 2, 3, 4, 
-ID 7: 4, 5, 1, 2, 3, 
-ID 8: 3, 4, 5, 1, 2, 
-ID 9: 2, 3, 4, 5, 1, 
-ID 10: 1, 2, 3, 4, 5, 
-ID 11: 5, 1, 2, 3, 4, 
-ID 12: 4, 5, 1, 2, 3, 
-ID 13: 3, 4, 5, 1, 2, 
-ID 14: 2, 3, 4, 5, 1, 
-ID 15: 1, 2, 3, 4, 5, 
-ID 16: 5, 1, 2, 3, 4, 
-ID 17: 4, 5, 1, 2, 3, 
-ID 18: 3, 4, 5, 1, 2, 
-ID 19: 2, 3, 4, 5, 1, 
-ID 20: 1, 2, 3, 4, 5, 
-ID 21: 5, 1, 2, 3, 4, 
-ID 22: 4, 5, 1, 2, 3, 
-ID 23: 3, 4, 5, 1, 2, 
-ID 24: 2, 3, 4, 5, 1, 
-ID 25: 1, 2, 3, 4, 5, 
-ID 26: 5, 1, 2, 3, 4, 
-ID 27: 4, 5, 1, 2, 3, 
-ID 28: 3, 4, 5, 1, 2, 
-ID 29: 2, 3, 4, 5, 1, 
-ID 30: 1, 2, 3, 4, 5, 
-ID 31: 5, 1, 2, 3, 4, 
-ID 32: 4, 5, 1, 2, 3, 
-ID 33: 3, 4, 5, 1, 2, 
-ID 34: 2, 3, 4, 5, 1, 
-ID 35: 1, 2, 3, 4, 5, 
-ID 36: 5, 1, 2, 3, 4, 
-ID 37: 4, 5, 1, 2, 3, 
-ID 38: 3, 4, 5, 1, 2, 
-ID 39: 2, 3, 4, 5, 1, 
-ID 40: 1, 2, 3, 4, 5, 
-ID 41: 5, 1, 2, 3, 4, 
-ID 42: 4, 5, 1, 2, 3, 
-ID 43: 3, 4, 5, 1, 2, 
-ID 44: 2, 3, 4, 5, 1, 
-ID 45: 1, 2, 3, 4, 5, 
-ID 46: 5, 1, 2, 3, 4, 
-ID 47: 4, 5, 1, 2, 3, 
-ID 48: 3, 4, 5, 1, 2, 
-ID 49: 2, 3, 4, 5, 1, 
-ID 50: 1, 2, 3, 4, 5, 
-ID 51: 5, 1, 2, 3, 4, 
-ID 52: 4, 5, 1, 2, 3, 
-ID 53: 3, 4, 5, 1, 2, 
-ID 54: 2, 3, 4, 5, 1, 
-ID 55: 1, 2, 3, 4, 5, 
-ID 56: 5, 1, 2, 3, 4, 
-ID 57: 4, 5, 1, 2, 3, 
-ID 58: 3, 4, 5, 1, 2, 
-ID 59: 2, 3, 4, 5, 1, 
-ID 60: 1, 2, 3, 4, 5, 
-ID 61: 5, 1, 2, 3, 4, 
-ID 62: 4, 5, 1, 2, 3, 
-ID 63: 3, 4, 5, 1, 2, 
-ID 64: 2, 3, 4, 5, 1, 
-ID 65: 1, 2, 3, 4, 5, 
-ID 66: 5, 1, 2, 3, 4, 
-ID 67: 4, 5, 1, 2, 3, 
-ID 68: 3, 4, 5, 1, 2, 
-ID 69: 2, 3, 4, 5, 1, 
-ID 70: 1, 2, 3, 4, 5, 
-ID 71: 5, 1, 2, 3, 4, 
-ID 72: 4, 5, 1, 2, 3, 
-ID 73: 3, 4, 5, 1, 2, 
-ID 74: 2, 3, 4, 5, 1, 
-ID 75: 1, 2, 3, 4, 5, 
-ID 76: 5, 1, 2, 3, 4, 
-ID 77: 4, 5, 1, 2, 3, 
-ID 78: 3, 4, 5, 1, 2, 
-ID 79: 2, 3, 4, 5, 1, 
-ID 80: 1, 2, 3, 4, 5, 
-ID 81: 5, 1, 2, 3, 4, 
-ID 82: 4, 5, 1, 2, 3, 
-ID 83: 3, 4, 5, 1, 2, 
-ID 84: 2, 3, 4, 5, 1, 
-ID 85: 1, 2, 3, 4, 5, 
-ID 86: 5, 1, 2, 3, 4, 
-ID 87: 4, 5, 1, 2, 3, 
-ID 88: 3, 4, 5, 1, 2, 
-ID 89: 2, 3, 4, 5, 1, 
-ID 90: 1, 2, 3, 4, 5, 
-ID 91: 5, 1, 2, 3, 4, 
-ID 92: 4, 5, 1, 2, 3, 
-ID 93: 3, 4, 5, 1, 2, 
-ID 94: 2, 3, 4, 5, 1, 
-ID 95: 1, 2, 3, 4, 5, 
-ID 96: 5, 1, 2, 3, 4, 
-ID 97: 4, 5, 1, 2, 3, 
-ID 98: 3, 4, 5, 1, 2, 
-ID 99: 2, 3, 4, 5, 1, 
-ID 100: 1, 2, 3, 4, 5, 
-ID 101: 5, 1, 2, 3, 4, 
-ID 102: 4, 5, 1, 2, 3, 
-ID 103: 3, 4, 5, 1, 2, 
-ID 104: 2, 3, 4, 5, 1, 
-ID 105: 1, 2, 3, 4, 5, 
-ID 106: 5, 1, 2, 3, 4, 
-ID 107: 4, 5, 1, 2, 3, 
-ID 108: 3, 4, 5, 1, 2, 
-ID 109: 2, 3, 4, 5, 1, 
-ID 110: 1, 2, 3, 4, 5, 
-ID 111: 5, 1, 2, 3, 4, 
-ID 112: 4, 5, 1, 2, 3, 
-ID 113: 3, 4, 5, 1, 2, 
-ID 114: 2, 3, 4, 5, 1, 
-ID 115: 1, 2, 3, 4, 5, 
-ID 116: 5, 1, 2, 3, 4, 
-ID 117: 4, 5, 1, 2, 3, 
-ID 118: 3, 4, 5, 1, 2, 
-ID 119: 2, 3, 4, 5, 1, 
-ID 120: 1, 2, 3, 4, 5, 
-ID 121: 5, 1, 2, 3, 4, 
-ID 122: 4, 5, 1, 2, 3, 
-ID 123: 3, 4, 5, 1, 2, 
-ID 124: 2, 3, 4, 5, 1, 
-ID 125: 1, 2, 3, 4, 5, 
-ID 126: 5, 1, 2, 3, 4, 
-ID 127: 4, 5, 1, 2, 3, 
-ID 128: 3, 4, 5, 1, 2, 
-ID 129: 2, 3, 4, 5, 1, 
-ID 130: 1, 2, 3, 4, 5, 
-ID 131: 5, 1, 2, 3, 4, 
-ID 132: 4, 5, 1, 2, 3, 
-ID 133: 3, 4, 5, 1, 2, 
-ID 134: 2, 3, 4, 5, 1, 
-ID 135: 1, 2, 3, 4, 5, 
-ID 136: 5, 1, 2, 3, 4, 
-ID 137: 4, 5, 1, 2, 3, 
-ID 138: 3, 4, 5, 1, 2, 
-ID 139: 2, 3, 4, 5, 1, 
-ID 140: 1, 2, 3, 4, 5, 
-ID 141: 5, 1, 2, 3, 4, 
-ID 142: 4, 5, 1, 2, 3, 
-ID 143: 3, 4, 5, 1, 2, 
-ID 144: 2, 3, 4, 5, 1, 
-ID 145: 1, 2, 3, 4, 5, 
-ID 146: 5, 1, 2, 3, 4, 
-ID 147: 4, 5, 1, 2, 3, 
-ID 148: 3, 4, 5, 1, 2, 
-ID 149: 2, 3, 4, 5, 1, 
-ID 150: 1, 2, 3, 4, 5, 
-ID 151: 5, 1, 2, 3, 4, 
-ID 152: 4, 5, 1, 2, 3, 
-ID 153: 3, 4, 5, 1, 2, 
-ID 154: 2, 3, 4, 5, 1, 
-ID 155: 1, 2, 3, 4, 5, 
-ID 156: 5, 1, 2, 3, 4, 
-ID 157: 4, 5, 1, 2, 3, 
-ID 158: 3, 4, 5, 1, 2, 
-ID 159: 2, 3, 4, 5, 1, 
-ID 160: 1, 2, 3, 4, 5, 
-ID 161: 5, 1, 2, 3, 4, 
-ID 162: 4, 5, 1, 2, 3, 
-ID 163: 3, 4, 5, 1, 2, 
-ID 164: 2, 3, 4, 5, 1, 
-ID 165: 1, 2, 3, 4, 5, 
-ID 166: 5, 1, 2, 3, 4, 
-ID 167: 4, 5, 1, 2, 3, 
-ID 168: 3, 4, 5, 1, 2, 
-ID 169: 2, 3, 4, 5, 1, 
-ID 170: 1, 2, 3, 4, 5, 
-ID 171: 5, 1, 2, 3, 4, 
-ID 172: 4, 5, 1, 2, 3, 
-ID 173: 3, 4, 5, 1, 2, 
-ID 174: 2, 3, 4, 5, 1, 
-ID 175: 1, 2, 3, 4, 5, 
-ID 176: 5, 1, 2, 3, 4, 
-ID 177: 4, 5, 1, 2, 3, 
-ID 178: 3, 4, 5, 1, 2, 
-ID 179: 2, 3, 4, 5, 1, 
-ID 180: 1, 2, 3, 4, 5, 
-ID 181: 5, 1, 2, 3, 4, 
-ID 182: 4, 5, 1, 2, 3, 
-ID 183: 3, 4, 5, 1, 2, 
-ID 184: 2, 3, 4, 5, 1, 
-ID 185: 1, 2, 3, 4, 5, 
-ID 186: 5, 1, 2, 3, 4, 
-ID 187: 4, 5, 1, 2, 3, 
-ID 188: 3, 4, 5, 1, 2, 
-ID 189: 2, 3, 4, 5, 1, 
-ID 190: 1, 2, 3, 4, 5, 
-ID 191: 5, 1, 2, 3, 4, 
-ID 192: 4, 5, 1, 2, 3, 
-ID 193: 3, 4, 5, 1, 2, 
-ID 194: 2, 3, 4, 5, 1, 
-ID 195: 1, 2, 3, 4, 5, 
-ID 196: 5, 1, 2, 3, 4, 
-ID 197: 4, 5, 1, 2, 3, 
-ID 198: 3, 4, 5, 1, 2, 
-ID 199: 2, 3, 4, 5, 1, 
-Bill Jones,0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150,155,160,165,170,175,180,185,190,195,
-Alice Mix,1,6,11,16,21,26,31,36,41,46,51,56,61,66,71,76,81,86,91,96,101,106,111,116,121,126,131,136,141,146,151,156,161,166,171,176,181,186,191,196,
-Sally Ride,2,7,12,17,22,27,32,37,42,47,52,57,62,67,72,77,82,87,92,97,102,107,112,117,122,127,132,137,142,147,152,157,162,167,172,177,182,187,192,197,
-Ahmed Mohamed,3,8,13,18,23,28,33,38,43,48,53,58,63,68,73,78,83,88,93,98,103,108,113,118,123,128,133,138,143,148,153,158,163,168,173,178,183,188,193,198,
-Siyang Xiong,4,9,14,19,24,29,34,39,44,49,54,59,64,69,74,79,84,89,94,99,104,109,114,119,124,129,134,139,144,149,154,159,164,169,174,179,184,189,194,199,
+
+Winners: Siyang Xiong, Bill Jones, Alice Mix
+Losers: Ahmed Mohamed, Sally Ride
+
+Below is input ballot information: 
+ID 0: 1,2,3,4,5
+ID 1: 5,1,2,3,4
+ID 2: 4,5,1,2,3
+ID 3: 3,4,5,1,2
+ID 4: 2,3,4,5,1
+ID 5: 1,2,3,4,5
+ID 6: 5,1,2,3,4
+ID 7: 4,5,1,2,3
+ID 8: 3,4,5,1,2
+ID 9: 2,3,4,5,1
+ID 10: 1,2,3,4,5
+ID 11: 5,1,2,3,4
+ID 12: 4,5,1,2,3
+ID 13: 3,4,5,1,2
+ID 14: 2,3,4,5,1
+ID 15: 1,2,3,4,5
+ID 16: 5,1,2,3,4
+ID 17: 4,5,1,2,3
+ID 18: 3,4,5,1,2
+ID 19: 2,3,4,5,1
+ID 20: 1,2,3,4,5
+ID 21: 5,1,2,3,4
+ID 22: 4,5,1,2,3
+ID 23: 3,4,5,1,2
+ID 24: 2,3,4,5,1
+ID 25: 1,2,3,4,5
+ID 26: 5,1,2,3,4
+ID 27: 4,5,1,2,3
+ID 28: 3,4,5,1,2
+ID 29: 2,3,4,5,1
+ID 30: 1,2,3,4,5
+ID 31: 5,1,2,3,4
+ID 32: 4,5,1,2,3
+ID 33: 3,4,5,1,2
+ID 34: 2,3,4,5,1
+ID 35: 1,2,3,4,5
+ID 36: 5,1,2,3,4
+ID 37: 4,5,1,2,3
+ID 38: 3,4,5,1,2
+ID 39: 2,3,4,5,1
+ID 40: 1,2,3,4,5
+ID 41: 5,1,2,3,4
+ID 42: 4,5,1,2,3
+ID 43: 3,4,5,1,2
+ID 44: 2,3,4,5,1
+ID 45: 1,2,3,4,5
+ID 46: 5,1,2,3,4
+ID 47: 4,5,1,2,3
+ID 48: 3,4,5,1,2
+ID 49: 2,3,4,5,1
+ID 50: 1,2,3,4,5
+ID 51: 5,1,2,3,4
+ID 52: 4,5,1,2,3
+ID 53: 3,4,5,1,2
+ID 54: 2,3,4,5,1
+ID 55: 1,2,3,4,5
+ID 56: 5,1,2,3,4
+ID 57: 4,5,1,2,3
+ID 58: 3,4,5,1,2
+ID 59: 2,3,4,5,1
+ID 60: 1,2,3,4,5
+ID 61: 5,1,2,3,4
+ID 62: 4,5,1,2,3
+ID 63: 3,4,5,1,2
+ID 64: 2,3,4,5,1
+ID 65: 1,2,3,4,5
+ID 66: 5,1,2,3,4
+ID 67: 4,5,1,2,3
+ID 68: 3,4,5,1,2
+ID 69: 2,3,4,5,1
+ID 70: 1,2,3,4,5
+ID 71: 5,1,2,3,4
+ID 72: 4,5,1,2,3
+ID 73: 3,4,5,1,2
+ID 74: 2,3,4,5,1
+ID 75: 1,2,3,4,5
+ID 76: 5,1,2,3,4
+ID 77: 4,5,1,2,3
+ID 78: 3,4,5,1,2
+ID 79: 2,3,4,5,1
+ID 80: 1,2,3,4,5
+ID 81: 5,1,2,3,4
+ID 82: 4,5,1,2,3
+ID 83: 3,4,5,1,2
+ID 84: 2,3,4,5,1
+ID 85: 1,2,3,4,5
+ID 86: 5,1,2,3,4
+ID 87: 4,5,1,2,3
+ID 88: 3,4,5,1,2
+ID 89: 2,3,4,5,1
+ID 90: 1,2,3,4,5
+ID 91: 5,1,2,3,4
+ID 92: 4,5,1,2,3
+ID 93: 3,4,5,1,2
+ID 94: 2,3,4,5,1
+ID 95: 1,2,3,4,5
+ID 96: 5,1,2,3,4
+ID 97: 4,5,1,2,3
+ID 98: 3,4,5,1,2
+ID 99: 2,3,4,5,1
+ID 100: 1,2,3,4,5
+ID 101: 5,1,2,3,4
+ID 102: 4,5,1,2,3
+ID 103: 3,4,5,1,2
+ID 104: 2,3,4,5,1
+ID 105: 1,2,3,4,5
+ID 106: 5,1,2,3,4
+ID 107: 4,5,1,2,3
+ID 108: 3,4,5,1,2
+ID 109: 2,3,4,5,1
+ID 110: 1,2,3,4,5
+ID 111: 5,1,2,3,4
+ID 112: 4,5,1,2,3
+ID 113: 3,4,5,1,2
+ID 114: 2,3,4,5,1
+ID 115: 1,2,3,4,5
+ID 116: 5,1,2,3,4
+ID 117: 4,5,1,2,3
+ID 118: 3,4,5,1,2
+ID 119: 2,3,4,5,1
+ID 120: 1,2,3,4,5
+ID 121: 5,1,2,3,4
+ID 122: 4,5,1,2,3
+ID 123: 3,4,5,1,2
+ID 124: 2,3,4,5,1
+ID 125: 1,2,3,4,5
+ID 126: 5,1,2,3,4
+ID 127: 4,5,1,2,3
+ID 128: 3,4,5,1,2
+ID 129: 2,3,4,5,1
+ID 130: 1,2,3,4,5
+ID 131: 5,1,2,3,4
+ID 132: 4,5,1,2,3
+ID 133: 3,4,5,1,2
+ID 134: 2,3,4,5,1
+ID 135: 1,2,3,4,5
+ID 136: 5,1,2,3,4
+ID 137: 4,5,1,2,3
+ID 138: 3,4,5,1,2
+ID 139: 2,3,4,5,1
+ID 140: 1,2,3,4,5
+ID 141: 5,1,2,3,4
+ID 142: 4,5,1,2,3
+ID 143: 3,4,5,1,2
+ID 144: 2,3,4,5,1
+ID 145: 1,2,3,4,5
+ID 146: 5,1,2,3,4
+ID 147: 4,5,1,2,3
+ID 148: 3,4,5,1,2
+ID 149: 2,3,4,5,1
+ID 150: 1,2,3,4,5
+ID 151: 5,1,2,3,4
+ID 152: 4,5,1,2,3
+ID 153: 3,4,5,1,2
+ID 154: 2,3,4,5,1
+ID 155: 1,2,3,4,5
+ID 156: 5,1,2,3,4
+ID 157: 4,5,1,2,3
+ID 158: 3,4,5,1,2
+ID 159: 2,3,4,5,1
+ID 160: 1,2,3,4,5
+ID 161: 5,1,2,3,4
+ID 162: 4,5,1,2,3
+ID 163: 3,4,5,1,2
+ID 164: 2,3,4,5,1
+ID 165: 1,2,3,4,5
+ID 166: 5,1,2,3,4
+ID 167: 4,5,1,2,3
+ID 168: 3,4,5,1,2
+ID 169: 2,3,4,5,1
+ID 170: 1,2,3,4,5
+ID 171: 5,1,2,3,4
+ID 172: 4,5,1,2,3
+ID 173: 3,4,5,1,2
+ID 174: 2,3,4,5,1
+ID 175: 1,2,3,4,5
+ID 176: 5,1,2,3,4
+ID 177: 4,5,1,2,3
+ID 178: 3,4,5,1,2
+ID 179: 2,3,4,5,1
+ID 180: 1,2,3,4,5
+ID 181: 5,1,2,3,4
+ID 182: 4,5,1,2,3
+ID 183: 3,4,5,1,2
+ID 184: 2,3,4,5,1
+ID 185: 1,2,3,4,5
+ID 186: 5,1,2,3,4
+ID 187: 4,5,1,2,3
+ID 188: 3,4,5,1,2
+ID 189: 2,3,4,5,1
+ID 190: 1,2,3,4,5
+ID 191: 5,1,2,3,4
+ID 192: 4,5,1,2,3
+ID 193: 3,4,5,1,2
+ID 194: 2,3,4,5,1
+ID 195: 1,2,3,4,5
+ID 196: 5,1,2,3,4
+ID 197: 4,5,1,2,3
+ID 198: 3,4,5,1,2
+ID 199: 2,3,4,5,1
+
+[Initial Vote Distribution]
+Ballot #0 assigned to Bill Jones
+Ballot #1 assigned to Alice Mix
+Ballot #2 assigned to Sally Ride
+Ballot #3 assigned to Ahmed Mohamed
+Ballot #4 assigned to Siyang Xiong
+Ballot #5 assigned to Bill Jones
+Ballot #6 assigned to Alice Mix
+Ballot #7 assigned to Sally Ride
+Ballot #8 assigned to Ahmed Mohamed
+Ballot #9 assigned to Siyang Xiong
+Ballot #10 assigned to Bill Jones
+Ballot #11 assigned to Alice Mix
+Ballot #12 assigned to Sally Ride
+Ballot #13 assigned to Ahmed Mohamed
+Ballot #14 assigned to Siyang Xiong
+Ballot #15 assigned to Bill Jones
+Ballot #16 assigned to Alice Mix
+Ballot #17 assigned to Sally Ride
+Ballot #18 assigned to Ahmed Mohamed
+Ballot #19 assigned to Siyang Xiong
+Ballot #20 assigned to Bill Jones
+Ballot #21 assigned to Alice Mix
+Ballot #22 assigned to Sally Ride
+Ballot #23 assigned to Ahmed Mohamed
+Ballot #24 assigned to Siyang Xiong
+Ballot #25 assigned to Bill Jones
+Ballot #26 assigned to Alice Mix
+Ballot #27 assigned to Sally Ride
+Ballot #28 assigned to Ahmed Mohamed
+Ballot #29 assigned to Siyang Xiong
+Ballot #30 assigned to Bill Jones
+Ballot #31 assigned to Alice Mix
+Ballot #32 assigned to Sally Ride
+Ballot #33 assigned to Ahmed Mohamed
+Ballot #34 assigned to Siyang Xiong
+Ballot #35 assigned to Bill Jones
+Ballot #36 assigned to Alice Mix
+Ballot #37 assigned to Sally Ride
+Ballot #38 assigned to Ahmed Mohamed
+Ballot #39 assigned to Siyang Xiong
+Ballot #40 assigned to Bill Jones
+Ballot #41 assigned to Alice Mix
+Ballot #42 assigned to Sally Ride
+Ballot #43 assigned to Ahmed Mohamed
+Ballot #44 assigned to Siyang Xiong
+Ballot #45 assigned to Bill Jones
+Ballot #46 assigned to Alice Mix
+Ballot #47 assigned to Sally Ride
+Ballot #48 assigned to Ahmed Mohamed
+Ballot #49 assigned to Siyang Xiong
+Ballot #50 assigned to Bill Jones
+Ballot #51 assigned to Alice Mix
+Ballot #52 assigned to Sally Ride
+Ballot #53 assigned to Ahmed Mohamed
+Ballot #54 assigned to Siyang Xiong
+Ballot #55 assigned to Bill Jones
+Ballot #56 assigned to Alice Mix
+Ballot #57 assigned to Sally Ride
+Ballot #58 assigned to Ahmed Mohamed
+Ballot #59 assigned to Siyang Xiong
+Ballot #60 assigned to Bill Jones
+Ballot #61 assigned to Alice Mix
+Ballot #62 assigned to Sally Ride
+Ballot #63 assigned to Ahmed Mohamed
+Ballot #64 assigned to Siyang Xiong
+Ballot #65 assigned to Bill Jones
+Ballot #66 assigned to Alice Mix
+Ballot #67 assigned to Sally Ride
+Ballot #68 assigned to Ahmed Mohamed
+Ballot #69 assigned to Siyang Xiong
+Ballot #70 assigned to Bill Jones
+Ballot #71 assigned to Alice Mix
+Ballot #72 assigned to Sally Ride
+Ballot #73 assigned to Ahmed Mohamed
+Ballot #74 assigned to Siyang Xiong
+Ballot #75 assigned to Bill Jones
+Ballot #76 assigned to Alice Mix
+Ballot #77 assigned to Sally Ride
+Ballot #78 assigned to Ahmed Mohamed
+Ballot #79 assigned to Siyang Xiong
+Ballot #80 assigned to Bill Jones
+Ballot #81 assigned to Alice Mix
+Ballot #82 assigned to Sally Ride
+Ballot #83 assigned to Ahmed Mohamed
+Ballot #84 assigned to Siyang Xiong
+Ballot #85 assigned to Bill Jones
+Ballot #86 assigned to Alice Mix
+Ballot #87 assigned to Sally Ride
+Ballot #88 assigned to Ahmed Mohamed
+Ballot #89 assigned to Siyang Xiong
+Ballot #90 assigned to Bill Jones
+Ballot #91 assigned to Alice Mix
+Ballot #92 assigned to Sally Ride
+Ballot #93 assigned to Ahmed Mohamed
+Ballot #94 assigned to Siyang Xiong
+Ballot #95 assigned to Bill Jones
+Ballot #96 assigned to Alice Mix
+Ballot #97 assigned to Sally Ride
+Ballot #98 assigned to Ahmed Mohamed
+Ballot #99 assigned to Siyang Xiong
+Ballot #100 assigned to Bill Jones
+Ballot #101 assigned to Alice Mix
+Ballot #102 assigned to Sally Ride
+Ballot #103 assigned to Ahmed Mohamed
+Ballot #104 assigned to Siyang Xiong
+Ballot #105 assigned to Bill Jones
+Ballot #106 assigned to Alice Mix
+Ballot #107 assigned to Sally Ride
+Ballot #108 assigned to Ahmed Mohamed
+Ballot #109 assigned to Siyang Xiong
+Ballot #110 assigned to Bill Jones
+Ballot #111 assigned to Alice Mix
+Ballot #112 assigned to Sally Ride
+Ballot #113 assigned to Ahmed Mohamed
+Ballot #114 assigned to Siyang Xiong
+Ballot #115 assigned to Bill Jones
+Ballot #116 assigned to Alice Mix
+Ballot #117 assigned to Sally Ride
+Ballot #118 assigned to Ahmed Mohamed
+Ballot #119 assigned to Siyang Xiong
+Ballot #120 assigned to Bill Jones
+Ballot #121 assigned to Alice Mix
+Ballot #122 assigned to Sally Ride
+Ballot #123 assigned to Ahmed Mohamed
+Ballot #124 assigned to Siyang Xiong
+Ballot #125 assigned to Bill Jones
+Ballot #126 assigned to Alice Mix
+Ballot #127 assigned to Sally Ride
+Ballot #128 assigned to Ahmed Mohamed
+Ballot #129 assigned to Siyang Xiong
+Ballot #130 assigned to Bill Jones
+Ballot #131 assigned to Alice Mix
+Ballot #132 assigned to Sally Ride
+Ballot #133 assigned to Ahmed Mohamed
+Ballot #134 assigned to Siyang Xiong
+Ballot #135 assigned to Bill Jones
+Ballot #136 assigned to Alice Mix
+Ballot #137 assigned to Sally Ride
+Ballot #138 assigned to Ahmed Mohamed
+Ballot #139 assigned to Siyang Xiong
+Ballot #140 assigned to Bill Jones
+Ballot #141 assigned to Alice Mix
+Ballot #142 assigned to Sally Ride
+Ballot #143 assigned to Ahmed Mohamed
+Ballot #144 assigned to Siyang Xiong
+Ballot #145 assigned to Bill Jones
+Ballot #146 assigned to Alice Mix
+Ballot #147 assigned to Sally Ride
+Ballot #148 assigned to Ahmed Mohamed
+Ballot #149 assigned to Siyang Xiong
+Ballot #150 assigned to Bill Jones
+Ballot #151 assigned to Alice Mix
+Ballot #152 assigned to Sally Ride
+Ballot #153 assigned to Ahmed Mohamed
+Ballot #154 assigned to Siyang Xiong
+Ballot #155 assigned to Bill Jones
+Ballot #156 assigned to Alice Mix
+Ballot #157 assigned to Sally Ride
+Ballot #158 assigned to Ahmed Mohamed
+Ballot #159 assigned to Siyang Xiong
+Ballot #160 assigned to Bill Jones
+Ballot #161 assigned to Alice Mix
+Ballot #162 assigned to Sally Ride
+Ballot #163 assigned to Ahmed Mohamed
+Ballot #164 assigned to Siyang Xiong
+Ballot #165 assigned to Bill Jones
+Ballot #166 assigned to Alice Mix
+Ballot #167 assigned to Sally Ride
+Ballot #168 assigned to Ahmed Mohamed
+Ballot #169 assigned to Siyang Xiong
+Ballot #170 assigned to Bill Jones
+Ballot #171 assigned to Alice Mix
+Ballot #172 assigned to Sally Ride
+Ballot #173 assigned to Ahmed Mohamed
+Ballot #174 assigned to Siyang Xiong
+Ballot #175 assigned to Bill Jones
+Ballot #176 assigned to Alice Mix
+Ballot #177 assigned to Sally Ride
+Ballot #178 assigned to Ahmed Mohamed
+Ballot #179 assigned to Siyang Xiong
+Ballot #180 assigned to Bill Jones
+Ballot #181 assigned to Alice Mix
+Ballot #182 assigned to Sally Ride
+Ballot #183 assigned to Ahmed Mohamed
+Ballot #184 assigned to Siyang Xiong
+Ballot #185 assigned to Bill Jones
+Ballot #186 assigned to Alice Mix
+Ballot #187 assigned to Sally Ride
+Ballot #188 assigned to Ahmed Mohamed
+Ballot #189 assigned to Siyang Xiong
+Ballot #190 assigned to Bill Jones
+Ballot #191 assigned to Alice Mix
+Ballot #192 assigned to Sally Ride
+Ballot #193 assigned to Ahmed Mohamed
+Ballot #194 assigned to Siyang Xiong
+Ballot #195 assigned to Bill Jones
+Ballot #196 assigned to Alice Mix
+Ballot #197 assigned to Sally Ride
+Ballot #198 assigned to Ahmed Mohamed
+Ballot #199 assigned to Siyang Xiong
+
+Current Vote Assignment Breakdown:
+Bill Jones: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195
+Alice Mix: 1, 6, 11, 16, 21, 26, 31, 36, 41, 46, 51, 56, 61, 66, 71, 76, 81, 86, 91, 96, 101, 106, 111, 116, 121, 126, 131, 136, 141, 146, 151, 156, 161, 166, 171, 176, 181, 186, 191, 196
+Sally Ride: 2, 7, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87, 92, 97, 102, 107, 112, 117, 122, 127, 132, 137, 142, 147, 152, 157, 162, 167, 172, 177, 182, 187, 192, 197
+Ahmed Mohamed: 3, 8, 13, 18, 23, 28, 33, 38, 43, 48, 53, 58, 63, 68, 73, 78, 83, 88, 93, 98, 103, 108, 113, 118, 123, 128, 133, 138, 143, 148, 153, 158, 163, 168, 173, 178, 183, 188, 193, 198
+Siyang Xiong: 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 69, 74, 79, 84, 89, 94, 99, 104, 109, 114, 119, 124, 129, 134, 139, 144, 149, 154, 159, 164, 169, 174, 179, 184, 189, 194, 199
+
 Winners: 
 Losers: 
-Tie between: Alice Mix, Bill Jones, Sally Ride, Ahmed Mohamed, Siyang Xiong, - loser selected to be: Alice Mix
 
-Vote Redistribution Round #1
-Reassigning ballot: 1 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 6 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 11 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 16 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 21 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 26 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 31 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 36 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 41 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 46 looking for the #2 choice.- it was: Sally Ride
-Reassigning ballot: 51 looking for the #2 choice.- it was: Sally Ride
-Sally Ride hit Droop quota- adding to winners list
-Reassigning ballot: 56 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 61 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 66 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 71 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 76 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 81 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 86 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 91 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 96 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 101 looking for the #3 choice.- it was: Ahmed Mohamed
-Reassigning ballot: 106 looking for the #3 choice.- it was: Ahmed Mohamed
-Ahmed Mohamed hit Droop quota- adding to winners list
-Reassigning ballot: 111 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 116 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 121 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 126 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 131 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 136 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 141 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 146 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 151 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 156 looking for the #4 choice.- it was: Siyang Xiong
-Reassigning ballot: 161 looking for the #4 choice.- it was: Siyang Xiong
-Siyang Xiong hit Droop quota- adding to winners list
-Reassigning ballot: 166 looking for the #5 choice.- it was: Bill Jones
-Reassigning ballot: 171 looking for the #5 choice.- it was: Bill Jones
-Reassigning ballot: 176 looking for the #5 choice.- it was: Bill Jones
-Reassigning ballot: 181 looking for the #5 choice.- it was: Bill Jones
-Reassigning ballot: 186 looking for the #5 choice.- it was: Bill Jones
-Reassigning ballot: 191 looking for the #5 choice.- it was: Bill Jones
-Reassigning ballot: 196 looking for the #5 choice.- it was: Bill Jones
-Bill Jones,0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150,155,160,165,170,175,180,185,190,195,166,171,176,181,186,191,196,
-Alice Mix,
-Sally Ride,2,7,12,17,22,27,32,37,42,47,52,57,62,67,72,77,82,87,92,97,102,107,112,117,122,127,132,137,142,147,152,157,162,167,172,177,182,187,192,197,1,6,11,16,21,26,31,36,41,46,51,
-Ahmed Mohamed,3,8,13,18,23,28,33,38,43,48,53,58,63,68,73,78,83,88,93,98,103,108,113,118,123,128,133,138,143,148,153,158,163,168,173,178,183,188,193,198,56,61,66,71,76,81,86,91,96,101,106,
-Siyang Xiong,4,9,14,19,24,29,34,39,44,49,54,59,64,69,74,79,84,89,94,99,104,109,114,119,124,129,134,139,144,149,154,159,164,169,174,179,184,189,194,199,111,116,121,126,131,136,141,146,151,156,161,
-Winners: Sally Ride,Ahmed Mohamed,Siyang Xiong,
-Losers: Alice Mix,
+[Vote Redistribution Round #1]
+Tie between: Ahmed Mohamed, Alice Mix, Siyang Xiong, Bill Jones, Sally Ride, - loser selected to be: Ahmed Mohamed
+Loser for this redistribution round selected to be Ahmed Mohamed, redistributing their ballots.
+	Reassigning ballot #3, Siyang Xiong is the #2 choice.
+Ballot #3 assigned to Siyang Xiong
+	Reassigning ballot #8, Siyang Xiong is the #2 choice.
+Ballot #8 assigned to Siyang Xiong
+	Reassigning ballot #13, Siyang Xiong is the #2 choice.
+Ballot #13 assigned to Siyang Xiong
+	Reassigning ballot #18, Siyang Xiong is the #2 choice.
+Ballot #18 assigned to Siyang Xiong
+	Reassigning ballot #23, Siyang Xiong is the #2 choice.
+Ballot #23 assigned to Siyang Xiong
+	Reassigning ballot #28, Siyang Xiong is the #2 choice.
+Ballot #28 assigned to Siyang Xiong
+	Reassigning ballot #33, Siyang Xiong is the #2 choice.
+Ballot #33 assigned to Siyang Xiong
+	Reassigning ballot #38, Siyang Xiong is the #2 choice.
+Ballot #38 assigned to Siyang Xiong
+	Reassigning ballot #43, Siyang Xiong is the #2 choice.
+Ballot #43 assigned to Siyang Xiong
+	Reassigning ballot #48, Siyang Xiong is the #2 choice.
+Ballot #48 assigned to Siyang Xiong
+	Reassigning ballot #53, Siyang Xiong is the #2 choice.
+Ballot #53 assigned to Siyang Xiong
+	Siyang Xiong hit Droop quota- adding to winners list
+	Reassigning ballot #58, Bill Jones is the #3 choice.
+Ballot #58 assigned to Bill Jones
+	Reassigning ballot #63, Bill Jones is the #3 choice.
+Ballot #63 assigned to Bill Jones
+	Reassigning ballot #68, Bill Jones is the #3 choice.
+Ballot #68 assigned to Bill Jones
+	Reassigning ballot #73, Bill Jones is the #3 choice.
+Ballot #73 assigned to Bill Jones
+	Reassigning ballot #78, Bill Jones is the #3 choice.
+Ballot #78 assigned to Bill Jones
+	Reassigning ballot #83, Bill Jones is the #3 choice.
+Ballot #83 assigned to Bill Jones
+	Reassigning ballot #88, Bill Jones is the #3 choice.
+Ballot #88 assigned to Bill Jones
+	Reassigning ballot #93, Bill Jones is the #3 choice.
+Ballot #93 assigned to Bill Jones
+	Reassigning ballot #98, Bill Jones is the #3 choice.
+Ballot #98 assigned to Bill Jones
+	Reassigning ballot #103, Bill Jones is the #3 choice.
+Ballot #103 assigned to Bill Jones
+	Reassigning ballot #108, Bill Jones is the #3 choice.
+Ballot #108 assigned to Bill Jones
+	Bill Jones hit Droop quota- adding to winners list
+	Reassigning ballot #113, Alice Mix is the #4 choice.
+Ballot #113 assigned to Alice Mix
+	Reassigning ballot #118, Alice Mix is the #4 choice.
+Ballot #118 assigned to Alice Mix
+	Reassigning ballot #123, Alice Mix is the #4 choice.
+Ballot #123 assigned to Alice Mix
+	Reassigning ballot #128, Alice Mix is the #4 choice.
+Ballot #128 assigned to Alice Mix
+	Reassigning ballot #133, Alice Mix is the #4 choice.
+Ballot #133 assigned to Alice Mix
+	Reassigning ballot #138, Alice Mix is the #4 choice.
+Ballot #138 assigned to Alice Mix
+	Reassigning ballot #143, Alice Mix is the #4 choice.
+Ballot #143 assigned to Alice Mix
+	Reassigning ballot #148, Alice Mix is the #4 choice.
+Ballot #148 assigned to Alice Mix
+	Reassigning ballot #153, Alice Mix is the #4 choice.
+Ballot #153 assigned to Alice Mix
+	Reassigning ballot #158, Alice Mix is the #4 choice.
+Ballot #158 assigned to Alice Mix
+	Reassigning ballot #163, Alice Mix is the #4 choice.
+Ballot #163 assigned to Alice Mix
+	Alice Mix hit Droop quota- adding to winners list
+	Reassigning ballot #168, Sally Ride is the #5 choice.
+Ballot #168 assigned to Sally Ride
+	Reassigning ballot #173, Sally Ride is the #5 choice.
+Ballot #173 assigned to Sally Ride
+	Reassigning ballot #178, Sally Ride is the #5 choice.
+Ballot #178 assigned to Sally Ride
+	Reassigning ballot #183, Sally Ride is the #5 choice.
+Ballot #183 assigned to Sally Ride
+	Reassigning ballot #188, Sally Ride is the #5 choice.
+Ballot #188 assigned to Sally Ride
+	Reassigning ballot #193, Sally Ride is the #5 choice.
+Ballot #193 assigned to Sally Ride
+	Reassigning ballot #198, Sally Ride is the #5 choice.
+Ballot #198 assigned to Sally Ride
+
+Current Vote Assignment Breakdown:
+Bill Jones: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 58, 63, 68, 73, 78, 83, 88, 93, 98, 103, 108
+Alice Mix: 1, 6, 11, 16, 21, 26, 31, 36, 41, 46, 51, 56, 61, 66, 71, 76, 81, 86, 91, 96, 101, 106, 111, 116, 121, 126, 131, 136, 141, 146, 151, 156, 161, 166, 171, 176, 181, 186, 191, 196, 113, 118, 123, 128, 133, 138, 143, 148, 153, 158, 163
+Sally Ride: 2, 7, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87, 92, 97, 102, 107, 112, 117, 122, 127, 132, 137, 142, 147, 152, 157, 162, 167, 172, 177, 182, 187, 192, 197, 168, 173, 178, 183, 188, 193, 198
+Ahmed Mohamed: 
+Siyang Xiong: 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 69, 74, 79, 84, 89, 94, 99, 104, 109, 114, 119, 124, 129, 134, 139, 144, 149, 154, 159, 164, 169, 174, 179, 184, 189, 194, 199, 3, 8, 13, 18, 23, 28, 33, 38, 43, 48, 53
+
+Winners: Siyang Xiong, Bill Jones, Alice Mix
+Losers: Ahmed Mohamed
 
 Final Election Results:
-Winners: Sally Ride,Ahmed Mohamed,Siyang Xiong,
-Losers: Alice Mix,Bill Jones,
+
+Winners: Siyang Xiong, Bill Jones, Alice Mix
+Losers: Ahmed Mohamed, Sally Ride

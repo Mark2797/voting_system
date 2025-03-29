@@ -17,7 +17,7 @@ using namespace std;
 
 int main() {
     int test_value = 2;
-    vector<int> ballot_amt = {10, 20, 100, 1000, 100000};
+    vector<int> ballot_amt = {1, 20, 100, 1000, 100000};
     // To keep it easier to change, this value corresponds to the total number of tests for
     // Each list of names and each ballot_amt.
     vector<string> names = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", 
