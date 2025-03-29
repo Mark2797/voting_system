@@ -49,6 +49,9 @@ TEST_F(BallotTest, GetBallotTest) {
     for (int i = 0; i < notShuffleBallots->getBallotCount(); i++) {
         EXPECT_EQ(notShuffleBallots->getBallot(i), notShuffleBallotsVector.at(i));
     }
+    EXPECT_THROW(notShuffleBallots->getBallot(-10), std::out_of_range);
+    EXPECT_THROW(notShuffleBallots->getBallot(notShuffleBallots->getBallotCount()), std::out_of_range);
+    EXPECT_THROW(notShuffleBallots->getBallot(notShuffleBallots->getBallotCount() + 1000), std::out_of_range);
 }
 
 TEST_F(BallotTest, GetCandidateTest) {   
