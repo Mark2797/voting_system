@@ -1,0 +1,32 @@
+[STV Election]: Droop: 11, Seats: 1, Candidates: 2
+Winners: Mark Suckerberg,
+Losers: Chuck Lancaster,
+Mark Suckerberg hit Droop quota- adding to winners list
+ID 0: 1, 0, 
+ID 1: 0, 1, 
+ID 2: 1, 2, 
+ID 3: 1, 0, 
+ID 4: 0, 1, 
+ID 5: 0, 1, 
+ID 6: 1, 0, 
+ID 7: 1, 0, 
+ID 8: 1, 2, 
+ID 9: 1, 2, 
+ID 10: 0, 1, 
+ID 11: 0, 1, 
+ID 12: 2, 1, 
+ID 13: 1, 2, 
+ID 14: 2, 1, 
+ID 15: 2, 1, 
+ID 16: 0, 1, 
+ID 17: 2, 1, 
+ID 18: 2, 1, 
+ID 19: 1, 0, 
+Chuck Lancaster,0,2,3,6,7,8,9,13,19,
+Mark Suckerberg,1,4,5,10,11,12,14,15,16,17,18,
+Winners: Mark Suckerberg,
+Losers: 
+
+Final Election Results:
+Winners: Mark Suckerberg,
+Losers: Chuck Lancaster,
