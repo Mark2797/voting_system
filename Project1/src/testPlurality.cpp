@@ -95,6 +95,41 @@ TEST_F(PluralityTest, RunElectionTest) {
     EXPECT_EQ(plurality->getWinners().at(0).getName(), "Bill Jones");
     EXPECT_EQ(plurality->getWinners().at(1).getName(), "Alice Mix");
     EXPECT_EQ(plurality->getLosers().size(), 4);
+    std::optional<Plurality> plurality_four;
+    std::optional<Ballots> ballots_four;
+    std::vector<std::string> candidates_four;
+    std::vector<std::vector<int>> ballots_plurality_four;
+    ballots_plurality_four = {{1}, {}};
+    candidates_four = {"Andy"};
+    ballots_four.emplace(candidates_four, ballots_plurality_four, false);
+    plurality_four.emplace(&(ballots_four.value()), 3);
+    plurality_four->runElection();
+    EXPECT_EQ(plurality_four->getBallots(), &(ballots_four.value()));
+    EXPECT_EQ(plurality_four->getSeats(), 3);
+    EXPECT_EQ(plurality_four->getCandidates().at(0).getName(), candidates_four.at(0));
+    EXPECT_EQ(plurality_four->getWinners().size(), 1);
+    EXPECT_EQ(plurality_four->getWinners().at(0).getName(), "Andy");
+    EXPECT_EQ(plurality_four->getLosers().size(), 0);
+    std::optional<Plurality> plurality_five;
+    plurality_five.emplace(&(ballots.value()), 1);
+    plurality_five->runElection();
+    EXPECT_EQ(plurality_five->getBallots(), &(ballots.value()));
+    EXPECT_EQ(plurality_five->getSeats(), 1);
+    for (long unsigned int i = 0; i < plurality_five->getCandidates().size(); i++) {
+        EXPECT_EQ(plurality_five->getCandidates().at(i).getName(), candidates.at(i));
+    }
+    EXPECT_EQ(plurality_five->getWinners().size(), 1);
+    EXPECT_EQ(plurality_five->getWinners().at(0).getName(), "Bill Jones");
+    EXPECT_EQ(plurality_five->getLosers().size(), 5);
+    std::optional<Plurality> plurality_six;
+    plurality_six.emplace(&(ballots_four.value()), 1);
+    plurality_six->runElection();
+    EXPECT_EQ(plurality_six->getBallots(), &(ballots_four.value()));
+    EXPECT_EQ(plurality_six->getSeats(), 1);
+    EXPECT_EQ(plurality_six->getCandidates().at(0).getName(), candidates_four.at(0));
+    EXPECT_EQ(plurality_six->getWinners().size(), 1);
+    EXPECT_EQ(plurality_six->getWinners().at(0).getName(), "Andy");
+    EXPECT_EQ(plurality_six->getLosers().size(), 0);
 }
 
 TEST_F(PluralityTest, DisplayElectionDetailsTest) {
@@ -175,6 +210,61 @@ TEST_F(PluralityTest, RandomFinalWinner) {
     for (long unsigned int i = 0; i < 2; i++) {
         EXPECT_EQ(plurality_three->getLosers().at(i).getName(), confirmed_losers.at(i));
     }
+    std::optional<Plurality> plurality_seven;
+    std::optional<Ballots> ballots_seven;
+    std::vector<std::string> candidates_seven;
+    std::vector<std::vector<int>> ballots_plurality_seven;
+    candidates_seven = {"Manan", "Mark", "Michael"};
+    ballots_plurality_seven = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
+    ballots_seven.emplace(candidates_seven, ballots_plurality_seven, false);
+    plurality_seven.emplace(&(ballots_seven.value()), 1);
+    plurality_seven->runElection();
+    EXPECT_EQ(plurality_seven->getBallots(), &(ballots_seven.value()));
+    EXPECT_EQ(plurality_seven->getSeats(), 1);
+    for (long unsigned int i = 0; i < plurality_seven->getCandidates().size(); i++) {
+        EXPECT_EQ(plurality_seven->getCandidates().at(i).getName(), candidates_seven.at(i));
+    }
+    EXPECT_EQ(plurality_seven->getWinners().size(), 1);
+    EXPECT_EQ(plurality_seven->getLosers().size(), 2);
+    std::optional<Plurality> plurality_eight;
+    std::optional<Ballots> ballots_eight;
+    std::vector<std::string> candidates_eight;
+    std::vector<std::vector<int>> ballots_plurality_eight;
+    candidates_eight = {
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+    };
+    ballots_plurality_eight = {};
+    for (int i = 0; i < 100000; i = i + 10) {
+        ballots_plurality_eight.push_back({1, 0, 0, 0, 0, 0, 0, 0, 0, 0});
+        ballots_plurality_eight.push_back({0, 1, 0, 0, 0, 0, 0, 0, 0, 0});
+        ballots_plurality_eight.push_back({0, 0, 1, 0, 0, 0, 0, 0, 0, 0});
+        ballots_plurality_eight.push_back({0, 0, 0, 1, 0, 0, 0, 0, 0, 0});
+        ballots_plurality_eight.push_back({0, 0, 0, 0, 1, 0, 0, 0, 0, 0});
+        ballots_plurality_eight.push_back({0, 0, 0, 0, 0, 1, 0, 0, 0, 0});
+        ballots_plurality_eight.push_back({0, 0, 0, 0, 0, 0, 1, 0, 0, 0});
+        ballots_plurality_eight.push_back({0, 0, 0, 0, 0, 0, 0, 1, 0, 0});
+        ballots_plurality_eight.push_back({0, 0, 0, 0, 0, 0, 0, 0, 1, 0});
+        ballots_plurality_eight.push_back({0, 0, 0, 0, 0, 0, 0, 0, 0, 1});
+    }
+    ballots_eight.emplace(candidates_eight, ballots_plurality_eight, false);
+    plurality_eight.emplace(&(ballots_eight.value()), 1);
+    plurality_eight->runElection();
+    EXPECT_EQ(plurality_eight->getBallots(), &(ballots_eight.value()));
+    EXPECT_EQ(plurality_eight->getSeats(), 1);
+    for (long unsigned int i = 0; i < plurality_eight->getCandidates().size(); i++) {
+        EXPECT_EQ(plurality_eight->getCandidates().at(i).getName(), candidates_eight.at(i));
+    }
+    EXPECT_EQ(plurality_eight->getWinners().size(), 1);
+    EXPECT_EQ(plurality_eight->getLosers().size(), 9);
 }
 
 int main(int argc, char **argv) {

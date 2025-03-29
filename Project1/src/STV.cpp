@@ -12,6 +12,16 @@ static std::string auditFileName;
 static std::string outputString;
 static std::ofstream file;
 
+static void writeVoteContent(std::vector<std::string>& electionProgress, Ballots* ballots, int candidateNum) {
+    for (int i = 0; i < ballots->getBallotCount(); i++) {
+        outputString = "\nID " + std::to_string(i) + ": ";
+        for (int j = 0; j < candidateNum; j++) {
+            outputString += std::to_string(ballots->getBallot(i).at(j)) + ", ";
+        }
+        electionProgress.push_back(outputString);
+    }
+}
+
 // write out each candidate and what ballot IDs they recieved... this causes slowdown but may be nice for auditing
 static void writeVotesToAudit(std::vector<std::string>& electionProgress, std::vector<Candidate>& candidates) {
 
@@ -28,18 +38,18 @@ static void writeVotesToAudit(std::vector<std::string>& electionProgress, std::v
 }
 
 // display the winners and losers at the time of being called
-static void displayWinnersLosers(std::vector<std::string>& electionProgress, std::vector<Candidate>& winners, std::vector<Candidate>& losers) {
-    outputString = "\nWinners: ";
+static std::string displayWinnersLosers(std::vector<std::string>& electionProgress, std::vector<Candidate>& winners, std::vector<Candidate>& losers) {
+    std::string output = "\nWinners: ";
     for (int i = 0; i < static_cast<int>(winners.size()); i++) {
-        outputString += winners.at(i).getName() + ",";
+        output += winners.at(i).getName() + ",";
     }
-    electionProgress.push_back(outputString);
-
-    outputString = "\nLosers: ";
+    
+    output += "\nLosers: ";
     for (int i = 0; i < static_cast<int>(losers.size()); i++) {
-        outputString += losers.at(i).getName() + ",";
+        output += losers.at(i).getName() + ",";
     }
-    electionProgress.push_back(outputString);
+    
+    return output;
 }
 
 // finds what number choice the loser was given a ballot... so if the loser was the ballot's 2nd choice, this function will return 2
@@ -210,6 +220,7 @@ STV::~STV() {}
 void STV::runElection() {
     
     promptAuditFilename();
+    
 
     int seatsElected = 0;
     droopQuota = (ballots->getBallotCount() / (this->seats + 1)) + 1;
@@ -239,8 +250,10 @@ void STV::runElection() {
             }
         }
     }
-
-    displayWinnersLosers(electionProgress, winners, losers);
+    
+    writeVoteContent(electionProgress, ballots, candidates.size());
+    writeVotesToAudit(electionProgress, candidates);
+    electionProgress.push_back(displayWinnersLosers(electionProgress, winners, losers));
 
     // after all of the votes are distributed, if there are still seats that need to be filled
     int voteRedistributionRound = 1;
@@ -276,7 +289,7 @@ void STV::runElection() {
         candidates.at(loserId).clearAssignedBallots();
 
         writeVotesToAudit(electionProgress, candidates);
-        displayWinnersLosers(electionProgress, winners, losers);
+        electionProgress.push_back(displayWinnersLosers(electionProgress, winners, losers));
         voteRedistributionRound++;
     }
     
@@ -297,8 +310,8 @@ void STV::runElection() {
         }
     }
     
-    displayWinnersLosers(electionProgress, winners, losers);
-
+    electionProgress.push_back(displayWinnersLosers(electionProgress, winners, losers));
+    electionProgress.at(0) += displayWinnersLosers(electionProgress, winners, losers);
     displayElectionDetails();
     outputAuditFile();
 }
