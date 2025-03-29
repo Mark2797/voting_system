@@ -5,5 +5,6 @@ Makefile commands:
 
 Voting system runing instruction:  
 ./voting_system  
+  
 To turn the shuffle off, use the shuffle-off flag:  
 ./voting_system shuffle-off  
