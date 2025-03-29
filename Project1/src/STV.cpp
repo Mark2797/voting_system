@@ -5,6 +5,7 @@
 #include "STV.h"
 #include <iostream>
 #include <climits>
+#include <cmath>
 #include <bits/stdc++.h>
 #include <fstream>
 
@@ -12,6 +13,7 @@ static std::string auditFileName;
 static std::string outputString;
 static std::ofstream file;
 
+// write which votes each candidate recieved to the audit file
 static void writeVoteContent(std::vector<std::string>& electionProgress, Ballots* ballots, int candidateNum) {
     for (int i = 0; i < ballots->getBallotCount(); i++) {
         outputString = "\nID " + std::to_string(i) + ": ";
@@ -221,12 +223,13 @@ void STV::runElection() {
     
     promptAuditFilename();
     
-
-    int seatsElected = 0;
-    droopQuota = (ballots->getBallotCount() / (this->seats + 1)) + 1;
-
     outputString = "[STV Election]: Droop: " + std::to_string(droopQuota) + ", Seats: " + std::to_string(seats) + ", Candidates: " + std::to_string(candidates.size());
     electionProgress.push_back(outputString);
+    writeVoteContent(electionProgress, ballots, candidates.size());
+
+    int seatsElected = 0;
+    droopQuota = std::floor((ballots->getBallotCount() / (this->seats + 1))) + 1;
+
 
     // traverse through the vector of ballots [first pass]
     for (int ballotId = 0; ballotId < ballots->getBallotCount(); ballotId++) {
@@ -251,7 +254,6 @@ void STV::runElection() {
         }
     }
     
-    writeVoteContent(electionProgress, ballots, candidates.size());
     writeVotesToAudit(electionProgress, candidates);
     electionProgress.push_back(displayWinnersLosers(electionProgress, winners, losers));
 
