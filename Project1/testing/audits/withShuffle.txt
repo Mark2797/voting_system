@@ -1,32 +1,212 @@
-[STV Election]: Droop: 11, Seats: 1, Candidates: 2
-Winners: Mark Suckerberg,
-Losers: Chuck Lancaster,
-Mark Suckerberg hit Droop quota- adding to winners list
-ID 0: 0, 1, 
-ID 1: 0, 1, 
-ID 2: 2, 1, 
-ID 3: 0, 1, 
-ID 4: 0, 1, 
-ID 5: 1, 0, 
-ID 6: 0, 1, 
-ID 7: 0, 1, 
-ID 8: 1, 2, 
-ID 9: 0, 1, 
-ID 10: 1, 2, 
-ID 11: 1, 2, 
-ID 12: 1, 0, 
-ID 13: 1, 2, 
-ID 14: 0, 1, 
-ID 15: 1, 0, 
-ID 16: 2, 1, 
-ID 17: 0, 1, 
-ID 18: 1, 0, 
-ID 19: 1, 2, 
-Chuck Lancaster,5,8,10,11,12,13,15,18,19,
-Mark Suckerberg,0,1,2,3,4,6,7,9,14,16,17,
-Winners: Mark Suckerberg,
+[STV Election]: Droop: 51, Seats: 1, Candidates: 5
+Winners: Andrew Hero,
+Losers: Joe Cool,Mark Suckerberg,Micheal Ashton,Chuck Lancaster,
+ID 0: 4, 1, 2, 3, 0, 
+ID 1: 1, 0, 3, 0, 2, 
+ID 2: 4, 1, 0, 2, 3, 
+ID 3: 1, 3, 2, 0, 0, 
+ID 4: 3, 4, 0, 2, 1, 
+ID 5: 2, 0, 3, 1, 0, 
+ID 6: 0, 1, 3, 2, 0, 
+ID 7: 0, 0, 3, 1, 2, 
+ID 8: 3, 0, 1, 2, 4, 
+ID 9: 3, 1, 0, 0, 2, 
+ID 10: 3, 1, 0, 4, 2, 
+ID 11: 1, 3, 2, 4, 5, 
+ID 12: 4, 1, 2, 3, 5, 
+ID 13: 4, 3, 1, 2, 0, 
+ID 14: 2, 0, 0, 1, 3, 
+ID 15: 5, 3, 2, 4, 1, 
+ID 16: 4, 1, 3, 5, 2, 
+ID 17: 5, 3, 4, 2, 1, 
+ID 18: 1, 0, 2, 0, 3, 
+ID 19: 3, 2, 0, 1, 4, 
+ID 20: 2, 3, 5, 1, 4, 
+ID 21: 1, 3, 2, 4, 5, 
+ID 22: 5, 1, 3, 2, 4, 
+ID 23: 2, 1, 0, 0, 3, 
+ID 24: 3, 0, 2, 1, 0, 
+ID 25: 3, 0, 1, 0, 2, 
+ID 26: 2, 1, 0, 0, 3, 
+ID 27: 3, 2, 4, 1, 5, 
+ID 28: 1, 2, 4, 3, 5, 
+ID 29: 1, 0, 2, 0, 3, 
+ID 30: 3, 0, 2, 0, 1, 
+ID 31: 3, 2, 5, 4, 1, 
+ID 32: 4, 2, 3, 1, 5, 
+ID 33: 3, 2, 0, 0, 1, 
+ID 34: 3, 1, 4, 0, 2, 
+ID 35: 2, 0, 0, 3, 1, 
+ID 36: 3, 0, 1, 0, 2, 
+ID 37: 0, 0, 2, 3, 1, 
+ID 38: 4, 1, 3, 0, 2, 
+ID 39: 5, 3, 1, 2, 4, 
+ID 40: 2, 3, 4, 5, 1, 
+ID 41: 2, 0, 1, 4, 3, 
+ID 42: 1, 3, 0, 4, 2, 
+ID 43: 3, 0, 2, 1, 0, 
+ID 44: 5, 2, 3, 1, 4, 
+ID 45: 3, 2, 1, 4, 5, 
+ID 46: 3, 2, 4, 1, 0, 
+ID 47: 2, 1, 3, 0, 0, 
+ID 48: 1, 5, 2, 4, 3, 
+ID 49: 0, 0, 2, 1, 3, 
+ID 50: 1, 2, 5, 4, 3, 
+ID 51: 3, 0, 2, 0, 1, 
+ID 52: 3, 0, 2, 4, 1, 
+ID 53: 3, 4, 1, 2, 5, 
+ID 54: 0, 2, 3, 0, 1, 
+ID 55: 0, 2, 1, 0, 3, 
+ID 56: 1, 5, 4, 2, 3, 
+ID 57: 2, 4, 1, 5, 3, 
+ID 58: 3, 1, 0, 2, 0, 
+ID 59: 3, 1, 0, 2, 4, 
+ID 60: 1, 2, 3, 4, 0, 
+ID 61: 3, 5, 1, 2, 4, 
+ID 62: 1, 3, 2, 0, 0, 
+ID 63: 4, 2, 1, 3, 0, 
+ID 64: 3, 2, 0, 1, 0, 
+ID 65: 0, 4, 1, 3, 2, 
+ID 66: 0, 2, 3, 1, 0, 
+ID 67: 5, 2, 1, 3, 4, 
+ID 68: 0, 1, 3, 0, 2, 
+ID 69: 2, 4, 3, 5, 1, 
+ID 70: 1, 4, 5, 3, 2, 
+ID 71: 5, 1, 4, 3, 2, 
+ID 72: 2, 4, 1, 3, 5, 
+ID 73: 2, 0, 1, 0, 3, 
+ID 74: 1, 3, 2, 0, 0, 
+ID 75: 3, 1, 2, 0, 0, 
+ID 76: 3, 1, 2, 4, 0, 
+ID 77: 1, 3, 0, 4, 2, 
+ID 78: 2, 0, 3, 1, 0, 
+ID 79: 3, 0, 2, 4, 1, 
+ID 80: 1, 2, 4, 5, 3, 
+ID 81: 1, 0, 2, 0, 3, 
+ID 82: 5, 4, 3, 2, 1, 
+ID 83: 1, 0, 0, 3, 2, 
+ID 84: 1, 5, 3, 2, 4, 
+ID 85: 2, 1, 5, 3, 4, 
+ID 86: 4, 0, 1, 3, 2, 
+ID 87: 0, 1, 0, 3, 2, 
+ID 88: 1, 2, 4, 0, 3, 
+ID 89: 4, 5, 3, 1, 2, 
+ID 90: 3, 4, 1, 5, 2, 
+ID 91: 0, 2, 3, 1, 4, 
+ID 92: 4, 3, 1, 0, 2, 
+ID 93: 3, 2, 1, 4, 0, 
+ID 94: 2, 4, 3, 1, 0, 
+ID 95: 1, 4, 3, 2, 5, 
+ID 96: 0, 3, 2, 1, 0, 
+ID 97: 3, 4, 1, 0, 2, 
+ID 98: 2, 0, 3, 1, 0, 
+ID 99: 0, 0, 3, 1, 2, 
+Chuck Lancaster,1,3,11,18,21,28,29,42,48,50,56,60,62,70,74,77,80,81,83,84,88,95,
+Mark Suckerberg,0,2,6,9,10,12,16,22,23,26,34,38,47,58,59,68,71,75,76,85,87,
+Andrew Hero,8,13,25,36,39,41,45,53,55,57,61,63,65,67,72,73,86,90,92,93,97,
+Micheal Ashton,5,7,14,19,20,24,27,32,43,44,46,49,64,66,78,89,91,94,96,98,99,
+Joe Cool,4,15,17,30,31,33,35,37,40,51,52,54,69,79,82,
+Winners: 
 Losers: 
 
+Vote Redistribution Round #1
+Reassigning ballot: 4 looking for the #2 choice.- it was: Micheal Ashton
+Reassigning ballot: 15 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 17 looking for the #2 choice.- it was: Micheal Ashton
+Reassigning ballot: 30 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 31 looking for the #2 choice.- it was: Mark Suckerberg
+Reassigning ballot: 33 looking for the #2 choice.- it was: Mark Suckerberg
+Reassigning ballot: 35 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 37 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 40 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 51 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 52 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 54 looking for the #2 choice.- it was: Mark Suckerberg
+Reassigning ballot: 69 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 79 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 82 looking for the #2 choice.- it was: Micheal Ashton
+Chuck Lancaster,1,3,11,18,21,28,29,42,48,50,56,60,62,70,74,77,80,81,83,84,88,95,35,40,69,
+Mark Suckerberg,0,2,6,9,10,12,16,22,23,26,34,38,47,58,59,68,71,75,76,85,87,31,33,54,
+Andrew Hero,8,13,25,36,39,41,45,53,55,57,61,63,65,67,72,73,86,90,92,93,97,15,30,37,51,52,79,
+Micheal Ashton,5,7,14,19,20,24,27,32,43,44,46,49,64,66,78,89,91,94,96,98,99,4,17,82,
+Joe Cool,
+Winners: 
+Losers: Joe Cool,
+Tie between: Mark Suckerberg, Micheal Ashton, - loser selected to be: Mark Suckerberg
+
+Vote Redistribution Round #2
+Reassigning ballot: 0 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 2 looking for the #2 choice.- it was: Micheal Ashton
+Reassigning ballot: 6 looking for the #2 choice.- it was: Micheal Ashton
+Reassigning ballot: 9 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 10 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 12 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 16 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 22 looking for the #2 choice.- it was: Micheal Ashton
+Reassigning ballot: 23 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 26 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 34 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 38 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 47 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 58 looking for the #2 choice.- it was: Micheal Ashton
+Reassigning ballot: 59 looking for the #2 choice.- it was: Micheal Ashton
+Reassigning ballot: 68 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 71 looking for the #3 choice.- it was: Micheal Ashton
+Reassigning ballot: 75 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 76 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 85 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 87 looking for the #3 choice.- it was: Micheal Ashton
+Reassigning ballot: 31 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 33 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 54 looking for the #3 choice.- it was: Andrew Hero
+Chuck Lancaster,1,3,11,18,21,28,29,42,48,50,56,60,62,70,74,77,80,81,83,84,88,95,35,40,69,9,10,23,26,34,47,85,31,33,
+Mark Suckerberg,
+Andrew Hero,8,13,25,36,39,41,45,53,55,57,61,63,65,67,72,73,86,90,92,93,97,15,30,37,51,52,79,0,12,16,38,68,75,76,54,
+Micheal Ashton,5,7,14,19,20,24,27,32,43,44,46,49,64,66,78,89,91,94,96,98,99,4,17,82,2,6,22,58,59,71,87,
+Joe Cool,
+Winners: 
+Losers: Joe Cool,Mark Suckerberg,
+
+Vote Redistribution Round #3
+Reassigning ballot: 5 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 7 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 14 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 19 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 20 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 24 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 27 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 32 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 43 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 44 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 46 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 49 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 64 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 66 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 78 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 89 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 91 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 94 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 96 looking for the #2 choice.- it was: Andrew Hero
+Reassigning ballot: 98 looking for the #2 choice.- it was: Chuck Lancaster
+Reassigning ballot: 99 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 4 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 17 looking for the #4 choice.- it was: Andrew Hero
+Reassigning ballot: 82 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 2 looking for the #4 choice.- it was: Chuck Lancaster
+Reassigning ballot: 6 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 22 looking for the #3 choice.- it was: Andrew Hero
+Reassigning ballot: 58 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 59 looking for the #3 choice.- it was: Chuck Lancaster
+Reassigning ballot: 71 looking for the #4 choice.- it was: Andrew Hero
+Andrew Hero hit Droop quota- adding to winners list
+Chuck Lancaster,1,3,11,18,21,28,29,42,48,50,56,60,62,70,74,77,80,81,83,84,88,95,35,40,69,9,10,23,26,34,47,85,31,33,5,14,19,20,27,46,64,78,94,98,4,2,58,59,
+Mark Suckerberg,
+Andrew Hero,8,13,25,36,39,41,45,53,55,57,61,63,65,67,72,73,86,90,92,93,97,15,30,37,51,52,79,0,12,16,38,68,75,76,54,7,24,32,43,44,49,66,89,91,96,99,17,82,6,22,71,
+Micheal Ashton,
+Joe Cool,
+Winners: Andrew Hero,
+Losers: Joe Cool,Mark Suckerberg,Micheal Ashton,
+
 Final Election Results:
-Winners: Mark Suckerberg,
-Losers: Chuck Lancaster,
+Winners: Andrew Hero,
+Losers: Joe Cool,Mark Suckerberg,Micheal Ashton,Chuck Lancaster,
