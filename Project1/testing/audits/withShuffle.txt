@@ -4,254 +4,254 @@ Winners: Joe Cool
 Losers: Andrew Hero, Chuck Lancaster, Mark Suckerberg, Micheal Ashton
 
 Below is input ballot information: 
-ID 0: 1,5,3,4,2
-ID 1: ,2,1,,3
-ID 2: ,2,,3,1
-ID 3: 5,3,4,1,2
-ID 4: 2,3,4,1,
-ID 5: 3,2,,,1
-ID 6: 1,,,2,3
-ID 7: ,4,2,1,3
-ID 8: ,,3,1,2
-ID 9: 2,3,,1,
-ID 10: ,3,,1,2
-ID 11: 3,4,5,1,2
-ID 12: 2,,,3,1
-ID 13: 3,1,2,5,4
-ID 14: ,1,,3,2
-ID 15: 3,1,,,2
-ID 16: 2,1,4,3,5
-ID 17: 4,2,3,5,1
-ID 18: 1,5,2,3,4
-ID 19: 3,4,5,1,2
-ID 20: ,2,1,3,
-ID 21: 2,5,4,3,1
-ID 22: ,3,1,2,4
-ID 23: 4,,2,3,1
-ID 24: 4,5,2,3,1
-ID 25: 3,2,,,1
-ID 26: 1,,3,2,4
-ID 27: 2,5,3,4,1
-ID 28: 5,4,1,2,3
-ID 29: ,1,,2,3
-ID 30: 1,,2,3,4
-ID 31: 3,1,4,,2
-ID 32: 3,4,2,1,
-ID 33: 4,3,,2,1
-ID 34: 4,2,3,5,1
-ID 35: ,3,2,4,1
-ID 36: 1,3,4,5,2
+ID 0: 5,2,3,1,4
+ID 1: 1,5,4,2,3
+ID 2: 2,3,4,1,
+ID 3: 1,5,3,4,2
+ID 4: 2,3,,,1
+ID 5: 4,3,1,,2
+ID 6: ,3,2,4,1
+ID 7: 1,,,2,3
+ID 8: 3,,1,4,2
+ID 9: 4,1,2,,3
+ID 10: ,2,1,3,
+ID 11: 4,5,3,1,2
+ID 12: 5,3,4,1,2
+ID 13: 1,2,5,3,4
+ID 14: 2,3,,4,1
+ID 15: 3,,1,2,
+ID 16: 3,5,1,4,2
+ID 17: 3,,1,,2
+ID 18: 3,1,5,4,2
+ID 19: 3,,,1,2
+ID 20: ,4,2,1,3
+ID 21: ,,3,1,2
+ID 22: 3,1,2,5,4
+ID 23: ,2,,1,3
+ID 24: 4,1,,3,2
+ID 25: 3,4,5,1,2
+ID 26: 2,5,3,4,1
+ID 27: 4,3,5,1,2
+ID 28: 2,1,4,3,5
+ID 29: 2,3,,1,
+ID 30: 1,4,2,3,
+ID 31: 1,5,2,3,4
+ID 32: 3,,1,,2
+ID 33: ,3,1,2,4
+ID 34: 4,3,,2,1
+ID 35: ,1,,3,2
+ID 36: 1,,3,2,4
 ID 37: 2,4,3,1,
-ID 38: 1,4,2,,3
-ID 39: 2,3,5,1,4
-ID 40: 4,3,5,1,2
-ID 41: 5,2,3,4,1
-ID 42: 1,5,3,4,2
-ID 43: 2,3,,4,1
-ID 44: 1,2,5,3,4
-ID 45: 4,,3,2,1
-ID 46: ,1,3,,2
-ID 47: 3,2,,,1
-ID 48: 2,3,4,,1
-ID 49: 3,1,5,2,4
-ID 50: 5,3,4,2,1
-ID 51: 1,3,2,4,
-ID 52: 3,,1,,2
-ID 53: 5,2,3,4,1
-ID 54: 2,1,4,,3
-ID 55: 1,5,3,4,2
-ID 56: 4,3,5,1,2
-ID 57: 2,3,,1,
-ID 58: 2,,1,,3
-ID 59: 3,1,5,4,2
-ID 60: 3,,,1,2
-ID 61: ,1,2,,3
-ID 62: ,2,,3,1
-ID 63: ,3,4,2,1
-ID 64: 3,1,2,5,4
-ID 65: 2,1,,3,4
-ID 66: 2,3,,,1
-ID 67: 1,2,,,3
-ID 68: 1,,,3,2
-ID 69: 2,,,3,1
-ID 70: 3,,1,,2
-ID 71: 4,1,,3,2
-ID 72: 4,1,5,2,3
-ID 73: 1,5,4,2,3
+ID 38: 3,1,5,2,4
+ID 39: 4,1,5,3,2
+ID 40: 5,4,3,2,1
+ID 41: 1,2,,,3
+ID 42: ,2,,3,1
+ID 43: ,3,,1,2
+ID 44: 4,1,5,2,3
+ID 45: ,,2,3,1
+ID 46: 5,3,4,2,1
+ID 47: 2,3,4,,1
+ID 48: 1,3,2,,
+ID 49: 2,3,,1,
+ID 50: 1,5,4,2,3
+ID 51: 1,4,2,,3
+ID 52: 2,1,,3,
+ID 53: 3,2,,,1
+ID 54: 5,2,4,3,1
+ID 55: 3,2,4,5,1
+ID 56: 1,5,3,4,2
+ID 57: ,3,4,2,1
+ID 58: ,4,1,2,3
+ID 59: 1,5,3,4,2
+ID 60: ,3,2,,1
+ID 61: 3,2,,,1
+ID 62: 1,,,3,2
+ID 63: 1,,2,3,4
+ID 64: ,1,2,,3
+ID 65: 4,5,2,3,1
+ID 66: 4,1,2,5,3
+ID 67: 2,,,3,1
+ID 68: 3,2,,,1
+ID 69: 3,1,4,,2
+ID 70: ,2,,3,1
+ID 71: 3,4,5,1,2
+ID 72: 2,3,5,1,4
+ID 73: 5,2,3,4,1
 ID 74: 2,3,5,4,1
-ID 75: ,,2,3,1
-ID 76: 1,5,4,2,3
-ID 77: 1,3,,2,
-ID 78: 3,,1,2,
-ID 79: 2,3,5,1,4
-ID 80: 3,5,1,4,2
-ID 81: ,4,1,2,3
-ID 82: 3,,1,4,2
-ID 83: 3,,,1,2
-ID 84: 5,4,3,2,1
-ID 85: 1,3,2,,
-ID 86: 2,3,1,,4
-ID 87: 1,2,,3,
-ID 88: 1,4,2,3,
-ID 89: 4,1,2,,3
-ID 90: 4,5,3,1,2
-ID 91: ,2,,1,3
-ID 92: 5,2,3,1,4
-ID 93: 3,2,4,5,1
-ID 94: 4,1,5,3,2
-ID 95: 2,1,,3,
-ID 96: ,3,2,,1
-ID 97: 4,1,2,5,3
-ID 98: 4,3,1,,2
-ID 99: 5,2,4,3,1
+ID 75: 5,2,3,4,1
+ID 76: 3,4,2,1,
+ID 77: 2,,,3,1
+ID 78: 3,1,,,2
+ID 79: ,1,,2,3
+ID 80: 2,,1,,3
+ID 81: 1,3,4,5,2
+ID 82: 2,5,4,3,1
+ID 83: 1,3,2,4,
+ID 84: 3,,,1,2
+ID 85: 4,2,3,5,1
+ID 86: ,1,3,,2
+ID 87: 1,3,,2,
+ID 88: 4,,2,3,1
+ID 89: 1,2,,3,
+ID 90: 2,3,1,,4
+ID 91: 5,4,1,2,3
+ID 92: 4,,3,2,1
+ID 93: 3,1,2,5,4
+ID 94: 2,1,4,,3
+ID 95: 4,2,3,5,1
+ID 96: 4,3,5,1,2
+ID 97: ,2,1,,3
+ID 98: 2,1,,3,4
+ID 99: 2,3,5,1,4
 
 [Initial Vote Distribution]
-Ballot #0 assigned to Chuck Lancaster
-Ballot #1 assigned to Andrew Hero
-Ballot #2 assigned to Joe Cool
-Ballot #3 assigned to Micheal Ashton
-Ballot #4 assigned to Micheal Ashton
-Ballot #5 assigned to Joe Cool
-Ballot #6 assigned to Chuck Lancaster
-Ballot #7 assigned to Micheal Ashton
-Ballot #8 assigned to Micheal Ashton
-Ballot #9 assigned to Micheal Ashton
-Ballot #10 assigned to Micheal Ashton
+Ballot #0 assigned to Micheal Ashton
+Ballot #1 assigned to Chuck Lancaster
+Ballot #2 assigned to Micheal Ashton
+Ballot #3 assigned to Chuck Lancaster
+Ballot #4 assigned to Joe Cool
+Ballot #5 assigned to Andrew Hero
+Ballot #6 assigned to Joe Cool
+Ballot #7 assigned to Chuck Lancaster
+Ballot #8 assigned to Andrew Hero
+Ballot #9 assigned to Mark Suckerberg
+Ballot #10 assigned to Andrew Hero
 Ballot #11 assigned to Micheal Ashton
-Ballot #12 assigned to Joe Cool
-Ballot #13 assigned to Mark Suckerberg
-Ballot #14 assigned to Mark Suckerberg
-Ballot #15 assigned to Mark Suckerberg
-Ballot #16 assigned to Mark Suckerberg
-Ballot #17 assigned to Joe Cool
-Ballot #18 assigned to Chuck Lancaster
+Ballot #12 assigned to Micheal Ashton
+Ballot #13 assigned to Chuck Lancaster
+Ballot #14 assigned to Joe Cool
+Ballot #15 assigned to Andrew Hero
+Ballot #16 assigned to Andrew Hero
+Ballot #17 assigned to Andrew Hero
+Ballot #18 assigned to Mark Suckerberg
 Ballot #19 assigned to Micheal Ashton
-Ballot #20 assigned to Andrew Hero
-Ballot #21 assigned to Joe Cool
-Ballot #22 assigned to Andrew Hero
-Ballot #23 assigned to Joe Cool
-Ballot #24 assigned to Joe Cool
-Ballot #25 assigned to Joe Cool
-Ballot #26 assigned to Chuck Lancaster
-Ballot #27 assigned to Joe Cool
-Ballot #28 assigned to Andrew Hero
-Ballot #29 assigned to Mark Suckerberg
+Ballot #20 assigned to Micheal Ashton
+Ballot #21 assigned to Micheal Ashton
+Ballot #22 assigned to Mark Suckerberg
+Ballot #23 assigned to Micheal Ashton
+Ballot #24 assigned to Mark Suckerberg
+Ballot #25 assigned to Micheal Ashton
+Ballot #26 assigned to Joe Cool
+Ballot #27 assigned to Micheal Ashton
+Ballot #28 assigned to Mark Suckerberg
+Ballot #29 assigned to Micheal Ashton
 Ballot #30 assigned to Chuck Lancaster
-Ballot #31 assigned to Mark Suckerberg
-Ballot #32 assigned to Micheal Ashton
-Ballot #33 assigned to Joe Cool
+Ballot #31 assigned to Chuck Lancaster
+Ballot #32 assigned to Andrew Hero
+Ballot #33 assigned to Andrew Hero
 Ballot #34 assigned to Joe Cool
-Ballot #35 assigned to Joe Cool
+Ballot #35 assigned to Mark Suckerberg
 Ballot #36 assigned to Chuck Lancaster
 Ballot #37 assigned to Micheal Ashton
-Ballot #38 assigned to Chuck Lancaster
-Ballot #39 assigned to Micheal Ashton
-Ballot #40 assigned to Micheal Ashton
-Ballot #41 assigned to Joe Cool
-Ballot #42 assigned to Chuck Lancaster
-Ballot #43 assigned to Joe Cool
-Ballot #44 assigned to Chuck Lancaster
+Ballot #38 assigned to Mark Suckerberg
+Ballot #39 assigned to Mark Suckerberg
+Ballot #40 assigned to Joe Cool
+Ballot #41 assigned to Chuck Lancaster
+Ballot #42 assigned to Joe Cool
+Ballot #43 assigned to Micheal Ashton
+Ballot #44 assigned to Mark Suckerberg
 Ballot #45 assigned to Joe Cool
-Ballot #46 assigned to Mark Suckerberg
+Ballot #46 assigned to Joe Cool
 Ballot #47 assigned to Joe Cool
-Ballot #48 assigned to Joe Cool
-Ballot #49 assigned to Mark Suckerberg
-Ballot #50 assigned to Joe Cool
+Ballot #48 assigned to Chuck Lancaster
+Ballot #49 assigned to Micheal Ashton
+Ballot #50 assigned to Chuck Lancaster
 Ballot #51 assigned to Chuck Lancaster
-Ballot #52 assigned to Andrew Hero
+Ballot #52 assigned to Mark Suckerberg
 Ballot #53 assigned to Joe Cool
-Ballot #54 assigned to Mark Suckerberg
-Ballot #55 assigned to Chuck Lancaster
-Ballot #56 assigned to Micheal Ashton
-Ballot #57 assigned to Micheal Ashton
+Ballot #54 assigned to Joe Cool
+Ballot #55 assigned to Joe Cool
+Ballot #56 assigned to Chuck Lancaster
+Ballot #57 assigned to Joe Cool
 Ballot #58 assigned to Andrew Hero
-Ballot #59 assigned to Mark Suckerberg
-Ballot #60 assigned to Micheal Ashton
-Ballot #61 assigned to Mark Suckerberg
-Ballot #62 assigned to Joe Cool
-Ballot #63 assigned to Joe Cool
+Ballot #59 assigned to Chuck Lancaster
+Ballot #60 assigned to Joe Cool
+Ballot #61 assigned to Joe Cool
+Ballot #62 assigned to Chuck Lancaster
+Ballot #63 assigned to Chuck Lancaster
 Ballot #64 assigned to Mark Suckerberg
-Ballot #65 assigned to Mark Suckerberg
-Ballot #66 assigned to Joe Cool
-Ballot #67 assigned to Chuck Lancaster
-Ballot #68 assigned to Chuck Lancaster
-Ballot #69 assigned to Joe Cool
-Ballot #70 assigned to Andrew Hero
-Ballot #71 assigned to Mark Suckerberg
-Ballot #72 assigned to Mark Suckerberg
-Ballot #73 assigned to Chuck Lancaster
+Ballot #65 assigned to Joe Cool
+Ballot #66 assigned to Mark Suckerberg
+Ballot #67 assigned to Joe Cool
+Ballot #68 assigned to Joe Cool
+Ballot #69 assigned to Mark Suckerberg
+Ballot #70 assigned to Joe Cool
+Ballot #71 assigned to Micheal Ashton
+Ballot #72 assigned to Micheal Ashton
+Ballot #73 assigned to Joe Cool
 Ballot #74 assigned to Joe Cool
 Ballot #75 assigned to Joe Cool
-Ballot #76 assigned to Chuck Lancaster
-Ballot #77 assigned to Chuck Lancaster
-Ballot #78 assigned to Andrew Hero
-Ballot #79 assigned to Micheal Ashton
+Ballot #76 assigned to Micheal Ashton
+Ballot #77 assigned to Joe Cool
+Ballot #78 assigned to Mark Suckerberg
+Ballot #79 assigned to Mark Suckerberg
 Ballot #80 assigned to Andrew Hero
-Ballot #81 assigned to Andrew Hero
-Ballot #82 assigned to Andrew Hero
-Ballot #83 assigned to Micheal Ashton
-Ballot #84 assigned to Joe Cool
-Ballot #85 assigned to Chuck Lancaster
-Ballot #86 assigned to Andrew Hero
+Ballot #81 assigned to Chuck Lancaster
+Ballot #82 assigned to Joe Cool
+Ballot #83 assigned to Chuck Lancaster
+Ballot #84 assigned to Micheal Ashton
+Ballot #85 assigned to Joe Cool
+Ballot #86 assigned to Mark Suckerberg
 Ballot #87 assigned to Chuck Lancaster
-Ballot #88 assigned to Chuck Lancaster
-Ballot #89 assigned to Mark Suckerberg
-Ballot #90 assigned to Micheal Ashton
-Ballot #91 assigned to Micheal Ashton
-Ballot #92 assigned to Micheal Ashton
-Ballot #93 assigned to Joe Cool
+Ballot #88 assigned to Joe Cool
+Ballot #89 assigned to Chuck Lancaster
+Ballot #90 assigned to Andrew Hero
+Ballot #91 assigned to Andrew Hero
+Ballot #92 assigned to Joe Cool
+Ballot #93 assigned to Mark Suckerberg
 Ballot #94 assigned to Mark Suckerberg
-Ballot #95 assigned to Mark Suckerberg
-Ballot #96 assigned to Joe Cool
-Ballot #97 assigned to Mark Suckerberg
-Ballot #98 assigned to Andrew Hero
-Ballot #99 assigned to Joe Cool
+Ballot #95 assigned to Joe Cool
+Ballot #96 assigned to Micheal Ashton
+Ballot #97 assigned to Andrew Hero
+Ballot #98 assigned to Mark Suckerberg
+Ballot #99 assigned to Micheal Ashton
 
 Current Vote Assignment Breakdown:
-Chuck Lancaster: 0, 6, 18, 26, 30, 36, 38, 42, 44, 51, 55, 67, 68, 73, 76, 77, 85, 87, 88
-Mark Suckerberg: 13, 14, 15, 16, 29, 31, 46, 49, 54, 59, 61, 64, 65, 71, 72, 89, 94, 95, 97
-Andrew Hero: 1, 20, 22, 28, 52, 58, 70, 78, 80, 81, 82, 86, 98
-Micheal Ashton: 3, 4, 7, 8, 9, 10, 11, 19, 32, 37, 39, 40, 56, 57, 60, 79, 83, 90, 91, 92
-Joe Cool: 2, 5, 12, 17, 21, 23, 24, 25, 27, 33, 34, 35, 41, 43, 45, 47, 48, 50, 53, 62, 63, 66, 69, 74, 75, 84, 93, 96, 99
+Chuck Lancaster: 1, 3, 7, 13, 30, 31, 36, 41, 48, 50, 51, 56, 59, 62, 63, 81, 83, 87, 89
+Mark Suckerberg: 9, 18, 22, 24, 28, 35, 38, 39, 44, 52, 64, 66, 69, 78, 79, 86, 93, 94, 98
+Andrew Hero: 5, 8, 10, 15, 16, 17, 32, 33, 58, 80, 90, 91, 97
+Micheal Ashton: 0, 2, 11, 12, 19, 20, 21, 23, 25, 27, 29, 37, 43, 49, 71, 72, 76, 84, 96, 99
+Joe Cool: 4, 6, 14, 26, 34, 40, 42, 45, 46, 47, 53, 54, 55, 57, 60, 61, 65, 67, 68, 70, 73, 74, 75, 77, 82, 85, 88, 92, 95
 
 Winners: 
 Losers: 
 
 [Vote Redistribution Round #1]
 Loser for this redistribution round selected to be Andrew Hero, redistributing their ballots.
-	Reassigning ballot #1, Mark Suckerberg is the #2 choice.
-Ballot #1 assigned to Mark Suckerberg
-	Reassigning ballot #20, Mark Suckerberg is the #2 choice.
-Ballot #20 assigned to Mark Suckerberg
-	Reassigning ballot #22, Micheal Ashton is the #2 choice.
-Ballot #22 assigned to Micheal Ashton
-	Reassigning ballot #28, Micheal Ashton is the #2 choice.
-Ballot #28 assigned to Micheal Ashton
-	Reassigning ballot #52, Joe Cool is the #2 choice.
-Ballot #52 assigned to Joe Cool
-	Reassigning ballot #58, Chuck Lancaster is the #2 choice.
-Ballot #58 assigned to Chuck Lancaster
-	Reassigning ballot #70, Joe Cool is the #2 choice.
-Ballot #70 assigned to Joe Cool
-	Reassigning ballot #78, Micheal Ashton is the #2 choice.
-Ballot #78 assigned to Micheal Ashton
-	Reassigning ballot #80, Joe Cool is the #2 choice.
-Ballot #80 assigned to Joe Cool
-	Reassigning ballot #81, Micheal Ashton is the #2 choice.
-Ballot #81 assigned to Micheal Ashton
-	Reassigning ballot #82, Joe Cool is the #2 choice.
-Ballot #82 assigned to Joe Cool
-	Reassigning ballot #86, Chuck Lancaster is the #2 choice.
-Ballot #86 assigned to Chuck Lancaster
-	Reassigning ballot #98, Joe Cool is the #2 choice.
-Ballot #98 assigned to Joe Cool
+	Reassigning ballot #5, Joe Cool is the #2 choice.
+Ballot #5 assigned to Joe Cool
+	Reassigning ballot #8, Joe Cool is the #2 choice.
+Ballot #8 assigned to Joe Cool
+	Reassigning ballot #10, Mark Suckerberg is the #2 choice.
+Ballot #10 assigned to Mark Suckerberg
+	Reassigning ballot #15, Micheal Ashton is the #2 choice.
+Ballot #15 assigned to Micheal Ashton
+	Reassigning ballot #16, Joe Cool is the #2 choice.
+Ballot #16 assigned to Joe Cool
+	Reassigning ballot #17, Joe Cool is the #2 choice.
+Ballot #17 assigned to Joe Cool
+	Reassigning ballot #32, Joe Cool is the #2 choice.
+Ballot #32 assigned to Joe Cool
+	Reassigning ballot #33, Micheal Ashton is the #2 choice.
+Ballot #33 assigned to Micheal Ashton
+	Reassigning ballot #58, Micheal Ashton is the #2 choice.
+Ballot #58 assigned to Micheal Ashton
+	Reassigning ballot #80, Chuck Lancaster is the #2 choice.
+Ballot #80 assigned to Chuck Lancaster
+	Reassigning ballot #90, Chuck Lancaster is the #2 choice.
+Ballot #90 assigned to Chuck Lancaster
+	Reassigning ballot #91, Micheal Ashton is the #2 choice.
+Ballot #91 assigned to Micheal Ashton
+	Reassigning ballot #97, Mark Suckerberg is the #2 choice.
+Ballot #97 assigned to Mark Suckerberg
 
 Current Vote Assignment Breakdown:
-Chuck Lancaster: 0, 6, 18, 26, 30, 36, 38, 42, 44, 51, 55, 67, 68, 73, 76, 77, 85, 87, 88, 58, 86
-Mark Suckerberg: 13, 14, 15, 16, 29, 31, 46, 49, 54, 59, 61, 64, 65, 71, 72, 89, 94, 95, 97, 1, 20
+Chuck Lancaster: 1, 3, 7, 13, 30, 31, 36, 41, 48, 50, 51, 56, 59, 62, 63, 81, 83, 87, 89, 80, 90
+Mark Suckerberg: 9, 18, 22, 24, 28, 35, 38, 39, 44, 52, 64, 66, 69, 78, 79, 86, 93, 94, 98, 10, 97
 Andrew Hero: 
-Micheal Ashton: 3, 4, 7, 8, 9, 10, 11, 19, 32, 37, 39, 40, 56, 57, 60, 79, 83, 90, 91, 92, 22, 28, 78, 81
-Joe Cool: 2, 5, 12, 17, 21, 23, 24, 25, 27, 33, 34, 35, 41, 43, 45, 47, 48, 50, 53, 62, 63, 66, 69, 74, 75, 84, 93, 96, 99, 52, 70, 80, 82, 98
+Micheal Ashton: 0, 2, 11, 12, 19, 20, 21, 23, 25, 27, 29, 37, 43, 49, 71, 72, 76, 84, 96, 99, 15, 33, 58, 91
+Joe Cool: 4, 6, 14, 26, 34, 40, 42, 45, 46, 47, 53, 54, 55, 57, 60, 61, 65, 67, 68, 70, 73, 74, 75, 77, 82, 85, 88, 92, 95, 5, 8, 16, 17, 32
 
 Winners: 
 Losers: Andrew Hero
@@ -259,113 +259,111 @@ Losers: Andrew Hero
 [Vote Redistribution Round #2]
 Tie between: Chuck Lancaster, Mark Suckerberg, - loser selected to be: Chuck Lancaster
 Loser for this redistribution round selected to be Chuck Lancaster, redistributing their ballots.
-	Reassigning ballot #0, Joe Cool is the #2 choice.
-Ballot #0 assigned to Joe Cool
-	Reassigning ballot #6, Micheal Ashton is the #2 choice.
-Ballot #6 assigned to Micheal Ashton
-	Reassigning ballot #18, Micheal Ashton is the #3 choice.
-Ballot #18 assigned to Micheal Ashton
-	Reassigning ballot #26, Micheal Ashton is the #2 choice.
-Ballot #26 assigned to Micheal Ashton
+	Reassigning ballot #1, Micheal Ashton is the #2 choice.
+Ballot #1 assigned to Micheal Ashton
+	Reassigning ballot #3, Joe Cool is the #2 choice.
+Ballot #3 assigned to Joe Cool
+	Reassigning ballot #7, Micheal Ashton is the #2 choice.
+Ballot #7 assigned to Micheal Ashton
+	Reassigning ballot #13, Mark Suckerberg is the #2 choice.
+Ballot #13 assigned to Mark Suckerberg
 	Reassigning ballot #30, Micheal Ashton is the #3 choice.
 Ballot #30 assigned to Micheal Ashton
-	Reassigning ballot #36, Joe Cool is the #2 choice.
-Ballot #36 assigned to Joe Cool
-	Reassigning ballot #38, Joe Cool is the #3 choice.
-Ballot #38 assigned to Joe Cool
-	Reassigning ballot #42, Joe Cool is the #2 choice.
-Ballot #42 assigned to Joe Cool
-	Reassigning ballot #44, Mark Suckerberg is the #2 choice.
-Ballot #44 assigned to Mark Suckerberg
-	Reassigning ballot #51, Mark Suckerberg is the #3 choice.
-Ballot #51 assigned to Mark Suckerberg
-	Reassigning ballot #55, Joe Cool is the #2 choice.
-Ballot #55 assigned to Joe Cool
-	Reassigning ballot #67, Mark Suckerberg is the #2 choice.
-Ballot #67 assigned to Mark Suckerberg
-	Reassigning ballot #68, Joe Cool is the #2 choice.
-Ballot #68 assigned to Joe Cool
-	Reassigning ballot #73, Micheal Ashton is the #2 choice.
-Ballot #73 assigned to Micheal Ashton
-	Reassigning ballot #76, Micheal Ashton is the #2 choice.
-Ballot #76 assigned to Micheal Ashton
-	Reassigning ballot #77, Micheal Ashton is the #2 choice.
-Ballot #77 assigned to Micheal Ashton
-	Reassigning ballot #85, Mark Suckerberg is the #3 choice.
-Ballot #85 assigned to Mark Suckerberg
-	Reassigning ballot #87, Mark Suckerberg is the #2 choice.
-Ballot #87 assigned to Mark Suckerberg
-	Reassigning ballot #88, Micheal Ashton is the #3 choice.
-Ballot #88 assigned to Micheal Ashton
-	Reassigning ballot #58, Joe Cool is the #3 choice.
-Ballot #58 assigned to Joe Cool
-	Reassigning ballot #86, Mark Suckerberg is the #3 choice.
-Ballot #86 assigned to Mark Suckerberg
+	Reassigning ballot #31, Micheal Ashton is the #3 choice.
+Ballot #31 assigned to Micheal Ashton
+	Reassigning ballot #36, Micheal Ashton is the #2 choice.
+Ballot #36 assigned to Micheal Ashton
+	Reassigning ballot #41, Mark Suckerberg is the #2 choice.
+Ballot #41 assigned to Mark Suckerberg
+	Reassigning ballot #48, Mark Suckerberg is the #3 choice.
+Ballot #48 assigned to Mark Suckerberg
+	Reassigning ballot #50, Micheal Ashton is the #2 choice.
+Ballot #50 assigned to Micheal Ashton
+	Reassigning ballot #51, Joe Cool is the #3 choice.
+Ballot #51 assigned to Joe Cool
+	Reassigning ballot #56, Joe Cool is the #2 choice.
+Ballot #56 assigned to Joe Cool
+	Reassigning ballot #59, Joe Cool is the #2 choice.
+Ballot #59 assigned to Joe Cool
+	Reassigning ballot #62, Joe Cool is the #2 choice.
+Ballot #62 assigned to Joe Cool
+	Reassigning ballot #63, Micheal Ashton is the #3 choice.
+Ballot #63 assigned to Micheal Ashton
+	Reassigning ballot #81, Joe Cool is the #2 choice.
+Ballot #81 assigned to Joe Cool
+	Reassigning ballot #83, Mark Suckerberg is the #3 choice.
+Ballot #83 assigned to Mark Suckerberg
+	Reassigning ballot #87, Micheal Ashton is the #2 choice.
+Ballot #87 assigned to Micheal Ashton
+	Reassigning ballot #89, Mark Suckerberg is the #2 choice.
+Ballot #89 assigned to Mark Suckerberg
+	Reassigning ballot #80, Joe Cool is the #3 choice.
+Ballot #80 assigned to Joe Cool
+	Reassigning ballot #90, Mark Suckerberg is the #3 choice.
+Ballot #90 assigned to Mark Suckerberg
 
 Current Vote Assignment Breakdown:
 Chuck Lancaster: 
-Mark Suckerberg: 13, 14, 15, 16, 29, 31, 46, 49, 54, 59, 61, 64, 65, 71, 72, 89, 94, 95, 97, 1, 20, 44, 51, 67, 85, 87, 86
+Mark Suckerberg: 9, 18, 22, 24, 28, 35, 38, 39, 44, 52, 64, 66, 69, 78, 79, 86, 93, 94, 98, 10, 97, 13, 41, 48, 83, 89, 90
 Andrew Hero: 
-Micheal Ashton: 3, 4, 7, 8, 9, 10, 11, 19, 32, 37, 39, 40, 56, 57, 60, 79, 83, 90, 91, 92, 22, 28, 78, 81, 6, 18, 26, 30, 73, 76, 77, 88
-Joe Cool: 2, 5, 12, 17, 21, 23, 24, 25, 27, 33, 34, 35, 41, 43, 45, 47, 48, 50, 53, 62, 63, 66, 69, 74, 75, 84, 93, 96, 99, 52, 70, 80, 82, 98, 0, 36, 38, 42, 55, 68, 58
+Micheal Ashton: 0, 2, 11, 12, 19, 20, 21, 23, 25, 27, 29, 37, 43, 49, 71, 72, 76, 84, 96, 99, 15, 33, 58, 91, 1, 7, 30, 31, 36, 50, 63, 87
+Joe Cool: 4, 6, 14, 26, 34, 40, 42, 45, 46, 47, 53, 54, 55, 57, 60, 61, 65, 67, 68, 70, 73, 74, 75, 77, 82, 85, 88, 92, 95, 5, 8, 16, 17, 32, 3, 51, 56, 59, 62, 81, 80
 
 Winners: 
 Losers: Andrew Hero, Chuck Lancaster
 
 [Vote Redistribution Round #3]
 Loser for this redistribution round selected to be Mark Suckerberg, redistributing their ballots.
-	Reassigning ballot #13, Joe Cool is the #4 choice.
-Ballot #13 assigned to Joe Cool
-	Reassigning ballot #14, Joe Cool is the #2 choice.
-Ballot #14 assigned to Joe Cool
-	Reassigning ballot #15, Joe Cool is the #2 choice.
-Ballot #15 assigned to Joe Cool
-	Reassigning ballot #16, Micheal Ashton is the #3 choice.
-Ballot #16 assigned to Micheal Ashton
-	Reassigning ballot #29, Micheal Ashton is the #2 choice.
-Ballot #29 assigned to Micheal Ashton
-	Reassigning ballot #31, Joe Cool is the #2 choice.
-Ballot #31 assigned to Joe Cool
-	Reassigning ballot #46, Joe Cool is the #2 choice.
-Ballot #46 assigned to Joe Cool
-	Reassigning ballot #49, Micheal Ashton is the #2 choice.
-Ballot #49 assigned to Micheal Ashton
-	Reassigning ballot #54, Joe Cool is the #3 choice.
-Ballot #54 assigned to Joe Cool
-	Reassigning ballot #59, Joe Cool is the #2 choice.
-Ballot #59 assigned to Joe Cool
-	Reassigning ballot #61, Joe Cool is the #3 choice.
-Ballot #61 assigned to Joe Cool
-	Reassigning ballot #64, Joe Cool is the #4 choice.
-Ballot #64 assigned to Joe Cool
-	Reassigning ballot #65, Micheal Ashton is the #3 choice.
-Ballot #65 assigned to Micheal Ashton
-	Reassigning ballot #71, Joe Cool is the #2 choice.
-Ballot #71 assigned to Joe Cool
-	Joe Cool hit Droop quota- adding to winners list
-	Reassigning ballot #72, Micheal Ashton is the #2 choice.
-Ballot #72 assigned to Micheal Ashton
-	Reassigning ballot #94, Micheal Ashton is the #3 choice.
-Ballot #94 assigned to Micheal Ashton
-	Reassigning ballot #95, Micheal Ashton is the #3 choice.
-Ballot #95 assigned to Micheal Ashton
-	Reassigning ballot #97, Micheal Ashton is the #5 choice.
-Ballot #97 assigned to Micheal Ashton
-	Reassigning ballot #20, Micheal Ashton is the #3 choice.
-Ballot #20 assigned to Micheal Ashton
-	Reassigning ballot #44, Micheal Ashton is the #3 choice.
+	Reassigning ballot #9, Joe Cool is the #3 choice.
+Ballot #9 assigned to Joe Cool
+	Reassigning ballot #18, Joe Cool is the #2 choice.
+Ballot #18 assigned to Joe Cool
+	Reassigning ballot #22, Joe Cool is the #4 choice.
+Ballot #22 assigned to Joe Cool
+	Reassigning ballot #24, Joe Cool is the #2 choice.
+Ballot #24 assigned to Joe Cool
+	Reassigning ballot #28, Micheal Ashton is the #3 choice.
+Ballot #28 assigned to Micheal Ashton
+	Reassigning ballot #35, Joe Cool is the #2 choice.
+Ballot #35 assigned to Joe Cool
+	Reassigning ballot #38, Micheal Ashton is the #2 choice.
+Ballot #38 assigned to Micheal Ashton
+	Reassigning ballot #39, Joe Cool is the #2 choice.
+Ballot #39 assigned to Joe Cool
+	Reassigning ballot #44, Micheal Ashton is the #2 choice.
 Ballot #44 assigned to Micheal Ashton
-	Reassigning ballot #51, Micheal Ashton is the #4 choice.
-Ballot #51 assigned to Micheal Ashton
-	Reassigning ballot #87, Micheal Ashton is the #3 choice.
-Ballot #87 assigned to Micheal Ashton
+	Reassigning ballot #52, Micheal Ashton is the #3 choice.
+Ballot #52 assigned to Micheal Ashton
+	Reassigning ballot #64, Joe Cool is the #3 choice.
+Ballot #64 assigned to Joe Cool
+	Reassigning ballot #66, Joe Cool is the #3 choice.
+Ballot #66 assigned to Joe Cool
+	Reassigning ballot #69, Joe Cool is the #2 choice.
+Ballot #69 assigned to Joe Cool
+	Reassigning ballot #78, Joe Cool is the #2 choice.
+Ballot #78 assigned to Joe Cool
+	Joe Cool hit Droop quota- adding to winners list
+	Reassigning ballot #79, Micheal Ashton is the #2 choice.
+Ballot #79 assigned to Micheal Ashton
+	Reassigning ballot #93, Micheal Ashton is the #5 choice.
+Ballot #93 assigned to Micheal Ashton
+	Reassigning ballot #98, Micheal Ashton is the #3 choice.
+Ballot #98 assigned to Micheal Ashton
+	Reassigning ballot #10, Micheal Ashton is the #3 choice.
+Ballot #10 assigned to Micheal Ashton
+	Reassigning ballot #13, Micheal Ashton is the #3 choice.
+Ballot #13 assigned to Micheal Ashton
+	Reassigning ballot #83, Micheal Ashton is the #4 choice.
+Ballot #83 assigned to Micheal Ashton
+	Reassigning ballot #89, Micheal Ashton is the #3 choice.
+Ballot #89 assigned to Micheal Ashton
 
 Current Vote Assignment Breakdown:
 Chuck Lancaster: 
 Mark Suckerberg: 
 Andrew Hero: 
-Micheal Ashton: 3, 4, 7, 8, 9, 10, 11, 19, 32, 37, 39, 40, 56, 57, 60, 79, 83, 90, 91, 92, 22, 28, 78, 81, 6, 18, 26, 30, 73, 76, 77, 88, 16, 29, 49, 65, 72, 94, 95, 97, 20, 44, 51, 87
-Joe Cool: 2, 5, 12, 17, 21, 23, 24, 25, 27, 33, 34, 35, 41, 43, 45, 47, 48, 50, 53, 62, 63, 66, 69, 74, 75, 84, 93, 96, 99, 52, 70, 80, 82, 98, 0, 36, 38, 42, 55, 68, 58, 13, 14, 15, 31, 46, 54, 59, 61, 64, 71
+Micheal Ashton: 0, 2, 11, 12, 19, 20, 21, 23, 25, 27, 29, 37, 43, 49, 71, 72, 76, 84, 96, 99, 15, 33, 58, 91, 1, 7, 30, 31, 36, 50, 63, 87, 28, 38, 44, 52, 79, 93, 98, 10, 13, 83, 89
+Joe Cool: 4, 6, 14, 26, 34, 40, 42, 45, 46, 47, 53, 54, 55, 57, 60, 61, 65, 67, 68, 70, 73, 74, 75, 77, 82, 85, 88, 92, 95, 5, 8, 16, 17, 32, 3, 51, 56, 59, 62, 81, 80, 9, 18, 22, 24, 35, 39, 64, 66, 69, 78
 
 Winners: Joe Cool
 Losers: Andrew Hero, Chuck Lancaster, Mark Suckerberg
