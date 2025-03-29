@@ -418,7 +418,7 @@ Winners:
 Losers: 
 
 [Vote Redistribution Round #1]
-Tie between: Siyang Xiong, Sally Ride, Bill Jones, Alice Mix, Ahmed Mohamed, - loser selected to be: Siyang Xiong
+Tie between: Siyang Xiong, Ahmed Mohamed, Bill Jones, Alice Mix, Sally Ride, - loser selected to be: Siyang Xiong
 Loser for this redistribution round selected to be Siyang Xiong, redistributing their ballots.
 	Reassigning ballot #4, Bill Jones is the #2 choice.
 Ballot #4 assigned to Bill Jones
