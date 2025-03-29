@@ -13,6 +13,23 @@
 // Elections must be processed in under 5 minutes
 #include <chrono>
 
+void userInput(std::vector<std::string> input) {
+    // Use pipe as user input
+    int pipe_fds[2];
+    pipe(pipe_fds);
+    for (const auto& str : input) {
+        write(pipe_fds[1], str.c_str(), str.length());
+    }
+    close(pipe_fds[1]);
+    dup2(pipe_fds[0], STDIN_FILENO);
+    close(pipe_fds[0]);
+}
+
+void restore_stdin_fd(int old_stdin) {
+    // restore the original FILENO
+    dup2(old_stdin, STDIN_FILENO);
+}
+
 class STVTest : public ::testing::Test {
     protected:
         std::vector<std::string> candidates;
@@ -28,6 +45,8 @@ class STVTest : public ::testing::Test {
         std::vector<std::vector<int>> basic_win;
         std::vector<std::vector<int>> winner_reassign_win;
         std::vector<std::vector<int>> loser_reassign_win;
+
+        int old_stdin;
         
     void SetUp() override {
         candidates = {
@@ -66,6 +85,8 @@ class STVTest : public ::testing::Test {
             {6,3,2,4,1,5},
             {1,0,0,0,0,0}
         };
+
+        old_stdin = dup(STDIN_FILENO);
     }
 };
 
@@ -74,7 +95,11 @@ TEST_F(STVTest, BasicWinTest) {
     ballots_basic_win.emplace(candidates, basic_win, false);
     stv_basic_win.emplace(&(ballots_basic_win.value()), 2);
 
+    std::vector<std::string> input_file_name = {"BasicWinTest.txt\n"};
+    userInput(input_file_name);
     stv_basic_win->runElection();
+    restore_stdin_fd(old_stdin);
+
     EXPECT_EQ(stv_basic_win->getBallots(), &(ballots_basic_win.value()));
     EXPECT_EQ(stv_basic_win->getSeats(), 2);
     for (long unsigned int i = 0; i < stv_basic_win->getCandidates().size(); i++) {
@@ -99,7 +124,11 @@ TEST_F(STVTest, WinnerReassignWin) {
     ballots_winner_reassign_win.emplace(candidates, winner_reassign_win, false);
     stv_winner_reassign_win.emplace(&(ballots_winner_reassign_win.value()), 2);
 
+    std::vector<std::string> input_file_name = {"WinnerReassignWin.txt\n"};
+    userInput(input_file_name);
     stv_winner_reassign_win->runElection();
+    restore_stdin_fd(old_stdin);
+
     EXPECT_EQ(stv_winner_reassign_win->getBallots(), &(ballots_winner_reassign_win.value()));
     EXPECT_EQ(stv_winner_reassign_win->getSeats(), 2);
     for (long unsigned int i = 0; i < stv_winner_reassign_win->getCandidates().size(); i++) {
@@ -124,7 +153,11 @@ TEST_F(STVTest, LoserReassignWin) {
     ballots_loser_reassign_win.emplace(candidates, loser_reassign_win, false);
     stv_loser_reassign_win.emplace(&(ballots_loser_reassign_win.value()), 2);
 
+    std::vector<std::string> input_file_name = {"LoserReassignWin.txt\n"};
+    userInput(input_file_name);
     stv_loser_reassign_win->runElection();
+    restore_stdin_fd(old_stdin);
+
     EXPECT_EQ(stv_loser_reassign_win->getBallots(), &(ballots_loser_reassign_win.value()));
     EXPECT_EQ(stv_loser_reassign_win->getSeats(), 2);
     for (long unsigned int i = 0; i < stv_loser_reassign_win->getCandidates().size(); i++) {
@@ -150,7 +183,12 @@ TEST_F(STVTest, DisplayElectionDetailsTest) {
     std::optional<Ballots> ballots;
     ballots.emplace(candidates, basic_win, false);
     stv.emplace(&(ballots.value()), 2);
+
+    std::vector<std::string> input_file_name = {"DisplayElectionDetailsTest.txt\n"};
+    userInput(input_file_name);
     stv->runElection();
+    restore_stdin_fd(old_stdin);
+
     std::string correct = "Please enter a filename for the audit file:\nPlease also include the .txt extension:\nElection type: STV\nNumber of seats: 2\nNumber of ballots: 6\nNumber of candidates: 6\nWinners:\nBill Jones\nSally Ride\nLosers:\nAlice Mix\nAhmed Mohamed\nSiyang Xiong\nPreeti Banerjee\n";
     EXPECT_EQ(testing::internal::GetCapturedStdout(), correct);
 }
@@ -161,7 +199,11 @@ TEST_F(STVTest, EmptySeats) {
     ballots.emplace(candidates, basic_win, false);
     stv.emplace(&(ballots.value()), 7);
 
+    std::vector<std::string> input_file_name = {"EmptySeats.txt\n"};
+    userInput(input_file_name);
     stv->runElection();
+    restore_stdin_fd(old_stdin);
+
     EXPECT_EQ(stv->getBallots(), &(ballots.value()));
     EXPECT_EQ(stv->getSeats(), 7);
     for (long unsigned int i = 0; i < stv->getCandidates().size(); i++) {
@@ -210,7 +252,12 @@ TEST_F(STVTest, ElectionTimeLimit) {
     }
     ballots_two.emplace(candidates_two, ballots_stv_two, false);
     stv_two.emplace(&(ballots_two.value()), 5);
+
+    std::vector<std::string> input_file_name = {"ElectionTimeLimit.txt\n"};
+    userInput(input_file_name);
     stv_two->runElection();
+    restore_stdin_fd(old_stdin);
+
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
     EXPECT_LT(duration.count() / 1000.0, 5.000);
@@ -228,7 +275,11 @@ TEST_F(STVTest, OneSeat) {
     ballots_basic_win.emplace(candidates, basic_win, false);
     stv_basic_win.emplace(&(ballots_basic_win.value()), 1);
 
+    std::vector<std::string> input_file_name = {"OneSeat.txt\n"};
+    userInput(input_file_name);
     stv_basic_win->runElection();
+    restore_stdin_fd(old_stdin);
+
     EXPECT_EQ(stv_basic_win->getBallots(), &(ballots_basic_win.value()));
     EXPECT_EQ(stv_basic_win->getSeats(), 1);
     for (long unsigned int i = 0; i < stv_basic_win->getCandidates().size(); i++) {
