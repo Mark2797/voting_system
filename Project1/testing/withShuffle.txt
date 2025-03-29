@@ -1,0 +1,62 @@
+[STV Election]: Droop: 4, Seats: 5, Candidates: 2
+Winners: Mark Suckerberg,Chuck Lancaster,
+Losers: 
+
+Below is input ballot information, with a '0' representing a candidate that was not voted for: 
+ID 0: 0, 1, 
+ID 1: 1, 0, 
+ID 2: 0, 1, 
+ID 3: 2, 1, 
+ID 4: 2, 1, 
+ID 5: 2, 1, 
+ID 6: 1, 0, 
+ID 7: 1, 2, 
+ID 8: 1, 2, 
+ID 9: 2, 1, 
+ID 10: 2, 1, 
+ID 11: 1, 0, 
+ID 12: 0, 1, 
+ID 13: 0, 1, 
+ID 14: 1, 0, 
+ID 15: 1, 0, 
+ID 16: 0, 1, 
+ID 17: 1, 2, 
+ID 18: 0, 1, 
+ID 19: 1, 2, 
+
+Initial Vote Distribution:
+Ballot #0 assigned to Mark Suckerberg
+Ballot #1 assigned to Chuck Lancaster
+Ballot #2 assigned to Mark Suckerberg
+Ballot #3 assigned to Mark Suckerberg
+Ballot #4 assigned to Mark Suckerberg
+Mark Suckerberg hit Droop quota- adding to winners list
+Ballot #5 would've been assigned to Mark Suckerberg but they already won a seat. Reassigning...
+Reassigning ballot: 5 looking for the #2 choice.- it was: Chuck Lancaster
+Ballot #5 assigned to Chuck Lancaster
+Ballot #6 assigned to Chuck Lancaster
+Ballot #7 assigned to Chuck Lancaster
+Chuck Lancaster hit Droop quota- adding to winners list
+Ballot #8 would've been assigned to Chuck Lancaster but they already won a seat. Reassigning...
+Ballot #9 would've been assigned to Mark Suckerberg but they already won a seat. Reassigning...
+Ballot #10 would've been assigned to Mark Suckerberg but they already won a seat. Reassigning...
+Ballot #11 would've been assigned to Chuck Lancaster but they already won a seat. Reassigning...
+Ballot #12 would've been assigned to Mark Suckerberg but they already won a seat. Reassigning...
+Ballot #13 would've been assigned to Mark Suckerberg but they already won a seat. Reassigning...
+Ballot #14 would've been assigned to Chuck Lancaster but they already won a seat. Reassigning...
+Ballot #15 would've been assigned to Chuck Lancaster but they already won a seat. Reassigning...
+Ballot #16 would've been assigned to Mark Suckerberg but they already won a seat. Reassigning...
+Ballot #17 would've been assigned to Chuck Lancaster but they already won a seat. Reassigning...
+Ballot #18 would've been assigned to Mark Suckerberg but they already won a seat. Reassigning...
+Ballot #19 would've been assigned to Chuck Lancaster but they already won a seat. Reassigning...
+Chuck Lancaster,1,5,6,7,
+Mark Suckerberg,0,2,3,4,
+Winners: Mark Suckerberg,Chuck Lancaster,
+Losers: 
+Tie between: Mark Suckerberg, Chuck Lancaster, - loser selected to be: Mark Suckerberg
+
+Final Election Results:
+Only 2 candidates were elected but 5 were needed.
+Winners are output in order below:
+Winners: Mark Suckerberg,Chuck Lancaster,
+Losers: 
