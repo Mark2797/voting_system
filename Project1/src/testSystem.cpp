@@ -318,7 +318,9 @@ TEST_F(SysTest, minElectionValidity) {
     restore_stdin_fd(old_stdin);
 
     vector<Candidate> winners = STVelection->getWinners();
+    vector<Candidate> losers = STVelection->getLosers();
     EXPECT_EQ(winners.size(), 1);
+    EXPECT_EQ(losers.size(), 0);
     Candidate winner = winners.at(0);
     EXPECT_EQ(winner.getBallotNum(), STVelection->getDroopQuota()); // Droop Quote, not total ballots!
 
@@ -326,7 +328,9 @@ TEST_F(SysTest, minElectionValidity) {
     pluralityElection->runElection();
 
     winners = pluralityElection->getWinners();
+    losers = pluralityElection->getLosers();
     EXPECT_EQ(winners.size(), 1);
+    EXPECT_EQ(losers.size(), 0);
     winner = winners.at(0);
     EXPECT_EQ(winner.getBallotNum(), pluralityElection->getBallots()->getBallotCount());
 };
