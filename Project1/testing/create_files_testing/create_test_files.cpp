@@ -7,7 +7,6 @@
 #include <iomanip>
 #include <numeric>
 #include <algorithm>
-#include <cmath>
 
 using namespace std;
 
@@ -43,38 +42,24 @@ int main() {
         f << str << "\n";
         str = "";
         if (type[i] == "S") {
-            uniform_int_distribution<> distribution(0, length.size() / 2);
             vector<vector<int>> vals(ballots[i], vector<int>(length.size()));
             for (int b = 0; b < ballots[i]; b++) {
-                int not_voted = distribution(rd);
-                vector<int> copy(length);
-                fill(copy.end() - not_voted, copy.end(), 0);
-                shuffle(copy.begin(), copy.end(), rd);
-                for (int k = 0; k < copy.size(); k++) {
-                    if (copy[k] != 0) {
-                        str += to_string(copy[k]) + ",";
-                    }
-                    else {
-                        str += ",";
-                    }
+                shuffle(length.begin(), length.end(), rd);
+                for (int k = 0; k < length.size(); k++) {
+                    str += to_string(length[k]) + ",";
                 }
                 str.pop_back();
                 f << str << '\n';
                 str = "";
             }
         } else if (type[i] == "P") {
-            vector<vector<int>> vals(ballots[i], vector<int>(length.size()));
+            vector<vector<int>> vals(ballots[i], vector<int>(length.size(), 0));
             uniform_int_distribution<int> distribution(0, length.size() - 1);
             for (vector<int> row : vals) {
                 int random_index = distribution(rd);
                 row[random_index] = 1;
                 for (int k = 0; k < row.size(); k++) {
-                    if (row[k] == 1){
-                        str += to_string(row[k]) + ",";
-                    }
-                    else {
-                        str += ",";
-                    }
+                    str += to_string(row[k]) + ",";
                 }
                 str.pop_back();
                 f << str << '\n';
