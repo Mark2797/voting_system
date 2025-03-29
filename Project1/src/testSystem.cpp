@@ -59,16 +59,16 @@ class SysTest : public ::testing::Test {
         Plurality* pluralityElectionS;
         
     void SetUp() override {
-        file_names = {{"../testing/test_file1.csv\n"}, {"../testing/test_file2.csv\n"}, {"../testing/test_file3.csv\n"},
-        {"../testing/test_file4.csv\n"}, {"../testing/test_file5.csv\n"}, {"../testing/test_file6.csv\n"},
-        {"../testing/test_file7.csv\n"}, {"../testing/test_file8.csv\n"}, {"../testing/test_file9.csv\n"},
-        {"../testing/test_file10.csv\n"}, {"../testing/pluralityTie.csv\n"}};
-        seatNums = {{"100\n"}, {"5\n"}, {"1\n"}, {"3\n"}, {"10\n"}};
+        file_names = {{"../testing/STV1.csv\n"}, {"../testing/Plurality1.csv\n"}, {"../testing/STV2.csv\n"},
+        {"../testing/Plurality2.csv\n"}, {"../testing/STV3.csv\n"}, {"../testing/Plurality3.csv\n"},
+        {"../testing/STV4.csv\n"}, {"../testing/Plurality4.csv\n"}, {"../testing/STV5.csv\n"},
+        {"../testing/Plurality5.csv\n"}, {"../testing/pluralityTie.csv\n"}, {"../testing/stvTie.csv\n"}};
+        seatNums = {{"21\n"}, {"5\n"}, {"1\n"}, {"3\n"}, {"10\n"}};
         auditFile = {{"../testing/audits/seatValid.txt\n"}, {"../testing/audits/noShuffle.txt\n"}, {"../testing/audits/withShuffle.txt\n"}, 
-        {"../testing/audits/regSTV.txt\n"}, {"../testing/audits/timeTest.txt\n"}};
+        {"../testing/audits/minSTV.txt\n"}, {"../testing/audits/regSTV.txt\n"}, {"../testing/audits/timeTest.txt\n"}, {"../testing/audits/stvTie.txt\n"}};
     }
     void TearDown() override {
-
+        
     }
 };
 
@@ -92,7 +92,7 @@ TEST_F(SysTest, seatValidity) {
 
     userInput(seatNums.at(0));
     prompt_user_seatNum(seatNum);
-    EXPECT_EQ(seatNum, 100);
+    EXPECT_EQ(seatNum, 21);
     restore_stdin_fd(old_stdin);
 
     STVelection = new STV(&ballots, seatNum);
@@ -101,12 +101,17 @@ TEST_F(SysTest, seatValidity) {
     restore_stdin_fd(old_stdin);
 
     int winners_size = STVelection->getWinners().size();
+    int losers_size = STVelection->getLosers().size();
     int candidates_size = STVelection->getCandidates().size();
     EXPECT_EQ(winners_size, candidates_size);
+    EXPECT_EQ(losers_size, 0);
     pluralityElection = new Plurality(&ballots2, seatNum);
     pluralityElection->runElection();
     winners_size = pluralityElection->getWinners().size();
+    losers_size = pluralityElection->getLosers().size();
+    candidates_size = pluralityElection->getCandidates().size();
     EXPECT_EQ(winners_size, candidates_size);
+    EXPECT_EQ(losers_size, 0);
 };
 
 TEST_F(SysTest, ballotShuffleValidity) {
@@ -141,7 +146,7 @@ TEST_F(SysTest, ballotShuffleValidity) {
 
 TEST_F(SysTest, fairElectionValiditySTV) {
     int seatNum;
-    userInput(file_names.at(2));
+    userInput(file_names.at(4));
     ifstream file;
     open_file(file);
     EXPECT_TRUE(file.is_open());
@@ -149,7 +154,7 @@ TEST_F(SysTest, fairElectionValiditySTV) {
     Ballots ballots = read_file(file, false);
     file.close();
 
-    userInput(file_names.at(2));
+    userInput(file_names.at(4));
     ifstream file2;
     open_file(file2);
     EXPECT_TRUE(file2.is_open());
@@ -210,16 +215,15 @@ TEST_F(SysTest, fairElectionValidityPlurlaity) {
     prompt_user_seatNum(seatNum);
     EXPECT_EQ(seatNum, 3);
     restore_stdin_fd(old_stdin);
-
+    
     pluralityElection = new Plurality(&ballots, seatNum);
-    userInput(auditFile.at(1));
     pluralityElection->runElection(); 
     restore_stdin_fd(old_stdin);
 
     pluralityElectionS = new Plurality(&shuffled, seatNum);
-    userInput(auditFile.at(2));
     pluralityElectionS->runElection();
     restore_stdin_fd(old_stdin);
+
 
     vector<Candidate> regWinners = pluralityElection->getWinners();
     vector<Candidate> shfWinners = pluralityElectionS->getWinners();
@@ -246,14 +250,22 @@ TEST_F(SysTest, minElectionValidity) {
     restore_stdin_fd(old_stdin);
     Ballots ballots = read_file(file, false);
     file.close();
-    
+
+    userInput(file_names.at(1));
+    ifstream file2;
+    open_file(file2);
+    EXPECT_TRUE(file2.is_open());
+    restore_stdin_fd(old_stdin);
+    Ballots ballots2 = read_file(file2, false);
+    file2.close();
+
     userInput(seatNums.at(2));
     prompt_user_seatNum(seatNum);
     EXPECT_EQ(seatNum, 1);
     restore_stdin_fd(old_stdin);
 
     STVelection = new STV(&ballots, seatNum);
-    userInput(auditFile.at(0));
+    userInput(auditFile.at(3));
     STVelection->runElection(); 
     restore_stdin_fd(old_stdin);
 
@@ -262,7 +274,7 @@ TEST_F(SysTest, minElectionValidity) {
     Candidate winner = winners.at(0);
     EXPECT_EQ(winner.getBallotNum(), STVelection->getDroopQuota()); // Droop Quote, not total ballots!
 
-    pluralityElection = new Plurality(&ballots, seatNum);
+    pluralityElection = new Plurality(&ballots2, seatNum);
     pluralityElection->runElection();
 
     winners = pluralityElection->getWinners();
@@ -350,7 +362,7 @@ TEST_F(SysTest, stvRegular) {
     restore_stdin_fd(old_stdin);
 
     STVelection = new STV(&ballots, seatNum);
-    userInput(auditFile.at(3));
+    userInput(auditFile.at(4));
     STVelection->runElection(); 
     restore_stdin_fd(old_stdin);
 
@@ -388,15 +400,15 @@ TEST_F(SysTest, timeSTV) {
     restore_stdin_fd(old_stdin);
 
     STVelection = new STV(&ballots, seatNum);
-    userInput(auditFile.at(4));
+    userInput(auditFile.at(5));
     STVelection->runElection(); 
     restore_stdin_fd(old_stdin);
 
     vector<Candidate> winners = STVelection->getWinners();
     vector<Candidate> losers = STVelection->getLosers();
-        int loser_size = STVelection->getCandidates().size() - seatNum;
-        EXPECT_EQ(winners.size(), seatNum);
-        EXPECT_EQ(losers.size(), loser_size);
+    int loser_size = STVelection->getCandidates().size() - seatNum;
+    EXPECT_EQ(winners.size(), seatNum);
+    EXPECT_EQ(losers.size(), loser_size);
     for (long unsigned int i = 0; i < winners.size(); i++) {
         // All winners should have met the Droop Quota.
         EXPECT_EQ(winners.at(i).getBallotNum(), STVelection->getDroopQuota());
@@ -405,7 +417,7 @@ TEST_F(SysTest, timeSTV) {
             EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
         }
     }
-    bool access(auditFile.at(3).at(0).c_str());
+    bool access(auditFile.at(4).at(0).c_str());
     EXPECT_TRUE(access);
     auto t1 = chrono::high_resolution_clock::now();
     chrono::duration<double> diff = t1 - t0;
@@ -450,7 +462,38 @@ TEST_F(SysTest, timePlurality) {
 };
 
 TEST_F(SysTest, stvTie) {
+    int seatNum;
+    userInput(file_names.at(11));
+    ifstream file;
+    open_file(file);
+    EXPECT_TRUE(file.is_open());
+    restore_stdin_fd(old_stdin);
+    Ballots ballots = read_file(file, false);
+    file.close();
 
+    userInput(seatNums.at(3));
+    prompt_user_seatNum(seatNum);
+    EXPECT_EQ(seatNum, 3);
+    restore_stdin_fd(old_stdin);
+
+    STVelection = new STV(&ballots, seatNum);
+    userInput(auditFile.at(6));
+    STVelection->runElection(); 
+    restore_stdin_fd(old_stdin);
+
+    vector<Candidate> winners = STVelection->getWinners();
+    vector<Candidate> losers = STVelection->getLosers();
+    int loser_size = STVelection->getCandidates().size() - seatNum;
+    EXPECT_EQ(winners.size(), seatNum);
+    EXPECT_EQ(losers.size(), loser_size);
+    for (long unsigned int i = 0; i < winners.size(); i++) {
+        // All winners should have met the Droop Quota.
+        EXPECT_EQ(winners.at(i).getBallotNum(), STVelection->getDroopQuota());
+        for (long unsigned int j = 0; j < losers.size(); j++) {
+            // Test all winners with all losers - should be about the same - winners in losers bracket.
+            EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
+        }
+    }
 };
 
 int main(int argc, char **argv) {
