@@ -275,7 +275,11 @@ TEST_F(STVTest, TieWin) {
     ballots_basic_win.emplace(candidates, basic_win, false);
     stv_basic_win.emplace(&(ballots_basic_win.value()), 1);
 
+    std::vector<std::string> input_file_name = {"TieWin.txt\n"};
+    userInput(input_file_name);
     stv_basic_win->runElection();
+    restore_stdin_fd(old_stdin);
+
     EXPECT_EQ(stv_basic_win->getBallots(), &(ballots_basic_win.value()));
     EXPECT_EQ(stv_basic_win->getSeats(), 1);
     for (long unsigned int i = 0; i < stv_basic_win->getCandidates().size(); i++) {
