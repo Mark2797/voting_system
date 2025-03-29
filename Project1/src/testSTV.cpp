@@ -6,7 +6,6 @@
 
 #include "STV.h"
 #include <iostream>
-
 // Use optional to delay initialization
 // Google test requires a default constructor
 #include <optional>
@@ -55,6 +54,7 @@ class STVTest : public ::testing::Test {
             {1,2,0,0,3,4},
             {4,5,1,2,0,3},
             {1,3,2,4,5,6},
+            {3,4,2,5,6,1},
             {1,3,2,5,4,3}
         };
         
@@ -223,7 +223,7 @@ TEST_F(STVTest, ElectionTimeLimit) {
     EXPECT_EQ(stv_two->getLosers().size(), 5);
 }
 
-TEST_F(STVTest, TieWin) {
+TEST_F(STVTest, OneSeat) {
     // one seat election
     ballots_basic_win.emplace(candidates, basic_win, false);
     stv_basic_win.emplace(&(ballots_basic_win.value()), 1);
@@ -235,15 +235,15 @@ TEST_F(STVTest, TieWin) {
         EXPECT_EQ(stv_basic_win->getCandidates().at(i).getName(), candidates.at(i));
     }
     
-    // regardless of who is the winner, there is only ONE winner and they have the correct number of ballots
     EXPECT_EQ(stv_basic_win->getWinners().size(), 1);
-    int winnerBallots = stv_basic_win->getWinners().at(0).getAssignedBallots().size();
-    EXPECT_EQ(winnerBallots, stv_basic_win->getDroopQuota());
+    std::vector<std::string> winners = {"Sally Ride"};
+    for (long unsigned int i = 0; i < stv_basic_win->getWinners().size(); i++) {
+        EXPECT_EQ(stv_basic_win->getWinners().at(i).getName(), winners.at(i));
+    }
 
-    // because the winner is either Bill Jones or Sally Ride, they will be the last 'loser' on the list, so make sure the rest of the list is correct
     EXPECT_EQ(stv_basic_win->getLosers().size(), 5);
-    std::vector<std::string> losers = {"Alice Mix", "Ahmed Mohamed", "Siyang Xiong", "Preeti Banerjee"};
-    for (long unsigned int i = 0; i < stv_basic_win->getLosers().size() - 1; i++) {
+    std::vector<std::string> losers = {"Alice Mix", "Ahmed Mohamed", "Siyang Xiong", "Preeti Banerjee", "Bill Jones"};
+    for (long unsigned int i = 0; i < stv_basic_win->getLosers().size(); i++) {
         EXPECT_EQ(stv_basic_win->getLosers().at(i).getName(), losers.at(i));
     }
 }

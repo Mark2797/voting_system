@@ -17,7 +17,7 @@ using namespace std;
 
 int main() {
     int test_value = 2;
-    vector<int> ballot_amt = {10, 20, 100, 1000, 100000};
+    vector<int> ballot_amt = {1, 20, 100, 1000, 100000};
     // To keep it easier to change, this value corresponds to the total number of tests for
     // Each list of names and each ballot_amt.
     vector<string> names = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", 
@@ -60,7 +60,9 @@ int main() {
     // DO NOT TOUCH TYPES. IT SHOULD ONLY HAVE S AND P.
     vector<string> path;
     for (int n = 1; n <= names_list.size(); n++) {
-        path.push_back("../test_file" + to_string(n) + ".csv");
+        string type = "";
+        if (type_list.at(n - 1) == "S") type = "STV"; else type ="Plurality";
+        path.push_back("../" + type + to_string(static_cast<int>((n - 1) / 2) + 1) + ".csv");
     }
     // Creates the total amount of test files as csv files to output.
 
