@@ -12,6 +12,7 @@
 #include <cstring>
 #include <cstdlib>
 #include <chrono>
+#include <iostream>
 #include <bits/stdc++.h>
 
 extern void open_file(std::ifstream& file);
@@ -64,7 +65,7 @@ class SysTest : public ::testing::Test {
         {"../testing/test_file10.csv\n"}, {"../testing/pluralityTie.csv\n"}};
         seatNums = {{"100\n"}, {"5\n"}, {"1\n"}, {"3\n"}, {"10\n"}};
         auditFile = {{"../testing/audits/seatValid.txt\n"}, {"../testing/audits/noShuffle.txt\n"}, {"../testing/audits/withShuffle.txt\n"}, 
-        {"../testing/audits/regSTV.txt\n"}, {"../testing/audits/STVstresstest.txt\n"}};
+        {"../testing/audits/regSTV.txt\n"}, {"../testing/audits/timeTest.txt\n"}};
     }
     void TearDown() override {
 
@@ -140,7 +141,7 @@ TEST_F(SysTest, ballotShuffleValidity) {
 
 TEST_F(SysTest, fairElectionValiditySTV) {
     int seatNum;
-    userInput(file_names.at(2));
+    userInput(file_names.at(4));
     ifstream file;
     open_file(file);
     EXPECT_TRUE(file.is_open());
@@ -148,7 +149,7 @@ TEST_F(SysTest, fairElectionValiditySTV) {
     Ballots ballots = read_file(file, false);
     file.close();
 
-    userInput(file_names.at(2));
+    userInput(file_names.at(4));
     ifstream file2;
     open_file(file2);
     EXPECT_TRUE(file2.is_open());
@@ -156,9 +157,9 @@ TEST_F(SysTest, fairElectionValiditySTV) {
     Ballots shuffled = read_file(file2, true);
     file2.close();
 
-    userInput(seatNums.at(1));
+    userInput(seatNums.at(3));
     prompt_user_seatNum(seatNum);
-    EXPECT_EQ(seatNum, 5);
+    EXPECT_EQ(seatNum, 3);
     restore_stdin_fd(old_stdin);
 
     STVelection = new STV(&ballots, seatNum);
@@ -189,7 +190,7 @@ TEST_F(SysTest, fairElectionValiditySTV) {
 
 TEST_F(SysTest, fairElectionValidityPlurlaity) {
     int seatNum;
-    userInput(file_names.at(3));
+    userInput(file_names.at(5));
     ifstream file;
     open_file(file);
     EXPECT_TRUE(file.is_open());
@@ -197,7 +198,7 @@ TEST_F(SysTest, fairElectionValidityPlurlaity) {
     Ballots ballots = read_file(file, false);
     file.close();
 
-    userInput(file_names.at(3));
+    userInput(file_names.at(5));
     ifstream file2;
     open_file(file2);
     EXPECT_TRUE(file2.is_open());
@@ -205,9 +206,9 @@ TEST_F(SysTest, fairElectionValidityPlurlaity) {
     Ballots shuffled = read_file(file2, true);
     file2.close();
 
-    userInput(seatNums.at(1));
+    userInput(seatNums.at(3));
     prompt_user_seatNum(seatNum);
-    EXPECT_EQ(seatNum, 5);
+    EXPECT_EQ(seatNum, 3);
     restore_stdin_fd(old_stdin);
 
     pluralityElection = new Plurality(&ballots, seatNum);
@@ -366,6 +367,8 @@ TEST_F(SysTest, stvRegular) {
             EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
         }
     }
+    bool access(auditFile.at(3).at(0).c_str());
+    EXPECT_TRUE(access);
 };
 
 TEST_F(SysTest, timeSTV) {
@@ -385,7 +388,7 @@ TEST_F(SysTest, timeSTV) {
     restore_stdin_fd(old_stdin);
 
     STVelection = new STV(&ballots, seatNum);
-    userInput(auditFile.at(3));
+    userInput(auditFile.at(4));
     STVelection->runElection(); 
     restore_stdin_fd(old_stdin);
 
@@ -402,6 +405,8 @@ TEST_F(SysTest, timeSTV) {
             EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
         }
     }
+    bool access(auditFile.at(3).at(0).c_str());
+    EXPECT_TRUE(access);
     auto t1 = chrono::high_resolution_clock::now();
     chrono::duration<double> diff = t1 - t0;
     cout << fixed << setprecision(2) << diff.count() << " seconds to run." << endl;
@@ -444,7 +449,9 @@ TEST_F(SysTest, timePlurality) {
     EXPECT_LE(diff.count(), 300.0);
 };
 
-// TEST_F(SysTest, stvTie) {};
+TEST_F(SysTest, stvTie) {
+
+};
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
