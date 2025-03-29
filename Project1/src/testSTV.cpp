@@ -270,31 +270,27 @@ TEST_F(STVTest, ElectionTimeLimit) {
     EXPECT_EQ(stv_two->getLosers().size(), 5);
 }
 
-TEST_F(STVTest, OneSeat) {
+TEST_F(STVTest, TieWin) {
     // one seat election
     ballots_basic_win.emplace(candidates, basic_win, false);
     stv_basic_win.emplace(&(ballots_basic_win.value()), 1);
 
-    std::vector<std::string> input_file_name = {"OneSeat.txt\n"};
-    userInput(input_file_name);
     stv_basic_win->runElection();
-    restore_stdin_fd(old_stdin);
-
     EXPECT_EQ(stv_basic_win->getBallots(), &(ballots_basic_win.value()));
     EXPECT_EQ(stv_basic_win->getSeats(), 1);
     for (long unsigned int i = 0; i < stv_basic_win->getCandidates().size(); i++) {
         EXPECT_EQ(stv_basic_win->getCandidates().at(i).getName(), candidates.at(i));
     }
     
+    // regardless of who is the winner, there is only ONE winner and they have the correct number of ballots
     EXPECT_EQ(stv_basic_win->getWinners().size(), 1);
-    std::vector<std::string> winners = {"Sally Ride"};
-    for (long unsigned int i = 0; i < stv_basic_win->getWinners().size(); i++) {
-        EXPECT_EQ(stv_basic_win->getWinners().at(i).getName(), winners.at(i));
-    }
+    int winnerBallots = stv_basic_win->getWinners().at(0).getAssignedBallots().size();
+    EXPECT_EQ(winnerBallots, stv_basic_win->getDroopQuota());
 
+    // because the winner is either Bill Jones or Sally Ride, they will be the last 'loser' on the list, so make sure the rest of the list is correct
     EXPECT_EQ(stv_basic_win->getLosers().size(), 5);
-    std::vector<std::string> losers = {"Alice Mix", "Ahmed Mohamed", "Siyang Xiong", "Preeti Banerjee", "Bill Jones"};
-    for (long unsigned int i = 0; i < stv_basic_win->getLosers().size(); i++) {
+    std::vector<std::string> losers = {"Alice Mix", "Ahmed Mohamed", "Siyang Xiong", "Preeti Banerjee"};
+    for (long unsigned int i = 0; i < stv_basic_win->getLosers().size() - 1; i++) {
         EXPECT_EQ(stv_basic_win->getLosers().at(i).getName(), losers.at(i));
     }
 }
