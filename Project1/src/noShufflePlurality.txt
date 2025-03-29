@@ -1,0 +1,27 @@
+[STV Election]: Droop: 1, Seats: 100, Candidates: 1
+Chuck Lancaster hit Droop quota- adding to winners list
+Chuck Lancaster already won a seat, reassigning ballot #1
+Chuck Lancaster already won a seat, reassigning ballot #2
+Chuck Lancaster already won a seat, reassigning ballot #3
+Chuck Lancaster already won a seat, reassigning ballot #4
+Chuck Lancaster already won a seat, reassigning ballot #5
+Chuck Lancaster already won a seat, reassigning ballot #6
+Chuck Lancaster already won a seat, reassigning ballot #7
+Chuck Lancaster already won a seat, reassigning ballot #8
+Chuck Lancaster already won a seat, reassigning ballot #9
+Winners: Chuck Lancaster,
+Losers: 
+
+Final Election Results:
+Only 1 candidates were elected but 100 were needed.
+Winners are output in order below:
+Winners: Chuck Lancaster,
+Losers: [STV Election]: Droop: 1, Seats: 100, Candidates: 1
+Winners: Chuck Lancaster,
+Losers: 
+
+Final Election Results:
+Only 0 candidates were elected but 100 were needed.
+Winners are output in order below:
+Winners: Chuck Lancaster,
+Losers: 

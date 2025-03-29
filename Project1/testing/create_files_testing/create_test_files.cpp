@@ -17,34 +17,40 @@ using namespace std;
 
 int main() {
     int test_value = 2;
-    // To keep it easier to change, this value corresponds to the total number of tests
-    // divided by 2. Increasing this value doubles the total amount of tests ran.
-    vector<string> names1 = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", 
+    vector<int> ballot_amt = {10, 20, 100, 1000, 100000};
+    // To keep it easier to change, this value corresponds to the total number of tests for
+    // Each list of names and each ballot_amt.
+    vector<string> names = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", 
         "Micheal Ashton", "Joe Cool", "Jimmy Donaldson", "John Kennedy", 
         "Patrick Star", "Robot Iam", "Alice Wonder", "Barack Obama", "James Lancaster", "Haley Welsh", 
         "James Blake", "Johnny Bravo", "Adam Sandler", "Holly Summers", "Polly Cracker", "Albert Wesk", "Leon Kennedy"};
     // Add or subtract names from here - keep in mind that this will be the total number
     // of candidates to be chosen as well.
-    vector<string> names2(names1.begin(), names1.begin() + 10);
-    // A second names vector set to be a subset of the original names1 vector.
+    vector<string> names1(names.begin(), names.end());
+    // First names vector taking from the entire names vector.
+    vector<string> names2(names.begin(), names.begin() + 10);
+    // A second names vector set to be a subset of the original names vector.
     // Ideally could be changed to a whole new vector, but kept this because it's easier.
-    vector<string> names3(names1.begin(), names1.begin() + 5);
-    // A third names vector set to be a subset of the original names1 vector.
-    vector<string> names4(names1.begin(), names1.begin() + 2);
-    // A fourth names vector set to be a subset of the original names1 vector.
-    vector<vector<string>> names_list(test_value, names4);
+    vector<string> names3(names.begin(), names.begin() + 5);
+    // A third names vector set to be a subset of the original names vector.
+    vector<string> names4(names.begin(), names.begin() + 2);
+    // A fourth names vector set to be a subset of the original names vector.
+    vector<string> names5(names.begin(), names.begin() + 1);
+    // A fifth names vector set to be a subset of the original names vector.
+    vector<vector<string>> names_list(test_value, names5);
     // This vector is dedicated to keeping track of all of the name lists to refer back to.
+    names_list.insert(names_list.end(), test_value, names4);
     names_list.insert(names_list.end(), test_value, names3);
     names_list.insert(names_list.end(), test_value, names2);
-    names_list.insert(names_list.end(), test_value, names1);
-    vector<int> ballots(test_value, 15);
+    names_list.insert(names_list.end(), test_value, names);
+    vector<int> ballots(names_list.size());
     // This refers to the total number of ballots. The right value can be changed without
     // concern, however the left value should be alligned with the total amount of 
     // tests we want to run.
-    ballots.insert(ballots.end(), test_value, 100);
-    ballots.insert(ballots.end(), test_value, 1000);
-    ballots.insert(ballots.end(), test_value, 100000);
-    // 100,000 is chosen as it is the maximum amount of ballots we expect to run.
+    for (int i = 0; i < names_list.size(); i++) {
+        ballots.at(i) = ballot_amt[ceil(i / test_value)];
+    }
+    // Using a loop with ceiling divsion to push the total number of ballots.
     static vector<string> types = {"S", "P"};
     vector<string> type_list(names_list.size());
     for (int i = 0; i < names_list.size(); i++) {
@@ -54,7 +60,7 @@ int main() {
     // DO NOT TOUCH TYPES. IT SHOULD ONLY HAVE S AND P.
     vector<string> path;
     for (int n = 1; n <= names_list.size(); n++) {
-        path.push_back("test_file" + to_string(n) + ".csv");
+        path.push_back("../test_file" + to_string(n) + ".csv");
     }
     // Creates the total amount of test files as csv files to output.
 
