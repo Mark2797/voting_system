@@ -1,0 +1,22 @@
+[STV Election]: Droop: 1, Seats: 1, Candidates: 1
+
+Winners: Chuck Lancaster
+Losers: 
+
+Below is input ballot information: 
+ID 0: 1
+
+[Initial Vote Distribution]
+Ballot #0 assigned to Chuck Lancaster
+	Chuck Lancaster hit Droop quota- adding to winners list
+
+Current Vote Assignment Breakdown:
+Chuck Lancaster: 0
+
+Winners: Chuck Lancaster
+Losers: 
+
+Final Election Results:
+
+Winners: Chuck Lancaster
+Losers: 

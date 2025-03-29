@@ -1,6 +1,7 @@
 // Candidate.cpp
 // Represents one candidate in the election
 // Author: Mark Tsai
+// Assume perfect play for the csv file
 
 #include "Candidate.h"
 #include <iostream>
@@ -17,18 +18,8 @@ void Candidate::assignBallot(int ballotID) {
     ballotNum++;
 }
 
-void Candidate::removeBallot(int ballotID) {
-    for (unsigned long i = 0; i < assignedBallots.size(); i++) {
-        if (assignedBallots.at(i) == ballotID) {
-            assignedBallots.erase(assignedBallots.begin() + i);
-            //std::cout << "\n[inside candidate]Ballot #" << ballotID << " removed from " << this->name;
-        }
-    }
-    // std::cout << "\n[inside candidate]Candidate " << this->name << "'s new ballots: "; 
-    // for (int i = 0; i < assignedBallots.size(); i++) {
-    //     std::cout << assignedBallots.at(i) << ", ";
-    // }
-    ballotNum--;
+void Candidate::clearAssignedBallots() {
+    assignedBallots.clear();
 }
 
 std::string Candidate::getName() {

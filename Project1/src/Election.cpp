@@ -15,10 +15,6 @@ Election::Election(Ballots* ballots, int seats) {
         Candidate newcandidate = Candidate(ballots->getCandidates().at(i));
         this->candidates.push_back(newcandidate);
     }
-
-    // for (int i = 0; i < this->candidates.size(); i++) {
-    //     std::cout << "\n2ndloop: " << this->candidates.at(i).getName();
-    // }
 }
 
 Election::~Election() {}

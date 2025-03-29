@@ -1,6 +1,14 @@
+/// @file main.cpp
+/// @brief The main of the software system
+
 // main.cpp
 // The main of the software system
 // Author: Mark Tsai
+// Assume perfect play for the csv file
+
+// Bug: 
+// This part of the system is handled procedural when collecting information (preprocessing),
+// OOP when all information is collected and election starts
 
 #include <iostream>
 #include <fstream>
@@ -12,6 +20,7 @@
 
 #include "Ballots.h"
 #include "Election.h"
+#include "Plurality.h"
 #include "STV.h"
 
 /**
@@ -23,12 +32,12 @@
  */
 int shuffleOffFlag(int argc, char **argv, bool &shuffle) {
     shuffle = true;
-    if (argc > 2) {
+    if (argc > 2) { // too many arguments
         std::cout << "Too many arguments" << std::endl;
         return 1;
     } else if (argc == 2) {
         std::string first_arg = std::string(argv[1]);
-        // shuffle-off flag
+        // check for shuffle-off flag
         if (first_arg.compare("shuffle-off") != 0) {
             std::cout << "Invalid flag" << std::endl;
             return 1;
@@ -51,7 +60,7 @@ void open_file(std::ifstream& file) {
     std::cin >> file_name;
     while (true) {
         file.open(file_name);
-        if (!file.is_open()) {
+        if (!file.is_open()) { // file is not opened
             std::cout << "Invalid file name" << std::endl;
             std::cout << "Following are the common mistakes:" << std::endl;
             std::cout << "1. Wrong file name" << std::endl;
@@ -59,7 +68,7 @@ void open_file(std::ifstream& file) {
             std::cout << "3. .csv extension is not included" << std::endl;
             std::cout << "Please re-enter the file name:" << std::endl;
             std::getline(std::cin, file_name);
-        } else {
+        } else { // file is opened
             break;
         }
     }
@@ -118,19 +127,19 @@ Ballots read_file(std::ifstream& file, bool shuffle) {
 /**
  * @brief Prompt user for seat number and algorithm
  * @param seatNum Number of seat to be elected
- * @param alg Algorithm to use
  */
 void prompt_user_seatNum(int& seatNum) {
     int num;
     while(true) {
         std::cout << "Please enter a positive integer for the number of seat to be elected: " << std::endl;
         std::cin >> num;
-        if (std::cin.fail()) {
+        if (std::cin.fail()) { // input is not an integer
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter a positive integer!" << std::endl;
             std::cin.clear();
+            // handle leftover characters in the input buffer
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        } else if (num <= 0) {
+        } else if (num <= 0) { // input is not a positive integer
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter a positive integer!" << std::endl;
         } else {
@@ -142,7 +151,6 @@ void prompt_user_seatNum(int& seatNum) {
 
 /**
  * @brief Prompt user for seat number and algorithm
- * @param seatNum Number of seat to be elected
  * @param alg Algorithm to use
  */
 void prompt_user_alg(std::string& alg) {
@@ -153,12 +161,13 @@ void prompt_user_alg(std::string& alg) {
         std::cout << "2. Single Transferable Vote (STV) Algorithm" << std::endl;
         std::cout << "Please select by entering the number 1 or 2:" << std::endl;
         std::cin >> num;
-        if (std::cin.fail()) {
+        if (std::cin.fail()) { // input is not an integer
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter 1 or 2!" << std::endl;
             std::cin.clear();
+            // handle leftover characters in the input buffer
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        } else if (num != 1 && num != 2) {
+        } else if (num != 1 && num != 2) { // input is not a valid option
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter 1 or 2!" << std::endl;
         } else {
@@ -177,6 +186,8 @@ void prompt_user_alg(std::string& alg) {
 
 /**
  * @brief The main function of the program.
+ * @param argc Number of arguments
+ * @param argv Arguments
  * @return 0 on successful execution and 1 on failed execution.
  */
 int main(int argc, char **argv) {
@@ -197,36 +208,20 @@ int main(int argc, char **argv) {
     prompt_user_seatNum(seatNum);
     prompt_user_alg(alg);
 
-    // Just for testing, printing out seat number and algorithm
-    std::cout << "Number of seat: " << seatNum << std::endl;
-    std::cout << "Algorithm: " << alg << std::endl;
-
     // Read the file and create a Ballot object
     Ballots ballots = read_file(file, shuffle);
 
+    // Create Election object and start the elction with collected information
+    Election* election;
     if (alg == "STV") {
-        STV* election = new STV(&ballots, seatNum);
-        election->runElection();
+        election = new STV(&ballots, seatNum);
     }
     else {
-        // code for running plurality
+        election = new Plurality(&ballots, seatNum);
     }
+    election->runElection();
+    delete election;
 
-
-
-    // Just for testing, printing out the content in ballots
-    for (int i = 0; i < ballots.getCandidateCount(); i++) {
-        std::cout << ballots.getCandidates().at(i) << std::endl;
-    }
-
-    for (int i = 0; i < ballots.getBallotCount(); i++) {
-        std::vector<int> ballot = ballots.getBallot(i);
-        for (int j = 0; j < ballots.getCandidateCount(); j++) {
-            std::cout << ballot.at(j) << " ";
-        }
-        std::cout << std::endl;
-    }
-    
     return 0;
 }
 
