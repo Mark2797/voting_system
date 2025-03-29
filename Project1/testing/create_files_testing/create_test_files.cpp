@@ -60,7 +60,9 @@ int main() {
     // DO NOT TOUCH TYPES. IT SHOULD ONLY HAVE S AND P.
     vector<string> path;
     for (int n = 1; n <= names_list.size(); n++) {
-        path.push_back("../test_file" + to_string(n) + ".csv");
+        string type = "";
+        if (type_list.at(n - 1) == "S") type = "STV"; else type ="Plurality";
+        path.push_back("../" + type + to_string(static_cast<int>((n - 1) / 2) + 1) + ".csv");
     }
     // Creates the total amount of test files as csv files to output.
 

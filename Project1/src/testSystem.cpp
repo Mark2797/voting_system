@@ -59,10 +59,10 @@ class SysTest : public ::testing::Test {
         Plurality* pluralityElectionS;
         
     void SetUp() override {
-        file_names = {{"../testing/test_file1.csv\n"}, {"../testing/test_file2.csv\n"}, {"../testing/test_file3.csv\n"},
-        {"../testing/test_file4.csv\n"}, {"../testing/test_file5.csv\n"}, {"../testing/test_file6.csv\n"},
-        {"../testing/test_file7.csv\n"}, {"../testing/test_file8.csv\n"}, {"../testing/test_file9.csv\n"},
-        {"../testing/test_file10.csv\n"}, {"../testing/pluralityTie.csv\n"}};
+        file_names = {{"../testing/STV1.csv\n"}, {"../testing/Plurality1.csv\n"}, {"../testing/STV2.csv\n"},
+        {"../testing/Plurality2.csv\n"}, {"../testing/STV3.csv\n"}, {"../testing/Plurality3.csv\n"},
+        {"../testing/STV4.csv\n"}, {"../testing/Plurality4.csv\n"}, {"../testing/STV5.csv\n"},
+        {"../testing/Plurality5.csv\n"}, {"../testing/pluralityTie.csv\n"}};
         seatNums = {{"100\n"}, {"5\n"}, {"1\n"}, {"3\n"}, {"10\n"}};
         auditFile = {{"../testing/audits/seatValid.txt\n"}, {"../testing/audits/noShuffle.txt\n"}, {"../testing/audits/withShuffle.txt\n"}, 
         {"../testing/audits/regSTV.txt\n"}, {"../testing/audits/timeTest.txt\n"}};
