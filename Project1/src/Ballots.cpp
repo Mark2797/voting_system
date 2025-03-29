@@ -1,6 +1,7 @@
 // Ballots.cpp
 // Represents the entire information stores in the input ballot file
 // Author: Mark Tsai
+// Assume perfect play for the csv file
 
 #include <bits/stdc++.h>
 

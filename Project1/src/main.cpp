@@ -4,9 +4,11 @@
 // main.cpp
 // The main of the software system
 // Author: Mark Tsai
+// Assume perfect play for the csv file
+
 // Bug: 
-// This part of the system is handled procedural when collecting information
-// OOP when information is collected and election object is created and called
+// This part of the system is handled procedural when collecting information (preprocessing),
+// OOP when all information is collected and election starts
 
 #include <iostream>
 #include <fstream>
@@ -135,6 +137,7 @@ void prompt_user_seatNum(int& seatNum) {
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter a positive integer!" << std::endl;
             std::cin.clear();
+            // handle leftover characters in the input buffer
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         } else if (num <= 0) { // input is not a positive integer
             std::cout << "Invalid input!" << std::endl;
@@ -162,6 +165,7 @@ void prompt_user_alg(std::string& alg) {
             std::cout << "Invalid input!" << std::endl;
             std::cout << "Please enter 1 or 2!" << std::endl;
             std::cin.clear();
+            // handle leftover characters in the input buffer
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         } else if (num != 1 && num != 2) { // input is not a valid option
             std::cout << "Invalid input!" << std::endl;

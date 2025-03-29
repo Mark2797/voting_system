@@ -1,0 +1,24 @@
+[STV Election]: Droop: 4, Seats: 5, Candidates: 2
+Chuck Lancaster hit Droop quota- adding to winners list
+Chuck Lancaster already won a seat, reassigning ballot #6
+Mark Suckerberg hit Droop quota- adding to winners list
+Mark Suckerberg already won a seat, reassigning ballot #9
+Mark Suckerberg already won a seat, reassigning ballot #10
+Chuck Lancaster already won a seat, reassigning ballot #11
+Chuck Lancaster already won a seat, reassigning ballot #12
+Chuck Lancaster already won a seat, reassigning ballot #13
+Chuck Lancaster already won a seat, reassigning ballot #14
+Mark Suckerberg already won a seat, reassigning ballot #15
+Mark Suckerberg already won a seat, reassigning ballot #16
+Mark Suckerberg already won a seat, reassigning ballot #17
+Mark Suckerberg already won a seat, reassigning ballot #18
+Mark Suckerberg already won a seat, reassigning ballot #19
+Winners: Chuck Lancaster,Mark Suckerberg,
+Losers: 
+Tie between: Mark Suckerberg, Chuck Lancaster, - loser selected to be: Mark Suckerberg
+
+Final Election Results:
+Only 2 candidates were elected but 5 were needed.
+Winners are output in order below:
+Winners: Chuck Lancaster,Mark Suckerberg,
+Losers: 
