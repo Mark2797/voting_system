@@ -11,6 +11,7 @@
 #include <fstream>
 #include <cstring>
 #include <cstdlib>
+#include <chrono>
 #include <bits/stdc++.h>
 
 extern void open_file(std::ifstream& file);
@@ -62,7 +63,7 @@ class SysTest : public ::testing::Test {
         {"../testing/test_file7.csv\n"}, {"../testing/test_file8.csv\n"}, {"../testing/test_file9.csv\n"},
         {"../testing/test_file10.csv\n"}, {"../testing/pluralityTie.csv\n"}};
         seatNums = {{"100\n"}, {"5\n"}, {"1\n"}, {"3\n"}};
-        auditFile = {{"../testing/whatever.txt\n"}, {"../testing/noShuffle.txt\n"}, {"../testing/withShuffle.txt\n"}, {"../testing/regSTV.txt\n"}};
+        auditFile = {{"../testing/seatValid.txt\n"}, {"../testing/noShuffle.txt\n"}, {"../testing/withShuffle.txt\n"}, {"../testing/regSTV.txt\n"}};
     }
     void TearDown() override {
 
@@ -362,8 +363,28 @@ TEST_F(SysTest, stvRegular) {
     }
 };
 
+TEST_F(SysTest, timeSTV) {
+    int seatNum; 
+    userInput(file_names.at(8));
+    ifstream file;
+    open_file(file);
+    EXPECT_TRUE(file.is_open());
+    restore_stdin_fd(old_stdin);
+    Ballots ballots = read_file(file, false);
+    file.close();
+};
+
+TEST_F(SysTest, timePlurality) {
+    userInput(file_names.at(9));
+    ifstream file;
+    open_file(file);
+    EXPECT_TRUE(file.is_open());
+    restore_stdin_fd(old_stdin);
+    Ballots ballots = read_file(file, false);
+    file.close();
+};
+
 // TEST_F(SysTest, stvTie) {};
-// TEST_F(SysTest, stvLoserWinner) {};
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
