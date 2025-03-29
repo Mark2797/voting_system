@@ -39,7 +39,7 @@ Chuck Lancaster,0,3,4,5,
 Mark Suckerberg,1,2,6,7,
 Winners: Chuck Lancaster,Mark Suckerberg,
 Losers: 
-Tie between: Mark Suckerberg, Chuck Lancaster, - loser selected to be: Mark Suckerberg
+Tie between: Chuck Lancaster, Mark Suckerberg, - loser selected to be: Chuck Lancaster
 
 Final Election Results:
 Only 2 candidates were elected but 5 were needed.

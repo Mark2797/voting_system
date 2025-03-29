@@ -62,8 +62,9 @@ class SysTest : public ::testing::Test {
         {"../testing/test_file4.csv\n"}, {"../testing/test_file5.csv\n"}, {"../testing/test_file6.csv\n"},
         {"../testing/test_file7.csv\n"}, {"../testing/test_file8.csv\n"}, {"../testing/test_file9.csv\n"},
         {"../testing/test_file10.csv\n"}, {"../testing/pluralityTie.csv\n"}};
-        seatNums = {{"100\n"}, {"5\n"}, {"1\n"}, {"3\n"}};
-        auditFile = {{"../testing/seatValid.txt\n"}, {"../testing/noShuffle.txt\n"}, {"../testing/withShuffle.txt\n"}, {"../testing/regSTV.txt\n"}};
+        seatNums = {{"100\n"}, {"5\n"}, {"1\n"}, {"3\n"}, {"10\n"}};
+        auditFile = {{"../testing/audits/seatValid.txt\n"}, {"../testing/audits/noShuffle.txt\n"}, {"../testing/audits/withShuffle.txt\n"}, 
+        {"../testing/audits/regSTV.txt\n"}, {"../testing/audits/STVstresstest.txt\n"}};
     }
     void TearDown() override {
 
@@ -176,7 +177,7 @@ TEST_F(SysTest, fairElectionValiditySTV) {
     vector<int> regWin(regWinners.size());
     vector<int> shfWin(shfWinners.size()); // Names are unreliable - we need to confirm ballot size.
 
-    for (int i = 0; i < regWinners.size(); i++) {
+    for (long unsigned int i = 0; i < regWinners.size(); i++) {
         regWin.at(i) = regWinners.at(i).getAssignedBallots().size();
         shfWin.at(i) = shfWinners.at(i).getAssignedBallots().size();
     }
@@ -225,7 +226,7 @@ TEST_F(SysTest, fairElectionValidityPlurlaity) {
     vector<int> regWin(regWinners.size());
     vector<int> shfWin(shfWinners.size()); // Names are unreliable - we need to confirm ballot size.
 
-    for (int i = 0; i < regWinners.size(); i++) {
+    for (long unsigned int i = 0; i < regWinners.size(); i++) {
         regWin.at(i) = regWinners.at(i).getAssignedBallots().size();
         shfWin.at(i) = shfWinners.at(i).getAssignedBallots().size();
     }
@@ -289,10 +290,12 @@ TEST_F(SysTest, pluralityRegular) {
 
     vector<Candidate> winners = pluralityElection->getWinners();
     vector<Candidate> losers = pluralityElection->getLosers();
-    EXPECT_EQ(winners.size(), 3);
-    EXPECT_EQ(losers.size(), 2);
-    for (int i = 0; i < winners.size(); i++) {
-        for (int j = 0; j < losers.size(); j++) {
+    cout << pluralityElection->getCandidates().size() << endl;
+    int loser_size = pluralityElection->getCandidates().size() - seatNum;
+    EXPECT_EQ(winners.size(), seatNum);
+    EXPECT_EQ(losers.size(), loser_size);
+    for (long unsigned int i = 0; i < winners.size(); i++) {
+        for (long unsigned int j = 0; j < losers.size(); j++) {
             // Test all winners with all losers - should have at least the same, if not greater ballots
             EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
         }
@@ -319,10 +322,11 @@ TEST_F(SysTest, pluralityTie) {
 
     vector<Candidate> winners = pluralityElection->getWinners();
     vector<Candidate> losers = pluralityElection->getLosers();
-    EXPECT_EQ(winners.size(), 3);
-    EXPECT_EQ(losers.size(), 2);
-    for (int i = 0; i < winners.size(); i++) {
-        for (int j = 0; j < losers.size(); j++) {
+    int loser_size = pluralityElection->getCandidates().size() - seatNum;
+    EXPECT_EQ(winners.size(), seatNum);
+    EXPECT_EQ(losers.size(), loser_size);
+    for (long unsigned int i = 0; i < winners.size(); i++) {
+        for (long unsigned int j = 0; j < losers.size(); j++) {
             // Test all winners with all losers - should have the same ballots exactly.
             EXPECT_EQ(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
         }
@@ -351,12 +355,13 @@ TEST_F(SysTest, stvRegular) {
 
     vector<Candidate> winners = STVelection->getWinners();
     vector<Candidate> losers = STVelection->getLosers();
-    EXPECT_EQ(winners.size(), 3);
-    EXPECT_EQ(losers.size(), 2);
-    for (int i = 0; i < winners.size(); i++) {
+    int loser_size = STVelection->getCandidates().size() - seatNum;
+    EXPECT_EQ(winners.size(), seatNum);
+    EXPECT_EQ(losers.size(), loser_size);
+    for (long unsigned int i = 0; i < winners.size(); i++) {
         // All winners should have met the Droop Quota.
         EXPECT_EQ(winners.at(i).getBallotNum(), STVelection->getDroopQuota());
-        for (int j = 0; j < losers.size(); j++) {
+        for (long unsigned int j = 0; j < losers.size(); j++) {
             // Test all winners with all losers - should have at least the same, if not greater ballots
             EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
         }
@@ -364,6 +369,7 @@ TEST_F(SysTest, stvRegular) {
 };
 
 TEST_F(SysTest, timeSTV) {
+    auto t0 = chrono::high_resolution_clock::now();
     int seatNum; 
     userInput(file_names.at(8));
     ifstream file;
@@ -372,9 +378,39 @@ TEST_F(SysTest, timeSTV) {
     restore_stdin_fd(old_stdin);
     Ballots ballots = read_file(file, false);
     file.close();
+
+    userInput(seatNums.at(4));
+    prompt_user_seatNum(seatNum);
+    EXPECT_EQ(seatNum, 10);
+    restore_stdin_fd(old_stdin);
+
+    STVelection = new STV(&ballots, seatNum);
+    userInput(auditFile.at(3));
+    STVelection->runElection(); 
+    restore_stdin_fd(old_stdin);
+
+    vector<Candidate> winners = STVelection->getWinners();
+    vector<Candidate> losers = STVelection->getLosers();
+        int loser_size = STVelection->getCandidates().size() - seatNum;
+        EXPECT_EQ(winners.size(), seatNum);
+        EXPECT_EQ(losers.size(), loser_size);
+    for (long unsigned int i = 0; i < winners.size(); i++) {
+        // All winners should have met the Droop Quota.
+        EXPECT_EQ(winners.at(i).getBallotNum(), STVelection->getDroopQuota());
+        for (long unsigned int j = 0; j < losers.size(); j++) {
+            // Test all winners with all losers - should have at least the same, if not greater ballots
+            EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
+        }
+    }
+    auto t1 = chrono::high_resolution_clock::now();
+    chrono::duration<double> diff = t1 - t0;
+    cout << fixed << setprecision(2) << diff.count() << " seconds to run." << endl;
+    EXPECT_LE(diff.count(), 300.0);
 };
 
 TEST_F(SysTest, timePlurality) {
+    auto t0 = chrono::high_resolution_clock::now();
+    int seatNum; 
     userInput(file_names.at(9));
     ifstream file;
     open_file(file);
@@ -382,6 +418,30 @@ TEST_F(SysTest, timePlurality) {
     restore_stdin_fd(old_stdin);
     Ballots ballots = read_file(file, false);
     file.close();
+
+    userInput(seatNums.at(4));
+    prompt_user_seatNum(seatNum);
+    EXPECT_EQ(seatNum, 10);
+    restore_stdin_fd(old_stdin);
+
+    pluralityElection = new Plurality(&ballots, seatNum);
+    pluralityElection->runElection();
+
+    vector<Candidate> winners = pluralityElection->getWinners();
+    vector<Candidate> losers = pluralityElection->getLosers();
+    int loser_size = pluralityElection->getCandidates().size() - seatNum;
+    EXPECT_EQ(winners.size(), seatNum);
+    EXPECT_EQ(losers.size(), loser_size);
+    for (long unsigned int i = 0; i < winners.size(); i++) {
+        for (long unsigned int j = 0; j < losers.size(); j++) {
+            // Test all winners with all losers - should have at least the same, if not greater ballots
+            EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
+        }
+    }
+    auto t1 = chrono::high_resolution_clock::now();
+    chrono::duration<double> diff = t1 - t0;
+    cout << fixed << setprecision(2) << diff.count() << " seconds to run." << endl;
+    EXPECT_LE(diff.count(), 300.0);
 };
 
 // TEST_F(SysTest, stvTie) {};
