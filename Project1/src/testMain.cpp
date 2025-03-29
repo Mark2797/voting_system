@@ -100,9 +100,9 @@ class MainTest : public ::testing::Test {
         plurality_file_name = {"../testing/pluralityTestMain.csv\n"};
         stv_file_name = {"../testing/stvTestMain.csv\n"};
         bad_file_name = {"12343\n", "../testing/asdasd\n", "../testing/asdasd.csv\n", "1231.csv\n", "../testing/stvTestMain.csv\n"};
-        bad_seatNum = {"abc\n", "0\n", "-123123\n", "5\n", "7\n"};
+        bad_seatNum = {"10000000000\n", "-10000000000\n", "abc\n", "0\n", "-123123\n", "5\n"};
         good_seatNum = {"10\n"};
-        bad_alg = {"abc\n", "0\n", "-123123\n", "5\n", "1\n"};
+        bad_alg = {"10000000000\n", "-10000000000\n", "abc\n", "0\n", "-123123\n", "5\n", "1\n"};
         good_alg_one = {"1\n"};
         good_alg_two = {"2\n"};
         old_stdout = dup(STDOUT_FILENO);
