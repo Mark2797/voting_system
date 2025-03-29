@@ -141,7 +141,7 @@ TEST_F(SysTest, ballotShuffleValidity) {
 
 TEST_F(SysTest, fairElectionValiditySTV) {
     int seatNum;
-    userInput(file_names.at(4));
+    userInput(file_names.at(2));
     ifstream file;
     open_file(file);
     EXPECT_TRUE(file.is_open());
@@ -149,7 +149,7 @@ TEST_F(SysTest, fairElectionValiditySTV) {
     Ballots ballots = read_file(file, false);
     file.close();
 
-    userInput(file_names.at(4));
+    userInput(file_names.at(2));
     ifstream file2;
     open_file(file2);
     EXPECT_TRUE(file2.is_open());
@@ -157,9 +157,9 @@ TEST_F(SysTest, fairElectionValiditySTV) {
     Ballots shuffled = read_file(file2, true);
     file2.close();
 
-    userInput(seatNums.at(3));
+    userInput(seatNums.at(2));
     prompt_user_seatNum(seatNum);
-    EXPECT_EQ(seatNum, 3);
+    EXPECT_EQ(seatNum, 1);
     restore_stdin_fd(old_stdin);
 
     STVelection = new STV(&ballots, seatNum);
