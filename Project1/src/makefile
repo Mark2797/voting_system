@@ -22,10 +22,10 @@ OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o
 OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d
 
 # Test Files
-TEST_SRCS = testBallots.cpp testCandidate.cpp testMain.cpp testPlurality.cpp testSTV.cpp
-TEST_OBJS = testBallots.o testCandidate.o testMain.o main_test.o testPlurality.o testSTV.o
-TEST_OBJS_D = testBallots.d testCandidate.d testMain.d main_test.d testPlurality.d testSTV.d
-TEST_EXECUTABLES = testBallots testCandidate testMain testPlurality testSTV
+TEST_SRCS = testBallots.cpp testCandidate.cpp testMain.cpp testPlurality.cpp testSTV.cpp testSystem.cpp
+TEST_OBJS = testBallots.o testCandidate.o testMain.o main_test.o testPlurality.o testSTV.o testSystem.o
+TEST_OBJS_D = testBallots.d testCandidate.d testMain.d main_test.d testPlurality.d testSTV.d testSystem.d
+TEST_EXECUTABLES = testBallots testCandidate testMain testPlurality testSTV testSystem
 # Target executable
 TARGET = voting_system
 
@@ -77,6 +77,9 @@ testPlurality: testPlurality.o Plurality.o Ballots.o Candidate.o Election.o
 testSTV: testSTV.o STV.o Ballots.o Candidate.o Election.o
 	$(CXX) $(CXXFLAGS) testSTV.o STV.o Ballots.o Candidate.o Election.o -o testSTV $(GTEST_DIR)
 
+testSystem: testSystem.o STV.o Plurality.o Ballots.o Candidate.o Election.o main_test.o
+	$(CXX) $(CXXFLAGS) testSystem.o STV.o Plurality.o Ballots.o Candidate.o Election.o main_test.o -o testSystem $(GTEST_DIR)
+
 # enable TESTING flag in main
 testMain: testMain.o Ballots.o main_test.o
 	$(CXX) $(CXXFLAGS) testMain.o Ballots.o main_test.o -o testMain $(GTEST_DIR) -DTESTING
@@ -98,7 +101,7 @@ test: $(TEST_EXECUTABLES)
 
 # Clean compiled files
 clean:
-	rm -f $(TARGET) $(OBJS) $(TEST_OBJS) $(TEST_EXECUTABLES) $(OBJS_D) $(TEST_OBJS_D)
+	rm -f $(TARGET) $(OBJS) $(TEST_OBJS) $(TEST_EXECUTABLES) $(OBJS_D) $(TEST_OBJS_D) *.txt ../testing/*.txt
 
 # Rule to run the executable
 run: $(TARGET)

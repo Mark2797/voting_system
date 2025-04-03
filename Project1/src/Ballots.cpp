@@ -1,6 +1,7 @@
 // Ballots.cpp
 // Represents the entire information stores in the input ballot file
 // Author: Mark Tsai
+// Assume perfect play for the csv file
 
 #include <bits/stdc++.h>
 
@@ -25,6 +26,10 @@ void Ballots::shuffler() {
 }
 
 std::vector<int> Ballots::getBallot(int index) {
+    // out of bound index
+    if (index >= ballotCount || index < 0) {
+        throw std::out_of_range("Index out of range: " + std::to_string(index));
+    }
     return ballots.at(index);
 }
 

@@ -1,6 +1,7 @@
 // Candidate.cpp
 // Represents one candidate in the election
 // Author: Mark Tsai
+// Assume perfect play for the csv file
 
 #include "Candidate.h"
 #include <iostream>

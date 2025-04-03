@@ -1,0 +1,37 @@
+\doxysection{Election.\+h}
+\hypertarget{Election_8h_source}{}\label{Election_8h_source}\index{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project1/src/Election.h@{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project1/src/Election.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Election.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ The\ abstract\ class\ for\ Plurality\ and\ STV\ algorithm\ inheritance}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Author:\ Mark\ Tsai}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ ELECTION\_H\_}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ELECTION\_H\_}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Ballots.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Candidate.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classElection}{Election}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classElection}{Election}}(\mbox{\hyperlink{classBallots}{Ballots}}*\ ballots,\ \textcolor{keywordtype}{int}\ seats);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classElection_aceebb69f0fdf9a5d8981ef93b6664a6a}{\string~Election}}()\ =\ 0;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classElection_afba360a69e902856a43ed3b4625abab6}{displayElectionDetails}}()\ =\ 0;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}{runElection}}()\ =\ 0;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBallots}{Ballots}}*\ ballots;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ seats;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ std::vector<Candidate>\ candidates;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::vector<Candidate>\ winners;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ std::vector<Candidate>\ losers;}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
