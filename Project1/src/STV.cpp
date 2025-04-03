@@ -126,7 +126,7 @@ static void assignBallot(std::vector<std::string>& electionProgress, int& candid
 }
 
 // finds the candidate with the fewest (non-zero) votes and returns their ID
-static int findLoser(std::vector<std::string>& electionProgress, std::vector<Candidate>& candidates, std::vector<Candidate>& losers) {
+static int findLoser(std::vector<std::string>& electionProgress, std::vector<Candidate>& candidates, std::vector<Candidate>& winners, std::vector<Candidate>& losers) {
     
     // create a vector to store candidates that are tied for lowest votes, and keep track of the current lowest vote number with lowestVotes    
     std::vector<int> lowestVoteCandidates;
@@ -137,20 +137,20 @@ static int findLoser(std::vector<std::string>& electionProgress, std::vector<Can
     for (int i = 0; i < static_cast<int>(candidates.size()); i++) {
 
         // if after the first pass a candidate didn't recieve any votes, add them to the losers list... their votes cannot be redistributed because they didn't get any
-        if (candidates.at(i).getAssignedBallots().size() == 0 && isInList(candidates.at(i), losers) == false) {
+        if (candidates.at(i).getAssignedBallots().size() == 0 && isInList(candidates.at(i), losers) == false && isInList(candidates.at(i), winners) == false) {
             losers.push_back(candidates.at(i));
             outputString = "\nAdding " + candidates.at(i).getName() + " to the losers list because they recieved " + std::to_string(candidates.at(i).getAssignedBallots().size()) + " ballots.";
             electionProgress.push_back(outputString);  
         }
         
         // if there's a tie in losers and they're not already, add them to the tie list
-        else if (static_cast<int>(candidates.at(i).getAssignedBallots().size()) == lowestVotes && isInList(candidates.at(i), losers) == false) {
+        else if (static_cast<int>(candidates.at(i).getAssignedBallots().size()) == lowestVotes && isInList(candidates.at(i), losers) == false && isInList(candidates.at(i), winners) == false) {
             lowestVoteCandidates.push_back(i);
             lowestVotes = candidates.at(i).getAssignedBallots().size(); //technically not needed bc lowestvotes will already be this value but :)
         }
         
         // If a 'new' losing amount of ballots is achieved, then clear out the losingCandidates vector and add the NEW loser
-        else if (static_cast<int>(candidates.at(i).getAssignedBallots().size()) < lowestVotes && candidates.at(i).getAssignedBallots().size() > 0 && isInList(candidates.at(i), losers) == false) {
+        else if (static_cast<int>(candidates.at(i).getAssignedBallots().size()) < lowestVotes && candidates.at(i).getAssignedBallots().size() > 0 && isInList(candidates.at(i), losers) == false && isInList(candidates.at(i), winners) == false) {
             lowestVoteCandidates.clear();
             lowestVoteCandidates.push_back(i);
             lowestVotes = candidates.at(i).getAssignedBallots().size();
@@ -289,7 +289,7 @@ void STV::runElection() {
         electionProgress.push_back(outputString);
 
         // find the loser that is having their ballots redistribuited
-        int loserId = findLoser(electionProgress, candidates, losers);
+        int loserId = findLoser(electionProgress, candidates, winners, losers);
         
         // in the case that there are more seats to elect but no more candidates can have their votes redistributed
         if (loserId == -1 || winners.size() == candidates.size()) {
