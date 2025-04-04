@@ -1,0 +1,133 @@
+\doxysection{Ballots Class Reference}
+\hypertarget{classBallots}{}\label{classBallots}\index{Ballots@{Ballots}}
+
+
+Represents the entire information stores in the input ballot file, including candidate names and ballots.  
+
+
+
+
+{\ttfamily \#include $<$Ballots.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBallots_a144a30daa95bf844310a59a23c1d5df8}{Ballots}} (std\+::vector$<$ std\+::string $>$ candidates, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ ballots, bool shuffle)
+\begin{DoxyCompactList}\small\item\em \doxylink{classBallots}{Ballots} constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classBallots_ad5829e389e32e5a8ade85a1664147ad9}\label{classBallots_ad5829e389e32e5a8ade85a1664147ad9} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Ballots} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classBallots_abbff61457352c5e71b7f7bc42449167b}{get\+Ballot}} (int index)
+\begin{DoxyCompactList}\small\item\em Get ballot by index. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classBallots_a9c47084998efadb928c7b529b3b5c1e2}{get\+Candidates}} ()
+\begin{DoxyCompactList}\small\item\em Get all candidate names. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBallots_a0361feb0bcb0ac092a00749eb81b2f4d}{get\+Ballot\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of ballots stored. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBallots_a70e5880fa0a4aac8b08458ae38675180}{get\+Candidate\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of candidate names stored. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBallots_ad0398bcea09052dbaf80bb79498b87ab}{get\+Shuffle}} ()
+\begin{DoxyCompactList}\small\item\em Get whether to shuffle the ballots or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the entire information stores in the input ballot file, including candidate names and ballots. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classBallots_a144a30daa95bf844310a59a23c1d5df8}\label{classBallots_a144a30daa95bf844310a59a23c1d5df8} 
+\index{Ballots@{Ballots}!Ballots@{Ballots}}
+\index{Ballots@{Ballots}!Ballots@{Ballots}}
+\doxysubsubsection{\texorpdfstring{Ballots()}{Ballots()}}
+{\footnotesize\ttfamily Ballots\+::\+Ballots (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{candidates,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$}]{ballots,  }\item[{bool}]{shuffle }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classBallots}{Ballots} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidates} & Vector of candidate names \\
+\hline
+{\em ballots} & Vector of ballots \\
+\hline
+{\em shuffle} & Whether to shuffle the ballots or not \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBallots_abbff61457352c5e71b7f7bc42449167b}\label{classBallots_abbff61457352c5e71b7f7bc42449167b} 
+\index{Ballots@{Ballots}!getBallot@{getBallot}}
+\index{getBallot@{getBallot}!Ballots@{Ballots}}
+\doxysubsubsection{\texorpdfstring{getBallot()}{getBallot()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Ballots\+::get\+Ballot (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Get ballot by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the ballot to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ballot with given index 
+\end{DoxyReturn}
+\Hypertarget{classBallots_a0361feb0bcb0ac092a00749eb81b2f4d}\label{classBallots_a0361feb0bcb0ac092a00749eb81b2f4d} 
+\index{Ballots@{Ballots}!getBallotCount@{getBallotCount}}
+\index{getBallotCount@{getBallotCount}!Ballots@{Ballots}}
+\doxysubsubsection{\texorpdfstring{getBallotCount()}{getBallotCount()}}
+{\footnotesize\ttfamily int Ballots\+::get\+Ballot\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of ballots stored. 
+
+\begin{DoxyReturn}{Returns}
+Number of ballots 
+\end{DoxyReturn}
+\Hypertarget{classBallots_a70e5880fa0a4aac8b08458ae38675180}\label{classBallots_a70e5880fa0a4aac8b08458ae38675180} 
+\index{Ballots@{Ballots}!getCandidateCount@{getCandidateCount}}
+\index{getCandidateCount@{getCandidateCount}!Ballots@{Ballots}}
+\doxysubsubsection{\texorpdfstring{getCandidateCount()}{getCandidateCount()}}
+{\footnotesize\ttfamily int Ballots\+::get\+Candidate\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of candidate names stored. 
+
+\begin{DoxyReturn}{Returns}
+Number of candidate names 
+\end{DoxyReturn}
+\Hypertarget{classBallots_a9c47084998efadb928c7b529b3b5c1e2}\label{classBallots_a9c47084998efadb928c7b529b3b5c1e2} 
+\index{Ballots@{Ballots}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!Ballots@{Ballots}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Ballots\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all candidate names. 
+
+\begin{DoxyReturn}{Returns}
+Vector of candidate names 
+\end{DoxyReturn}
+\Hypertarget{classBallots_ad0398bcea09052dbaf80bb79498b87ab}\label{classBallots_ad0398bcea09052dbaf80bb79498b87ab} 
+\index{Ballots@{Ballots}!getShuffle@{getShuffle}}
+\index{getShuffle@{getShuffle}!Ballots@{Ballots}}
+\doxysubsubsection{\texorpdfstring{getShuffle()}{getShuffle()}}
+{\footnotesize\ttfamily bool Ballots\+::get\+Shuffle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get whether to shuffle the ballots or not. 
+
+\begin{DoxyReturn}{Returns}
+Boolean of the shuffle option 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/Ballots.\+h\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/Ballots.\+cpp\end{DoxyCompactItemize}
