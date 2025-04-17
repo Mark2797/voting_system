@@ -1,0 +1,33 @@
+\doxysection{STV.\+h}
+\hypertarget{STV_8h_source}{}\label{STV_8h_source}\index{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project1/src/STV.h@{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project1/src/STV.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Plurality.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Perform\ a\ single\ transferable\ vote\ (STV)\ election}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Author:\ Mark\ Tsai}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ STV\_H\_}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ STV\_H\_}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Election.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Ballots.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSTV}{STV}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classElection}{Election}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSTV}{STV}}(\mbox{\hyperlink{classBallots}{Ballots}}*\ ballots,\ \textcolor{keywordtype}{int}\ seats);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSTV}{\string~STV}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSTV_a004373572830f75615db580a7bada82d}{runElection}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSTV_afb2ab691a9164924a2fcddd2758ca43b}{displayElectionDetails}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ outputAuditFile();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ droopQuota;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::vector<std::string>\ electionProgress;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBallots}{Ballots}}*\ stv\_ballots;}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
