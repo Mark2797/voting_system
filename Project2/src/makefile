@@ -17,15 +17,15 @@ CXXFLAGS = -Wall -g -pthread -MMD -MP
 GTEST_DIR = -lgtest -lgtest_main -pthread
 
 # Source Files
-SRCS = Ballots.cpp Candidate.cpp Election.cpp main.cpp Plurality.cpp STV.cpp
-OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o
-OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d
+SRCS = Ballots.cpp Candidate.cpp Election.cpp main.cpp Plurality.cpp STV.cpp Driver.cpp FileHandler.cpp UI.cpp
+OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o Driver.o FileHandler.o UI.o
+OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d Driver.d FileHandler.d UI.d
 
 # Test Files
-TEST_SRCS = testBallots.cpp testCandidate.cpp testMain.cpp testPlurality.cpp testSTV.cpp testSystem.cpp
-TEST_OBJS = testBallots.o testCandidate.o testMain.o main_test.o testPlurality.o testSTV.o testSystem.o
-TEST_OBJS_D = testBallots.d testCandidate.d testMain.d main_test.d testPlurality.d testSTV.d testSystem.d
-TEST_EXECUTABLES = testBallots testCandidate testMain testPlurality testSTV testSystem
+TEST_SRCS = testBallots.cpp testCandidate.cpp testPlurality.cpp testSTV.cpp testFileHandler.cpp testUI.cpp testDriver.cpp
+TEST_OBJS = testBallots.o testCandidate.o testPlurality.o testSTV.o testFileHandler.o testUI.o testDriver.o
+TEST_OBJS_D = testBallots.d testCandidate.d testPlurality.d testSTV.d testFileHandler.d testUI.d testDriver.d
+TEST_EXECUTABLES = testBallots testCandidate testPlurality testSTV testFileHandler testUI testDriver
 # Target executable
 TARGET = voting_system
 
@@ -50,20 +50,14 @@ Plurality.o:
 STV.o:
 	$(CXX) $(CXXFLAGS) -c STV.cpp -o STV.o
 
-testBallots.o:
-	$(CXX) $(CXXFLAGS) -c testBallots.cpp -o testBallots.o 
+Driver.o:
+	$(CXX) $(CXXFLAGS) -c Driver.cpp -o Driver.o
 
-testCandidate.o:
-	$(CXX) $(CXXFLAGS) -c testCandidate.cpp -o testCandidate.o
+FileHandler.o:
+	$(CXX) $(CXXFLAGS) -c FileHandler.cpp -o FileHandler.o
 
-testMain.o:
-	$(CXX) $(CXXFLAGS) -c testMain.cpp -o testMain.o
-
-testPlurality.o:
-	$(CXX) $(CXXFLAGS) -c testPlurality.cpp -o testPlurality.o
-
-testSTV.o:
-	$(CXX) $(CXXFLAGS) -c testSTV.cpp -o testSTV.o
+UI.o:
+	$(CXX) $(CXXFLAGS) -c UI.cpp -o UI.o
 
 testBallots: testBallots.o Ballots.o
 	$(CXX) $(CXXFLAGS) testBallots.o Ballots.o -o testBallots $(GTEST_DIR)
@@ -77,16 +71,14 @@ testPlurality: testPlurality.o Plurality.o Ballots.o Candidate.o Election.o
 testSTV: testSTV.o STV.o Ballots.o Candidate.o Election.o
 	$(CXX) $(CXXFLAGS) testSTV.o STV.o Ballots.o Candidate.o Election.o -o testSTV $(GTEST_DIR)
 
-testSystem: testSystem.o STV.o Plurality.o Ballots.o Candidate.o Election.o main_test.o
-	$(CXX) $(CXXFLAGS) testSystem.o STV.o Plurality.o Ballots.o Candidate.o Election.o main_test.o -o testSystem $(GTEST_DIR)
+testFileHandler: testFileHandler.o FileHandler.o
+	$(CXX) $(CXXFLAGS) testFileHandler.o FileHandler.o -o testFileHandler $(GTEST_DIR)
 
-# enable TESTING flag in main
-testMain: testMain.o Ballots.o main_test.o
-	$(CXX) $(CXXFLAGS) testMain.o Ballots.o main_test.o -o testMain $(GTEST_DIR) -DTESTING
+testUI: testUI.o UI.o
+	$(CXX) $(CXXFLAGS) testUI.o UI.o -o testUI $(GTEST_DIR)
 
-# main for testing
-main_test.o:: main.cpp
-	$(CXX) $(CXXFLAGS) -DTESTING -c main.cpp -o main_test.o
+testDriver: testDriver.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o
+	$(CXX) $(CXXFLAGS) testDriver.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o -o testDriver $(GTEST_DIR)
 
 # Link object files to the target executable
 $(TARGET): $(OBJS)
