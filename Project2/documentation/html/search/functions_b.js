@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['_7eballots_0',['~Ballots',['../classBallots.html#ad5829e389e32e5a8ade85a1664147ad9',1,'Ballots']]],
-  ['_7ecandidate_1',['~Candidate',['../classCandidate.html#a61ad4ae35e7a3ce5e5b91204b55c0b55',1,'Candidate']]],
-  ['_7eelection_2',['~Election',['../classElection.html#aceebb69f0fdf9a5d8981ef93b6664a6a',1,'Election']]],
-  ['_7eplurality_3',['~Plurality',['../classPlurality.html#a0f79fb6a57260916f0f0c3aa6b8d9810',1,'Plurality']]]
+  ['shuffleoffflag_72',['shuffleOffFlag',['../classDriver.html#a9860d1c2e79e796cf6511b7d41a56708',1,'Driver']]],
+  ['stv_73',['STV',['../classSTV.html#a0d8c8dbce0473a0ca2ee39f0e19d25a0',1,'STV']]]
 ];

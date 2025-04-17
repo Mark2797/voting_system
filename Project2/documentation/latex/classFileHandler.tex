@@ -1,0 +1,96 @@
+\hypertarget{classFileHandler}{}\doxysection{File\+Handler Class Reference}
+\label{classFileHandler}\index{FileHandler@{FileHandler}}
+
+
+Class that handle the input file.  
+
+
+
+
+{\ttfamily \#include $<$File\+Handler.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFileHandler_a0d1ac8e9911e19255e8b2d99c2d93f43}\label{classFileHandler_a0d1ac8e9911e19255e8b2d99c2d93f43}} 
+\mbox{\hyperlink{classFileHandler_a0d1ac8e9911e19255e8b2d99c2d93f43}{File\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFileHandler_ae02277194e0e40b0db9d42e09b5ee204}{open\+\_\+file}} (std\+::ifstream \&file)
+\begin{DoxyCompactList}\small\item\em Open a ballot file with the correct file name or else keep prompting. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFileHandler_a921fddac25828ee1654ea345674ca0ee}{read\+\_\+file}} (std\+::ifstream \&file, std\+::vector$<$ std\+::string $>$ \&candidates, std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&ballots\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em Read the ballot file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFileHandler_ac257936981bd7879976da9ff9762f43f}{read\+\_\+file}} (std\+::ifstream \&file, std\+::vector$<$ std\+::string $>$ \&candidates, std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&ballots\+\_\+vector, std\+::string \&alg, int \&seat\+Num, int \&candidate\+Num, int \&ballot\+Num)
+\begin{DoxyCompactList}\small\item\em Read the ballot file including its headers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that handle the input file. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFileHandler_ae02277194e0e40b0db9d42e09b5ee204}\label{classFileHandler_ae02277194e0e40b0db9d42e09b5ee204}} 
+\index{FileHandler@{FileHandler}!open\_file@{open\_file}}
+\index{open\_file@{open\_file}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{open\_file()}{open\_file()}}
+{\footnotesize\ttfamily void File\+Handler\+::open\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{file }\end{DoxyParamCaption})}
+
+
+
+Open a ballot file with the correct file name or else keep prompting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file variable to store opened file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFileHandler_a921fddac25828ee1654ea345674ca0ee}\label{classFileHandler_a921fddac25828ee1654ea345674ca0ee}} 
+\index{FileHandler@{FileHandler}!read\_file@{read\_file}}
+\index{read\_file@{read\_file}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void File\+Handler\+::read\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{file,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{candidates,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{ballots\+\_\+vector }\end{DoxyParamCaption})}
+
+
+
+Read the ballot file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file variable that stores the opened file \\
+\hline
+{\em candidates} & Vector that stores the candidate names \\
+\hline
+{\em ballots\+\_\+vector} & Vector that stores the ballot information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFileHandler_ac257936981bd7879976da9ff9762f43f}\label{classFileHandler_ac257936981bd7879976da9ff9762f43f}} 
+\index{FileHandler@{FileHandler}!read\_file@{read\_file}}
+\index{read\_file@{read\_file}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void File\+Handler\+::read\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{file,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{candidates,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{ballots\+\_\+vector,  }\item[{std\+::string \&}]{alg,  }\item[{int \&}]{seat\+Num,  }\item[{int \&}]{candidate\+Num,  }\item[{int \&}]{ballot\+Num }\end{DoxyParamCaption})}
+
+
+
+Read the ballot file including its headers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file variable that stores the opened file \\
+\hline
+{\em candidates} & Vector that stores the candidate names \\
+\hline
+{\em ballots\+\_\+vector} & Vector that stores the ballot information \\
+\hline
+{\em alg} & Algorithm to use \\
+\hline
+{\em seat\+Num} & Number of seat to be elected \\
+\hline
+{\em candidate\+Num} & Number of candidates \\
+\hline
+{\em ballot\+Num} & Number of ballot \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/users/markf/desktop/repo-\/\+Team11/\+Project2/src/File\+Handler.\+h\item 
+/mnt/c/users/markf/desktop/repo-\/\+Team11/\+Project2/src/File\+Handler.\+cpp\end{DoxyCompactItemize}

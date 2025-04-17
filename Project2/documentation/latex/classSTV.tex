@@ -1,8 +1,8 @@
-\doxysection{STV Class Reference}
-\hypertarget{classSTV}{}\label{classSTV}\index{STV@{STV}}
+\hypertarget{classSTV}{}\doxysection{STV Class Reference}
+\label{classSTV}\index{STV@{STV}}
 
 
-Perform a single transferable vote (\doxylink{classSTV}{STV}) election.  
+Perform a single transferable vote (\mbox{\hyperlink{classSTV}{STV}}) election.  
 
 
 
@@ -11,93 +11,149 @@ Perform a single transferable vote (\doxylink{classSTV}{STV}) election.
 
 
 
-Inheritance diagram for STV\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=136pt]{classSTV__inherit__graph}
-\end{center}
-\end{figure}
+Inheritance diagram for STV\+:
+% FIG 0
 
 
-Collaboration diagram for STV\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=145pt]{classSTV__coll__graph}
-\end{center}
-\end{figure}
-\doxysubsubsection*{Public Member Functions}
+Collaboration diagram for STV\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classSTV_a0d8c8dbce0473a0ca2ee39f0e19d25a0}\label{classSTV_a0d8c8dbce0473a0ca2ee39f0e19d25a0} 
-{\bfseries STV} (\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}ballots, int seats)
-\item 
+\mbox{\hyperlink{classSTV_a0d8c8dbce0473a0ca2ee39f0e19d25a0}{STV}} (\mbox{\hyperlink{classBallots}{Ballots}} $\ast$ballots, int seats)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSTV}{STV}} Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSTV_ac0273879be334d416d8cd384f4b271db}\label{classSTV_ac0273879be334d416d8cd384f4b271db}} 
+\mbox{\hyperlink{classSTV_ac0273879be334d416d8cd384f4b271db}{$\sim$\+STV}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSTV}{STV}} destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSTV_a004373572830f75615db580a7bada82d}\label{classSTV_a004373572830f75615db580a7bada82d}} 
 void \mbox{\hyperlink{classSTV_a004373572830f75615db580a7bada82d}{run\+Election}} () override
-\begin{DoxyCompactList}\small\item\em Run the election with an voting algorithm. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Runs an \mbox{\hyperlink{classSTV}{STV}} election using the \mbox{\hyperlink{classSTV}{STV}} algorithm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSTV_afb2ab691a9164924a2fcddd2758ca43b}\label{classSTV_afb2ab691a9164924a2fcddd2758ca43b}} 
 void \mbox{\hyperlink{classSTV_afb2ab691a9164924a2fcddd2758ca43b}{display\+Election\+Details}} ()
-\begin{DoxyCompactList}\small\item\em Display the details of the election to the terminal. \end{DoxyCompactList}\item 
-\Hypertarget{classSTV_a1a62c76c650a932de5acbf63c4a00b9a}\label{classSTV_a1a62c76c650a932de5acbf63c4a00b9a} 
-void {\bfseries output\+Audit\+File} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classElection}{Election}}}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classElection_acc559d4bf95045f86e06fe8c0fa05baf}{Election}} (\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}ballots, int seats)
-\begin{DoxyCompactList}\small\item\em \doxylink{classElection}{Election} Constructor. \end{DoxyCompactList}\item 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Election} ()=0
-\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classElection}{Election}}}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*} {\bfseries ballots}
-\item 
-int {\bfseries seats}
-\item 
-std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries candidates}
-\item 
-std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries winners}
-\item 
-std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries losers}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Displays election information. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSTV_a1a62c76c650a932de5acbf63c4a00b9a}\label{classSTV_a1a62c76c650a932de5acbf63c4a00b9a}} 
+void \mbox{\hyperlink{classSTV_a1a62c76c650a932de5acbf63c4a00b9a}{output\+Audit\+File}} ()
+\begin{DoxyCompactList}\small\item\em Creates an audit file that contains election information after each vote distribution round. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallots}{Ballots}} $\ast$ \mbox{\hyperlink{classSTV_af96bbad56940d39624418fbc516fce5f}{get\+Ballots}} ()
+\begin{DoxyCompactList}\small\item\em Get the pointer to the Ballots$\ast$ containing all ballot information. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSTV_a16d3aea84dbbac81fbf0046ed03b216c}{get\+Seats}} ()
+\begin{DoxyCompactList}\small\item\em Get total seat number. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classSTV_a897de3db371e898d06046be2f66512a2}{get\+Candidates}} ()
+\begin{DoxyCompactList}\small\item\em Get vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects for all candidates in the election. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classSTV_ae0e6447ec0cec3e89349f44b7cef8453}{get\+Winners}} ()
+\begin{DoxyCompactList}\small\item\em Get vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects containing winners of the election. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classSTV_ae91bd553e831b40b7558767d1a2ac5a0}{get\+Losers}} ()
+\begin{DoxyCompactList}\small\item\em Get vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects containing losers of the election. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSTV_ae1e7d9ebf0c1f68384aafa8dae7d390f}{get\+Droop\+Quota}} ()
+\begin{DoxyCompactList}\small\item\em get the Droop quota of the election that is calculated and stored \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
-Perform a single transferable vote (\doxylink{classSTV}{STV}) election. 
+Perform a single transferable vote (\mbox{\hyperlink{classSTV}{STV}}) election. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSTV_a0d8c8dbce0473a0ca2ee39f0e19d25a0}\label{classSTV_a0d8c8dbce0473a0ca2ee39f0e19d25a0}} 
+\index{STV@{STV}!STV@{STV}}
+\index{STV@{STV}!STV@{STV}}
+\doxysubsubsection{\texorpdfstring{STV()}{STV()}}
+{\footnotesize\ttfamily STV\+::\+STV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallots}{Ballots}} $\ast$}]{ballots,  }\item[{int}]{seats }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classSTV}{STV}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballots} & Pointer to the \mbox{\hyperlink{classBallots}{Ballots}} that contain the ballots information \\
+\hline
+{\em seats} & Number of seats to be elected \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classSTV_afb2ab691a9164924a2fcddd2758ca43b}\label{classSTV_afb2ab691a9164924a2fcddd2758ca43b} 
-\index{STV@{STV}!displayElectionDetails@{displayElectionDetails}}
-\index{displayElectionDetails@{displayElectionDetails}!STV@{STV}}
-\doxysubsubsection{\texorpdfstring{displayElectionDetails()}{displayElectionDetails()}}
-{\footnotesize\ttfamily void STV\+::display\+Election\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{classSTV_af96bbad56940d39624418fbc516fce5f}\label{classSTV_af96bbad56940d39624418fbc516fce5f}} 
+\index{STV@{STV}!getBallots@{getBallots}}
+\index{getBallots@{getBallots}!STV@{STV}}
+\doxysubsubsection{\texorpdfstring{getBallots()}{getBallots()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBallots}{Ballots}} $\ast$ STV\+::get\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Display the details of the election to the terminal. 
+Get the pointer to the Ballots$\ast$ containing all ballot information. 
+
+\begin{DoxyReturn}{Returns}
+Ballot$\ast$ object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSTV_a897de3db371e898d06046be2f66512a2}\label{classSTV_a897de3db371e898d06046be2f66512a2}} 
+\index{STV@{STV}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!STV@{STV}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ STV\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Implements \mbox{\hyperlink{classElection_afba360a69e902856a43ed3b4625abab6}{Election}}.
+Get vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects for all candidates in the election. 
 
-\Hypertarget{classSTV_a004373572830f75615db580a7bada82d}\label{classSTV_a004373572830f75615db580a7bada82d} 
-\index{STV@{STV}!runElection@{runElection}}
-\index{runElection@{runElection}!STV@{STV}}
-\doxysubsubsection{\texorpdfstring{runElection()}{runElection()}}
-{\footnotesize\ttfamily void STV\+::run\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Run the election with an voting algorithm. 
-
+\begin{DoxyReturn}{Returns}
+vector$<$\+Candidate$>$ containing \mbox{\hyperlink{classCandidate}{Candidate}} objects for each candidate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSTV_ae1e7d9ebf0c1f68384aafa8dae7d390f}\label{classSTV_ae1e7d9ebf0c1f68384aafa8dae7d390f}} 
+\index{STV@{STV}!getDroopQuota@{getDroopQuota}}
+\index{getDroopQuota@{getDroopQuota}!STV@{STV}}
+\doxysubsubsection{\texorpdfstring{getDroopQuota()}{getDroopQuota()}}
+{\footnotesize\ttfamily int STV\+::get\+Droop\+Quota (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
-Implements \mbox{\hyperlink{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}{Election}}.
 
+get the Droop quota of the election that is calculated and stored 
+
+\begin{DoxyReturn}{Returns}
+int that corresponds to the Droop quota 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSTV_ae91bd553e831b40b7558767d1a2ac5a0}\label{classSTV_ae91bd553e831b40b7558767d1a2ac5a0}} 
+\index{STV@{STV}!getLosers@{getLosers}}
+\index{getLosers@{getLosers}!STV@{STV}}
+\doxysubsubsection{\texorpdfstring{getLosers()}{getLosers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ STV\+::get\+Losers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects containing losers of the election. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Candidate$>$ containing \mbox{\hyperlink{classCandidate}{Candidate}} objects for each candidate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSTV_a16d3aea84dbbac81fbf0046ed03b216c}\label{classSTV_a16d3aea84dbbac81fbf0046ed03b216c}} 
+\index{STV@{STV}!getSeats@{getSeats}}
+\index{getSeats@{getSeats}!STV@{STV}}
+\doxysubsubsection{\texorpdfstring{getSeats()}{getSeats()}}
+{\footnotesize\ttfamily int STV\+::get\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get total seat number. 
+
+\begin{DoxyReturn}{Returns}
+int with total number of seats 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSTV_ae0e6447ec0cec3e89349f44b7cef8453}\label{classSTV_ae0e6447ec0cec3e89349f44b7cef8453}} 
+\index{STV@{STV}!getWinners@{getWinners}}
+\index{getWinners@{getWinners}!STV@{STV}}
+\doxysubsubsection{\texorpdfstring{getWinners()}{getWinners()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ STV\+::get\+Winners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get vector of \mbox{\hyperlink{classCandidate}{Candidate}} objects containing winners of the election. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Candidate$>$ containing \mbox{\hyperlink{classCandidate}{Candidate}} objects for each candidate 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/STV.\+h\item 
-/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project1/src/STV.\+cpp\end{DoxyCompactItemize}
+/mnt/c/users/markf/desktop/repo-\/\+Team11/\+Project2/src/STV.\+h\item 
+/mnt/c/users/markf/desktop/repo-\/\+Team11/\+Project2/src/STV.\+cpp\end{DoxyCompactItemize}

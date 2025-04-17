@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plurality_0',['Plurality',['../classPlurality.html',1,'']]]
+  ['election_39',['Election',['../classElection.html',1,'']]]
 ];
