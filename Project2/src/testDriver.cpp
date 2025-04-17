@@ -1,5 +1,5 @@
 // testDriver.cpp
-// Unit testing for testDriver
+// Unit testing for Driver.cpp
 // Author: Mark Tsai
 
 #include "gtest/gtest.h"
@@ -18,7 +18,7 @@ void setArguments(int argc, char **argv, std::vector<std::string> &args) {
     }
 }
 
-class MainTest : public ::testing::Test {
+class DriverTest : public ::testing::Test {
     protected:
         Driver driver;
         int old_stdout;
@@ -79,7 +79,7 @@ class MainTest : public ::testing::Test {
     }
 };
 
-TEST_F(MainTest, ShuffleFlagTest) {
+TEST_F(DriverTest, ShuffleFlagTest) {
     int result_return;
 
     bool good_result;
