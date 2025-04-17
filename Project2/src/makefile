@@ -17,15 +17,15 @@ CXXFLAGS = -Wall -g -pthread -MMD -MP
 GTEST_DIR = -lgtest -lgtest_main -pthread
 
 # Source Files
-SRCS = Ballots.cpp Candidate.cpp Election.cpp main.cpp Plurality.cpp STV.cpp Driver.cpp FileHandler.cpp UI.cpp 
-OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o Driver.o FileHandler.o UI.o
-OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d Driver.d FileHandler.d UI.d
+SRCS = Ballots.cpp Candidate.cpp Election.cpp main.cpp Plurality.cpp STV.cpp Driver.cpp FileHandler.cpp
+OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o Driver.o FileHandler.o
+OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d Driver.d FileHandler.d
 
 # Test Files
-TEST_SRCS = testBallots.cpp testCandidate.cpp testPlurality.cpp testSTV.cpp testFileHandler.cpp testUI.cpp testDriver.cpp testSystem.cpp
-TEST_OBJS = testBallots.o testCandidate.o testPlurality.o testSTV.o testFileHandler.o testUI.o testDriver.o testSystem.o
-TEST_OBJS_D = testBallots.d testCandidate.d testPlurality.d testSTV.d testFileHandler.d testUI.d testDriver.d testSystem.d
-TEST_EXECUTABLES = testBallots testCandidate testPlurality testSTV testFileHandler testUI testDriver testSystem
+TEST_SRCS = testBallots.cpp testCandidate.cpp testPlurality.cpp testSTV.cpp testFileHandler.cpp testDriver.cpp testSystem.cpp
+TEST_OBJS = testBallots.o testCandidate.o testPlurality.o testSTV.o testFileHandler.o testDriver.o testSystem.o
+TEST_OBJS_D = testBallots.d testCandidate.d testPlurality.d testSTV.d testFileHandler.d testDriver.d testSystem.d
+TEST_EXECUTABLES = testBallots testCandidate testPlurality testSTV testFileHandler testDriver testSystem
 # Target executable
 TARGET = voting_system
 
@@ -56,9 +56,6 @@ Driver.o:
 FileHandler.o:
 	$(CXX) $(CXXFLAGS) -c FileHandler.cpp -o FileHandler.o
 
-UI.o:
-	$(CXX) $(CXXFLAGS) -c UI.cpp -o UI.o
-
 testBallots: testBallots.o Ballots.o
 	$(CXX) $(CXXFLAGS) testBallots.o Ballots.o -o testBallots $(GTEST_DIR)
 
@@ -74,14 +71,11 @@ testSTV: testSTV.o STV.o Ballots.o Candidate.o Election.o
 testFileHandler: testFileHandler.o FileHandler.o
 	$(CXX) $(CXXFLAGS) testFileHandler.o FileHandler.o -o testFileHandler $(GTEST_DIR)
 
-testUI: testUI.o UI.o
-	$(CXX) $(CXXFLAGS) testUI.o UI.o -o testUI $(GTEST_DIR)
+testDriver: testDriver.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o
+	$(CXX) $(CXXFLAGS) testDriver.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o -o testDriver $(GTEST_DIR)
 
-testDriver: testDriver.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o
-	$(CXX) $(CXXFLAGS) testDriver.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o -o testDriver $(GTEST_DIR)
-
-testSystem: testSystem.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o
-	$(CXX) $(CXXFLAGS) testSystem.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o -o testSystem $(GTEST_DIR)
+testSystem: testSystem.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o 
+	$(CXX) $(CXXFLAGS) testSystem.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o -o testSystem $(GTEST_DIR)
 
 # Link object files to the target executable
 $(TARGET): $(OBJS)

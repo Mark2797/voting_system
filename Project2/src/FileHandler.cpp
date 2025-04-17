@@ -69,3 +69,22 @@ void FileHandler::read_file(std::ifstream& file, std::vector<std::string>& candi
     
     file.close();
 }
+
+void FileHandler::read_file(std::ifstream& file, std::vector<std::string>& candidates, std::vector<std::vector<int>>& ballots_vector, std::string& alg, int& seatNum, int& candidateNum, int& ballotNum) {
+    std::string line;
+
+    // First line is election voting algo type
+    std::getline(file, line);
+    alg = line.erase(line.find_last_not_of("\r\n") + 1);;
+    // Second line is number of seats
+    std::getline(file, line);
+    seatNum = std::stoi(line);
+    // Third line is number of candidates
+    std::getline(file, line);
+    candidateNum = std::stoi(line);
+    // Forth line is number of ballots
+    std::getline(file, line);
+    ballotNum = std::stoi(line);
+    // The rest of the file is the ballot information
+    read_file(file, candidates, ballots_vector);
+}

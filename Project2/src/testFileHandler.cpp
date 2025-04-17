@@ -36,8 +36,9 @@ class FileHandlerTest : public ::testing::Test {
         std::vector<std::vector<int>> ballots_stv;
         std::vector<std::string> plurality_file_name;
         std::vector<std::string> stv_file_name;
+        std::vector<std::string> plurality_file_name_header;
+        std::vector<std::string> stv_file_name_header;
         std::vector<std::string> bad_file_name;
-        int old_stdout;
         int old_stdin;
         int null_fd;
 
@@ -75,16 +76,10 @@ class FileHandlerTest : public ::testing::Test {
         };
         plurality_file_name = {"../testing/pluralityTestFileHandler.csv\n"};
         stv_file_name = {"../testing/stvTestFileHandler.csv\n"};
+        plurality_file_name_header = {"../testing/pluralityWithHeaderTestFileHandler.csv\n"};
+        stv_file_name_header = {"../testing/stvWithHeaderTestFileHandler.csv\n"};
         bad_file_name = {"12343\n", "../testing/asdasd\n", "../testing/asdasd.csv\n", "1231.csv\n", "../testing/stvTestFileHandler.csv\n"};
-        old_stdout = dup(STDOUT_FILENO);
         old_stdin = dup(STDIN_FILENO);
-        null_fd = open("/dev/null", O_WRONLY);
-        dup2(null_fd, STDOUT_FILENO);
-    }
-
-    void TearDown() override {
-        dup2(old_stdout, STDOUT_FILENO);
-        close(null_fd);
     }
 };
 
@@ -138,6 +133,52 @@ TEST_F(FileHandlerTest, ReadFileTest) {
     restore_stdin_fd(old_stdin);
     EXPECT_EQ(candidates_stv, candidates);
     EXPECT_EQ(ballots_vector_stv, ballots_stv);
+}
+
+TEST_F(FileHandlerTest, ReadFileWithHeaderTest) {
+    // Read the plurality csv file with header
+    userInput(plurality_file_name_header);
+    std::ifstream file_plurality;
+    fh.open_file(file_plurality);
+    std::vector<std::string> candidates_plurality;
+    std::vector<std::vector<int>> ballots_vector_plurality;
+    std::string alg_plurality;
+    int seatNum_plurality;
+    int candidateNum_plurality;
+    int ballotNum_plurality;
+    fh.read_file(file_plurality, candidates_plurality, ballots_vector_plurality, alg_plurality, seatNum_plurality, candidateNum_plurality, ballotNum_plurality);
+    file_plurality.close();
+    restore_stdin_fd(old_stdin);
+    EXPECT_EQ(candidates_plurality, candidates);
+    EXPECT_EQ(ballots_vector_plurality, ballots_plurality);
+    EXPECT_EQ(alg_plurality, "PV");
+    EXPECT_EQ(seatNum_plurality, 2);
+    EXPECT_EQ(candidateNum_plurality, 6);
+    EXPECT_EQ(candidateNum_plurality, candidates_plurality.size());
+    EXPECT_EQ(ballotNum_plurality, 11);
+    EXPECT_EQ(ballotNum_plurality, ballots_vector_plurality.size());
+
+    // Read the stv csv file with header
+    userInput(stv_file_name_header);
+    std::ifstream file_stv;
+    fh.open_file(file_stv);
+    std::vector<std::string> candidates_stv;
+    std::vector<std::vector<int>> ballots_vector_stv;
+    std::string alg_stv;
+    int seatNum_stv;
+    int candidateNum_stv;
+    int ballotNum_stv;
+    fh.read_file(file_stv, candidates_stv, ballots_vector_stv, alg_stv, seatNum_stv, candidateNum_stv, ballotNum_stv);
+    file_stv.close();
+    restore_stdin_fd(old_stdin);
+    EXPECT_EQ(candidates_stv, candidates);
+    EXPECT_EQ(ballots_vector_stv, ballots_stv);
+    EXPECT_EQ(alg_stv, "STV");
+    EXPECT_EQ(seatNum_stv, 3);
+    EXPECT_EQ(candidateNum_stv, 6);
+    EXPECT_EQ(candidateNum_stv, candidates_stv.size());
+    EXPECT_EQ(ballotNum_stv, 7);
+    EXPECT_EQ(ballotNum_stv, ballots_vector_stv.size());
 }
 
 int main(int argc, char **argv) {
