@@ -428,7 +428,7 @@ TEST_F(SysTest, stvRegular) {
         EXPECT_EQ(winners.at(i).getBallotNum(), STVelection->getDroopQuota());
         for (long unsigned int j = 0; j < losers.size(); j++) {
             // Test all winners with all losers - should have at least the same, if not greater ballots
-            EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
+            EXPECT_GT(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
         }
     }
     bool access(auditFile.at(3).at(0).c_str());

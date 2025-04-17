@@ -17,15 +17,15 @@ CXXFLAGS = -Wall -g -pthread -MMD -MP
 GTEST_DIR = -lgtest -lgtest_main -pthread
 
 # Source Files
-SRCS = Ballots.cpp Candidate.cpp Election.cpp main.cpp Plurality.cpp STV.cpp Driver.cpp FileHandler.cpp UI.cpp
+SRCS = Ballots.cpp Candidate.cpp Election.cpp main.cpp Plurality.cpp STV.cpp Driver.cpp FileHandler.cpp UI.cpp 
 OBJS = Ballots.o Candidate.o Election.o main.o Plurality.o STV.o Driver.o FileHandler.o UI.o
 OBJS_D = Ballots.d Candidate.d Election.d main.d Plurality.d STV.d Driver.d FileHandler.d UI.d
 
 # Test Files
-TEST_SRCS = testBallots.cpp testCandidate.cpp testPlurality.cpp testSTV.cpp testFileHandler.cpp testUI.cpp testDriver.cpp
-TEST_OBJS = testBallots.o testCandidate.o testPlurality.o testSTV.o testFileHandler.o testUI.o testDriver.o
-TEST_OBJS_D = testBallots.d testCandidate.d testPlurality.d testSTV.d testFileHandler.d testUI.d testDriver.d
-TEST_EXECUTABLES = testBallots testCandidate testPlurality testSTV testFileHandler testUI testDriver
+TEST_SRCS = testBallots.cpp testCandidate.cpp testPlurality.cpp testSTV.cpp testFileHandler.cpp testUI.cpp testDriver.cpp testSystem.cpp
+TEST_OBJS = testBallots.o testCandidate.o testPlurality.o testSTV.o testFileHandler.o testUI.o testDriver.o testSystem.o
+TEST_OBJS_D = testBallots.d testCandidate.d testPlurality.d testSTV.d testFileHandler.d testUI.d testDriver.d testSystem.d
+TEST_EXECUTABLES = testBallots testCandidate testPlurality testSTV testFileHandler testUI testDriver testSystem
 # Target executable
 TARGET = voting_system
 
@@ -79,6 +79,9 @@ testUI: testUI.o UI.o
 
 testDriver: testDriver.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o
 	$(CXX) $(CXXFLAGS) testDriver.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o -o testDriver $(GTEST_DIR)
+
+testSystem: testSystem.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o
+	$(CXX) $(CXXFLAGS) testSystem.o Ballots.o Candidate.o Election.o Plurality.o STV.o Driver.o FileHandler.o UI.o -o testSystem $(GTEST_DIR)
 
 # Link object files to the target executable
 $(TARGET): $(OBJS)
