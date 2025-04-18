@@ -116,7 +116,7 @@ static void assignBallot(std::vector<std::string>& electionProgress, int& candid
     electionProgress.push_back(outputString);
 
     // if assigning the ballot means that the candidate hits droop quota, then immediately add them to the winners list
-    if (static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) == droopQuota) {
+    if (static_cast<int>(candidates.at(candidateNum).getBallotNum()) == droopQuota) {
         outputString = "\n\t" + candidates.at(candidateNum).getName() + " hit Droop quota- adding to winners list";
         electionProgress.push_back(outputString);
         
@@ -263,16 +263,16 @@ void STV::runElection() {
         for (int candidateNum = 0; candidateNum < static_cast<int>(current_ballot.size()); candidateNum++) {
             
             // if the current vote is a 1, assign the ballot the candidate that recieved it
-            if (current_ballot.at(candidateNum) == 1 && static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) < droopQuota) {   
+            if (current_ballot.at(candidateNum) == 1 && static_cast<int>(candidates.at(candidateNum).getBallotNum()) < droopQuota) {   
                 assignBallot(electionProgress, candidateNum, ballotId, droopQuota, seatsElected, candidates, winners);
             }
             
             // if the ballot was going to be assigned to a candidate at droop quota, instead give the ballot to the next option
-            else if (static_cast<int>(current_ballot.at(candidateNum)) == 1 && static_cast<int>(candidates.at(candidateNum).getAssignedBallots().size()) >= droopQuota) {
+            else if (static_cast<int>(current_ballot.at(candidateNum)) == 1 && static_cast<int>(candidates.at(candidateNum).getBallotNum()) >= droopQuota) {
                 outputString = "\nBallot #" + std::to_string(ballotId) + " would've been assigned to " + candidates.at(candidateNum).getName() + " but they already won a seat. Reassigning...";
                 electionProgress.push_back(outputString);
+                
                 // if the vote was going to be given to the 1st candidate but they're at droop, then look for the (first + 1) choice etc.
-
                 reassignBallot(electionProgress, ballotId, current_ballot, 1, winners, losers, candidates, droopQuota, seatsElected);
             }
         }
@@ -303,7 +303,7 @@ void STV::runElection() {
         electionProgress.push_back(outputString);  
   
         // for each of the losing candidates ballots
-        for (int i = 0; i < static_cast<int>(candidates.at(loserId).getAssignedBallots().size()); i++) {
+        for (int i = 0; i < static_cast<int>(candidates.at(loserId).getBallotNum()); i++) {
             
             int currentBallotID = candidates.at(loserId).getAssignedBallots().at(i);
             std::vector<int> currentBallot = ballots->getBallot(currentBallotID);
