@@ -109,14 +109,13 @@ TEST_F(SysTest, seatValidityDefecit) {
     EXPECT_EQ(losers_size, candidates_size);
 
     pluralityElection = new Plurality(&ballotp, seatNum);
-
+    
     pluralityElection->runElection();
     winners_size = pluralityElection->getWinners().size();
     losers_size = pluralityElection->getLosers().size();
     candidates_size = pluralityElection->getCandidates().size() - 1;
     EXPECT_EQ(winners_size, 1);
     EXPECT_EQ(losers_size, candidates_size);
-    
 };
 
 TEST_F(SysTest, seatValiditySurplus) {
