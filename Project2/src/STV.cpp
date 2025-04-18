@@ -303,7 +303,7 @@ void STV::runElection() {
         electionProgress.push_back(outputString);  
   
         // for each of the losing candidates ballots
-        for (int i = 0; i < static_cast<int>(candidates.at(loserId).getBallotNum()); i++) {
+        for (int i = 0; i < static_cast<int>(candidates.at(loserId).getAssignedBallots().size()); i++) {
             
             int currentBallotID = candidates.at(loserId).getAssignedBallots().at(i);
             std::vector<int> currentBallot = ballots->getBallot(currentBallotID);
