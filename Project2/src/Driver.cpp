@@ -7,13 +7,12 @@
 #include "Driver.h"
 #include "FileHandler.h"
 #include "Ballots.h"
-#include "Election.h"
 #include "Plurality.h"
 #include "STV.h"
 
 Driver::Driver() {}
 
-void Driver::run(int argc, char **argv) {
+void Driver::run(int argc, char **argv, Election*& election) {
     // Check shuffle flag
     bool shuffle;
     if (shuffleOffFlag(argc, argv, shuffle) != 0) {
@@ -39,7 +38,6 @@ void Driver::run(int argc, char **argv) {
     }
 
     // Create Election object and start the elction with collected information
-    Election* election;
     if (alg == "STV") {
         election = new STV(&ballots, seatNum);
     }
@@ -47,7 +45,6 @@ void Driver::run(int argc, char **argv) {
         election = new Plurality(&ballots, seatNum);
     }
     election->runElection();
-    delete election;
 }
 
 int Driver::shuffleOffFlag(int argc, char **argv, bool &shuffle) {

@@ -7,6 +7,7 @@
 // Assume perfect play for the csv file
 
 #include "Driver.h"
+#include "Election.h"
 
 /**
  * @brief The main function of the program.
@@ -16,5 +17,7 @@
  */
 int main(int argc, char **argv) {
     Driver driver = Driver();
-    driver.run(argc, argv);
+    Election* election;
+    driver.run(argc, argv, election);
+    delete election;
 }
