@@ -40,7 +40,6 @@ class FileHandlerTest : public ::testing::Test {
         std::vector<std::string> stv_file_name_header;
         std::vector<std::string> bad_file_name;
         int old_stdin;
-        int null_fd;
 
     void SetUp() override {
         fh = FileHandler();
