@@ -1,7 +1,7 @@
 [STV Election]: Droop: 1, Seats: 21, Candidates: 20
 
 Winners: Leon Kennedy
-Losers: Chuck Lancaster, Mark Suckerberg, Andrew Hero, Micheal Ashton, Joe Cool, Jimmy Donaldson, John Kennedy, Patrick Star, Robot Iam, Alice Wonder, Barack Obama, James Lancaster, Haley Welsh, James Blake, Johnny Bravo, Adam Sandler, Holly Summers, Polly Cracker, Albert Wesk, Leon Kennedy
+Losers: Chuck Lancaster, Mark Suckerberg, Andrew Hero, Micheal Ashton, Joe Cool, Jimmy Donaldson, John Kennedy, Patrick Star, Robot Iam, Alice Wonder, Barack Obama, James Lancaster, Haley Welsh, James Blake, Johnny Bravo, Adam Sandler, Holly Summers, Polly Cracker, Albert Wesk
 
 Below is input ballot information: 
 ID 0: 11,3,,9,5,6,12,,4,15,2,,,13,14,10,7,,8,1
@@ -55,38 +55,10 @@ Adding Adam Sandler to the losers list because they recieved 0 ballots.
 Adding Holly Summers to the losers list because they recieved 0 ballots.
 Adding Polly Cracker to the losers list because they recieved 0 ballots.
 Adding Albert Wesk to the losers list because they recieved 0 ballots.
-Loser for this redistribution round selected to be Leon Kennedy, redistributing their ballots.
-
-Current Vote Assignment Breakdown:
-Chuck Lancaster: 
-Mark Suckerberg: 
-Andrew Hero: 
-Micheal Ashton: 
-Joe Cool: 
-Jimmy Donaldson: 
-John Kennedy: 
-Patrick Star: 
-Robot Iam: 
-Alice Wonder: 
-Barack Obama: 
-James Lancaster: 
-Haley Welsh: 
-James Blake: 
-Johnny Bravo: 
-Adam Sandler: 
-Holly Summers: 
-Polly Cracker: 
-Albert Wesk: 
-Leon Kennedy: 
-
-Winners: Leon Kennedy
-Losers: Chuck Lancaster, Mark Suckerberg, Andrew Hero, Micheal Ashton, Joe Cool, Jimmy Donaldson, John Kennedy, Patrick Star, Robot Iam, Alice Wonder, Barack Obama, James Lancaster, Haley Welsh, James Blake, Johnny Bravo, Adam Sandler, Holly Summers, Polly Cracker, Albert Wesk, Leon Kennedy
-
-[Vote Redistribution Round #2]
 
 Final Election Results:
 Only 1 candidates were elected but 21 were needed.
 Winners are output in order below:
 
 Winners: Leon Kennedy
-Losers: Chuck Lancaster, Mark Suckerberg, Andrew Hero, Micheal Ashton, Joe Cool, Jimmy Donaldson, John Kennedy, Patrick Star, Robot Iam, Alice Wonder, Barack Obama, James Lancaster, Haley Welsh, James Blake, Johnny Bravo, Adam Sandler, Holly Summers, Polly Cracker, Albert Wesk, Leon Kennedy
+Losers: Chuck Lancaster, Mark Suckerberg, Andrew Hero, Micheal Ashton, Joe Cool, Jimmy Donaldson, John Kennedy, Patrick Star, Robot Iam, Alice Wonder, Barack Obama, James Lancaster, Haley Welsh, James Blake, Johnny Bravo, Adam Sandler, Holly Summers, Polly Cracker, Albert Wesk

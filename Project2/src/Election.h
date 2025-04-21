@@ -38,10 +38,35 @@ class Election {
          */
         virtual void runElection() = 0;
 
-        // virtual Ballots* getBallots() { return this->ballots; }
-        // virtual Ballots* getCandidates() { return this->candidates; }
-        // virtual Ballots* getWinners() { return this->winners; }
-        // virtual Ballots* getLosers() { return this->losers; }
+        /**
+         * @brief Get the pointer to the Ballots* containing all ballot information
+         * @return Ballot* object
+         */
+        virtual Ballots* getBallots();
+        
+        /**
+         * @brief Get total seat number
+         * @return int with total number of seats
+         */
+        virtual int getSeats();
+
+        /**
+         * @brief Get vector of Candidate objects for all candidates in the election
+         * @return vector<Candidate> containing Candidate objects for each candidate
+         */
+        virtual std::vector<Candidate> getCandidates();
+        
+        /**
+         * @brief Get vector of Candidate objects containing winners of the election
+         * @return vector<Candidate> containing Candidate objects for each candidate
+         */
+        virtual std::vector<Candidate> getWinners();
+        
+        /**
+         * @brief Get vector of Candidate objects containing losers of the election
+         * @return vector<Candidate> containing Candidate objects for each candidate
+         */
+        virtual std::vector<Candidate> getLosers();
 
     protected:
         Ballots* ballots;
