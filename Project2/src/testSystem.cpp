@@ -61,9 +61,7 @@ void looper(string loop_thru, vector<string> &result) {
 
 class SysTest : public ::testing::Test {
     protected:
-        vector<string> algo;
         vector<string> file_names;
-        vector<string> seatNums;
         vector<string> auditFile;
         int old_stdout = dup(STDOUT_FILENO);
         int old_stdin = dup(STDIN_FILENO);
@@ -82,11 +80,9 @@ class SysTest : public ::testing::Test {
         "../testing/STV4.csv\n", "../testing/Plurality4.csv\n", "../testing/STV5.csv\n",
         "../testing/Plurality5.csv\n", "../testing/pluralityTie.csv\n", "../testing/stvTie.csv\n",
         "../testing/seatLowPlurality.csv\n", "../testing/seatLowSTV.csv\n"};
-        seatNums = {"21\n", "5\n", "1\n", "3\n", "10\n"};
         auditFile = {"../testing/audits/seatValid.txt\n", "../testing/audits/noShuffle.txt\n", "../testing/audits/withShuffle.txt\n", 
         "../testing/audits/minSTV.txt\n", "../testing/audits/regSTV.txt\n", "../testing/audits/timeTest.txt\n", 
         "../testing/audits/stvTie.txt\n", "../testing/audits/lowVoteValid.txt\n"};
-        algo = {"1\n", "2\n"};
     }
     void TearDown() override {
         for (int i = 0; i < argc_no_shuffle; i++) {
@@ -102,9 +98,7 @@ class SysTest : public ::testing::Test {
 
 TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#: 
     vector<string> user_input;
-    user_input.push_back(file_names.at(13)); 
-    user_input.push_back(seatNums.at(0));
-    user_input.push_back(algo.at(1));
+    user_input.push_back(file_names.at(13));
     user_input.push_back(auditFile.at(7));
     
     userInput(user_input);
@@ -136,8 +130,6 @@ TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#:
 TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 38
     vector<string> user_input;
     user_input.push_back(file_names.at(12));
-    user_input.push_back(seatNums.at(0));
-    user_input.push_back(algo.at(0));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -180,8 +172,6 @@ TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 38
 TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 37
     vector<string> user_input;
     user_input.push_back(file_names.at(9));
-    user_input.push_back(seatNums.at(0));
-    user_input.push_back(algo.at(0));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -206,8 +196,6 @@ TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 37
 TEST_F(SysTest, seatValiditySurplusSTV) {
     vector<string> user_input;
     user_input.push_back(file_names.at(8));
-    user_input.push_back(seatNums.at(0));
-    user_input.push_back(algo.at(1));
     user_input.push_back(auditFile.at(0));
 
     userInput(user_input);
@@ -237,8 +225,6 @@ TEST_F(SysTest, seatValiditySurplusSTV) {
 TEST_F(SysTest, ballotShuffleValidity) {
     vector<string> user_input;
     user_input.push_back(file_names.at(5));
-    user_input.push_back(seatNums.at(3));
-    user_input.push_back(algo.at(0));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -288,8 +274,6 @@ TEST_F(SysTest, ballotShuffleValidity) {
 TEST_F(SysTest, fairElectionValiditySTV) {
     vector<string> user_input;
     user_input.push_back(file_names.at(4));
-    user_input.push_back(seatNums.at(2));
-    user_input.push_back(algo.at(1));
     user_input.push_back(auditFile.at(1));
 
     userInput(user_input);
@@ -344,8 +328,6 @@ TEST_F(SysTest, fairElectionValiditySTV) {
 TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
     vector<string> user_input;
     user_input.push_back(file_names.at(5));
-    user_input.push_back(seatNums.at(3));
-    user_input.push_back(algo.at(0));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -431,8 +413,6 @@ TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
 TEST_F (SysTest, minElectionValiditySTV) {
     vector<string> user_input;
     user_input.push_back(file_names.at(0));
-    user_input.push_back(seatNums.at(2));
-    user_input.push_back(algo.at(1));
     user_input.push_back(auditFile.at(3));
 
     userInput(user_input);
@@ -462,8 +442,6 @@ TEST_F (SysTest, minElectionValiditySTV) {
 TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 30
     vector<string> user_input;
     user_input.push_back(file_names.at(1));
-    user_input.push_back(seatNums.at(2));
-    user_input.push_back(algo.at(0));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -488,8 +466,6 @@ TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 30
 TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 31
     vector<string> user_input;
     user_input.push_back(file_names.at(5));
-    user_input.push_back(seatNums.at(3));
-    user_input.push_back(algo.at(0));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -523,8 +499,6 @@ TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 31
 TEST_F(SysTest, pluralityTie) { // Test Case ID#: 32
     vector<string> user_input;
     user_input.push_back(file_names.at(10));
-    user_input.push_back(seatNums.at(3));
-    user_input.push_back(algo.at(0));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -568,8 +542,6 @@ TEST_F(SysTest, pluralityTie) { // Test Case ID#: 32
 TEST_F(SysTest, stvRegular) {
     vector<string> user_input;
     user_input.push_back(file_names.at(4));
-    user_input.push_back(seatNums.at(3));
-    user_input.push_back(algo.at(1));
     user_input.push_back(auditFile.at(4));
 
     userInput(user_input);
@@ -609,8 +581,6 @@ TEST_F(SysTest, timeSTV) {
 
     vector<string> user_input;
     user_input.push_back(file_names.at(8));
-    user_input.push_back(seatNums.at(4));
-    user_input.push_back(algo.at(1));
     user_input.push_back(auditFile.at(5));
 
     userInput(user_input);
@@ -655,8 +625,6 @@ TEST_F(SysTest, timePlurality) { // Test Case ID#: 36
 
     vector<string> user_input;
     user_input.push_back(file_names.at(9));
-    user_input.push_back(seatNums.at(4));
-    user_input.push_back(algo.at(0));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -701,8 +669,6 @@ TEST_F(SysTest, timePlurality) { // Test Case ID#: 36
 TEST_F(SysTest, stvTie) {
     vector<string> user_input;
     user_input.push_back(file_names.at(11));
-    user_input.push_back(seatNums.at(3));
-    user_input.push_back(algo.at(1));
     user_input.push_back(auditFile.at(6));
 
     userInput(user_input);
