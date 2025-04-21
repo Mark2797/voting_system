@@ -23,6 +23,8 @@ class Driver {
          * @brief Start the election process
          * @param argc Number of arguments
          * @param argv Arguments
+         * @param election Election object pointer pass by reference
+         * @param ballots Ballots object pointer pass by reference
          */
         void run(int argc, char **argv, Election*& election, Ballots*& ballots);
 

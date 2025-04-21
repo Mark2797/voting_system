@@ -7,6 +7,7 @@
 // Assume perfect play for the csv file
 
 #include "Driver.h"
+#include "Election.h"
 
 /**
  * @brief The main function of the program.
