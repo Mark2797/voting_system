@@ -6,6 +6,7 @@
 #define DRIVER_H_
 
 #include "Election.h"
+#include "Ballots.h"
 
 /**
  * @class Driver
@@ -23,8 +24,9 @@ class Driver {
          * @param argc Number of arguments
          * @param argv Arguments
          * @param election Election object pointer pass by reference
+         * @param ballots Ballots object pointer pass by reference
          */
-        void run(int argc, char **argv, Election*& election);
+        void run(int argc, char **argv, Election*& election, Ballots*& ballots);
 
         /**
          * @brief Take arguments and check for shuffle-off flag

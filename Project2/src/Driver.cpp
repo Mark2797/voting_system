@@ -6,13 +6,12 @@
 
 #include "Driver.h"
 #include "FileHandler.h"
-#include "Ballots.h"
 #include "Plurality.h"
 #include "STV.h"
 
 Driver::Driver() {}
 
-void Driver::run(int argc, char **argv, Election*& election) {
+void Driver::run(int argc, char **argv, Election*& election, Ballots*& ballots) {
     // Check shuffle flag
     bool shuffle;
     if (shuffleOffFlag(argc, argv, shuffle) != 0) {
@@ -30,19 +29,19 @@ void Driver::run(int argc, char **argv, Election*& election) {
     int candidateNum;
     int ballotNum;
     fh.read_file(file, candidates, ballots_vector, alg, seatNum, candidateNum, ballotNum);
-    Ballots ballots(candidates, ballots_vector, shuffle);
+    ballots = new Ballots(candidates, ballots_vector, shuffle);
     // Check obtained information
-    if (ballots.getCandidateCount() != candidateNum || ballots.getBallotCount() != ballotNum) {
+    if (ballots->getCandidateCount() != candidateNum || ballots->getBallotCount() != ballotNum) {
         std::cout << "Header Error!" << std::endl;
         return;
     }
 
     // Create Election object and start the elction with collected information
     if (alg == "STV") {
-        election = new STV(&ballots, seatNum);
+        election = new STV(ballots, seatNum);
     }
     else {
-        election = new Plurality(&ballots, seatNum);
+        election = new Plurality(ballots, seatNum);
     }
     election->runElection();
 }

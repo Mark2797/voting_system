@@ -95,8 +95,10 @@ TEST_F(DriverTest, RunTest) {
     userInput(run_input);
     testing::internal::CaptureStdout();
     Election *election;
-    driver.run(good_shuffle_argc, good_shuffle_argv, election);
+    Ballots *ballots;
+    driver.run(good_shuffle_argc, good_shuffle_argv, election, ballots);
     delete election;
+    delete ballots;
     std::string result = testing::internal::GetCapturedStdout();
     restore_stdin_fd(old_stdin);
     std::string expected_result = "Shuffle is off\nPlease enter the csv file name that contains the candidates and ballots\nPlease also include the .csv extension:\nElection type: Plurality\nNumber of seats: 2\nNumber of ballots: 11\nNumber of candidates: 6\nWinners:\nBill Jones\nAlice Mix\nLosers:\nSally Ride\nAhmed Mohamed\nSiyang Xiong\nPreeti Banerjee\nPercentage of votes:\nBill Jones (45.45%)\nAlice Mix (18.18%)\nSally Ride (9.09%)\nAhmed Mohamed (9.09%)\nSiyang Xiong (9.09%)\nPreeti Banerjee (9.09%)\n";
