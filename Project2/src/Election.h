@@ -38,6 +38,11 @@ class Election {
          */
         virtual void runElection() = 0;
 
+        // virtual Ballots* getBallots() { return this->ballots; }
+        // virtual Ballots* getCandidates() { return this->candidates; }
+        // virtual Ballots* getWinners() { return this->winners; }
+        // virtual Ballots* getLosers() { return this->losers; }
+
     protected:
         Ballots* ballots;
         int seats;

@@ -5,6 +5,9 @@
 #ifndef DRIVER_H_
 #define DRIVER_H_
 
+#include "Election.h"
+#include "Ballots.h"
+
 /**
  * @class Driver
  * @brief Driver of the election that preprocess information and kick start the election
@@ -21,7 +24,7 @@ class Driver {
          * @param argc Number of arguments
          * @param argv Arguments
          */
-        void run(int argc, char **argv);
+        void run(int argc, char **argv, Election*& election, Ballots*& ballots);
 
         /**
          * @brief Take arguments and check for shuffle-off flag

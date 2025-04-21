@@ -16,5 +16,9 @@
  */
 int main(int argc, char **argv) {
     Driver driver = Driver();
-    driver.run(argc, argv);
+    Election* election;
+    Ballots* ballots;
+    driver.run(argc, argv, election, ballots);
+    delete election;
+    delete ballots;
 }
