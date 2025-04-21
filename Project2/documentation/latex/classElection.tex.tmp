@@ -1,0 +1,80 @@
+\hypertarget{classElection}{}\doxysection{Election Class Reference}
+\label{classElection}\index{Election@{Election}}
+
+
+The abstract class for \mbox{\hyperlink{classPlurality}{Plurality}} and \mbox{\hyperlink{classSTV}{STV}} algorithm inheritance.  
+
+
+
+
+{\ttfamily \#include $<$Election.\+h$>$}
+
+
+
+Inheritance diagram for Election\+:
+% FIG 0
+
+
+Collaboration diagram for Election\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classElection_acc559d4bf95045f86e06fe8c0fa05baf}{Election}} (\mbox{\hyperlink{classBallots}{Ballots}} $\ast$ballots, int seats)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classElection}{Election}} Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classElection_aceebb69f0fdf9a5d8981ef93b6664a6a}\label{classElection_aceebb69f0fdf9a5d8981ef93b6664a6a}} 
+virtual \mbox{\hyperlink{classElection_aceebb69f0fdf9a5d8981ef93b6664a6a}{$\sim$\+Election}} ()=0
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classElection_afba360a69e902856a43ed3b4625abab6}\label{classElection_afba360a69e902856a43ed3b4625abab6}} 
+virtual void \mbox{\hyperlink{classElection_afba360a69e902856a43ed3b4625abab6}{display\+Election\+Details}} ()=0
+\begin{DoxyCompactList}\small\item\em Display the details of the election to the terminal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}\label{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}} 
+virtual void \mbox{\hyperlink{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}{run\+Election}} ()=0
+\begin{DoxyCompactList}\small\item\em Run the election with an voting algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classElection_a9142adf6dd0d42a18a424edf2fddd5ce}\label{classElection_a9142adf6dd0d42a18a424edf2fddd5ce}} 
+\mbox{\hyperlink{classBallots}{Ballots}} $\ast$ {\bfseries ballots}
+\item 
+\mbox{\Hypertarget{classElection_a95e25f027c6077f9e9df8d6eec9cdd88}\label{classElection_a95e25f027c6077f9e9df8d6eec9cdd88}} 
+int {\bfseries seats}
+\item 
+\mbox{\Hypertarget{classElection_abae0ef542b0a2ce1bcb8c23c4aa4b05b}\label{classElection_abae0ef542b0a2ce1bcb8c23c4aa4b05b}} 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries candidates}
+\item 
+\mbox{\Hypertarget{classElection_aec1d74f43aaf91361e23a3de7e7ba9d8}\label{classElection_aec1d74f43aaf91361e23a3de7e7ba9d8}} 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries winners}
+\item 
+\mbox{\Hypertarget{classElection_ab393f031c23707f162d4b11dd53b6cc3}\label{classElection_ab393f031c23707f162d4b11dd53b6cc3}} 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries losers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The abstract class for \mbox{\hyperlink{classPlurality}{Plurality}} and \mbox{\hyperlink{classSTV}{STV}} algorithm inheritance. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classElection_acc559d4bf95045f86e06fe8c0fa05baf}\label{classElection_acc559d4bf95045f86e06fe8c0fa05baf}} 
+\index{Election@{Election}!Election@{Election}}
+\index{Election@{Election}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{Election()}{Election()}}
+{\footnotesize\ttfamily Election\+::\+Election (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallots}{Ballots}} $\ast$}]{ballots,  }\item[{int}]{seats }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classElection}{Election}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballots} & Pointer to the \mbox{\hyperlink{classBallots}{Ballots}} that contain the ballots information \\
+\hline
+{\em seats} & Number of seats to be elected \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/users/markf/desktop/repo-\/\+Team11/\+Project2/src/Election.\+h\item 
+/mnt/c/users/markf/desktop/repo-\/\+Team11/\+Project2/src/Election.\+cpp\end{DoxyCompactItemize}

@@ -105,23 +105,3 @@ void Plurality::displayElectionDetails() {
         std::cout << this->candidates.at(i).getName() << " (" << std::fixed << std::setprecision(2) << percentage << "%)" << std::endl;
     }
 }
-
-Ballots* Plurality::getBallots() {
-    return this->ballots;
-}
-
-int Plurality::getSeats() {
-    return this->seats;
-}
-
-std::vector<Candidate> Plurality::getCandidates() {
-    return this->candidates;
-}
-
-std::vector<Candidate> Plurality::getWinners() {
-    return this->winners;
-}
-
-std::vector<Candidate> Plurality::getLosers() {
-    return this->losers;
-}

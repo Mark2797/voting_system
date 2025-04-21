@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ballots_0',['ballots',['../classBallots.html',1,'Ballots'],['../classBallots.html#a144a30daa95bf844310a59a23c1d5df8',1,'Ballots::Ballots()']]]
+  ['ballots_1',['Ballots',['../classBallots.html',1,'Ballots'],['../classBallots.html#a9d314bb661ae391cd067af1f657a383f',1,'Ballots::Ballots()']]]
 ];

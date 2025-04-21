@@ -27,26 +27,6 @@ class Plurality : public Election {
 
         /// @brief Display the details of the election to the terminal
         void displayElectionDetails();
-
-        /// @brief Getter function for ballots
-        /// @return the ballots attribute
-        Ballots* getBallots();
-
-        /// @brief Getter function for seats
-        /// @return the seats attribute
-        int getSeats();
-
-        /// @brief Getter function for candidates
-        /// @return the ballots candidates
-        std::vector<Candidate> getCandidates();
-
-        /// @brief Getter function for winners
-        /// @return the ballots winners
-        std::vector<Candidate> getWinners();
-
-        /// @brief Getter function for losers
-        /// @return the ballots losers
-        std::vector<Candidate> getLosers();
 };
 
 #endif

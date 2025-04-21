@@ -6,15 +6,12 @@
 
 #include "Driver.h"
 #include "FileHandler.h"
-#include "UI.h"
-#include "Ballots.h"
-#include "Election.h"
 #include "Plurality.h"
 #include "STV.h"
 
 Driver::Driver() {}
 
-void Driver::run(int argc, char **argv) {
+void Driver::run(int argc, char **argv, Election*& election, Ballots*& ballots) {
     // Check shuffle flag
     bool shuffle;
     if (shuffleOffFlag(argc, argv, shuffle) != 0) {
@@ -27,26 +24,26 @@ void Driver::run(int argc, char **argv) {
     fh.open_file(file);
     std::vector<std::string> candidates;
     std::vector<std::vector<int>> ballots_vector;
-    fh.read_file(file, candidates, ballots_vector);
-    Ballots ballots(candidates, ballots_vector, shuffle);
-
-    UI ui = UI();
-    // Get number of seat and algorithm choice from user
-    int seatNum;
     std::string alg;
-    ui.prompt_user_seatNum(seatNum);
-    ui.prompt_user_alg(alg);
+    int seatNum;
+    int candidateNum;
+    int ballotNum;
+    fh.read_file(file, candidates, ballots_vector, alg, seatNum, candidateNum, ballotNum);
+    ballots = new Ballots(candidates, ballots_vector, shuffle);
+    // Check obtained information
+    if (ballots->getCandidateCount() != candidateNum || ballots->getBallotCount() != ballotNum) {
+        std::cout << "Header Error!" << std::endl;
+        return;
+    }
 
     // Create Election object and start the elction with collected information
-    Election* election;
     if (alg == "STV") {
-        election = new STV(&ballots, seatNum);
+        election = new STV(ballots, seatNum);
     }
     else {
-        election = new Plurality(&ballots, seatNum);
+        election = new Plurality(ballots, seatNum);
     }
     election->runElection();
-    delete election;
 }
 
 int Driver::shuffleOffFlag(int argc, char **argv, bool &shuffle) {
