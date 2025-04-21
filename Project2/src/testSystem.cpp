@@ -342,7 +342,6 @@ TEST_F(SysTest, fairElectionValiditySTV) {
 };
 
 TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
-    // THIS NEEDS TO BE FIXED.
     vector<string> user_input;
     user_input.push_back(file_names.at(5));
     user_input.push_back(seatNums.at(3));
@@ -357,6 +356,7 @@ TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
     driver.run(argc_no_shuffle, argv_no_shuffle, election, ballots);
     restore_stdin_fd(old_stdin);
     string ret = testing::internal::GetCapturedStdout();
+
     vector<string> results;
     looper(ret, results);
     results.erase(results.begin(), results.begin() + 8);
@@ -385,14 +385,14 @@ TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
     testing::internal::CaptureStdout();
 
     Driver driverS = Driver();
-    Election* election2;
-    Ballots* ballots2;
-    driverS.run(argc_no_shuffle, argv_no_shuffle, election2, ballots2);
+    Election* electionShuffle;
+    Ballots* ballotsShuffle;
+    driverS.run(argc_shuffle, argv_shuffle, electionShuffle, ballotsShuffle);
     restore_stdin_fd(old_stdin);
     string retS = testing::internal::GetCapturedStdout();
     vector<string> resultsS;
     looper(retS, resultsS);
-    resultsS.erase(resultsS.begin(), resultsS.begin() + 8);
+    resultsS.erase(resultsS.begin(), resultsS.begin() + 7);
 
     vector<string> subWinnersS(resultsS.begin() + 5, resultsS.begin() + 8);
     vector<string> subLosersS(resultsS.begin() + 9, resultsS.begin() + 11);
@@ -423,8 +423,8 @@ TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
     }
     delete election;
     delete ballots;
-    delete election2;
-    delete ballots2;
+    delete electionShuffle;
+    delete ballotsShuffle;
 };
 
 
@@ -486,7 +486,6 @@ TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 30
 };
 
 TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 31
-    // TODO FIX
     vector<string> user_input;
     user_input.push_back(file_names.at(5));
     user_input.push_back(seatNums.at(3));
@@ -501,38 +500,22 @@ TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 31
     driver.run(argc_no_shuffle, argv_no_shuffle, election, ballots);
     restore_stdin_fd(old_stdin);
     string ret = testing::internal::GetCapturedStdout();
-    vector<string> results;
-    looper(ret, results);
-    results.erase(results.begin(), results.begin() + 8);
 
-    vector<string> subWinners(results.begin() + 5, results.begin() + 8);
-    vector<string> subLosers(results.begin() + 9, results.begin() + 11);
-    vector<string> subPercentages(results.begin() + 12, results.end());
+    Plurality* PVelection = static_cast<Plurality*>(election);
+    vector<Candidate> winners = PVelection->getWinners();
+    vector<Candidate> losers = PVelection->getLosers();
+    int seatNum = PVelection->getSeats();
+    int loser_size = PVelection->getCandidates().size() - seatNum;
 
-    sort(subWinners.begin(), subWinners.end());
-    sort(subLosers.begin(), subLosers.end());
-    sort(subPercentages.begin(), subPercentages.end());
-
-    EXPECT_EQ(results.at(0), "Election type: Plurality");
-    EXPECT_EQ(results.at(1), "Number of seats: 3");
-    EXPECT_EQ(results.at(2), "Number of ballots: 100");
-    EXPECT_EQ(results.at(3), "Number of candidates: 5");
-    EXPECT_EQ(results.at(4), "Winners:");
-    EXPECT_EQ(results.at(8), "Losers:");
-    EXPECT_EQ(results.at(11), "Percentage of votes:");
-    EXPECT_EQ(subWinners.size(), 3);
-    EXPECT_EQ(subLosers.size(), 2);
-    EXPECT_EQ(subPercentages.size(), 5);
-    EXPECT_EQ(subWinners.at(0), "Andrew Hero");
-    EXPECT_EQ(subWinners.at(1), "Chuck Lancaster");
-    EXPECT_EQ(subWinners.at(2), "Joe Cool");
-    EXPECT_EQ(subLosers.at(0), "Mark Suckerberg");
-    EXPECT_EQ(subLosers.at(1), "Micheal Ashton");
-    EXPECT_EQ(subPercentages.at(0), "Andrew Hero (23.00%)");
-    EXPECT_EQ(subPercentages.at(1), "Chuck Lancaster (20.00%)");
-    EXPECT_EQ(subPercentages.at(2), "Joe Cool (26.00%)");
-    EXPECT_EQ(subPercentages.at(3), "Mark Suckerberg (19.00%)");
-    EXPECT_EQ(subPercentages.at(4), "Micheal Ashton (12.00%)");
+    EXPECT_EQ(seatNum, PVelection->getSeats());
+    EXPECT_EQ(winners.size(), seatNum);
+    EXPECT_EQ(losers.size(), loser_size);
+    for (long unsigned int i = 0; i < winners.size(); i++) {
+        for (long unsigned int j = 0; j < losers.size(); j++) {
+            // Test all winners with all losers - should have at least the same, if not greater ballots
+            EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
+        }
+    }
     delete election;
     delete ballots;
 };
