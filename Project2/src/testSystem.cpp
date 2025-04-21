@@ -20,12 +20,6 @@
 #include <sstream>
 #include <string>
 
-// extern void open_file(std::ifstream& file);
-// extern Ballots read_file(std::ifstream& file, bool shuffle);
-// extern int shuffleOffFlag(int argc, char **argv, bool &shuffle);
-// extern void prompt_user_seatNum(int& seatNum);
-// extern void prompt_user_alg(std::string& alg);
-
 using namespace std;
 
 void userInput(std::vector<std::string> input) {
@@ -133,6 +127,8 @@ TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#:
     vector<string> sub((results.begin() + 10), results.end());
 
     EXPECT_EQ(sub, expected_results);
+    bool access(auditFile.at(7).c_str());
+    EXPECT_TRUE(access);
     delete election;
     delete ballots;
 };
@@ -231,6 +227,9 @@ TEST_F(SysTest, seatValiditySurplusSTV) {
     EXPECT_EQ(winners_size, candidates_size);
     EXPECT_EQ(losers_size, 0);
 
+    bool access(auditFile.at(0).c_str());
+    EXPECT_TRUE(access);
+
     delete election;
     delete ballots;
 };
@@ -265,7 +264,7 @@ TEST_F(SysTest, ballotShuffleValidity) {
         Driver driver2 = Driver();
         driver2.run(argc_shuffle, argv_shuffle, electionShuffle, ballotsShuffle);
         restore_stdin_fd(old_stdin);
-        string ret = testing::internal::GetCapturedStdout();
+        string ret2 = testing::internal::GetCapturedStdout();
 
         Plurality* pluralityElection2 = dynamic_cast<Plurality*>(electionShuffle);
         Ballots* ballot_2 = pluralityElection2->getBallots();
@@ -280,90 +279,66 @@ TEST_F(SysTest, ballotShuffleValidity) {
         delete ballotsShuffle;
     }
     int avg_shuffle = not_equal / 1000;
-    cout << avg_shuffle << endl;
+    cout << avg_shuffle << "% average for shuffling" << endl;
     EXPECT_GE(avg_shuffle, 75); // 75% shuffle average overall.
     delete election;
     delete ballots;
 };
 
 TEST_F(SysTest, fairElectionValiditySTV) {
-    // vector<string> user_input;
-    // user_input.push_back(file_names.at(4));
-    // user_input.push_back(seatNums.at(2));
-    // user_input.push_back(algo.at(1));
-    // user_input.push_back(auditFile.at(1));
+    vector<string> user_input;
+    user_input.push_back(file_names.at(4));
+    user_input.push_back(seatNums.at(2));
+    user_input.push_back(algo.at(1));
+    user_input.push_back(auditFile.at(1));
 
-    // userInput(user_input);
-    // testing::internal::CaptureStdout();
+    userInput(user_input);
+    testing::internal::CaptureStdout();
 
-    // Driver driver = Driver();
-    // Election* election;
-    // Ballots* ballots;
-    // driver.run(argc_no_shuffle, argv_no_shuffle, election, ballots);
-    // restore_stdin_fd(old_stdin);
-    // string ret = testing::internal::GetCapturedStdout();
+    Driver driver = Driver();
+    Election* election;
+    Ballots* ballots;
+    driver.run(argc_no_shuffle, argv_no_shuffle, election, ballots);
+    restore_stdin_fd(old_stdin);
+    string ret = testing::internal::GetCapturedStdout();
 
-    // STV* STVelection = static_cast<STV*>(election);
+    STV* STVelection = static_cast<STV*>(election);
 
-    // vector<Candidate> winners = STVelection->getWinners();
-    // vector<Candidate> losers = STVelection->getLosers();
-    // int seatNum = STVelection->getSeats();
-    // int loser_size = STVelection->getCandidates().size() - seatNum;
-    // EXPECT_EQ(winners.size(), seatNum);
-    // EXPECT_EQ(losers.size(), loser_size);
-    // for (long unsigned int i = 0; i < winners.size(); i++) {
-    //     // All winners should have met the Droop Quota.
-    //     EXPECT_EQ(winners.at(i).getBallotNum(), STVelection->getDroopQuota());
-    //     for (long unsigned int j = 0; j < losers.size(); j++) {
-    //         // Test all winners with all losers - should have at least the same, if not greater ballots
-    //         EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
-    //     }
-    // }
-    // userInput(file_names.at(4));
-    // ifstream file;
-    // open_file(file);
-    // EXPECT_TRUE(file.is_open());
-    // restore_stdin_fd(old_stdin);
-    // Ballots ballots = read_file(file, false);
-    // file.close();
+    vector<Candidate> winners = STVelection->getWinners();
 
-    // userInput(file_names.at(4));
-    // ifstream file2;
-    // open_file(file2);
-    // EXPECT_TRUE(file2.is_open());
-    // restore_stdin_fd(old_stdin);
-    // Ballots shuffled = read_file(file2, true);
-    // file2.close();
+    userInput(user_input);
+    testing::internal::CaptureStdout();
 
-    // userInput(seatNums.at(2));
-    // prompt_user_seatNum(seatNum);
-    // EXPECT_EQ(seatNum, 1);
-    // restore_stdin_fd(old_stdin);
+    Election* electionShuffle;
+    Ballots* ballotsShuffle;
+    driver.run(argc_shuffle, argv_shuffle, electionShuffle, ballotsShuffle);
+    restore_stdin_fd(old_stdin);
+    string ret2 = testing::internal::GetCapturedStdout();
 
-    // STVelection = new STV(&ballots, seatNum);
-    // userInput(auditFile.at(1));
-    // STVelection->runElection(); 
-    // restore_stdin_fd(old_stdin);
+    STV* STVelectionS = static_cast<STV*>(electionShuffle);
 
-    // STVelectionS = new STV(&shuffled, seatNum);
-    // userInput(auditFile.at(2));
-    // STVelectionS->runElection();
-    // restore_stdin_fd(old_stdin);
+    vector<Candidate> regWinners = STVelection->getWinners();
+    vector<Candidate> shfWinners = STVelectionS->getWinners();
 
-    // vector<Candidate> regWinners = STVelection->getWinners();
-    // vector<Candidate> shfWinners = STVelectionS->getWinners();
+    vector<int> regWin(regWinners.size());
+    vector<int> shfWin(shfWinners.size()); // Names are unreliable - we need to confirm ballot size.
 
-    // vector<int> regWin(regWinners.size());
-    // vector<int> shfWin(shfWinners.size()); // Names are unreliable - we need to confirm ballot size.
+    for (long unsigned int i = 0; i < regWinners.size(); i++) {
+        regWin.at(i) = regWinners.at(i).getAssignedBallots().size();
+        shfWin.at(i) = shfWinners.at(i).getAssignedBallots().size();
+    }
 
-    // for (long unsigned int i = 0; i < regWinners.size(); i++) {
-    //     regWin.at(i) = regWinners.at(i).getAssignedBallots().size();
-    //     shfWin.at(i) = shfWinners.at(i).getAssignedBallots().size();
-    // }
+    sort(regWin.begin(), regWin.end(), comp); // Consider winners and losers come in different times.
+    sort(shfWin.begin(), shfWin.end(), comp);
+    EXPECT_EQ(regWin, shfWin);
 
-    // sort(regWin.begin(), regWin.end(), comp); // Consider winners and losers come in different times.
-    // sort(shfWin.begin(), shfWin.end(), comp);
-    // EXPECT_EQ(regWin, shfWin);
+    bool access(auditFile.at(1).c_str());
+    EXPECT_TRUE(access);
+
+    delete election;
+    delete ballots;
+    delete electionShuffle;
+    delete ballotsShuffle;
 };
 
 TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
@@ -476,6 +451,10 @@ TEST_F (SysTest, minElectionValiditySTV) {
 
     EXPECT_EQ(winners_size, candidates_size);
     EXPECT_EQ(losers_size, 0);
+
+    bool access(auditFile.at(3).c_str());
+    EXPECT_TRUE(access);
+
     delete election;
     delete ballots;
 };
@@ -507,6 +486,7 @@ TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 30
 };
 
 TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 31
+    // TODO FIX
     vector<string> user_input;
     user_input.push_back(file_names.at(5));
     user_input.push_back(seatNums.at(3));
@@ -687,6 +667,7 @@ TEST_F(SysTest, timeSTV) {
 };
 
 TEST_F(SysTest, timePlurality) { // Test Case ID#: 36
+    // TODO FIX
     auto t0 = chrono::high_resolution_clock::now();
 
     vector<string> user_input;
@@ -709,7 +690,7 @@ TEST_F(SysTest, timePlurality) { // Test Case ID#: 36
 
     vector<string> subWinners(results.begin() + 5, results.begin() + 15);
     vector<string> subLosers(results.begin() + 16, results.begin() + 26);
-    vector<string> subPercentages(results.begin() + 27, results.begin() + 47); // THIS LINE CAUSES A MAX_SIZE() FAULT
+    vector<string> subPercentages(results.begin() + 27, results.begin() + 47);
 
     sort(subWinners.begin(), subWinners.end());
     sort(subPercentages.begin(), subPercentages.end());
@@ -767,6 +748,8 @@ TEST_F(SysTest, stvTie) {
             EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
         }
     }
+    bool access(auditFile.at(6).c_str());
+    EXPECT_TRUE(access);
     delete election;
     delete ballots;
 };
