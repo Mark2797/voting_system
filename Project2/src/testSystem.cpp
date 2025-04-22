@@ -297,7 +297,10 @@ TEST_F(SysTest, fairElectionValiditySTV) {
 
     vector<Candidate> winners = STVelection->getWinners();
 
-    userInput(user_input);
+    vector<string> user_inputS;
+    user_inputS.push_back(file_names.at(6));
+    user_inputS.push_back(auditFile.at(2));
+    userInput(user_inputS);
     testing::internal::CaptureStdout();
 
     Election* electionShuffle;
