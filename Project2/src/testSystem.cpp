@@ -61,9 +61,7 @@ void looper(string loop_thru, vector<string> &result) {
 
 class SysTest : public ::testing::Test {
     protected:
-        vector<string> algo;
         vector<string> file_names;
-        vector<string> seatNums;
         vector<string> auditFile;
         int old_stdout = dup(STDOUT_FILENO);
         int old_stdin = dup(STDIN_FILENO);
@@ -707,6 +705,43 @@ TEST_F(SysTest, timePlurality) { // Test Case ID#: 41
     chrono::duration<double> diff = t1 - t0;
     cout << fixed << setprecision(2) << diff.count() << " seconds to run." << endl;
     EXPECT_LE(diff.count(), 300.0);
+    delete election;
+    delete ballots;
+};
+
+TEST_F(SysTest, stvTie) {
+    vector<string> user_input;
+    user_input.push_back(file_names.at(11));
+    user_input.push_back(auditFile.at(6));
+
+    userInput(user_input);
+    testing::internal::CaptureStdout();
+
+    Driver driver = Driver();
+    Election* election;
+    Ballots* ballots;
+    driver.run(argc_no_shuffle, argv_no_shuffle, election, ballots);
+    restore_stdin_fd(old_stdin);
+    string ret = testing::internal::GetCapturedStdout();
+
+    STV* STVelection = static_cast<STV*>(election);
+
+    vector<Candidate> winners = STVelection->getWinners();
+    vector<Candidate> losers = STVelection->getLosers();
+    int seatNum = STVelection->getSeats();
+    int loser_size = STVelection->getCandidates().size() - seatNum;
+    EXPECT_EQ(winners.size(), seatNum);
+    EXPECT_EQ(losers.size(), loser_size);
+    for (long unsigned int i = 0; i < winners.size(); i++) {
+        // All winners should have met the Droop Quota.
+        EXPECT_EQ(winners.at(i).getBallotNum(), STVelection->getDroopQuota());
+        for (long unsigned int j = 0; j < losers.size(); j++) {
+            // Test all winners with all losers - should have at least the same, if not greater ballots
+            EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
+        }
+    }
+    bool access(auditFile.at(6).c_str());
+    EXPECT_TRUE(access);
     delete election;
     delete ballots;
 };
