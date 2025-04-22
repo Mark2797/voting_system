@@ -83,11 +83,9 @@ class SysTest : public ::testing::Test {
         "../testing/Plurality5.csv\n", "../testing/pluralityTie.csv\n", "../testing/stvTie.csv\n",
         "../testing/seatLowPlurality.csv\n", "../testing/seatLowSTV.csv\n", 
         "../testing/pluralitySurplus.csv\n",  "../testing/stvSurplus.csv\n"};
-        seatNums = {"21\n", "5\n", "1\n", "3\n", "10\n"};
         auditFile = {"../testing/audits/seatValid.txt\n", "../testing/audits/noShuffle.txt\n", "../testing/audits/withShuffle.txt\n", 
         "../testing/audits/minSTV.txt\n", "../testing/audits/regSTV.txt\n", "../testing/audits/timeTest.txt\n", 
         "../testing/audits/stvTie.txt\n", "../testing/audits/lowVoteValid.txt\n"};
-        algo = {"1\n", "2\n"};
     }
     void TearDown() override {
         for (int i = 0; i < argc_no_shuffle; i++) {
