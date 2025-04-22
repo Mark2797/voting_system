@@ -34,10 +34,10 @@ void helper(string algo_type, vector<string> names, ofstream* file, int ballot_s
 }
 
 int main() {
-    int test_value = 2;
+    int test_value = 3;
     vector<int> ballot_amt = {1, 20, 100, 1000, 100000};
     vector<int> seat_amt = {1, 1, 3, 5, 10};
-    static vector<string> types = {"STV", "PV"};
+    static vector<string> types = {"STV", "PV", "MV"};
     // To keep it easier to change, this value corresponds to the total number of tests for
     // Each list of names and each ballot_amt.
     vector<string> names = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", 

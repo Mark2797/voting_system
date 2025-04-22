@@ -101,7 +101,7 @@ class SysTest : public ::testing::Test {
     }
 };
 
-TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#: 
+TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#: 27
     vector<string> user_input;
     user_input.push_back(file_names.at(13)); 
     user_input.push_back(auditFile.at(7));
@@ -132,7 +132,7 @@ TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#:
     delete ballots;
 };
 
-TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 38
+TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 28
     vector<string> user_input;
     user_input.push_back(file_names.at(12));
 
@@ -174,7 +174,7 @@ TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 38
     delete ballots;
 };
 
-TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 37
+TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 29
     vector<string> user_input;
     user_input.push_back(file_names.at(14));
 
@@ -200,7 +200,7 @@ TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 37
     delete ballots;
 };
 
-TEST_F(SysTest, seatValiditySurplusSTV) {
+TEST_F(SysTest, seatValiditySurplusSTV) { // Test Case ID#: 30
     vector<string> user_input;
     user_input.push_back(file_names.at(15));
     user_input.push_back(auditFile.at(0));
@@ -229,7 +229,7 @@ TEST_F(SysTest, seatValiditySurplusSTV) {
     delete ballots;
 };
 
-TEST_F(SysTest, ballotShuffleValidity) {
+TEST_F(SysTest, ballotShuffleValidity) { // Test Case ID#: 31
     vector<string> user_input;
     user_input.push_back(file_names.at(5));
 
@@ -278,7 +278,7 @@ TEST_F(SysTest, ballotShuffleValidity) {
     delete ballots;
 };
 
-TEST_F(SysTest, fairElectionValiditySTV) {
+TEST_F(SysTest, fairElectionValiditySTV) { // Test Case ID#: 32
     vector<string> user_input;
     user_input.push_back(file_names.at(6));
     user_input.push_back(auditFile.at(1));
@@ -335,7 +335,7 @@ TEST_F(SysTest, fairElectionValiditySTV) {
     delete ballotsShuffle;
 };
 
-TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
+TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 33
     vector<string> user_input;
     user_input.push_back(file_names.at(7));
 
@@ -419,7 +419,7 @@ TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
 };
 
 
-TEST_F (SysTest, minElectionValiditySTV) {
+TEST_F (SysTest, minElectionValiditySTV) { // Test Case ID#: 34
     vector<string> user_input;
     user_input.push_back(file_names.at(0));
     user_input.push_back(auditFile.at(3));
@@ -448,7 +448,7 @@ TEST_F (SysTest, minElectionValiditySTV) {
     delete ballots;
 };
 
-TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 30
+TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 35
     vector<string> user_input;
     user_input.push_back(file_names.at(1));
 
@@ -472,7 +472,7 @@ TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 30
     delete ballots;
 };
 
-TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 31
+TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 36
     // Rework to use PV4
     vector<string> user_input;
     user_input.push_back(file_names.at(7));
@@ -506,7 +506,7 @@ TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 31
     delete ballots;
 };
 
-TEST_F(SysTest, pluralityTie) { // Test Case ID#: 32
+TEST_F(SysTest, pluralityTie) { // Test Case ID#: 37
     vector<string> user_input;
     user_input.push_back(file_names.at(10));
 
@@ -549,7 +549,7 @@ TEST_F(SysTest, pluralityTie) { // Test Case ID#: 32
     delete ballots;
 };
 
-TEST_F(SysTest, stvRegular) {
+TEST_F(SysTest, stvRegular) { // Test Case ID#: 38
     // Rework to use STV4
     vector<string> user_input;
     user_input.push_back(file_names.at(6));
@@ -586,7 +586,7 @@ TEST_F(SysTest, stvRegular) {
     delete election;
     delete ballots;
 };
-TEST_F(SysTest, stvTie) {
+TEST_F(SysTest, stvTie) { // Test Case ID#: 39
     vector<string> user_input;
     user_input.push_back(file_names.at(11));
     user_input.push_back(auditFile.at(6));
@@ -623,7 +623,7 @@ TEST_F(SysTest, stvTie) {
     delete ballots;
 };
 
-TEST_F(SysTest, timeSTV) {
+TEST_F(SysTest, timeSTV) { // Test Case ID#: 40
     auto t0 = chrono::high_resolution_clock::now();
 
     vector<string> user_input;
@@ -666,7 +666,7 @@ TEST_F(SysTest, timeSTV) {
     delete ballots;
 };
 
-TEST_F(SysTest, timePlurality) { // Test Case ID#: 36
+TEST_F(SysTest, timePlurality) { // Test Case ID#: 41
     // TODO FIX
     auto t0 = chrono::high_resolution_clock::now();
 
