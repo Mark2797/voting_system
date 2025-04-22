@@ -79,7 +79,8 @@ class SysTest : public ::testing::Test {
         "../testing/Plurality2.csv\n", "../testing/STV3.csv\n", "../testing/Plurality3.csv\n",
         "../testing/STV4.csv\n", "../testing/Plurality4.csv\n", "../testing/STV5.csv\n",
         "../testing/Plurality5.csv\n", "../testing/pluralityTie.csv\n", "../testing/stvTie.csv\n",
-        "../testing/seatLowPlurality.csv\n", "../testing/seatLowSTV.csv\n"};
+        "../testing/seatLowPlurality.csv\n", "../testing/seatLowSTV.csv\n", 
+        "../testing/pluralitySurplus.csv\n",  "../testing/stvSurplus.csv\n"};
         auditFile = {"../testing/audits/seatValid.txt\n", "../testing/audits/noShuffle.txt\n", "../testing/audits/withShuffle.txt\n", 
         "../testing/audits/minSTV.txt\n", "../testing/audits/regSTV.txt\n", "../testing/audits/timeTest.txt\n", 
         "../testing/audits/stvTie.txt\n", "../testing/audits/lowVoteValid.txt\n"};
@@ -96,9 +97,9 @@ class SysTest : public ::testing::Test {
     }
 };
 
-TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#: 
+TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#: 27
     vector<string> user_input;
-    user_input.push_back(file_names.at(13));
+    user_input.push_back(file_names.at(13)); 
     user_input.push_back(auditFile.at(7));
     
     userInput(user_input);
@@ -108,8 +109,8 @@ TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#:
     Election* election;
     Ballots* ballots;
     driver.run(argc_no_shuffle, argv_no_shuffle, election, ballots);
-    restore_stdin_fd(old_stdin);
     string ret = testing::internal::GetCapturedStdout();
+    restore_stdin_fd(old_stdin);
     vector<string> results;
     looper(ret, results);
     string correct = "Election type: STV\nNumber of seats: 21\nNumber of ballots: 1\nNumber of candidates: 20\nWinners:\n"
@@ -118,7 +119,7 @@ TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#:
                      "Polly Cracker\nAlbert Wesk";
     vector<string> expected_results;
     looper(correct, expected_results);
-    vector<string> sub((results.begin() + 10), results.end());
+    vector<string> sub((results.begin() + 5), results.end());
 
     EXPECT_EQ(sub, expected_results);
     bool access(auditFile.at(7).c_str());
@@ -127,7 +128,7 @@ TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#:
     delete ballots;
 };
 
-TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 38
+TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 28
     vector<string> user_input;
     user_input.push_back(file_names.at(12));
 
@@ -142,7 +143,7 @@ TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 38
     string ret = testing::internal::GetCapturedStdout();
     vector<string> results;
     looper(ret, results);
-    results.erase(results.begin(), results.begin() + 8);
+    results.erase(results.begin(), results.begin() + 3);
 
     vector<string> subWinners(results.begin() + 5, results.begin() + 25);
     vector<string> subLosers(results.begin() + 26, results.begin() + 26);
@@ -169,9 +170,9 @@ TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 38
     delete ballots;
 };
 
-TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 37
+TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 29
     vector<string> user_input;
-    user_input.push_back(file_names.at(9));
+    user_input.push_back(file_names.at(14));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -183,9 +184,11 @@ TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 37
     restore_stdin_fd(old_stdin);
     string ret = testing::internal::GetCapturedStdout();
 
-    int winners_size = static_cast<Plurality*>(election)->getWinners().size();
-    int losers_size = static_cast<Plurality*>(election)->getLosers().size();
-    int candidates_size = static_cast<Plurality*>(election)->getCandidates().size();
+    Plurality* PVelection = static_cast<Plurality*>(election);
+
+    int winners_size = PVelection->getWinners().size();
+    int losers_size = PVelection->getLosers().size();
+    int candidates_size = PVelection->getCandidates().size();
 
     EXPECT_EQ(winners_size, candidates_size);
     EXPECT_EQ(losers_size, 0);
@@ -193,9 +196,9 @@ TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 37
     delete ballots;
 };
 
-TEST_F(SysTest, seatValiditySurplusSTV) {
+TEST_F(SysTest, seatValiditySurplusSTV) { // Test Case ID#: 30
     vector<string> user_input;
-    user_input.push_back(file_names.at(8));
+    user_input.push_back(file_names.at(15));
     user_input.push_back(auditFile.at(0));
 
     userInput(user_input);
@@ -222,7 +225,7 @@ TEST_F(SysTest, seatValiditySurplusSTV) {
     delete ballots;
 };
 
-TEST_F(SysTest, ballotShuffleValidity) {
+TEST_F(SysTest, ballotShuffleValidity) { // Test Case ID#: 31
     vector<string> user_input;
     user_input.push_back(file_names.at(5));
 
@@ -271,9 +274,9 @@ TEST_F(SysTest, ballotShuffleValidity) {
     delete ballots;
 };
 
-TEST_F(SysTest, fairElectionValiditySTV) {
+TEST_F(SysTest, fairElectionValiditySTV) { // Test Case ID#: 32
     vector<string> user_input;
-    user_input.push_back(file_names.at(4));
+    user_input.push_back(file_names.at(6));
     user_input.push_back(auditFile.at(1));
 
     userInput(user_input);
@@ -290,7 +293,10 @@ TEST_F(SysTest, fairElectionValiditySTV) {
 
     vector<Candidate> winners = STVelection->getWinners();
 
-    userInput(user_input);
+    vector<string> user_inputS;
+    user_inputS.push_back(file_names.at(6));
+    user_inputS.push_back(auditFile.at(2));
+    userInput(user_inputS);
     testing::internal::CaptureStdout();
 
     Election* electionShuffle;
@@ -325,9 +331,9 @@ TEST_F(SysTest, fairElectionValiditySTV) {
     delete ballotsShuffle;
 };
 
-TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
+TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 33
     vector<string> user_input;
-    user_input.push_back(file_names.at(5));
+    user_input.push_back(file_names.at(7));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -341,59 +347,58 @@ TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
 
     vector<string> results;
     looper(ret, results);
-    results.erase(results.begin(), results.begin() + 8);
+    results.erase(results.begin(), results.begin() + 3);
 
-    vector<string> subWinners(results.begin() + 5, results.begin() + 8);
-    vector<string> subLosers(results.begin() + 9, results.begin() + 11);
-    vector<string> subPercentages(results.begin() + 12, results.begin() + 17);
+    vector<string> subWinners(results.begin() + 5, results.begin() + 10);
+    vector<string> subLosers(results.begin() + 11, results.begin() + 16);
+    vector<string> subPercentages(results.begin() + 17, results.begin() + 27);
 
     sort(subWinners.begin(), subWinners.end());
     sort(subLosers.begin(), subLosers.end());
     sort(subPercentages.begin(), subPercentages.end());
 
     EXPECT_EQ(results.at(0), "Election type: Plurality");
-    EXPECT_EQ(results.at(1), "Number of seats: 3");
-    EXPECT_EQ(results.at(2), "Number of ballots: 100");
-    EXPECT_EQ(results.at(3), "Number of candidates: 5");
+    EXPECT_EQ(results.at(1), "Number of seats: 5");
+    EXPECT_EQ(results.at(2), "Number of ballots: 1000");
+    EXPECT_EQ(results.at(3), "Number of candidates: 10");
     EXPECT_EQ(results.at(4), "Winners:");
-    EXPECT_EQ(results.at(8), "Losers:");
-    EXPECT_EQ(results.at(11), "Percentage of votes:");
-    EXPECT_EQ(subWinners.size(), 3);
-    EXPECT_EQ(subLosers.size(), 2);
-    EXPECT_EQ(subPercentages.size(), 5);
+    EXPECT_EQ(results.at(10), "Losers:");
+    EXPECT_EQ(results.at(16), "Percentage of votes:");
+    EXPECT_EQ(subWinners.size(), 5);
+    EXPECT_EQ(subLosers.size(), 5);
+    EXPECT_EQ(subPercentages.size(), 10);
 
 
     userInput(user_input);
     testing::internal::CaptureStdout();
 
-    Driver driverS = Driver();
     Election* electionShuffle;
     Ballots* ballotsShuffle;
-    driverS.run(argc_shuffle, argv_shuffle, electionShuffle, ballotsShuffle);
+    driver.run(argc_shuffle, argv_shuffle, electionShuffle, ballotsShuffle);
     restore_stdin_fd(old_stdin);
     string retS = testing::internal::GetCapturedStdout();
     vector<string> resultsS;
     looper(retS, resultsS);
-    resultsS.erase(resultsS.begin(), resultsS.begin() + 7);
+    resultsS.erase(resultsS.begin(), resultsS.begin() + 2);
 
-    vector<string> subWinnersS(resultsS.begin() + 5, resultsS.begin() + 8);
-    vector<string> subLosersS(resultsS.begin() + 9, resultsS.begin() + 11);
-    vector<string> subPercentagesS(resultsS.begin() + 12, resultsS.begin() + 17);
+    vector<string> subWinnersS(resultsS.begin() + 5, resultsS.begin() + 10);
+    vector<string> subLosersS(resultsS.begin() + 11, resultsS.begin() + 16);
+    vector<string> subPercentagesS(resultsS.begin() + 17, resultsS.begin() + 27);
 
     sort(subWinnersS.begin(), subWinnersS.end());
     sort(subLosersS.begin(), subLosersS.end());
     sort(subPercentagesS.begin(), subPercentagesS.end());
 
     EXPECT_EQ(resultsS.at(0), "Election type: Plurality");
-    EXPECT_EQ(resultsS.at(1), "Number of seats: 3");
-    EXPECT_EQ(resultsS.at(2), "Number of ballots: 100");
-    EXPECT_EQ(resultsS.at(3), "Number of candidates: 5");
+    EXPECT_EQ(resultsS.at(1), "Number of seats: 5");
+    EXPECT_EQ(resultsS.at(2), "Number of ballots: 1000");
+    EXPECT_EQ(resultsS.at(3), "Number of candidates: 10");
     EXPECT_EQ(resultsS.at(4), "Winners:");
-    EXPECT_EQ(resultsS.at(8), "Losers:");
-    EXPECT_EQ(resultsS.at(11), "Percentage of votes:");
-    EXPECT_EQ(subWinnersS.size(), 3);
-    EXPECT_EQ(subLosersS.size(), 2);
-    EXPECT_EQ(subPercentagesS.size(), 5);
+    EXPECT_EQ(resultsS.at(10), "Losers:");
+    EXPECT_EQ(resultsS.at(16), "Percentage of votes:");
+    EXPECT_EQ(subWinnersS.size(), 5);
+    EXPECT_EQ(subLosersS.size(), 5);
+    EXPECT_EQ(subPercentagesS.size(), 10);
     for (int i = 0; i < static_cast<int>(subWinners.size()); i++) {
         EXPECT_EQ(subWinners.at(i), subWinnersS.at(i));
     }
@@ -410,7 +415,7 @@ TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 29
 };
 
 
-TEST_F (SysTest, minElectionValiditySTV) {
+TEST_F (SysTest, minElectionValiditySTV) { // Test Case ID#: 34
     vector<string> user_input;
     user_input.push_back(file_names.at(0));
     user_input.push_back(auditFile.at(3));
@@ -439,7 +444,7 @@ TEST_F (SysTest, minElectionValiditySTV) {
     delete ballots;
 };
 
-TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 30
+TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 35
     vector<string> user_input;
     user_input.push_back(file_names.at(1));
 
@@ -463,9 +468,10 @@ TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 30
     delete ballots;
 };
 
-TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 31
+TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 36
+    // Rework to use PV4
     vector<string> user_input;
-    user_input.push_back(file_names.at(5));
+    user_input.push_back(file_names.at(7));
 
     userInput(user_input);
     testing::internal::CaptureStdout();
@@ -496,7 +502,7 @@ TEST_F(SysTest, pluralityRegular) { // Test Case ID#: 31
     delete ballots;
 };
 
-TEST_F(SysTest, pluralityTie) { // Test Case ID#: 32
+TEST_F(SysTest, pluralityTie) { // Test Case ID#: 37
     vector<string> user_input;
     user_input.push_back(file_names.at(10));
 
@@ -511,7 +517,7 @@ TEST_F(SysTest, pluralityTie) { // Test Case ID#: 32
     string ret = testing::internal::GetCapturedStdout();
     vector<string> results;
     looper(ret, results);
-    results.erase(results.begin(), results.begin() + 8);
+    results.erase(results.begin(), results.begin() + 3);
 
     vector<string> subWinners(results.begin() + 5, results.begin() + 8);
     vector<string> subLosers(results.begin() + 9, results.begin() + 11);
@@ -539,9 +545,10 @@ TEST_F(SysTest, pluralityTie) { // Test Case ID#: 32
     delete ballots;
 };
 
-TEST_F(SysTest, stvRegular) {
+TEST_F(SysTest, stvRegular) { // Test Case ID#: 38
+    // Rework to use STV4
     vector<string> user_input;
-    user_input.push_back(file_names.at(4));
+    user_input.push_back(file_names.at(6));
     user_input.push_back(auditFile.at(4));
 
     userInput(user_input);
@@ -575,8 +582,44 @@ TEST_F(SysTest, stvRegular) {
     delete election;
     delete ballots;
 };
+TEST_F(SysTest, stvTie) { // Test Case ID#: 39
+    vector<string> user_input;
+    user_input.push_back(file_names.at(11));
+    user_input.push_back(auditFile.at(6));
 
-TEST_F(SysTest, timeSTV) {
+    userInput(user_input);
+    testing::internal::CaptureStdout();
+
+    Driver driver = Driver();
+    Election* election;
+    Ballots* ballots;
+    driver.run(argc_no_shuffle, argv_no_shuffle, election, ballots);
+    restore_stdin_fd(old_stdin);
+    string ret = testing::internal::GetCapturedStdout();
+
+    STV* STVelection = static_cast<STV*>(election);
+
+    vector<Candidate> winners = STVelection->getWinners();
+    vector<Candidate> losers = STVelection->getLosers();
+    int seatNum = STVelection->getSeats();
+    int loser_size = STVelection->getCandidates().size() - seatNum;
+    EXPECT_EQ(winners.size(), seatNum);
+    EXPECT_EQ(losers.size(), loser_size);
+    for (long unsigned int i = 0; i < winners.size(); i++) {
+        // All winners should have met the Droop Quota.
+        EXPECT_EQ(winners.at(i).getBallotNum(), STVelection->getDroopQuota());
+        for (long unsigned int j = 0; j < losers.size(); j++) {
+            // Test all winners with all losers - should have at least the same, if not greater ballots
+            EXPECT_GE(winners.at(i).getBallotNum(), losers.at(j).getBallotNum()); 
+        }
+    }
+    bool access(auditFile.at(6).c_str());
+    EXPECT_TRUE(access);
+    delete election;
+    delete ballots;
+};
+
+TEST_F(SysTest, timeSTV) { // Test Case ID#: 40
     auto t0 = chrono::high_resolution_clock::now();
 
     vector<string> user_input;
@@ -619,7 +662,7 @@ TEST_F(SysTest, timeSTV) {
     delete ballots;
 };
 
-TEST_F(SysTest, timePlurality) { // Test Case ID#: 36
+TEST_F(SysTest, timePlurality) { // Test Case ID#: 41
     // TODO FIX
     auto t0 = chrono::high_resolution_clock::now();
 
@@ -637,7 +680,7 @@ TEST_F(SysTest, timePlurality) { // Test Case ID#: 36
     string ret = testing::internal::GetCapturedStdout();
     vector<string> results;
     looper(ret, results);
-    results.erase(results.begin(), results.begin() + 8);
+    results.erase(results.begin(), results.begin() + 3);
 
     vector<string> subWinners(results.begin() + 5, results.begin() + 15);
     vector<string> subLosers(results.begin() + 16, results.begin() + 26);
