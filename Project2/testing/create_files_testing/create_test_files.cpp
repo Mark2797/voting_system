@@ -15,9 +15,29 @@ using namespace std;
 // March 24th, 2025
 // Purpose is to create random CSV files to test for.
 
+void helper(string algo_type, vector<string> names, ofstream* file, int ballot_size, int seat_size) {
+    string seats = to_string(seat_size);
+    string candidates = to_string(names.size());
+    string ballots = to_string(ballot_size);
+    vector<string> printer = {algo_type, seats, candidates, ballots};
+    string str = "";
+
+    for (string i : printer) {
+        *file << i << "\n";
+    }
+
+    for (string name : names) {
+        str += name + ",";
+    }
+    str.pop_back();
+    *file << str << "\n";
+}
+
 int main() {
     int test_value = 2;
     vector<int> ballot_amt = {1, 20, 100, 1000, 100000};
+    vector<int> seat_amt = {1, 1, 3, 5, 10};
+    static vector<string> types = {"STV", "PV"};
     // To keep it easier to change, this value corresponds to the total number of tests for
     // Each list of names and each ballot_amt.
     vector<string> names = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", 
@@ -44,24 +64,22 @@ int main() {
     names_list.insert(names_list.end(), test_value, names2);
     names_list.insert(names_list.end(), test_value, names);
     vector<int> ballots(names_list.size());
+    vector<int> seats(names_list.size());
+    vector<string> type_list(names_list.size());
     // This refers to the total number of ballots. The right value can be changed without
     // concern, however the left value should be alligned with the total amount of 
     // tests we want to run.
     for (int i = 0; i < names_list.size(); i++) {
         ballots.at(i) = ballot_amt[ceil(i / test_value)];
-    }
-    // Using a loop with ceiling divsion to push the total number of ballots.
-    static vector<string> types = {"S", "P"};
-    vector<string> type_list(names_list.size());
-    for (int i = 0; i < names_list.size(); i++) {
-        type_list.at(i) = types[i % 2];
+        type_list.at(i) = types[i % test_value];
+        seats.at(i) = seat_amt[ceil(i / test_value)];
     }
     // Interchanging types of algorithms to run. 
     // DO NOT TOUCH TYPES. IT SHOULD ONLY HAVE S AND P.
     vector<string> path;
     for (int n = 1; n <= names_list.size(); n++) {
         string type = "";
-        if (type_list.at(n - 1) == "S") type = "STV"; else type ="Plurality";
+        if (type_list.at(n - 1) == "STV") type = "STV"; else type ="Plurality";
         path.push_back("../" + type + to_string(static_cast<int>((n - 1) / 2) + 1) + ".csv");
     }
     // Creates the total amount of test files as csv files to output.
@@ -76,15 +94,9 @@ int main() {
         ofstream f(path[i]); // Start output stream
         vector<int> length(names_list[i].size());
         iota(length.begin(), length.end(), 1); // Gets length vector ready for being randomized
+        helper(type_list[i], names_list[i], &f, ballots[i], seats[i]);
         string str = "";
-        for (string name : names_list[i]) {
-            str += name + ",";
-        }
-        str.pop_back();
-        f << str << "\n";
-        str = "";
-        // Prints out names at the top of the file.
-        if (type_list[i] == "S") {
+        if (type_list[i] == "STV") {
             // STV ALGORITHM
             // Randomzies order & number of non-votes, then writes to the file.
             uniform_int_distribution<> distribution(0, length.size() / 2);
@@ -106,7 +118,7 @@ int main() {
                 f << str << '\n';
                 str = "";
             }
-        } else if (type_list[i] == "P") {
+        } else if (type_list[i] == "PV") {
             // PLURALITY ALGORITHM
             // Ranomizes what candidate (index) gets the vote, then writes to the file.
             vector<vector<int>> vals(ballots[i], vector<int>(length.size()));
