@@ -33,8 +33,10 @@ class FileHandlerTest : public ::testing::Test {
         FileHandler fh;
         std::vector<std::string> candidates;
         std::vector<std::vector<int>> ballots_plurality;
+        std::vector<std::vector<int>> ballots_plurality_multiple;
         std::vector<std::vector<int>> ballots_stv;
         std::vector<std::string> plurality_file_name;
+        std::vector<std::string> plurality_multiple_file_name;
         std::vector<std::string> stv_file_name;
         std::vector<std::string> plurality_file_name_header;
         std::vector<std::string> stv_file_name_header;
@@ -64,6 +66,27 @@ class FileHandlerTest : public ::testing::Test {
             {0, 0, 0, 0, 1, 0},
             {0, 0, 0, 0, 0, 1}
         };
+        ballots_plurality_multiple = {
+            {1, 0, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {0, 1, 0, 0, 0, 0},
+            {0, 1, 0, 0, 0, 0},
+            {0, 0, 1, 0, 0, 0},
+            {0, 0, 0, 1, 0, 0},
+            {0, 0, 0, 0, 1, 0},
+            {0, 0, 0, 0, 0, 1},
+            {1, 0, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {1, 0, 0, 0, 0, 0},
+            {0, 1, 0, 0, 0, 0},
+            {0, 1, 0, 0, 0, 0},
+            {0, 0, 1, 0, 0, 0}
+        };
         ballots_stv = {
             {1, 0, 2, 0, 3, 0},
             {3, 2, 1, 4, 6, 5},
@@ -74,6 +97,7 @@ class FileHandlerTest : public ::testing::Test {
             {0, 0, 0, 1, 2, 3}
         };
         plurality_file_name = {"../testing/pluralityTestFileHandler.csv\n"};
+        plurality_multiple_file_name = {"../testing/pluralityWithHeaderTestFileHandler.csv\n", "1\n", "../testing/pluralityWithHeaderTestFileHandler-2.csv\n", "2\n"};
         stv_file_name = {"../testing/stvTestFileHandler.csv\n"};
         plurality_file_name_header = {"../testing/pluralityWithHeaderTestFileHandler.csv\n"};
         stv_file_name_header = {"../testing/stvWithHeaderTestFileHandler.csv\n"};
@@ -178,6 +202,27 @@ TEST_F(FileHandlerTest, ReadFileWithHeaderTest) {
     EXPECT_EQ(candidateNum_stv, candidates_stv.size());
     EXPECT_EQ(ballotNum_stv, 7);
     EXPECT_EQ(ballotNum_stv, ballots_vector_stv.size());
+}
+
+TEST_F(FileHandlerTest, MultipleFilesTest) {
+    userInput(plurality_multiple_file_name);
+    std::vector<std::string> candidates_plurality;
+    std::vector<std::vector<int>> ballots_vector_plurality;
+    std::string alg_plurality;
+    int seatNum_plurality;
+    int candidateNum_plurality;
+    int ballotNum_plurality;
+    int result = fh.multiple_files(candidates_plurality, ballots_vector_plurality, alg_plurality, seatNum_plurality, candidateNum_plurality, ballotNum_plurality);
+    restore_stdin_fd(old_stdin);
+    EXPECT_EQ(result, 0);
+    EXPECT_EQ(candidates_plurality, candidates);
+    EXPECT_EQ(ballots_vector_plurality, ballots_plurality_multiple);
+    EXPECT_EQ(alg_plurality, "PV");
+    EXPECT_EQ(seatNum_plurality, 2);
+    EXPECT_EQ(candidateNum_plurality, 6);
+    EXPECT_EQ(candidateNum_plurality, candidates_plurality.size());
+    EXPECT_EQ(ballotNum_plurality, 19);
+    EXPECT_EQ(ballotNum_plurality, ballots_vector_plurality.size());
 }
 
 int main(int argc, char **argv) {
