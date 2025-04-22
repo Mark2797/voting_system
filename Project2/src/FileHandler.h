@@ -47,7 +47,7 @@ class FileHandler {
         void read_file(std::ifstream& file, std::vector<std::string>& candidates, std::vector<std::vector<int>>& ballots_vector, std::string& alg, int& seatNum, int& candidateNum, int& ballotNum);
 
         /**
-         * @brief Read the ballot file including its headers
+         * @brief Read the ballot file including its headers from single file or multiple files
          * @param candidates Vector that stores the candidate names
          * @param ballots_vector Vector that stores the ballot information
          * @param alg Algorithm to use
