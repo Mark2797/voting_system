@@ -8,6 +8,7 @@
 #include "FileHandler.h"
 #include "Plurality.h"
 #include "STV.h"
+#include "Municipal.h"
 
 Driver::Driver() {}
 
@@ -38,8 +39,10 @@ void Driver::run(int argc, char **argv, Election*& election, Ballots*& ballots) 
     if (alg == "STV") {
         election = new STV(ballots, seatNum);
     }
-    else {
+    else if (alg == "PV") {
         election = new Plurality(ballots, seatNum);
+    } else {
+        election = new Municipal(ballots, seatNum);
     }
     election->runElection();
 }
