@@ -1,0 +1,9 @@
+<map id="Election" name="Election">
+<area shape="rect" id="Node000001" title="The abstract class for Plurality and STV algorithm inheritance." alt="" coords="116,5,191,31"/>
+<area shape="rect" id="Node000002" href="$classMunicipal.html" title="Perform a municipal election." alt="" coords="5,79,91,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,41,67,81,64,76,123,36"/>
+<area shape="rect" id="Node000003" href="$classPlurality.html" title="Perform a plurality election." alt="" coords="115,79,191,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,44,156,79,151,79,151,44"/>
+<area shape="rect" id="Node000004" href="$classSTV.html" title="Perform a single transferable vote (STV) election." alt="" coords="215,79,262,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,37,226,76,223,80,176,41"/>
+</map>

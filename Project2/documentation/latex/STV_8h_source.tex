@@ -1,0 +1,40 @@
+\doxysection{STV.\+h}
+\hypertarget{STV_8h_source}{}\label{STV_8h_source}\index{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project2/src/STV.h@{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project2/src/STV.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ STV.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Perform\ a\ single\ transferable\ vote\ (STV)\ election}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Author:\ Mark\ Tsai,\ Michael\ Dunn}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ STV\_H\_}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ STV\_H\_}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Election.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Ballots.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSTV}{STV}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classElection}{Election}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSTV}{STV}}(\mbox{\hyperlink{classBallots}{Ballots}}*\ ballots,\ \textcolor{keywordtype}{int}\ seats);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSTV_ac0273879be334d416d8cd384f4b271db}{\string~STV}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSTV_a004373572830f75615db580a7bada82d}{runElection}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSTV_afb2ab691a9164924a2fcddd2758ca43b}{displayElectionDetails}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSTV_a1a62c76c650a932de5acbf63c4a00b9a}{outputAuditFile}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSTV_ae1e7d9ebf0c1f68384aafa8dae7d390f}{getDroopQuota}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ droopQuota;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ std::vector<std::string>\ electionProgress;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBallots}{Ballots}}*\ stv\_ballots;}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

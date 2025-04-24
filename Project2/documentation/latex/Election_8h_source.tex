@@ -1,0 +1,47 @@
+\doxysection{Election.\+h}
+\hypertarget{Election_8h_source}{}\label{Election_8h_source}\index{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project2/src/Election.h@{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project2/src/Election.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Election.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ The\ abstract\ class\ for\ Plurality\ and\ STV\ algorithm\ inheritance}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Author:\ Mark\ Tsai}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ ELECTION\_H\_}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ELECTION\_H\_}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Ballots.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Candidate.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classElection}{Election}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classElection}{Election}}(\mbox{\hyperlink{classBallots}{Ballots}}*\ ballots,\ \textcolor{keywordtype}{int}\ seats);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classElection_aceebb69f0fdf9a5d8981ef93b6664a6a}{\string~Election}}()\ =\ 0;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classElection_afba360a69e902856a43ed3b4625abab6}{displayElectionDetails}}()\ =\ 0;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}{runElection}}()\ =\ 0;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classBallots}{Ballots}}*\ \mbox{\hyperlink{classElection_a74242bd95f155c7407b9c0454161cbed}{getBallots}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classElection_ae12f1484c45a3cf403e2dc3355ba51a9}{getSeats}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<Candidate>\ \mbox{\hyperlink{classElection_aeca6cbb092e03709ad2e543fd8f37b4b}{getCandidates}}();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<Candidate>\ \mbox{\hyperlink{classElection_a014d4164f5669f35c67211d4a0026387}{getWinners}}();}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<Candidate>\ \mbox{\hyperlink{classElection_ad6040385a339b92ceed5e7ed9ddf7610}{getLosers}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBallots}{Ballots}}*\ ballots;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ seats;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ std::vector<Candidate>\ candidates;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ std::vector<Candidate>\ winners;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ std::vector<Candidate>\ losers;}
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

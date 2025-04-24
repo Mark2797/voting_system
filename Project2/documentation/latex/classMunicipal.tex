@@ -1,0 +1,134 @@
+\doxysection{Municipal Class Reference}
+\hypertarget{classMunicipal}{}\label{classMunicipal}\index{Municipal@{Municipal}}
+
+
+Perform a municipal election.  
+
+
+
+
+{\ttfamily \#include $<$Municipal.\+h$>$}
+
+
+
+Inheritance diagram for Municipal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{classMunicipal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Municipal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{classMunicipal__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMunicipal_a48d08bb0a93286d83a9e763b41c76aa8}{Municipal}} (\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}ballots, int seats)
+\begin{DoxyCompactList}\small\item\em \doxylink{classMunicipal}{Municipal} constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classMunicipal_ad92f4ca2f60ebc9dc82cd550adeef4e7}\label{classMunicipal_ad92f4ca2f60ebc9dc82cd550adeef4e7} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Municipal} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMunicipal_ab1db396d371581a98ab995d3a555c762}{run\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Runs a municipal election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMunicipal_a14e47ef3c5602df40031e729c3ef7e53}{display\+Election\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Display the details of the election to the terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classElection}{Election}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classElection_acc559d4bf95045f86e06fe8c0fa05baf}{Election}} (\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}ballots, int seats)
+\begin{DoxyCompactList}\small\item\em \doxylink{classElection}{Election} Constructor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Election} ()=0
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classElection_a74242bd95f155c7407b9c0454161cbed}{get\+Ballots}} ()
+\begin{DoxyCompactList}\small\item\em Get the pointer to the Ballots\texorpdfstring{$\ast$}{*} containing all ballot information. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classElection_ae12f1484c45a3cf403e2dc3355ba51a9}{get\+Seats}} ()
+\begin{DoxyCompactList}\small\item\em Get total seat number. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classElection_aeca6cbb092e03709ad2e543fd8f37b4b}{get\+Candidates}} ()
+\begin{DoxyCompactList}\small\item\em Get vector of \doxylink{classCandidate}{Candidate} objects for all candidates in the election. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classElection_a014d4164f5669f35c67211d4a0026387}{get\+Winners}} ()
+\begin{DoxyCompactList}\small\item\em Get vector of \doxylink{classCandidate}{Candidate} objects containing winners of the election. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classElection_ad6040385a339b92ceed5e7ed9ddf7610}{get\+Losers}} ()
+\begin{DoxyCompactList}\small\item\em Get vector of \doxylink{classCandidate}{Candidate} objects containing losers of the election. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classElection}{Election}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*} {\bfseries ballots}
+\item 
+int {\bfseries seats}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries candidates}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries winners}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries losers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Perform a municipal election. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMunicipal_a48d08bb0a93286d83a9e763b41c76aa8}\label{classMunicipal_a48d08bb0a93286d83a9e763b41c76aa8} 
+\index{Municipal@{Municipal}!Municipal@{Municipal}}
+\index{Municipal@{Municipal}!Municipal@{Municipal}}
+\doxysubsubsection{\texorpdfstring{Municipal()}{Municipal()}}
+{\footnotesize\ttfamily Municipal\+::\+Municipal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}}]{ballots,  }\item[{int}]{seats }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classMunicipal}{Municipal} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballots} & Pointer to the \doxylink{classBallots}{Ballots} that contain the ballots information \\
+\hline
+{\em seats} & Number of seats to be elected \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMunicipal_a14e47ef3c5602df40031e729c3ef7e53}\label{classMunicipal_a14e47ef3c5602df40031e729c3ef7e53} 
+\index{Municipal@{Municipal}!displayElectionDetails@{displayElectionDetails}}
+\index{displayElectionDetails@{displayElectionDetails}!Municipal@{Municipal}}
+\doxysubsubsection{\texorpdfstring{displayElectionDetails()}{displayElectionDetails()}}
+{\footnotesize\ttfamily void Municipal\+::display\+Election\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Display the details of the election to the terminal. 
+
+
+
+Implements \mbox{\hyperlink{classElection_afba360a69e902856a43ed3b4625abab6}{Election}}.
+
+\Hypertarget{classMunicipal_ab1db396d371581a98ab995d3a555c762}\label{classMunicipal_ab1db396d371581a98ab995d3a555c762} 
+\index{Municipal@{Municipal}!runElection@{runElection}}
+\index{runElection@{runElection}!Municipal@{Municipal}}
+\doxysubsubsection{\texorpdfstring{runElection()}{runElection()}}
+{\footnotesize\ttfamily void Municipal\+::run\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Runs a municipal election. 
+
+
+
+Implements \mbox{\hyperlink{classElection_a1d84fd2f5cd7b14b2e9a729e7804286f}{Election}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project2/src/Municipal.\+h\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project2/src/Municipal.\+cpp\end{DoxyCompactItemize}
