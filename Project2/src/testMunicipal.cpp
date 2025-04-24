@@ -126,6 +126,16 @@ class MunicipalTest : public ::testing::Test {
 
 TEST_F(MunicipalTest, MunicipalConstructorTest) {
     EXPECT_EQ(municipal->getBallots(), &(ballots.value()));
+    EXPECT_EQ(municipal->getWinners().size(), 0);
+    EXPECT_EQ(municipal->getLosers().size(), 0);
+    EXPECT_EQ(municipal->getSeats(), 3);
+    EXPECT_EQ(municipal->getCandidates().size(), 6);
+    EXPECT_EQ(municipal->getCandidates().at(0).getName(), "Bill Jones");
+    EXPECT_EQ(municipal->getCandidates().at(1).getName(), "Alice Mix");
+    EXPECT_EQ(municipal->getCandidates().at(2).getName(), "Sally Ride");
+    EXPECT_EQ(municipal->getCandidates().at(3).getName(), "Ahmed Mohamed");
+    EXPECT_EQ(municipal->getCandidates().at(4).getName(), "Siyang Xiong");
+    EXPECT_EQ(municipal->getCandidates().at(5).getName(), "Shana Watters");
     EXPECT_EQ(0, 1);
 };
 
