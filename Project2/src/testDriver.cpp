@@ -48,6 +48,7 @@ class DriverTest : public ::testing::Test {
         char **bad_argv;
         char **many_argv;
         std::vector<std::string> run_input;
+        std::vector<std::string> run_multiple_file_input;
 
     void SetUp() override {
         driver = Driver();
@@ -60,15 +61,16 @@ class DriverTest : public ::testing::Test {
         good_shuffle_argv = new char *[good_shuffle_argc];
         bad_argv = new char *[bad_argc];
         many_argv = new char *[many_argc];
-        std::vector<std::string> good_args = {"program"};
+        std::vector<std::string> good_args = {"voting_system"};
         setArguments(good_argc, good_argv, good_args);
-        std::vector<std::string> good_shuffle_args = {"program", "shuffle-off"};
+        std::vector<std::string> good_shuffle_args = {"voting_system", "shuffle-off"};
         setArguments(good_shuffle_argc, good_shuffle_argv, good_shuffle_args);
-        std::vector<std::string> bad_args = {"program", "shuffle"};
+        std::vector<std::string> bad_args = {"voting_system", "shuffle"};
         setArguments(bad_argc, bad_argv, bad_args);
-        std::vector<std::string> many_args = {"program", "shuffle-off", "extra"};
+        std::vector<std::string> many_args = {"voting_system", "shuffle-off", "extra"};
         setArguments(many_argc, many_argv, many_args);
-        run_input = {"../testing/pluralityWithHeaderTestFileHandler.csv"};
+        run_input = {"../testing/pluralityWithHeaderTestFileHandler.csv\n", "2\n"};
+        run_multiple_file_input = {"../testing/pluralityWithHeaderTestFileHandler.csv\n", "1\n", "../testing/pluralityWithHeaderTestFileHandler-2.csv\n", "2\n"};
     }
 
     void TearDown() override {
@@ -101,7 +103,79 @@ TEST_F(DriverTest, RunTest) {
     delete ballots;
     std::string result = testing::internal::GetCapturedStdout();
     restore_stdin_fd(old_stdin);
-    std::string expected_result = "Shuffle is off\nPlease enter the csv file name that contains the candidates and ballots\nPlease also include the .csv extension:\nElection type: Plurality\nNumber of seats: 2\nNumber of ballots: 11\nNumber of candidates: 6\nWinners:\nBill Jones\nAlice Mix\nLosers:\nSally Ride\nAhmed Mohamed\nSiyang Xiong\nPreeti Banerjee\nPercentage of votes:\nBill Jones (45.45%)\nAlice Mix (18.18%)\nSally Ride (9.09%)\nAhmed Mohamed (9.09%)\nSiyang Xiong (9.09%)\nPreeti Banerjee (9.09%)\n";
+    std::string expected_result = 
+        "Shuffle is off\n"
+        "Please enter the csv file name that contains the candidates and ballots\n"
+        "Please also include the .csv extension:\n"
+        "Do you want to input another file?\n"
+        "1. Yes\n"
+        "2. No\n"
+        "Please select by entering the number 1 or 2:\n"
+        "Election type: Plurality\n"
+        "Number of seats: 2\n"
+        "Number of ballots: 11\n"
+        "Number of candidates: 6\n"
+        "Winners:\n"
+        "Bill Jones\n"
+        "Alice Mix\n"
+        "Losers:\n"
+        "Sally Ride\n"
+        "Ahmed Mohamed\n"
+        "Siyang Xiong\n"
+        "Preeti Banerjee\n"
+        "Percentage of votes:\n"
+        "Bill Jones (45.45%)\n"
+        "Alice Mix (18.18%)\n"
+        "Sally Ride (9.09%)\n"
+        "Ahmed Mohamed (9.09%)\n"
+        "Siyang Xiong (9.09%)\n"
+        "Preeti Banerjee (9.09%)\n";
+    EXPECT_EQ(result, expected_result);
+}
+
+TEST_F(DriverTest, RunMultipleFileTest) {
+    userInput(run_multiple_file_input);
+    testing::internal::CaptureStdout();
+    Election *election;
+    Ballots *ballots;
+    driver.run(good_shuffle_argc, good_shuffle_argv, election, ballots);
+    delete election;
+    delete ballots;
+    std::string result = testing::internal::GetCapturedStdout();
+    restore_stdin_fd(old_stdin);
+    std::string expected_result = 
+        "Shuffle is off\n"
+        "Please enter the csv file name that contains the candidates and ballots\n"
+        "Please also include the .csv extension:\n"
+        "Do you want to input another file?\n"
+        "1. Yes\n"
+        "2. No\n"
+        "Please select by entering the number 1 or 2:\n"
+        "Please enter the csv file name that contains the candidates and ballots\n"
+        "Please also include the .csv extension:\n"
+        "Do you want to input another file?\n"
+        "1. Yes\n"
+        "2. No\n"
+        "Please select by entering the number 1 or 2:\n"
+        "Election type: Plurality\n"
+        "Number of seats: 2\n"
+        "Number of ballots: 19\n"
+        "Number of candidates: 6\n"
+        "Winners:\n"
+        "Bill Jones\n"
+        "Alice Mix\n"
+        "Losers:\n"
+        "Ahmed Mohamed\n"
+        "Siyang Xiong\n"
+        "Preeti Banerjee\n"
+        "Sally Ride\n"
+        "Percentage of votes:\n"
+        "Bill Jones (52.63%)\n"
+        "Alice Mix (21.05%)\n"
+        "Sally Ride (10.53%)\n"
+        "Ahmed Mohamed (5.26%)\n"
+        "Siyang Xiong (5.26%)\n"
+        "Preeti Banerjee (5.26%)\n";
     EXPECT_EQ(result, expected_result);
 }
 

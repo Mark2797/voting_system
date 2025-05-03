@@ -2024,6 +2024,7 @@ Losers:
 
 [Vote Redistribution Round #1]
 Loser for this redistribution round selected to be Chuck Lancaster, redistributing their ballots.
+
 	Reassigning ballot #6, Alice Wonder is the #2 choice.
 Ballot #6 assigned to Alice Wonder
 	Reassigning ballot #16, Jimmy Donaldson is the #2 choice.
@@ -2212,6 +2213,7 @@ Losers: Chuck Lancaster
 
 [Vote Redistribution Round #2]
 Loser for this redistribution round selected to be Patrick Star, redistributing their ballots.
+
 	Reassigning ballot #22, Jimmy Donaldson is the #2 choice.
 Ballot #22 assigned to Jimmy Donaldson
 	Reassigning ballot #32, John Kennedy is the #2 choice.
@@ -2414,6 +2416,7 @@ Losers: Chuck Lancaster, Patrick Star
 
 [Vote Redistribution Round #3]
 Loser for this redistribution round selected to be Alice Wonder, redistributing their ballots.
+
 	Reassigning ballot #10, Jimmy Donaldson is the #2 choice.
 Ballot #10 assigned to Jimmy Donaldson
 	Reassigning ballot #23, Mark Suckerberg is the #2 choice.
@@ -2639,6 +2642,7 @@ Jimmy Donaldson: 33, 37, 48, 50, 52, 53, 55, 60, 74, 77, 106, 115, 117, 146, 149
 John Kennedy: 1, 4, 7, 12, 19, 21, 25, 57, 61, 69, 113, 118, 123, 125, 152, 153, 157, 170, 188, 198, 200, 214, 235, 247, 275, 278, 281, 294, 325, 326, 333, 334, 338, 369, 372, 373, 375, 381, 382, 390, 392, 421, 448, 451, 455, 468, 470, 475, 498, 501, 502, 503, 504, 513, 520, 524, 536, 538, 567, 568, 574, 577, 581, 582, 595, 596, 612, 619, 621, 633, 639, 649, 653, 658, 661, 662, 664, 671, 687, 689, 702, 703, 704, 726, 733, 754, 759, 764, 767, 768, 816, 819, 834, 866, 869, 870, 877, 901, 911, 917, 927, 932, 948, 949, 950, 958, 960, 963, 965, 969, 975, 982, 988, 992, 995, 27, 34, 140, 408, 463, 584, 657, 718, 868, 32, 54, 89, 199, 260, 460, 481, 648, 783, 934, 402, 45, 67, 126, 141, 191, 355, 386, 403, 650, 656, 666, 675, 715, 775, 838, 923, 937, 688, 491, 537
 Patrick Star: 
 Robot Iam: 17, 18, 24, 28, 40, 81, 84, 87, 91, 94, 95, 97, 102, 107, 110, 116, 119, 124, 129, 131, 137, 147, 154, 159, 179, 180, 185, 201, 222, 227, 229, 231, 232, 236, 239, 246, 249, 258, 286, 291, 304, 312, 324, 356, 361, 363, 383, 411, 414, 426, 449, 465, 477, 508, 510, 539, 540, 571, 575, 583, 588, 589, 632, 641, 667, 668, 674, 677, 700, 713, 721, 727, 730, 738, 743, 777, 784, 789, 796, 802, 812, 814, 833, 839, 840, 845, 849, 854, 879, 889, 899, 909, 922, 940, 966, 977, 983, 985, 996, 30, 96, 224, 288, 385, 553, 594, 723, 891, 92, 305, 420, 562, 748, 762, 916, 318, 793, 71, 158, 194, 240, 272, 348, 393, 516, 531, 645, 699, 735, 752, 755, 826, 261, 303, 321, 741, 832
+
 Alice Wonder: 
 
 Winners: 
@@ -2646,6 +2650,7 @@ Losers: Chuck Lancaster, Patrick Star, Alice Wonder
 
 [Vote Redistribution Round #4]
 Loser for this redistribution round selected to be Joe Cool, redistributing their ballots.
+
 	Reassigning ballot #2, Mark Suckerberg is the #3 choice.
 Ballot #2 assigned to Mark Suckerberg
 	Reassigning ballot #3, Andrew Hero is the #2 choice.
