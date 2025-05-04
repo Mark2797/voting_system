@@ -1051,6 +1051,7 @@ EXCLUDE                = "../src/testBallots.cpp" \
                          "../src/testCandidate.cpp" \
                          "../src/testPlurality.cpp" \
                          "../src/testSTV.cpp" \
+                         "../src/testMunicipal.cpp" \
                          "../src/testDriver.cpp" \
                          "../src/testFileHandler.cpp" \
                          "../src/testSystem.cpp" \
