@@ -85,7 +85,7 @@ class SysTest : public ::testing::Test {
         "../testing/seatLowPlurality.csv\n", "../testing/seatLowSTV.csv\n", 
         "../testing/pluralitySurplus.csv\n",  "../testing/stvSurplus.csv\n", "../testing/MV1.csv\n",
         "../testing/MV2.csv\n", "../testing/MV3.csv\n", "../testing/MV4.csv\n", "../testing/MV5.csv\n",
-        "../testing/seatLowMV.csv\n", "../testing/MVSurplus.csv\n", "../testing/MVTie.csv\n"};
+        "../testing/seatLowMV.csv\n", "../testing/MVSurplus.csv\n", "../testing/TieMV.csv\n"};
         auditFile = {"../testing/audits/seatValid.txt\n", "../testing/audits/noShuffle.txt\n", "../testing/audits/withShuffle.txt\n", 
         "../testing/audits/minSTV.txt\n", "../testing/audits/regSTV.txt\n", "../testing/audits/timeTest.txt\n", 
         "../testing/audits/stvTie.txt\n", "../testing/audits/lowVoteValid.txt\n", "../testing/audits/multiFile.txt\n"};
