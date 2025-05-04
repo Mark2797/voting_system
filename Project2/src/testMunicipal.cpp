@@ -79,7 +79,6 @@ TEST_F(MunicipalTest, RunElectionTest) {
     EXPECT_EQ(municipal.at(0)->getCandidates().at(4).getBallotNum(), 4);
     EXPECT_EQ(municipal.at(0)->getCandidates().at(5).getName(), "Shana Watters");
     EXPECT_EQ(municipal.at(0)->getCandidates().at(5).getBallotNum(), 3);
-    EXPECT_EQ(0, 1);
 };
 
 int main(int argc, char **argv) {

@@ -11,8 +11,8 @@
 
 using namespace std;
 
-// Created by Manan Chaturvedi
-// March 24th, 2025
+// Created by Manan Chaturvedi, Micheal Dunn
+// May 2nd, 2025
 // Purpose is to create random CSV files to test for.
 
 void helper(string algo_type, vector<string> names, ofstream* file, int ballot_size, int seat_size) {
@@ -34,10 +34,10 @@ void helper(string algo_type, vector<string> names, ofstream* file, int ballot_s
 }
 
 int main() {
-    int test_value = 3;
-    vector<int> ballot_amt = {1, 20, 100, 1000, 100000};
-    vector<int> seat_amt = {1, 1, 3, 5, 10};
+    vector<int> ballot_amt = {1, 20, 100, 1000, 100000,  50000, 25000, 15000, 9999, 1};
+    vector<int> seat_amt = {1, 1, 3, 5, 10,  10, 10, 10, 10, 10};
     static vector<string> types = {"STV", "PV", "MV"};
+    int test_value = types.size();
     // To keep it easier to change, this value corresponds to the total number of tests for
     // Each list of names and each ballot_amt.
     vector<string> names = {"Chuck Lancaster", "Mark Suckerberg", "Andrew Hero", 
@@ -62,7 +62,7 @@ int main() {
     names_list.insert(names_list.end(), test_value, names4);
     names_list.insert(names_list.end(), test_value, names3);
     names_list.insert(names_list.end(), test_value, names2);
-    names_list.insert(names_list.end(), test_value, names);
+    names_list.insert(names_list.end(), test_value * 6, names);
     vector<int> ballots(names_list.size());
     vector<int> seats(names_list.size());
     vector<string> type_list(names_list.size());
@@ -79,8 +79,10 @@ int main() {
     vector<string> path;
     for (int n = 1; n <= names_list.size(); n++) {
         string type = "";
-        if (type_list.at(n - 1) == "STV") type = "STV"; else type ="Plurality";
-        path.push_back("../" + type + to_string(static_cast<int>((n - 1) / 2) + 1) + ".csv");
+        if (type_list.at(n - 1) == "STV") type = "STV";
+        else if (type_list.at(n - 1) == "PV") type = "Plurality";
+        else type = "MV";
+        path.push_back("../" + type + to_string(static_cast<int>((n - 1) / 3) + 1) + ".csv");
     }
     // Creates the total amount of test files as csv files to output.
 
@@ -129,6 +131,27 @@ int main() {
                 for (int k = 0; k < row.size(); k++) {
                     if (row[k] == 1){
                         str += to_string(row[k]) + ",";
+                    }
+                    else {
+                        str += ",";
+                    }
+                }
+                str.pop_back();
+                f << str << '\n';
+                str = "";
+            }
+        } else if (type_list[i] == "MV") {
+            // MUNICIPAL ALGORITHM
+            // Randomizes candidates along with non-votes from 1 to the number of, then writes to file.
+            vector<vector<int>> vals(ballots[i], vector<int>(length.size()));
+            uniform_int_distribution<int> distribution(1, seat_amt.at(i / 3));
+            for (vector<int> row : vals) {
+                int check = distribution(rd);
+                fill(row.end() - check, row.end(), 1);
+                shuffle(row.begin(), row.end(), rd);
+                for (int k = 0; k < row.size(); k++) {
+                    if (row[k] != 0) {
+                        str += "1,";
                     }
                     else {
                         str += ",";
