@@ -108,7 +108,7 @@ class SysTest : public ::testing::Test {
     }
 };
 
-TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#: 27
+TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#: 25
     vector<string> user_input;
     user_input.push_back(file_names.at(13)); 
     user_input.push_back(fileChoice.at(1));
@@ -140,7 +140,7 @@ TEST_F(SysTest, seatValidityDefecitSTV) { // Test Case ID#: 27
     delete ballots;
 };
 
-TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 28
+TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 26
     vector<string> user_input;
     user_input.push_back(file_names.at(12));
     user_input.push_back(fileChoice.at(1));
@@ -183,7 +183,7 @@ TEST_F(SysTest, seatValidityDefecitPV) { // Test Case ID#: 28
     delete ballots;
 };
 
-TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 29
+TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 27
     vector<string> user_input;
     user_input.push_back(file_names.at(14));
     user_input.push_back(fileChoice.at(1));
@@ -210,7 +210,7 @@ TEST_F(SysTest, seatValiditySurplusPV) { // Test Case ID#: 29
     delete ballots;
 };
 
-TEST_F(SysTest, seatValiditySurplusSTV) { // Test Case ID#: 30
+TEST_F(SysTest, seatValiditySurplusSTV) { // Test Case ID#: 28
     vector<string> user_input;
     user_input.push_back(file_names.at(15));
     user_input.push_back(fileChoice.at(1));
@@ -240,7 +240,7 @@ TEST_F(SysTest, seatValiditySurplusSTV) { // Test Case ID#: 30
     delete ballots;
 };
 
-TEST_F(SysTest, ballotShuffleValidity) { // Test Case ID#: 31
+TEST_F(SysTest, ballotShuffleValidity) { // Test Case ID#: 29
     vector<string> user_input;
     user_input.push_back(file_names.at(5));
     user_input.push_back(fileChoice.at(1));
@@ -290,7 +290,7 @@ TEST_F(SysTest, ballotShuffleValidity) { // Test Case ID#: 31
     delete ballots;
 };
 
-TEST_F(SysTest, fairElectionValiditySTV) { // Test Case ID#: 32
+TEST_F(SysTest, fairElectionValiditySTV) { // Test Case ID#: 30
     vector<string> user_input;
     user_input.push_back(file_names.at(6));
     user_input.push_back(fileChoice.at(1));
@@ -345,7 +345,7 @@ TEST_F(SysTest, fairElectionValiditySTV) { // Test Case ID#: 32
     delete ballotsShuffle;
 };
 
-TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 33
+TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 31
     vector<string> user_input;
     user_input.push_back(file_names.at(7));
     user_input.push_back(fileChoice.at(1));
@@ -429,7 +429,7 @@ TEST_F(SysTest, fairElectionValidityPlurality) { // Test Case ID#: 33
     delete ballotsShuffle;
 };
 
-TEST_F(SysTest, minElectionValiditySTV) { // Test Case ID#: 34
+TEST_F(SysTest, minElectionValiditySTV) { // Test Case ID#: 32
     vector<string> user_input;
     user_input.push_back(file_names.at(0));
     user_input.push_back(fileChoice.at(1));
@@ -459,7 +459,7 @@ TEST_F(SysTest, minElectionValiditySTV) { // Test Case ID#: 34
     delete ballots;
 };
 
-TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 35
+TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 33
     vector<string> user_input;
     user_input.push_back(file_names.at(1));
     user_input.push_back(fileChoice.at(1));
@@ -484,7 +484,7 @@ TEST_F(SysTest, minElectionValidityPV) { // Test Case ID#: 35
     delete ballots;
 };
 
-TEST_F(SysTest, regularPV) { // Test Case ID#: 36
+TEST_F(SysTest, regularPV) { // Test Case ID#: 34
     vector<string> user_input;
     user_input.push_back(file_names.at(7));
     user_input.push_back(fileChoice.at(1));
@@ -518,7 +518,7 @@ TEST_F(SysTest, regularPV) { // Test Case ID#: 36
     delete ballots;
 };
 
-TEST_F(SysTest, tiePV) { // Test Case ID#: 37
+TEST_F(SysTest, tiePV) { // Test Case ID#: 35
     vector<string> user_input;
     user_input.push_back(file_names.at(10));
     user_input.push_back(fileChoice.at(1));
@@ -562,7 +562,7 @@ TEST_F(SysTest, tiePV) { // Test Case ID#: 37
     delete ballots;
 };
 
-TEST_F(SysTest, regularSTV) { // Test Case ID#: 38
+TEST_F(SysTest, regularSTV) { // Test Case ID#: 36
     vector<string> user_input;
     user_input.push_back(file_names.at(6));
     user_input.push_back(fileChoice.at(1));
@@ -600,7 +600,7 @@ TEST_F(SysTest, regularSTV) { // Test Case ID#: 38
     delete ballots;
 };
 
-TEST_F(SysTest, tieSTV) { // Test Case ID#: 39
+TEST_F(SysTest, tieSTV) { // Test Case ID#: 37
     vector<string> user_input;
     user_input.push_back(file_names.at(11));
     user_input.push_back(fileChoice.at(1));
@@ -638,7 +638,7 @@ TEST_F(SysTest, tieSTV) { // Test Case ID#: 39
     delete ballots;
 };
 
-TEST_F(SysTest, timeSTV) { // Test Case ID#: 40
+TEST_F(SysTest, timeSTV) { // Test Case ID#: 38
     auto t0 = chrono::high_resolution_clock::now();
 
     vector<string> user_input;
@@ -682,7 +682,7 @@ TEST_F(SysTest, timeSTV) { // Test Case ID#: 40
     delete ballots;
 };
 
-TEST_F(SysTest, timePV) { // Test Case ID#: 41
+TEST_F(SysTest, timePV) { // Test Case ID#: 39
     auto t0 = chrono::high_resolution_clock::now();
 
     vector<string> user_input;
@@ -729,8 +729,7 @@ TEST_F(SysTest, timePV) { // Test Case ID#: 41
     delete ballots;
 };
 
-
-TEST_F(SysTest, seatValidityDefefictMV) { // Test Case ID#: 47 
+TEST_F(SysTest, seatValidityDefefictMV) { // Test Case ID#: 48 
     vector<string> user_input;
     user_input.push_back(file_names.at(21));
     user_input.push_back(fileChoice.at(1));
@@ -773,7 +772,7 @@ TEST_F(SysTest, seatValidityDefefictMV) { // Test Case ID#: 47
     delete ballots;
 };
 
-TEST_F(SysTest, seatValiditySurplusMV) { // Test Case ID#: 48
+TEST_F(SysTest, seatValiditySurplusMV) { // Test Case ID#: 49
     vector<string> user_input;
     user_input.push_back(file_names.at(22));
     user_input.push_back(fileChoice.at(1));
@@ -800,7 +799,7 @@ TEST_F(SysTest, seatValiditySurplusMV) { // Test Case ID#: 48
     delete ballots;
 };
 
-TEST_F(SysTest, fairElectionValidityMV) { // Test Case ID#: 49
+TEST_F(SysTest, fairElectionValidityMV) { // Test Case ID#: 50
     vector<string> user_input;
     user_input.push_back(file_names.at(19));
     user_input.push_back(fileChoice.at(1));
@@ -884,7 +883,7 @@ TEST_F(SysTest, fairElectionValidityMV) { // Test Case ID#: 49
     delete ballotsShuffle;
 };
 
-TEST_F(SysTest, minElectionValidityMV) { // Test Case ID#: 50
+TEST_F(SysTest, minElectionValidityMV) { // Test Case ID#: 51
     vector<string> user_input;
     user_input.push_back(file_names.at(16));
     user_input.push_back(fileChoice.at(1));
@@ -911,9 +910,9 @@ TEST_F(SysTest, minElectionValidityMV) { // Test Case ID#: 50
     delete ballots;
 };
 
-TEST_F(SysTest, regularMV) { // Test Case ID#: 51
+TEST_F(SysTest, regularMV) { // Test Case ID#: 52
     vector<string> user_input;
-    user_input.push_back(file_names.at(19));
+    user_input.push_back(file_names.at(18));
     user_input.push_back(fileChoice.at(1));
 
     userInput(user_input);
@@ -944,7 +943,7 @@ TEST_F(SysTest, regularMV) { // Test Case ID#: 51
     delete ballots;
 };
 
-TEST_F(SysTest, tieMV) { // Test Case ID#: 52
+TEST_F(SysTest, tieMV) { // Test Case ID#: 53
     vector<string> user_input;
     user_input.push_back(file_names.at(23));
     user_input.push_back(fileChoice.at(1));
@@ -988,7 +987,7 @@ TEST_F(SysTest, tieMV) { // Test Case ID#: 52
     delete ballots;
 };
 
-TEST_F(SysTest, timeMV) { // Test Case ID#: 53
+TEST_F(SysTest, timeMV) { // Test Case ID#: 54
     auto t0 = chrono::high_resolution_clock::now();
 
     vector<string> user_input;
@@ -1035,7 +1034,7 @@ TEST_F(SysTest, timeMV) { // Test Case ID#: 53
     delete ballots;
 };
 
-TEST_F(SysTest, multFilePV) { // Test Case ID#: 54
+TEST_F(SysTest, multFilePV) { // Test Case ID#: 55
     vector<string> user_input;
     user_input.push_back(multFiles.at(1));
     user_input.push_back(fileChoice.at(0));
@@ -1077,7 +1076,7 @@ TEST_F(SysTest, multFilePV) { // Test Case ID#: 54
     delete ballots;
 };
 
-TEST_F(SysTest, multFileSTV) { // Test Case ID#: 55
+TEST_F(SysTest, multFileSTV) { // Test Case ID#: 56
     vector<string> user_input;
     user_input.push_back(multFiles.at(0));
     user_input.push_back(fileChoice.at(0));
@@ -1124,7 +1123,7 @@ TEST_F(SysTest, multFileSTV) { // Test Case ID#: 55
     delete ballots;
 };
 
-TEST_F(SysTest, multFileMV) { // Test Case ID#: 56
+TEST_F(SysTest, multFileMV) { // Test Case ID#: 57
     vector<string> user_input;
     user_input.push_back(multFiles.at(2));
     user_input.push_back(fileChoice.at(0));

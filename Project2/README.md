@@ -51,3 +51,9 @@ For each individual election, different results will come up after these common 
     - PV will have the percentage of votes recieved by the associated candidate.
     - MV will have the number of votes received be the associated candidate.
 
+### Exiting the Program:
+In the event that the program does NOT run the election (i.e. nothing happens on multiple file input
+due to invalid files), input ctrl+C to exit the program manually.
+
+Otherwise, the election will automatically exit the program as soon as the results are displayed 
+(and for STV, once the audit file is outputted).

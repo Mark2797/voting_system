@@ -418,7 +418,7 @@ Winners:
 Losers: 
 
 [Vote Redistribution Round #1]
-Tie between: Sally Ride, Siyang Xiong, Ahmed Mohamed, Bill Jones, Alice Mix, - loser selected to be: Sally Ride
+Tie between: Sally Ride, Siyang Xiong, Alice Mix, Bill Jones, Ahmed Mohamed, - loser selected to be: Sally Ride
 Loser for this redistribution round selected to be Sally Ride, redistributing their ballots.
 	Reassigning ballot #2, Ahmed Mohamed is the #2 choice.
 Ballot #2 assigned to Ahmed Mohamed
