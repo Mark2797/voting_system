@@ -4,7 +4,9 @@ Within the src folder of the program, run 'make' to compile the program and test
 
 Running "make run" within your command line interface will run the program after compilation.
 
-Running "make test" within your command line interface will run the program's unit and system tests.
+Running "make test" within your command line interface will run the program's unit and system tests after compilation.
+
+If the program is already compiled, then "make run" or "make test" will simply run or test without compiling, respectively. 
 
 ### Running The System:
 ./voting_system - running the voting_system software with shuffling
