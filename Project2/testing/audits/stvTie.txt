@@ -1,7 +1,7 @@
 [STV Election]: Droop: 51, Seats: 3, Candidates: 5
 
-Winners: Alice Mix, Sally Ride, Ahmed Mohamed
-Losers: Bill Jones, Siyang Xiong
+Winners: Siyang Xiong, Bill Jones, Alice Mix
+Losers: Ahmed Mohamed, Sally Ride
 
 Below is input ballot information: 
 ID 0: 1,2,3,4,5
@@ -418,103 +418,103 @@ Winners:
 Losers: 
 
 [Vote Redistribution Round #1]
-Tie between: Bill Jones, Ahmed Mohamed, Alice Mix, Siyang Xiong, Sally Ride, - loser selected to be: Bill Jones
-Loser for this redistribution round selected to be Bill Jones, redistributing their ballots.
-	Reassigning ballot #0, Alice Mix is the #2 choice.
-Ballot #0 assigned to Alice Mix
-	Reassigning ballot #5, Alice Mix is the #2 choice.
-Ballot #5 assigned to Alice Mix
-	Reassigning ballot #10, Alice Mix is the #2 choice.
-Ballot #10 assigned to Alice Mix
-	Reassigning ballot #15, Alice Mix is the #2 choice.
-Ballot #15 assigned to Alice Mix
-	Reassigning ballot #20, Alice Mix is the #2 choice.
-Ballot #20 assigned to Alice Mix
-	Reassigning ballot #25, Alice Mix is the #2 choice.
-Ballot #25 assigned to Alice Mix
-	Reassigning ballot #30, Alice Mix is the #2 choice.
-Ballot #30 assigned to Alice Mix
-	Reassigning ballot #35, Alice Mix is the #2 choice.
-Ballot #35 assigned to Alice Mix
-	Reassigning ballot #40, Alice Mix is the #2 choice.
-Ballot #40 assigned to Alice Mix
-	Reassigning ballot #45, Alice Mix is the #2 choice.
-Ballot #45 assigned to Alice Mix
-	Reassigning ballot #50, Alice Mix is the #2 choice.
-Ballot #50 assigned to Alice Mix
+Tie between: Ahmed Mohamed, Sally Ride, Siyang Xiong, Alice Mix, Bill Jones, - loser selected to be: Ahmed Mohamed
+Loser for this redistribution round selected to be Ahmed Mohamed, redistributing their ballots.
+	Reassigning ballot #3, Siyang Xiong is the #2 choice.
+Ballot #3 assigned to Siyang Xiong
+	Reassigning ballot #8, Siyang Xiong is the #2 choice.
+Ballot #8 assigned to Siyang Xiong
+	Reassigning ballot #13, Siyang Xiong is the #2 choice.
+Ballot #13 assigned to Siyang Xiong
+	Reassigning ballot #18, Siyang Xiong is the #2 choice.
+Ballot #18 assigned to Siyang Xiong
+	Reassigning ballot #23, Siyang Xiong is the #2 choice.
+Ballot #23 assigned to Siyang Xiong
+	Reassigning ballot #28, Siyang Xiong is the #2 choice.
+Ballot #28 assigned to Siyang Xiong
+	Reassigning ballot #33, Siyang Xiong is the #2 choice.
+Ballot #33 assigned to Siyang Xiong
+	Reassigning ballot #38, Siyang Xiong is the #2 choice.
+Ballot #38 assigned to Siyang Xiong
+	Reassigning ballot #43, Siyang Xiong is the #2 choice.
+Ballot #43 assigned to Siyang Xiong
+	Reassigning ballot #48, Siyang Xiong is the #2 choice.
+Ballot #48 assigned to Siyang Xiong
+	Reassigning ballot #53, Siyang Xiong is the #2 choice.
+Ballot #53 assigned to Siyang Xiong
+	Siyang Xiong hit Droop quota- adding to winners list
+	Reassigning ballot #58, Bill Jones is the #3 choice.
+Ballot #58 assigned to Bill Jones
+	Reassigning ballot #63, Bill Jones is the #3 choice.
+Ballot #63 assigned to Bill Jones
+	Reassigning ballot #68, Bill Jones is the #3 choice.
+Ballot #68 assigned to Bill Jones
+	Reassigning ballot #73, Bill Jones is the #3 choice.
+Ballot #73 assigned to Bill Jones
+	Reassigning ballot #78, Bill Jones is the #3 choice.
+Ballot #78 assigned to Bill Jones
+	Reassigning ballot #83, Bill Jones is the #3 choice.
+Ballot #83 assigned to Bill Jones
+	Reassigning ballot #88, Bill Jones is the #3 choice.
+Ballot #88 assigned to Bill Jones
+	Reassigning ballot #93, Bill Jones is the #3 choice.
+Ballot #93 assigned to Bill Jones
+	Reassigning ballot #98, Bill Jones is the #3 choice.
+Ballot #98 assigned to Bill Jones
+	Reassigning ballot #103, Bill Jones is the #3 choice.
+Ballot #103 assigned to Bill Jones
+	Reassigning ballot #108, Bill Jones is the #3 choice.
+Ballot #108 assigned to Bill Jones
+	Bill Jones hit Droop quota- adding to winners list
+	Reassigning ballot #113, Alice Mix is the #4 choice.
+Ballot #113 assigned to Alice Mix
+	Reassigning ballot #118, Alice Mix is the #4 choice.
+Ballot #118 assigned to Alice Mix
+	Reassigning ballot #123, Alice Mix is the #4 choice.
+Ballot #123 assigned to Alice Mix
+	Reassigning ballot #128, Alice Mix is the #4 choice.
+Ballot #128 assigned to Alice Mix
+	Reassigning ballot #133, Alice Mix is the #4 choice.
+Ballot #133 assigned to Alice Mix
+	Reassigning ballot #138, Alice Mix is the #4 choice.
+Ballot #138 assigned to Alice Mix
+	Reassigning ballot #143, Alice Mix is the #4 choice.
+Ballot #143 assigned to Alice Mix
+	Reassigning ballot #148, Alice Mix is the #4 choice.
+Ballot #148 assigned to Alice Mix
+	Reassigning ballot #153, Alice Mix is the #4 choice.
+Ballot #153 assigned to Alice Mix
+	Reassigning ballot #158, Alice Mix is the #4 choice.
+Ballot #158 assigned to Alice Mix
+	Reassigning ballot #163, Alice Mix is the #4 choice.
+Ballot #163 assigned to Alice Mix
 	Alice Mix hit Droop quota- adding to winners list
-	Reassigning ballot #55, Sally Ride is the #3 choice.
-Ballot #55 assigned to Sally Ride
-	Reassigning ballot #60, Sally Ride is the #3 choice.
-Ballot #60 assigned to Sally Ride
-	Reassigning ballot #65, Sally Ride is the #3 choice.
-Ballot #65 assigned to Sally Ride
-	Reassigning ballot #70, Sally Ride is the #3 choice.
-Ballot #70 assigned to Sally Ride
-	Reassigning ballot #75, Sally Ride is the #3 choice.
-Ballot #75 assigned to Sally Ride
-	Reassigning ballot #80, Sally Ride is the #3 choice.
-Ballot #80 assigned to Sally Ride
-	Reassigning ballot #85, Sally Ride is the #3 choice.
-Ballot #85 assigned to Sally Ride
-	Reassigning ballot #90, Sally Ride is the #3 choice.
-Ballot #90 assigned to Sally Ride
-	Reassigning ballot #95, Sally Ride is the #3 choice.
-Ballot #95 assigned to Sally Ride
-	Reassigning ballot #100, Sally Ride is the #3 choice.
-Ballot #100 assigned to Sally Ride
-	Reassigning ballot #105, Sally Ride is the #3 choice.
-Ballot #105 assigned to Sally Ride
-	Sally Ride hit Droop quota- adding to winners list
-	Reassigning ballot #110, Ahmed Mohamed is the #4 choice.
-Ballot #110 assigned to Ahmed Mohamed
-	Reassigning ballot #115, Ahmed Mohamed is the #4 choice.
-Ballot #115 assigned to Ahmed Mohamed
-	Reassigning ballot #120, Ahmed Mohamed is the #4 choice.
-Ballot #120 assigned to Ahmed Mohamed
-	Reassigning ballot #125, Ahmed Mohamed is the #4 choice.
-Ballot #125 assigned to Ahmed Mohamed
-	Reassigning ballot #130, Ahmed Mohamed is the #4 choice.
-Ballot #130 assigned to Ahmed Mohamed
-	Reassigning ballot #135, Ahmed Mohamed is the #4 choice.
-Ballot #135 assigned to Ahmed Mohamed
-	Reassigning ballot #140, Ahmed Mohamed is the #4 choice.
-Ballot #140 assigned to Ahmed Mohamed
-	Reassigning ballot #145, Ahmed Mohamed is the #4 choice.
-Ballot #145 assigned to Ahmed Mohamed
-	Reassigning ballot #150, Ahmed Mohamed is the #4 choice.
-Ballot #150 assigned to Ahmed Mohamed
-	Reassigning ballot #155, Ahmed Mohamed is the #4 choice.
-Ballot #155 assigned to Ahmed Mohamed
-	Reassigning ballot #160, Ahmed Mohamed is the #4 choice.
-Ballot #160 assigned to Ahmed Mohamed
-	Ahmed Mohamed hit Droop quota- adding to winners list
-	Reassigning ballot #165, Siyang Xiong is the #5 choice.
-Ballot #165 assigned to Siyang Xiong
-	Reassigning ballot #170, Siyang Xiong is the #5 choice.
-Ballot #170 assigned to Siyang Xiong
-	Reassigning ballot #175, Siyang Xiong is the #5 choice.
-Ballot #175 assigned to Siyang Xiong
-	Reassigning ballot #180, Siyang Xiong is the #5 choice.
-Ballot #180 assigned to Siyang Xiong
-	Reassigning ballot #185, Siyang Xiong is the #5 choice.
-Ballot #185 assigned to Siyang Xiong
-	Reassigning ballot #190, Siyang Xiong is the #5 choice.
-Ballot #190 assigned to Siyang Xiong
-	Reassigning ballot #195, Siyang Xiong is the #5 choice.
-Ballot #195 assigned to Siyang Xiong
+	Reassigning ballot #168, Sally Ride is the #5 choice.
+Ballot #168 assigned to Sally Ride
+	Reassigning ballot #173, Sally Ride is the #5 choice.
+Ballot #173 assigned to Sally Ride
+	Reassigning ballot #178, Sally Ride is the #5 choice.
+Ballot #178 assigned to Sally Ride
+	Reassigning ballot #183, Sally Ride is the #5 choice.
+Ballot #183 assigned to Sally Ride
+	Reassigning ballot #188, Sally Ride is the #5 choice.
+Ballot #188 assigned to Sally Ride
+	Reassigning ballot #193, Sally Ride is the #5 choice.
+Ballot #193 assigned to Sally Ride
+	Reassigning ballot #198, Sally Ride is the #5 choice.
+Ballot #198 assigned to Sally Ride
 
 Current Vote Assignment Breakdown:
-Bill Jones: 
-Alice Mix: 1, 6, 11, 16, 21, 26, 31, 36, 41, 46, 51, 56, 61, 66, 71, 76, 81, 86, 91, 96, 101, 106, 111, 116, 121, 126, 131, 136, 141, 146, 151, 156, 161, 166, 171, 176, 181, 186, 191, 196, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50
-Sally Ride: 2, 7, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87, 92, 97, 102, 107, 112, 117, 122, 127, 132, 137, 142, 147, 152, 157, 162, 167, 172, 177, 182, 187, 192, 197, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105
-Ahmed Mohamed: 3, 8, 13, 18, 23, 28, 33, 38, 43, 48, 53, 58, 63, 68, 73, 78, 83, 88, 93, 98, 103, 108, 113, 118, 123, 128, 133, 138, 143, 148, 153, 158, 163, 168, 173, 178, 183, 188, 193, 198, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160
-Siyang Xiong: 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 69, 74, 79, 84, 89, 94, 99, 104, 109, 114, 119, 124, 129, 134, 139, 144, 149, 154, 159, 164, 169, 174, 179, 184, 189, 194, 199, 165, 170, 175, 180, 185, 190, 195
+Bill Jones: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 58, 63, 68, 73, 78, 83, 88, 93, 98, 103, 108
+Alice Mix: 1, 6, 11, 16, 21, 26, 31, 36, 41, 46, 51, 56, 61, 66, 71, 76, 81, 86, 91, 96, 101, 106, 111, 116, 121, 126, 131, 136, 141, 146, 151, 156, 161, 166, 171, 176, 181, 186, 191, 196, 113, 118, 123, 128, 133, 138, 143, 148, 153, 158, 163
+Sally Ride: 2, 7, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87, 92, 97, 102, 107, 112, 117, 122, 127, 132, 137, 142, 147, 152, 157, 162, 167, 172, 177, 182, 187, 192, 197, 168, 173, 178, 183, 188, 193, 198
+Ahmed Mohamed: 
+Siyang Xiong: 4, 9, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 64, 69, 74, 79, 84, 89, 94, 99, 104, 109, 114, 119, 124, 129, 134, 139, 144, 149, 154, 159, 164, 169, 174, 179, 184, 189, 194, 199, 3, 8, 13, 18, 23, 28, 33, 38, 43, 48, 53
 
-Winners: Alice Mix, Sally Ride, Ahmed Mohamed
-Losers: Bill Jones
+Winners: Siyang Xiong, Bill Jones, Alice Mix
+Losers: Ahmed Mohamed
 
 Final Election Results:
 
-Winners: Alice Mix, Sally Ride, Ahmed Mohamed
-Losers: Bill Jones, Siyang Xiong
+Winners: Siyang Xiong, Bill Jones, Alice Mix
+Losers: Ahmed Mohamed, Sally Ride

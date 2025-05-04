@@ -8,6 +8,7 @@
 #include "FileHandler.h"
 #include "Plurality.h"
 #include "STV.h"
+#include "Municipal.h"
 
 Driver::Driver() {}
 
@@ -19,20 +20,18 @@ void Driver::run(int argc, char **argv, Election*& election, Ballots*& ballots) 
     }
 
     FileHandler fh = FileHandler();
-    // Try opening file until a valid file name is provided
-    std::ifstream file;
-    fh.open_file(file);
     std::vector<std::string> candidates;
     std::vector<std::vector<int>> ballots_vector;
     std::string alg;
-    int seatNum;
-    int candidateNum;
-    int ballotNum;
-    fh.read_file(file, candidates, ballots_vector, alg, seatNum, candidateNum, ballotNum);
+    int seatNum, candidateNum, ballotNum;
+    if (fh.multiple_files(candidates, ballots_vector, alg, seatNum, candidateNum, ballotNum) == 1) {
+        std::cout << "Fail to read file(s)!" << std::endl;
+        return;
+    }
     ballots = new Ballots(candidates, ballots_vector, shuffle);
     // Check obtained information
     if (ballots->getCandidateCount() != candidateNum || ballots->getBallotCount() != ballotNum) {
-        std::cout << "Header Error!" << std::endl;
+        std::cout << "Ballots number Error!" << std::endl;
         return;
     }
 
@@ -40,8 +39,10 @@ void Driver::run(int argc, char **argv, Election*& election, Ballots*& ballots) 
     if (alg == "STV") {
         election = new STV(ballots, seatNum);
     }
-    else {
+    else if (alg == "PV") {
         election = new Plurality(ballots, seatNum);
+    } else {
+        election = new Municipal(ballots, seatNum);
     }
     election->runElection();
 }
