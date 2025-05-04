@@ -96,7 +96,7 @@ test: $(TEST_EXECUTABLES)
 
 # Clean compiled files
 clean:
-	rm -f $(TARGET) $(OBJS) $(TEST_OBJS) $(TEST_EXECUTABLES) $(OBJS_D) $(TEST_OBJS_D) *.txt ../testing/*.txt ../testing/audits/*.txt
+	rm -f $(TARGET) $(OBJS) $(TEST_OBJS) $(TEST_EXECUTABLES) $(OBJS_D) $(TEST_OBJS_D) *.txt ../testing/*.txt
 
 # Rule to run the executable
 run: $(TARGET)

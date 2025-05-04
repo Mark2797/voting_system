@@ -1,0 +1,2963 @@
+[STV Election]: Droop: 167, Seats: 5, Candidates: 10
+
+Winners: Patrick Star, Jimmy Donaldson, Robot Iam, Joe Cool, John Kennedy
+Losers: Chuck Lancaster, Mark Suckerberg, Micheal Ashton, Alice Wonder, Andrew Hero
+
+Below is input ballot information: 
+ID 0: 5,4,,2,,,3,,6,1
+ID 1: ,,,5,2,4,1,,,3
+ID 2: 6,8,2,9,1,5,3,10,7,4
+ID 3: ,6,,1,5,7,,2,4,3
+ID 4: 2,,,,1,,4,,5,3
+ID 5: 3,5,,6,2,9,8,4,7,1
+ID 6: 5,,6,9,4,3,8,2,1,7
+ID 7: 3,7,6,5,,9,4,1,2,8
+ID 8: ,3,9,8,2,7,6,4,5,1
+ID 9: 7,4,3,6,2,,1,5,9,8
+ID 10: ,8,7,5,9,6,2,4,1,3
+ID 11: ,3,5,4,6,,,2,1,
+ID 12: 6,2,3,,7,9,1,4,5,8
+ID 13: 6,1,3,2,9,7,4,5,8,
+ID 14: 7,4,8,5,2,6,1,3,,
+ID 15: 2,,5,,,,1,4,3,6
+ID 16: ,4,,3,5,1,2,,,
+ID 17: ,8,4,7,6,1,5,2,,3
+ID 18: 5,1,,3,,,,4,6,2
+ID 19: 3,1,7,8,6,,2,4,5,
+ID 20: ,,2,7,3,1,6,5,,4
+ID 21: 3,1,,,,2,,5,,4
+ID 22: 3,8,4,1,9,5,,2,6,7
+ID 23: ,,,,3,5,1,6,4,2
+ID 24: ,2,6,,4,7,5,3,1,
+ID 25: ,2,1,3,,6,8,7,5,4
+ID 26: 8,5,7,3,,1,,6,2,4
+ID 27: 6,8,3,1,,4,9,5,2,7
+ID 28: ,,3,1,6,7,4,,5,2
+ID 29: 2,6,,,,4,1,5,3,
+ID 30: 5,8,2,3,7,10,9,6,4,1
+ID 31: ,6,1,,7,4,3,5,2,
+ID 32: 3,2,8,6,5,7,,1,4,
+ID 33: 8,2,7,,1,6,,3,5,4
+ID 34: 2,6,,4,5,1,7,3,9,8
+ID 35: 3,5,2,7,,1,6,4,8,
+ID 36: 3,9,10,6,2,1,8,7,4,5
+ID 37: 4,,8,2,1,7,6,,5,3
+ID 38: 6,9,8,2,7,3,4,1,,5
+ID 39: ,,2,,3,4,7,1,5,6
+ID 40: 2,10,5,8,1,9,7,6,4,3
+ID 41: 2,3,6,4,1,9,,8,5,7
+ID 42: 7,5,6,10,1,2,3,9,4,8
+ID 43: 10,1,8,3,9,2,5,7,4,6
+ID 44: 4,,2,1,,3,,5,,
+ID 45: 9,8,4,7,6,5,,1,2,3
+ID 46: 10,8,9,1,2,5,3,7,6,4
+ID 47: ,7,4,,6,1,3,8,2,5
+ID 48: 3,2,9,1,5,6,8,4,7,10
+ID 49: ,3,,4,2,5,7,8,1,6
+ID 50: ,4,1,9,3,5,8,7,2,6
+ID 51: ,1,,5,3,2,,,,4
+ID 52: 2,5,7,8,4,,1,3,,6
+ID 53: 7,9,2,6,10,1,5,8,3,4
+ID 54: 7,2,5,,,1,3,,6,4
+ID 55: 3,4,7,9,8,2,6,,5,1
+ID 56: 8,6,5,,,2,1,3,4,7
+ID 57: 1,5,,6,,4,3,,7,2
+ID 58: ,3,5,,,,,4,2,1
+ID 59: ,4,5,6,,2,,3,1,
+ID 60: ,6,2,9,8,1,5,3,7,4
+ID 61: ,3,,1,4,,,,2,5
+ID 62: 3,4,5,,8,7,,1,6,2
+ID 63: ,3,,1,6,7,,2,4,5
+ID 64: 3,8,2,5,7,6,,1,4,
+ID 65: 8,6,3,7,,5,2,,4,1
+ID 66: ,6,2,1,4,3,,7,5,8
+ID 67: 3,9,8,1,,7,2,6,5,4
+ID 68: 8,1,5,3,4,6,10,9,7,2
+ID 69: ,3,,4,,,,5,1,2
+ID 70: 7,2,6,,5,4,3,1,,8
+ID 71: 5,,,,,1,3,,4,2
+ID 72: 3,,4,6,,1,8,7,5,2
+ID 73: 2,8,1,9,,5,6,7,4,3
+ID 74: 3,2,6,,1,,,,4,5
+ID 75: 1,3,,,7,6,5,2,,4
+ID 76: 4,,,2,5,1,,7,6,3
+ID 77: 3,7,2,10,4,8,6,5,9,1
+ID 78: 7,,3,5,,6,2,4,,1
+ID 79: ,,5,4,,,3,2,1,6
+ID 80: 1,,,6,,,5,2,3,4
+ID 81: ,1,3,,4,,,5,,2
+ID 82: 5,,,7,4,8,2,3,6,1
+ID 83: ,1,,5,4,,,2,,3
+ID 84: 6,4,3,2,1,5,9,,7,8
+ID 85: ,5,,,,3,6,1,4,2
+ID 86: 4,10,9,5,2,6,8,1,3,7
+ID 87: 8,7,6,,5,1,,3,2,4
+ID 88: 2,,,4,6,1,3,7,5,8
+ID 89: 7,,1,4,2,5,,6,,3
+ID 90: ,3,,5,,,1,2,4,6
+ID 91: 4,5,6,,3,,,7,2,1
+ID 92: 5,,2,4,,3,,,,1
+ID 93: 2,3,1,,,5,6,,4,
+ID 94: 7,2,8,,4,3,1,6,5,
+ID 95: 1,,5,3,,7,4,,6,2
+ID 96: 5,1,3,2,,7,8,4,,6
+ID 97: 4,3,1,5,2,,6,8,7,
+ID 98: 9,1,2,,8,3,4,5,7,6
+ID 99: ,,1,,2,3,4,5,,
+ID 100: 4,3,,5,,,,,1,2
+ID 101: 3,,2,4,5,,,,1,
+ID 102: 8,4,6,3,5,7,2,9,1,10
+ID 103: ,1,2,,3,6,4,,,5
+ID 104: 6,,,,5,1,3,4,2,
+ID 105: 7,5,2,8,1,4,,3,,6
+ID 106: 2,5,,,,4,1,3,6,
+ID 107: ,4,2,,3,,5,,1,6
+ID 108: 3,1,2,8,4,6,7,,9,5
+ID 109: 8,4,7,10,1,5,2,9,3,6
+ID 110: ,,5,3,,1,4,,2,
+ID 111: 7,6,8,,5,2,3,1,4,
+ID 112: 2,9,6,,4,1,8,5,3,7
+ID 113: 9,10,1,8,4,3,7,2,6,5
+ID 114: 7,4,3,9,10,2,8,6,1,5
+ID 115: 6,,3,8,4,5,7,1,2,
+ID 116: 3,,6,,,7,5,2,1,4
+ID 117: 5,8,6,4,3,9,2,10,1,7
+ID 118: 5,4,7,2,8,10,6,1,3,9
+ID 119: ,2,1,,,5,,4,,3
+ID 120: 8,5,9,2,1,7,3,4,6,
+ID 121: 6,2,,7,,8,3,5,4,1
+ID 122: 4,1,5,3,2,,,,,
+ID 123: 3,,4,1,7,8,5,6,,2
+ID 124: 3,2,,,4,6,5,,,1
+ID 125: ,1,,4,5,8,2,6,7,3
+ID 126: 7,3,,5,6,,8,1,4,2
+ID 127: ,1,6,,4,5,,2,3,7
+ID 128: ,,4,3,1,,2,6,,5
+ID 129: ,3,6,2,4,5,,,7,1
+ID 130: ,1,4,,,,5,3,2,6
+ID 131: 7,1,5,8,2,,6,3,9,4
+ID 132: 5,,1,,4,3,,6,,2
+ID 133: 8,2,4,,3,5,6,9,7,1
+ID 134: 3,1,5,7,4,2,6,9,8,
+ID 135: 3,2,8,6,1,4,5,9,10,7
+ID 136: ,6,4,,2,,,5,3,1
+ID 137: 5,4,3,1,6,9,2,7,8,
+ID 138: 6,5,,8,1,2,7,,3,4
+ID 139: 2,3,8,5,10,1,7,4,9,6
+ID 140: 6,9,2,7,5,3,10,8,4,1
+ID 141: ,,,2,4,,1,5,3,
+ID 142: 1,9,7,6,5,2,,4,3,8
+ID 143: 8,2,7,5,1,4,9,10,6,3
+ID 144: 4,3,1,,8,2,,6,7,5
+ID 145: 3,2,,,6,,5,4,1,
+ID 146: 2,,5,,1,3,,,4,
+ID 147: 6,10,3,9,2,4,7,1,8,5
+ID 148: 3,,,5,,2,,1,4,
+ID 149: 6,3,1,9,4,2,5,8,10,7
+ID 150: 4,3,5,10,9,6,8,1,7,2
+ID 151: ,5,,,3,,2,4,1,6
+ID 152: 4,2,1,,8,7,5,3,,6
+ID 153: 6,4,5,2,1,10,7,3,9,8
+ID 154: ,,2,6,3,1,5,,,4
+ID 155: 7,5,2,4,3,6,,,1,8
+ID 156: 6,2,,3,1,7,4,5,,
+ID 157: 8,2,4,,5,6,3,,7,1
+ID 158: 2,,4,7,5,,3,6,1,8
+ID 159: 6,1,,,2,3,,4,,5
+ID 160: ,,5,6,3,7,4,,1,2
+ID 161: 5,3,1,7,4,6,,2,,
+ID 162: 4,3,8,7,,5,6,1,2,9
+ID 163: 6,,1,,8,4,2,5,7,3
+ID 164: 3,1,,7,4,,6,2,,5
+ID 165: ,,,3,5,,1,2,4,
+ID 166: 1,2,,6,5,3,4,,,
+ID 167: 2,7,,,,6,5,1,4,3
+ID 168: 2,10,3,9,4,7,6,8,1,5
+ID 169: ,3,9,1,8,4,7,5,2,6
+ID 170: 3,6,,2,4,,,,1,5
+ID 171: 1,7,5,10,2,9,4,6,3,8
+ID 172: ,5,7,2,6,4,,,1,3
+ID 173: 8,6,,1,5,7,3,4,2,
+ID 174: 3,1,8,4,7,5,2,,6,
+ID 175: 6,7,1,4,,8,3,5,2,9
+ID 176: 1,10,7,6,5,9,2,4,3,8
+ID 177: 3,,5,6,,7,1,2,4,
+ID 178: 3,2,7,8,5,1,4,,6,
+ID 179: 1,,,7,4,5,,3,2,6
+ID 180: 7,2,10,3,1,4,9,5,8,6
+ID 181: 5,7,1,4,6,3,,,2,
+ID 182: 5,4,7,8,,3,6,2,,1
+ID 183: 1,4,6,5,10,2,8,9,3,7
+ID 184: 4,,,2,3,1,5,,6,
+ID 185: 6,2,3,4,7,,,8,1,5
+ID 186: 3,4,5,,1,,,,2,
+ID 187: 6,4,3,7,2,,,8,5,1
+ID 188: 4,,1,,,6,5,3,,2
+ID 189: ,,2,5,3,,,4,1,
+ID 190: 4,6,10,2,7,5,9,3,1,8
+ID 191: 5,,,3,4,,6,7,2,1
+ID 192: 1,10,6,2,3,4,9,5,7,8
+ID 193: 9,10,5,1,2,4,7,8,3,6
+ID 194: 3,5,2,4,,,1,,,
+ID 195: ,7,,6,3,4,5,,2,1
+ID 196: ,7,,4,2,,6,1,3,5
+ID 197: 5,4,1,3,,,7,2,6,
+ID 198: ,2,5,,6,4,,1,3,
+ID 199: ,2,7,1,6,,5,4,3,8
+ID 200: ,,5,6,3,1,,,4,2
+ID 201: 6,5,3,7,9,10,2,8,4,1
+ID 202: 2,,,5,7,3,4,6,1,
+ID 203: ,,,3,,2,4,1,5,
+ID 204: 4,9,2,7,1,3,10,5,6,8
+ID 205: 9,1,6,10,2,5,7,4,8,3
+ID 206: 1,6,5,,,,3,2,4,
+ID 207: ,,3,,5,,1,,4,2
+ID 208: ,3,,1,,2,,4,5,
+ID 209: 3,,5,6,,2,4,,,1
+ID 210: 5,,,1,,4,,2,3,
+ID 211: 4,5,,,,2,,1,3,6
+ID 212: 1,9,2,5,,7,8,6,4,3
+ID 213: 1,,,4,2,,5,,3,
+ID 214: ,5,,1,,3,,2,4,6
+ID 215: 2,3,1,7,,6,4,5,8,9
+ID 216: 1,,2,5,3,,4,7,,6
+ID 217: 8,10,3,9,6,7,1,5,2,4
+ID 218: ,,,3,1,4,,6,5,2
+ID 219: 3,1,,7,4,5,2,6,,
+ID 220: ,,,,3,,5,1,4,2
+ID 221: 2,6,1,5,4,,3,,,
+ID 222: ,1,4,,5,6,8,2,7,3
+ID 223: 3,7,4,2,8,5,6,9,1,
+ID 224: 1,5,8,3,4,2,,6,9,7
+ID 225: ,5,,3,6,4,1,,2,
+ID 226: 4,8,6,5,3,2,1,,7,
+ID 227: ,2,,,,5,1,,3,4
+ID 228: ,,5,,,3,1,2,6,4
+ID 229: 6,2,8,10,3,7,9,4,1,5
+ID 230: 7,6,8,5,2,4,1,3,9,
+ID 231: 2,3,,5,4,,1,,,
+ID 232: ,5,7,,4,1,6,3,2,
+ID 233: ,8,6,5,1,2,,3,7,4
+ID 234: 4,7,6,2,8,1,5,,,3
+ID 235: ,2,7,1,5,,4,3,6,
+ID 236: 3,4,7,2,,8,,6,5,1
+ID 237: 2,6,3,4,,5,1,,,
+ID 238: 2,3,10,7,5,8,6,9,1,4
+ID 239: 3,5,1,,,2,,4,,6
+ID 240: 4,7,8,6,9,10,1,3,5,2
+ID 241: 5,8,9,1,2,,6,7,4,3
+ID 242: 8,2,9,5,4,,7,6,1,3
+ID 243: 6,5,,1,,,2,4,3,
+ID 244: 2,7,8,4,5,9,6,1,3,
+ID 245: 5,1,,,4,2,,,,3
+ID 246: ,5,4,2,,6,3,1,,
+ID 247: 8,2,7,3,5,,4,1,6,
+ID 248: 10,1,9,4,8,7,3,6,5,2
+ID 249: 3,1,4,,5,6,9,7,2,8
+ID 250: 4,2,5,6,,,1,3,,
+ID 251: 7,4,9,3,1,8,5,6,,2
+ID 252: 3,7,4,,1,5,2,,,6
+ID 253: 1,3,,7,2,9,8,4,6,5
+ID 254: 2,4,5,,8,3,,1,6,7
+ID 255: 5,1,4,3,8,7,,6,2,9
+ID 256: 1,8,5,9,4,10,7,2,6,3
+ID 257: 1,4,2,,5,,,,3,6
+ID 258: ,,,1,4,,,2,3,5
+ID 259: 1,,4,,5,6,,3,,2
+ID 260: 1,,7,5,3,9,2,8,4,6
+ID 261: 7,6,5,,1,,,2,4,3
+ID 262: 2,8,4,5,3,6,,7,1,
+ID 263: ,1,6,7,,5,2,4,3,
+ID 264: ,2,,5,4,1,,,6,3
+ID 265: 3,6,2,5,4,1,,,,7
+ID 266: 3,2,6,,4,5,7,,,1
+ID 267: ,6,3,8,,5,1,4,2,7
+ID 268: 6,4,8,5,7,2,1,,3,9
+ID 269: 5,,6,,1,3,2,4,7,8
+ID 270: 1,7,3,2,,6,4,8,5,
+ID 271: 5,,1,4,,,2,3,,
+ID 272: 8,7,2,3,1,,5,,6,4
+ID 273: 1,,7,,4,5,3,2,6,
+ID 274: 7,6,2,3,,,,1,4,5
+ID 275: 3,2,,6,,4,5,,1,
+ID 276: 2,,4,5,,,,3,1,
+ID 277: 3,,,1,2,,4,,6,5
+ID 278: 9,5,3,,7,4,8,6,1,2
+ID 279: 5,,6,4,2,7,,,1,3
+ID 280: 7,,6,2,8,4,1,3,5,
+ID 281: 4,5,,3,1,9,2,8,6,7
+ID 282: 1,,,2,,3,,4,,5
+ID 283: 4,7,3,6,5,9,2,8,1,
+ID 284: 1,2,3,,5,,4,,,
+ID 285: 4,6,7,1,9,8,2,3,5,10
+ID 286: 1,6,,,4,,,3,2,5
+ID 287: 2,3,4,7,5,1,,9,8,6
+ID 288: 6,9,,7,5,4,2,3,8,1
+ID 289: 3,4,2,,1,5,,,,
+ID 290: 9,4,7,1,3,6,2,10,8,5
+ID 291: 5,6,2,10,7,4,9,1,8,3
+ID 292: 4,9,3,8,7,5,2,1,10,6
+ID 293: 9,7,8,3,5,1,,6,4,2
+ID 294: ,,1,5,4,6,,,3,2
+ID 295: 1,,,3,,5,4,,,2
+ID 296: ,2,1,9,8,6,5,7,4,3
+ID 297: 6,7,1,2,10,5,4,3,8,9
+ID 298: ,3,,4,5,,,1,2,
+ID 299: ,4,6,1,2,7,,5,,3
+ID 300: ,2,,6,4,,3,5,1,
+ID 301: ,2,,1,4,,5,3,,
+ID 302: 1,5,9,10,4,2,3,8,6,7
+ID 303: ,6,7,2,4,,5,,1,3
+ID 304: 9,7,10,5,2,3,1,4,6,8
+ID 305: 8,1,7,4,10,2,3,5,9,6
+ID 306: 3,6,7,4,5,2,,,,1
+ID 307: 7,,2,1,6,,5,,4,3
+ID 308: 1,,,,,2,3,,4,5
+ID 309: 4,7,2,1,,5,3,6,,
+ID 310: 6,,1,5,2,,,3,,4
+ID 311: 5,3,,6,4,,,1,,2
+ID 312: 4,2,,,1,,6,5,7,3
+ID 313: ,,8,6,7,2,1,3,4,5
+ID 314: 5,,4,6,2,3,,1,7,
+ID 315: ,2,6,5,3,,4,1,,
+ID 316: 9,5,,4,7,1,3,6,2,8
+ID 317: ,1,5,3,6,2,4,,,
+ID 318: 4,2,8,,7,6,9,3,5,1
+ID 319: 2,5,,4,,6,3,,1,
+ID 320: 2,7,,5,8,4,6,1,3,9
+ID 321: 1,3,5,,2,,,,,4
+ID 322: 4,,5,9,3,1,8,6,2,7
+ID 323: 3,9,6,8,5,2,1,4,,7
+ID 324: 6,3,2,9,,4,1,7,5,8
+ID 325: 1,,4,,,5,2,,3,
+ID 326: ,6,1,3,,,4,5,2,7
+ID 327: ,7,3,,1,6,2,8,5,4
+ID 328: ,,2,,,,5,1,4,3
+ID 329: ,,2,3,4,1,6,,5,
+ID 330: 3,8,,2,7,6,1,9,5,4
+ID 331: 6,,,2,5,1,3,4,,
+ID 332: ,3,1,5,8,,7,2,4,6
+ID 333: ,3,,4,2,,6,1,5,
+ID 334: 4,6,8,2,3,7,,,1,5
+ID 335: 1,,3,5,4,7,,2,6,
+ID 336: 10,2,5,3,8,1,9,4,7,6
+ID 337: 5,7,3,2,4,6,,,,1
+ID 338: ,6,2,3,,5,,1,4,
+ID 339: 6,3,9,8,4,10,1,5,7,2
+ID 340: 2,,3,5,4,,,,6,1
+ID 341: 9,8,4,6,10,1,3,5,7,2
+ID 342: ,4,1,2,,3,,,5,
+ID 343: ,5,7,,2,1,4,6,,3
+ID 344: 6,,2,,3,5,4,,1,
+ID 345: 6,,2,5,7,1,,,3,4
+ID 346: 2,6,,5,4,,,,3,1
+ID 347: 2,3,8,,5,4,9,6,1,7
+ID 348: 6,3,,1,4,7,2,,5,8
+ID 349: 5,,,2,4,1,,,,3
+ID 350: ,,,3,5,1,,6,4,2
+ID 351: 3,6,,,1,4,,5,,2
+ID 352: 7,1,3,5,4,2,6,10,9,8
+ID 353: 4,,2,1,,,,3,5,
+ID 354: 3,5,4,,1,,2,,,6
+ID 355: ,8,4,7,9,5,6,2,3,1
+ID 356: 6,7,1,2,5,9,4,10,3,8
+ID 357: 7,4,10,5,3,2,9,1,6,8
+ID 358: 7,5,1,6,2,,,3,,4
+ID 359: 3,,2,1,5,4,,,,
+ID 360: ,2,,1,4,,,,5,3
+ID 361: 6,3,2,5,7,4,9,1,8,10
+ID 362: 7,4,1,5,6,,,,2,3
+ID 363: 4,7,3,1,6,2,,5,,
+ID 364: 3,,4,2,,,5,1,,
+ID 365: 3,6,5,,7,,4,,2,1
+ID 366: 4,2,,,3,1,5,6,,7
+ID 367: 7,,,3,6,2,,5,4,1
+ID 368: 6,4,8,,1,2,,7,5,3
+ID 369: 8,3,5,4,1,7,,6,,2
+ID 370: 3,4,5,,6,,2,1,,
+ID 371: 7,,1,5,3,6,4,,2,
+ID 372: ,9,3,5,2,1,4,6,7,8
+ID 373: 3,2,,,5,1,,4,,
+ID 374: 3,1,7,,5,2,4,6,8,
+ID 375: 1,,2,,,3,4,,,5
+ID 376: 1,2,6,3,7,9,4,5,8,
+ID 377: 5,1,3,,,,2,,,4
+ID 378: 5,,2,,,,1,6,3,4
+ID 379: 4,8,6,7,3,9,1,5,2,
+ID 380: 2,,,1,5,6,3,,4,
+ID 381: 3,,7,1,,4,6,8,2,5
+ID 382: 3,7,6,5,1,,,4,8,2
+ID 383: 7,6,1,,,3,5,2,,4
+ID 384: 7,5,8,2,6,4,1,,9,3
+ID 385: 4,6,2,7,,,1,3,5,
+ID 386: ,6,,4,2,8,7,3,1,5
+ID 387: 9,6,7,4,10,3,2,8,1,5
+ID 388: 1,,,,,3,5,4,6,2
+ID 389: 7,1,2,,6,3,8,4,5,
+ID 390: 5,1,,,4,,2,,,3
+ID 391: ,1,,5,4,3,2,6,,
+ID 392: 5,,,4,,1,3,7,6,2
+ID 393: 8,7,4,9,2,3,1,5,10,6
+ID 394: 3,2,7,4,,,6,5,1,
+ID 395: ,3,5,2,6,4,,,1,
+ID 396: ,2,6,9,4,3,7,8,5,1
+ID 397: 5,3,1,9,8,4,2,7,10,6
+ID 398: 6,2,3,7,9,4,1,5,8,
+ID 399: 5,9,7,3,8,2,10,4,6,1
+ID 400: 4,8,9,6,1,,7,5,3,2
+ID 401: 7,6,,4,8,5,9,1,2,3
+ID 402: 10,8,6,4,5,2,1,3,9,7
+ID 403: 10,8,7,4,9,5,2,6,1,3
+ID 404: ,2,5,3,,7,,1,6,4
+ID 405: 8,9,5,7,4,,1,2,3,6
+ID 406: ,7,3,2,9,8,5,4,1,6
+ID 407: 2,7,1,4,,5,6,9,3,8
+ID 408: 6,,1,7,5,8,,3,2,4
+ID 409: 1,6,9,7,4,8,2,10,5,3
+ID 410: 8,6,2,,7,9,4,1,3,5
+ID 411: 5,3,6,10,8,7,9,4,1,2
+ID 412: 5,,1,2,,3,6,7,,4
+ID 413: 3,,6,1,4,2,,,5,
+ID 414: ,5,2,,,3,,1,4,6
+ID 415: 9,1,7,3,10,2,6,8,5,4
+ID 416: 2,4,6,5,,1,,3,,
+ID 417: 2,4,5,9,3,1,7,8,,6
+ID 418: 5,3,2,9,7,6,1,8,4,10
+ID 419: 7,1,2,10,6,5,9,3,8,4
+ID 420: 7,,6,4,2,5,1,3,8,
+ID 421: ,1,,,2,5,,3,,4
+ID 422: 10,9,2,3,8,4,1,5,7,6
+ID 423: ,,3,1,5,4,2,,,
+ID 424: 8,5,2,10,7,1,3,9,6,4
+ID 425: 2,,6,3,8,7,4,1,9,5
+ID 426: ,3,1,4,2,,5,,,
+ID 427: 2,,6,1,3,4,,7,5,8
+ID 428: 1,6,4,9,7,3,,2,5,8
+ID 429: 5,4,6,1,,2,,3,7,
+ID 430: 5,,7,2,3,1,6,,8,4
+ID 431: 1,4,3,,6,5,2,,7,
+ID 432: 6,7,2,10,4,1,5,9,8,3
+ID 433: 1,4,8,5,6,,7,2,,3
+ID 434: 2,5,1,7,6,,4,3,,
+ID 435: 2,,5,1,,,6,3,,4
+ID 436: 5,1,,4,,,3,,2,
+ID 437: 3,,,4,5,,1,6,2,
+ID 438: 4,7,3,1,5,6,9,10,8,2
+ID 439: 4,2,7,3,10,5,6,9,8,1
+ID 440: ,,,4,2,,5,6,1,3
+ID 441: 5,,4,,,2,1,3,,
+ID 442: 6,2,3,7,4,1,8,,5,
+ID 443: 2,,3,,,5,,1,6,4
+ID 444: 5,,2,1,4,,,,3,
+ID 445: 1,3,2,,7,,6,4,,5
+ID 446: ,4,1,5,,,,3,,2
+ID 447: 5,2,7,,4,,3,,1,6
+ID 448: 2,,1,3,4,,5,,,
+ID 449: ,3,,5,4,,2,,1,
+ID 450: 5,3,6,,4,,2,,1,7
+ID 451: 3,5,,6,2,7,8,,4,1
+ID 452: 1,9,5,7,6,2,4,,3,8
+ID 453: 4,3,,,,7,2,1,5,6
+ID 454: ,1,4,6,5,8,,2,3,7
+ID 455: 8,,7,3,4,2,5,6,1,
+ID 456: 3,,4,,,2,5,,,1
+ID 457: 6,5,7,4,3,8,1,9,10,2
+ID 458: ,,2,,,3,5,,1,4
+ID 459: 4,5,,7,1,3,,,6,2
+ID 460: 3,4,6,2,7,,,5,8,1
+ID 461: ,6,2,,3,,,1,4,5
+ID 462: 6,,2,3,,7,,1,5,4
+ID 463: 7,2,,6,4,3,,1,,5
+ID 464: 10,5,1,3,9,6,4,2,7,8
+ID 465: 6,3,,5,1,8,2,9,4,7
+ID 466: 2,,6,5,3,,,7,1,4
+ID 467: ,,1,2,3,7,4,5,,6
+ID 468: 4,10,1,8,7,9,6,2,5,3
+ID 469: 5,,,6,2,3,4,7,1,
+ID 470: ,3,,5,4,1,,2,,
+ID 471: 9,8,5,4,2,3,1,6,10,7
+ID 472: 5,6,1,3,2,,,4,,
+ID 473: 6,2,,,4,3,,,1,5
+ID 474: 8,5,7,,6,4,3,,2,1
+ID 475: 4,3,5,1,2,6,,,,
+ID 476: 7,4,6,3,8,9,2,10,5,1
+ID 477: 10,6,3,1,2,5,8,9,7,4
+ID 478: 2,6,,,,5,,4,1,3
+ID 479: 7,1,2,4,9,3,8,10,5,6
+ID 480: ,,,,2,5,4,3,,1
+ID 481: 4,6,1,3,8,,5,2,7,
+ID 482: 1,3,,2,4,,5,6,,
+ID 483: ,5,,1,2,,,3,,4
+ID 484: 2,6,5,4,8,,7,3,1,
+ID 485: 1,,5,,,2,,,3,4
+ID 486: 5,2,9,4,3,6,7,8,,1
+ID 487: 3,6,4,5,,1,,,,2
+ID 488: ,3,2,1,4,,5,,,
+ID 489: 5,7,1,4,3,9,6,2,,8
+ID 490: 2,4,3,,,,1,5,,6
+ID 491: 2,,,4,,,3,5,,1
+ID 492: 5,8,1,7,10,3,6,4,9,2
+ID 493: 5,7,1,3,10,8,4,9,2,6
+ID 494: 5,,2,1,,4,,,3,6
+ID 495: 7,5,1,6,,2,4,,3,
+ID 496: ,,3,,5,1,,2,4,
+ID 497: ,2,4,7,,,1,6,5,3
+ID 498: ,,1,5,2,7,3,4,6,
+ID 499: ,3,,,4,2,,5,,1
+ID 500: ,2,6,4,,7,5,,1,3
+ID 501: 6,4,,5,1,7,3,8,9,2
+ID 502: 2,8,1,10,4,9,6,5,3,7
+ID 503: ,,5,2,1,,,3,4,
+ID 504: 3,6,4,2,1,,5,,,
+ID 505: ,5,6,4,2,8,7,1,,3
+ID 506: 3,1,,8,6,2,5,,4,7
+ID 507: ,,,,,2,3,5,4,1
+ID 508: 3,7,4,,5,2,8,1,9,6
+ID 509: 1,,6,7,2,,4,3,5,
+ID 510: ,1,7,4,,6,2,,3,5
+ID 511: 3,6,2,5,4,7,,,8,1
+ID 512: 3,,6,,1,,7,5,4,2
+ID 513: 1,5,2,7,6,3,,9,8,4
+ID 514: 2,1,9,8,7,6,5,3,,4
+ID 515: 1,8,3,10,9,7,5,2,6,4
+ID 516: 2,8,,1,3,6,5,7,4,
+ID 517: 7,,3,,2,,1,6,4,5
+ID 518: 2,,6,4,7,,,1,3,5
+ID 519: 4,5,,,,,,2,3,1
+ID 520: 2,,4,3,,,,,5,1
+ID 521: 5,3,4,,2,,,,1,
+ID 522: 1,6,,5,2,,4,,,3
+ID 523: ,,1,4,5,6,,,2,3
+ID 524: 6,,4,2,5,,,7,1,3
+ID 525: 7,6,3,5,,1,8,,4,2
+ID 526: 7,2,1,8,4,3,5,,,6
+ID 527: 4,6,,3,,,5,,1,2
+ID 528: 1,3,,6,7,2,4,5,8,
+ID 529: 4,,,,2,,5,3,1,
+ID 530: 4,1,2,,5,8,6,9,7,3
+ID 531: 3,10,8,6,1,2,5,7,4,9
+ID 532: 6,3,4,1,5,7,8,9,2,10
+ID 533: ,,,2,1,,4,6,3,5
+ID 534: 10,3,2,4,9,1,5,7,6,8
+ID 535: 1,,,,3,,2,5,4,6
+ID 536: 4,,,,,,3,2,5,1
+ID 537: 4,,,,2,1,5,,,3
+ID 538: ,4,2,1,,,,3,5,
+ID 539: ,2,5,4,6,,3,1,,
+ID 540: 3,6,7,4,5,2,8,10,1,9
+ID 541: 6,,5,1,2,,,3,,4
+ID 542: ,4,6,7,,5,1,,2,3
+ID 543: 1,10,7,6,4,3,8,5,9,2
+ID 544: ,4,,5,3,,2,,6,1
+ID 545: 3,,1,5,4,2,,,,
+ID 546: 2,5,8,4,3,6,9,10,7,1
+ID 547: ,5,4,2,,,,1,,3
+ID 548: 5,1,,4,6,,2,3,7,
+ID 549: 2,3,,1,7,5,4,6,,
+ID 550: 2,5,1,3,4,8,,,6,7
+ID 551: ,5,4,,3,,2,,6,1
+ID 552: ,,3,,4,5,2,,1,
+ID 553: 7,5,4,6,,1,3,2,,
+ID 554: 6,3,,,1,2,7,4,,5
+ID 555: ,5,,,3,1,4,,2,
+ID 556: 4,2,5,3,9,6,8,1,,7
+ID 557: 2,7,5,6,,,3,,4,1
+ID 558: 5,7,2,,,6,1,,3,4
+ID 559: 2,,5,,,4,3,1,,
+ID 560: 2,3,5,,,4,,,1,
+ID 561: ,,1,4,,,2,5,3,
+ID 562: 5,7,2,3,8,,,1,6,4
+ID 563: 4,3,9,8,6,2,5,1,7,
+ID 564: ,,1,3,4,2,,5,,6
+ID 565: 6,1,8,3,,2,4,9,7,5
+ID 566: ,,4,6,3,,5,1,2,
+ID 567: 5,,,,3,2,,1,,4
+ID 568: ,1,5,4,6,,,2,3,
+ID 569: 3,1,4,5,9,7,6,8,,2
+ID 570: 5,1,2,,4,,,,,3
+ID 571: ,8,6,7,3,2,5,,4,1
+ID 572: 7,5,8,,2,1,6,9,3,4
+ID 573: ,4,2,3,1,5,,,,6
+ID 574: 7,,6,4,,2,5,3,1,
+ID 575: 9,6,1,3,2,7,4,8,,5
+ID 576: 6,5,2,1,,,4,,,3
+ID 577: 2,9,8,4,5,,7,1,6,3
+ID 578: ,,,2,6,7,4,1,5,3
+ID 579: 9,2,,3,7,4,8,1,5,6
+ID 580: ,3,,5,4,6,,1,2,7
+ID 581: 5,2,4,6,7,8,10,3,9,1
+ID 582: 7,6,,,2,4,3,,5,1
+ID 583: 5,8,9,3,1,6,,4,7,2
+ID 584: 2,1,5,7,6,,,,3,4
+ID 585: ,6,5,3,8,1,9,7,2,4
+ID 586: 8,10,4,2,5,7,9,6,1,3
+ID 587: 6,8,1,4,7,9,3,2,5,10
+ID 588: 10,4,6,5,9,7,8,3,1,2
+ID 589: 3,9,5,8,1,4,2,7,6,10
+ID 590: 4,5,9,8,7,1,2,,6,3
+ID 591: 2,1,5,,3,6,,,4,
+ID 592: 1,6,5,,3,7,2,,8,4
+ID 593: 6,,2,4,3,,1,,,5
+ID 594: ,3,,,2,5,,4,1,6
+ID 595: 6,4,2,3,9,,8,7,5,1
+ID 596: 8,,4,3,1,6,,2,7,5
+ID 597: ,3,2,5,,,6,1,,4
+ID 598: 5,6,10,3,8,9,7,4,1,2
+ID 599: ,3,4,,,5,,2,,1
+ID 600: ,4,6,,7,5,3,1,2,8
+ID 601: 5,9,7,2,8,4,10,1,6,3
+ID 602: 7,5,2,4,3,9,8,1,6,
+ID 603: 5,,4,2,6,3,,1,,
+ID 604: ,,6,1,2,5,,3,4,
+ID 605: 9,5,,4,8,3,6,7,1,2
+ID 606: 8,5,4,,2,,3,7,6,1
+ID 607: ,1,,,4,,2,3,,5
+ID 608: 1,6,9,7,2,5,10,3,4,8
+ID 609: 4,,2,,6,7,5,3,,1
+ID 610: 1,3,,,,5,2,,6,4
+ID 611: 3,,4,7,6,9,2,5,1,8
+ID 612: 1,10,3,5,6,9,8,2,4,7
+ID 613: 3,5,1,,,,,4,,2
+ID 614: 7,3,6,8,1,4,9,2,10,5
+ID 615: ,6,3,,,2,5,4,1,
+ID 616: 6,1,3,,,2,4,,,5
+ID 617: 3,8,7,9,,5,4,2,6,1
+ID 618: 3,7,4,6,8,10,5,2,1,9
+ID 619: 10,5,1,8,9,7,6,2,4,3
+ID 620: 1,6,,,,4,2,5,,3
+ID 621: 3,,1,,,2,4,,,5
+ID 622: ,5,,,2,4,,3,1,
+ID 623: 2,,3,5,4,6,,,1,7
+ID 624: 1,3,4,,2,6,,7,5,
+ID 625: 4,,5,1,2,,3,,,6
+ID 626: 4,5,8,7,6,3,9,2,1,10
+ID 627: 3,1,5,,,,,,4,2
+ID 628: 8,9,4,6,1,3,7,2,10,5
+ID 629: 5,1,8,10,4,2,3,9,7,6
+ID 630: 10,5,4,1,2,7,3,9,8,6
+ID 631: 8,6,9,1,2,3,4,,7,5
+ID 632: 4,,5,,2,,,3,6,1
+ID 633: ,4,3,5,1,7,,2,,6
+ID 634: 4,7,3,6,2,5,,8,9,1
+ID 635: 1,8,2,9,7,5,10,4,3,6
+ID 636: 3,6,7,2,8,,5,,1,4
+ID 637: 4,5,1,,,,,2,,3
+ID 638: 1,5,,,7,3,2,4,6,8
+ID 639: 3,,2,,1,,4,5,,
+ID 640: 1,,2,,,5,,6,4,3
+ID 641: 3,5,,,6,,,2,1,4
+ID 642: 2,,1,3,,4,5,,,6
+ID 643: 3,,,4,,5,,,2,1
+ID 644: 7,4,2,5,1,3,,9,8,6
+ID 645: 1,5,2,,,,,4,,3
+ID 646: 10,3,6,5,8,2,1,9,7,4
+ID 647: 2,3,4,7,8,1,5,9,,6
+ID 648: 7,10,1,5,3,2,4,8,9,6
+ID 649: 5,8,6,1,3,2,4,9,7,10
+ID 650: 1,5,,,4,,7,2,3,6
+ID 651: 6,1,8,5,,4,7,2,,3
+ID 652: 6,7,3,5,9,8,4,1,10,2
+ID 653: ,,4,,,1,,5,2,3
+ID 654: 5,,2,4,3,1,6,,,
+ID 655: 3,2,,1,,5,,4,,
+ID 656: 7,4,5,2,,,,1,6,3
+ID 657: 4,5,,2,3,6,1,7,,8
+ID 658: 5,,3,6,4,,7,1,2,
+ID 659: ,,7,3,6,1,2,5,,4
+ID 660: 8,7,9,3,,1,6,5,4,2
+ID 661: ,5,4,3,,2,,1,,
+ID 662: 9,3,4,2,7,6,10,5,8,1
+ID 663: 3,7,6,2,5,1,4,8,,9
+ID 664: 2,7,1,4,3,5,6,9,10,8
+ID 665: 1,6,4,,,2,3,5,,
+ID 666: 5,6,7,1,3,2,9,8,4,
+ID 667: 2,8,1,9,7,10,4,5,6,3
+ID 668: ,3,4,,,5,,1,2,
+ID 669: ,3,5,,,,4,,2,1
+ID 670: 3,8,2,1,,5,,6,4,7
+ID 671: 4,3,7,,,2,,1,6,5
+ID 672: 3,,,5,,1,,,4,2
+ID 673: 3,1,4,,6,8,7,2,9,5
+ID 674: 2,,1,,,,3,4,,5
+ID 675: 3,,,,4,,5,1,2,
+ID 676: 3,5,,,2,,4,1,,
+ID 677: 5,,4,,3,,,,1,2
+ID 678: 7,4,5,1,,,6,2,3,
+ID 679: 10,4,3,8,1,9,7,6,5,2
+ID 680: 2,,6,4,,3,7,1,5,
+ID 681: 4,2,6,,7,,,1,5,3
+ID 682: 7,8,9,1,4,6,10,3,5,2
+ID 683: ,7,3,5,,6,1,4,,2
+ID 684: 5,3,1,8,10,2,7,9,6,4
+ID 685: ,7,4,1,2,,3,,6,5
+ID 686: 7,6,4,,,1,3,2,5,
+ID 687: 5,4,,2,,7,,3,6,1
+ID 688: 8,,4,1,7,2,9,6,5,3
+ID 689: 7,,,4,8,6,1,5,2,3
+ID 690: 1,,3,4,,7,5,6,,2
+ID 691: 9,2,1,6,10,5,8,3,7,4
+ID 692: 1,5,2,6,,,3,,,4
+ID 693: ,,6,,4,5,2,1,,3
+ID 694: 5,1,,3,,2,,,6,4
+ID 695: ,5,,1,,4,2,3,,
+ID 696: 3,2,5,4,9,8,7,1,6,10
+ID 697: 2,5,,3,6,,1,4,,
+ID 698: ,2,,1,6,,3,5,4,
+ID 699: 1,6,,,2,5,7,4,3,
+ID 700: ,1,8,3,9,4,7,5,2,6
+ID 701: 1,5,7,6,3,8,,2,9,4
+ID 702: ,2,,6,5,7,3,4,,1
+ID 703: 4,2,,,1,,5,3,,
+ID 704: 3,1,6,8,,4,,2,7,5
+ID 705: ,6,,,3,4,5,,2,1
+ID 706: 2,,,,4,3,6,7,1,5
+ID 707: 2,,,3,5,1,,,6,4
+ID 708: 7,1,3,8,5,2,6,,4,
+ID 709: 6,1,,5,7,4,3,2,,
+ID 710: 7,5,3,2,,8,9,1,6,4
+ID 711: ,,6,2,,5,4,1,,3
+ID 712: 2,3,1,,,6,,5,,4
+ID 713: ,,,3,6,2,4,5,7,1
+ID 714: 9,3,2,5,4,6,10,7,8,1
+ID 715: 7,5,,,4,,3,2,1,6
+ID 716: 3,,4,,5,,2,,,1
+ID 717: 9,8,2,5,10,6,7,3,1,4
+ID 718: 5,1,3,,2,4,,,,
+ID 719: 3,,,1,,2,,5,,4
+ID 720: 1,,3,,,5,4,2,,6
+ID 721: 5,2,4,9,6,3,7,,8,1
+ID 722: ,2,4,6,,5,1,3,,
+ID 723: ,,,,5,1,4,,2,3
+ID 724: ,5,2,1,,3,4,6,,
+ID 725: 9,8,4,10,1,5,6,7,3,2
+ID 726: ,3,,6,2,4,1,5,,
+ID 727: 7,8,,2,4,1,6,3,5,
+ID 728: 3,2,6,8,7,10,5,1,4,9
+ID 729: 6,3,,1,4,2,,5,7,8
+ID 730: 5,,,6,2,3,4,1,,
+ID 731: 1,6,8,7,9,,3,5,2,4
+ID 732: 3,,5,2,,1,4,6,,
+ID 733: ,5,1,3,,,2,7,6,4
+ID 734: 5,1,7,10,2,9,6,4,3,8
+ID 735: ,,1,3,8,2,7,4,5,6
+ID 736: 3,5,4,2,1,,7,9,6,8
+ID 737: 3,1,8,10,2,6,7,4,5,9
+ID 738: 1,5,8,2,,6,7,3,4,
+ID 739: 5,,1,,3,2,,4,,6
+ID 740: ,4,3,2,8,5,1,7,6,
+ID 741: 4,6,,3,,5,,2,1,
+ID 742: 1,8,5,9,4,3,6,7,2,
+ID 743: 6,2,4,3,,,5,,1,7
+ID 744: ,2,,3,1,4,5,,,
+ID 745: ,6,4,7,,2,8,5,1,3
+ID 746: ,,,5,1,3,6,,4,2
+ID 747: 5,3,1,,2,4,,,6,
+ID 748: 4,5,6,3,1,2,,,8,7
+ID 749: ,5,2,,4,6,3,,,1
+ID 750: ,7,6,5,1,,8,3,2,4
+ID 751: 4,,,5,3,,,1,2,
+ID 752: 7,2,8,4,10,5,1,3,9,6
+ID 753: 5,4,1,,,2,,,,3
+ID 754: 2,8,7,9,4,1,,5,6,3
+ID 755: 5,2,4,,7,,1,,3,6
+ID 756: 4,1,,2,6,3,,5,,
+ID 757: 8,4,7,9,2,,3,5,6,1
+ID 758: 2,3,,,5,4,,,,1
+ID 759: 4,6,,,,1,3,2,5,
+ID 760: 4,2,8,3,5,9,7,1,,6
+ID 761: 5,8,3,4,1,9,10,7,2,6
+ID 762: 1,,2,,,3,,4,5,
+ID 763: 4,,,,7,1,6,5,2,3
+ID 764: 7,4,5,,6,2,,,3,1
+ID 765: 8,10,4,7,9,3,6,1,2,5
+ID 766: 4,3,2,,,1,5,6,,7
+ID 767: 2,5,,6,,3,4,,1,7
+ID 768: 4,,,1,,,3,5,2,
+ID 769: 2,1,,,,,4,5,6,3
+ID 770: 10,4,8,5,1,2,9,3,7,6
+ID 771: 2,8,6,7,4,5,,1,,3
+ID 772: 4,,,3,,,1,5,,2
+ID 773: 8,9,4,3,1,5,2,10,6,7
+ID 774: 1,8,9,3,10,5,4,2,7,6
+ID 775: ,5,,1,,2,,,3,4
+ID 776: ,1,5,3,2,,6,,7,4
+ID 777: 6,8,,5,7,3,2,,4,1
+ID 778: ,,,4,5,1,2,,3,
+ID 779: 3,4,8,6,,2,7,9,1,5
+ID 780: 3,1,,,,4,,5,6,2
+ID 781: 1,2,6,8,4,5,,7,3,
+ID 782: 5,3,6,1,2,8,,7,4,
+ID 783: 9,6,3,2,5,1,,7,4,8
+ID 784: 6,5,1,4,2,,,,,3
+ID 785: 2,5,8,3,6,9,4,1,,7
+ID 786: 5,2,10,7,9,1,6,8,4,3
+ID 787: 9,10,5,4,8,6,3,7,1,2
+ID 788: 5,,,,,3,4,,1,2
+ID 789: ,1,4,2,3,,,5,,6
+ID 790: ,1,3,4,2,6,5,,,7
+ID 791: 7,,1,2,8,5,6,9,4,3
+ID 792: 7,,3,,6,5,,4,2,1
+ID 793: ,,6,2,3,7,1,4,,5
+ID 794: 7,6,1,9,8,5,2,3,,4
+ID 795: ,2,5,1,4,,,,,3
+ID 796: 2,1,4,9,5,10,7,3,8,6
+ID 797: 2,9,6,5,10,8,7,1,3,4
+ID 798: 1,3,6,5,7,8,2,,,4
+ID 799: 4,7,1,8,3,5,9,,2,6
+ID 800: 1,6,7,4,5,,8,,3,2
+ID 801: 6,,3,5,,,,4,1,2
+ID 802: ,2,9,4,5,7,8,6,3,1
+ID 803: ,2,6,5,4,,,,1,3
+ID 804: 7,3,8,5,6,4,9,,1,2
+ID 805: ,,3,,2,,5,1,4,6
+ID 806: 1,9,8,5,3,6,4,7,10,2
+ID 807: 3,9,10,5,6,2,8,4,1,7
+ID 808: 4,5,3,,2,7,,6,,1
+ID 809: ,1,4,6,,,5,,3,2
+ID 810: 4,8,7,,3,5,2,,1,6
+ID 811: 1,3,8,5,2,9,4,,6,7
+ID 812: 2,,,,4,,5,,3,1
+ID 813: 4,,6,2,,1,,7,3,5
+ID 814: ,,2,,1,,,3,4,5
+ID 815: 4,9,7,8,2,1,6,5,,3
+ID 816: 3,5,6,,7,,1,4,2,
+ID 817: 4,1,6,5,,2,7,,,3
+ID 818: 1,3,8,7,10,2,5,4,6,9
+ID 819: 5,3,7,1,8,9,4,,2,6
+ID 820: ,1,,5,,2,4,3,,
+ID 821: 5,4,,1,3,,,6,7,2
+ID 822: 8,6,1,4,,7,2,3,5,
+ID 823: 2,1,5,4,6,,,,3,
+ID 824: ,9,2,5,7,8,3,6,4,1
+ID 825: 2,,5,3,1,9,6,8,4,7
+ID 826: 3,,6,,5,7,4,1,,2
+ID 827: ,3,7,9,8,1,4,5,6,2
+ID 828: 1,,,4,,3,2,,5,
+ID 829: 5,3,8,4,,1,7,6,2,9
+ID 830: 8,6,9,1,10,2,7,4,5,3
+ID 831: 3,2,1,5,,,,,4,6
+ID 832: 6,5,1,3,8,9,7,2,4,10
+ID 833: 4,,2,,1,,3,,5,
+ID 834: ,,3,,4,2,1,5,6,
+ID 835: 5,6,4,1,,,3,,2,7
+ID 836: ,2,9,1,3,4,6,8,5,7
+ID 837: 6,1,4,,5,3,7,2,,
+ID 838: ,8,,5,1,6,7,2,4,3
+ID 839: 3,5,8,4,6,2,9,1,7,10
+ID 840: ,5,,,,2,3,,4,1
+ID 841: ,4,3,1,2,5,,,,
+ID 842: 5,8,,7,6,3,4,9,2,1
+ID 843: ,2,5,,6,3,1,,4,
+ID 844: 3,1,2,4,,5,,,,
+ID 845: 3,,2,4,7,1,8,6,5,
+ID 846: 4,8,3,,1,9,2,5,6,7
+ID 847: ,3,7,4,6,,1,5,,2
+ID 848: 2,4,,5,,1,3,,,
+ID 849: ,6,2,,1,,5,,3,4
+ID 850: 5,4,,,,,3,,1,2
+ID 851: ,5,6,,,3,4,2,,1
+ID 852: 2,1,10,8,3,6,9,7,4,5
+ID 853: ,,8,1,4,2,6,7,5,3
+ID 854: 9,3,6,8,5,4,7,,1,2
+ID 855: 4,5,,3,1,,,,2,
+ID 856: 3,2,9,10,7,6,1,4,5,8
+ID 857: 6,7,4,1,5,,3,,,2
+ID 858: 4,7,5,,6,3,,1,2,
+ID 859: ,2,5,1,4,,3,7,,6
+ID 860: 2,6,3,,,1,5,7,4,
+ID 861: 6,2,,4,3,1,7,8,9,5
+ID 862: ,3,,4,6,,,1,5,2
+ID 863: 5,,,4,,,,2,3,1
+ID 864: 2,3,1,4,,,5,,,6
+ID 865: 2,3,6,4,1,,,7,5,8
+ID 866: ,7,2,5,8,3,1,4,6,9
+ID 867: ,2,7,3,1,6,9,8,4,5
+ID 868: 5,3,2,6,7,,4,8,,1
+ID 869: 2,5,4,,,6,8,3,1,7
+ID 870: 3,6,4,,,2,1,5,,
+ID 871: 3,,,2,5,,,1,,4
+ID 872: 5,,,1,7,,2,3,6,4
+ID 873: 5,6,2,,3,,1,7,8,4
+ID 874: 5,7,8,,1,,3,4,6,2
+ID 875: 9,1,5,7,10,2,3,8,6,4
+ID 876: ,5,,4,3,,6,,1,2
+ID 877: 6,5,1,7,8,9,2,10,3,4
+ID 878: 2,3,,6,4,1,5,,,
+ID 879: 8,7,2,3,5,6,,,4,1
+ID 880: ,3,2,6,1,4,5,,,
+ID 881: ,,7,,1,6,4,5,3,2
+ID 882: 5,10,7,8,9,2,4,1,3,6
+ID 883: 7,6,,3,,2,4,5,,1
+ID 884: 6,7,,4,2,1,3,,5,
+ID 885: ,3,2,,,5,4,,1,
+ID 886: 6,7,8,1,,3,2,4,9,5
+ID 887: 5,,,,2,,4,,3,1
+ID 888: 5,1,,8,6,7,2,4,3,9
+ID 889: 2,5,7,9,4,8,6,1,,3
+ID 890: 2,5,3,7,,,4,6,1,8
+ID 891: ,6,5,,1,3,4,,2,
+ID 892: 3,6,2,9,8,4,1,7,5,
+ID 893: 5,8,3,,1,6,9,7,4,2
+ID 894: 6,10,4,1,3,9,2,7,5,8
+ID 895: 3,,2,5,4,,6,,7,1
+ID 896: 6,5,1,7,9,3,2,,8,4
+ID 897: 6,7,,,8,4,3,1,2,5
+ID 898: 8,,2,,6,5,3,4,1,7
+ID 899: 2,,4,5,3,,,,,1
+ID 900: 3,5,8,7,6,,1,9,4,2
+ID 901: 10,2,1,8,4,9,6,3,5,7
+ID 902: 1,5,2,,,4,,3,,
+ID 903: 3,,,,5,2,1,,,4
+ID 904: ,5,4,3,,,1,,,2
+ID 905: ,,,3,2,,4,1,,5
+ID 906: 4,1,6,3,5,2,,7,,
+ID 907: 5,,3,2,,1,4,,,
+ID 908: 7,9,5,8,10,6,1,4,2,3
+ID 909: 7,6,,,1,2,3,5,4,
+ID 910: ,1,,,4,2,5,,3,
+ID 911: 4,,3,1,,,,5,2,
+ID 912: 4,10,5,1,9,7,2,3,8,6
+ID 913: ,,,4,5,,3,1,2,
+ID 914: ,,2,5,,,1,3,4,
+ID 915: 6,9,7,3,,2,5,8,4,1
+ID 916: 3,2,8,10,4,6,1,7,5,9
+ID 917: ,2,,,4,3,1,,5,
+ID 918: 5,2,4,6,3,1,,,7,
+ID 919: ,4,6,3,1,,5,2,,
+ID 920: 1,,,7,3,2,8,6,5,4
+ID 921: 4,7,2,,6,3,8,9,5,1
+ID 922: 6,8,,7,,4,1,2,3,5
+ID 923: 5,6,3,7,9,4,10,8,2,1
+ID 924: 8,,5,2,6,1,4,,7,3
+ID 925: 2,6,4,,,1,3,,,5
+ID 926: 1,,,4,,3,,2,5,
+ID 927: 5,8,6,2,7,10,3,1,9,4
+ID 928: 4,8,6,7,,1,9,2,5,3
+ID 929: 5,,3,2,4,6,,,1,7
+ID 930: 8,4,6,5,9,,1,3,2,7
+ID 931: 5,2,1,3,8,7,,9,4,6
+ID 932: 7,,3,6,,4,5,,1,2
+ID 933: 2,6,5,7,8,,3,1,4,9
+ID 934: 6,3,2,,1,,4,5,,
+ID 935: 3,5,7,,4,1,,6,,2
+ID 936: 3,8,2,,4,9,5,1,6,7
+ID 937: ,4,8,1,9,3,7,2,6,5
+ID 938: ,4,5,,2,1,,,3,
+ID 939: 4,7,5,1,3,8,9,,2,6
+ID 940: 5,9,6,2,7,8,,3,1,4
+ID 941: 5,,,7,2,6,3,1,4,
+ID 942: 4,2,,,,1,,5,3,
+ID 943: 6,5,2,3,,,1,,4,
+ID 944: ,1,5,,,,2,4,,3
+ID 945: 2,4,1,,,3,7,6,,5
+ID 946: 8,9,10,6,3,4,1,7,5,2
+ID 947: 6,3,4,7,5,9,,1,2,8
+ID 948: 5,,,1,,,3,,4,2
+ID 949: 2,,,,,1,5,4,,3
+ID 950: ,,,4,3,,1,2,5,
+ID 951: ,3,1,4,6,8,9,7,2,5
+ID 952: 8,7,6,4,3,,1,9,2,5
+ID 953: ,6,3,7,2,1,,,5,4
+ID 954: 8,,3,1,7,4,2,5,9,6
+ID 955: ,,5,4,,,2,,1,3
+ID 956: 8,1,10,3,6,5,7,4,2,9
+ID 957: 4,6,10,9,3,2,1,7,5,8
+ID 958: ,1,2,4,,3,,6,5,
+ID 959: ,,,2,,5,3,4,,1
+ID 960: 8,,4,3,6,7,,2,1,5
+ID 961: ,3,5,6,4,,1,,,2
+ID 962: 6,5,,,3,4,,2,,1
+ID 963: 6,4,2,5,1,8,9,7,3,10
+ID 964: 1,3,2,5,,8,7,4,9,6
+ID 965: 1,5,,,,6,7,4,2,3
+ID 966: ,2,6,,4,1,,5,,3
+ID 967: 1,,4,,2,5,3,,,
+ID 968: ,,3,2,1,5,,6,,4
+ID 969: 1,4,2,8,7,,6,3,5,
+ID 970: ,5,,,3,4,,1,,2
+ID 971: 5,8,4,9,7,3,10,2,6,1
+ID 972: 4,,6,7,3,2,,,5,1
+ID 973: ,,4,3,5,2,,,,1
+ID 974: 4,,,1,,2,5,3,,
+ID 975: 3,,2,,6,,,1,5,4
+ID 976: ,5,4,2,3,7,,8,1,6
+ID 977: 7,3,6,5,1,8,9,4,,2
+ID 978: 10,4,8,6,9,1,7,3,2,5
+ID 979: 4,7,8,2,3,9,,1,6,5
+ID 980: 6,1,5,,,3,,4,,2
+ID 981: ,7,4,3,,6,5,1,,2
+ID 982: 5,4,7,,2,,1,,6,3
+ID 983: ,,2,,3,4,,1,5,
+ID 984: 4,1,6,,,5,,,3,2
+ID 985: 2,7,9,1,8,6,5,3,,4
+ID 986: 7,1,,2,6,5,4,8,3,
+ID 987: 5,1,6,2,3,,7,,8,4
+ID 988: 3,5,4,6,7,8,,9,1,2
+ID 989: 3,,2,,4,1,,6,,5
+ID 990: ,2,,,1,,5,4,6,3
+ID 991: 7,9,1,8,5,4,6,3,2,
+ID 992: ,2,4,5,1,3,6,,,7
+ID 993: 1,5,,8,,2,3,4,7,6
+ID 994: 9,5,8,1,3,10,6,4,2,7
+ID 995: 4,5,3,1,2,7,8,,,6
+ID 996: 6,3,7,8,,1,4,5,9,2
+ID 997: 3,2,,,,,1,4,,5
+ID 998: 3,8,5,7,1,,6,4,,2
+ID 999: ,5,2,3,1,,6,,4,
+
+[Initial Vote Distribution]
+Ballot #0 assigned to Alice Wonder
+Ballot #1 assigned to John Kennedy
+Ballot #2 assigned to Joe Cool
+Ballot #3 assigned to Micheal Ashton
+Ballot #4 assigned to Joe Cool
+Ballot #5 assigned to Alice Wonder
+Ballot #6 assigned to Robot Iam
+Ballot #7 assigned to Patrick Star
+Ballot #8 assigned to Alice Wonder
+Ballot #9 assigned to John Kennedy
+Ballot #10 assigned to Robot Iam
+Ballot #11 assigned to Robot Iam
+Ballot #12 assigned to John Kennedy
+Ballot #13 assigned to Mark Suckerberg
+Ballot #14 assigned to John Kennedy
+Ballot #15 assigned to John Kennedy
+Ballot #16 assigned to Jimmy Donaldson
+Ballot #17 assigned to Jimmy Donaldson
+Ballot #18 assigned to Mark Suckerberg
+Ballot #19 assigned to Mark Suckerberg
+Ballot #20 assigned to Jimmy Donaldson
+Ballot #21 assigned to Mark Suckerberg
+Ballot #22 assigned to Micheal Ashton
+Ballot #23 assigned to John Kennedy
+Ballot #24 assigned to Robot Iam
+Ballot #25 assigned to Andrew Hero
+Ballot #26 assigned to Jimmy Donaldson
+Ballot #27 assigned to Micheal Ashton
+Ballot #28 assigned to Micheal Ashton
+Ballot #29 assigned to John Kennedy
+Ballot #30 assigned to Alice Wonder
+Ballot #31 assigned to Andrew Hero
+Ballot #32 assigned to Patrick Star
+Ballot #33 assigned to Joe Cool
+Ballot #34 assigned to Jimmy Donaldson
+Ballot #35 assigned to Jimmy Donaldson
+Ballot #36 assigned to Jimmy Donaldson
+Ballot #37 assigned to Joe Cool
+Ballot #38 assigned to Patrick Star
+Ballot #39 assigned to Patrick Star
+Ballot #40 assigned to Joe Cool
+Ballot #41 assigned to Joe Cool
+Ballot #42 assigned to Joe Cool
+Ballot #43 assigned to Mark Suckerberg
+Ballot #44 assigned to Micheal Ashton
+Ballot #45 assigned to Patrick Star
+Ballot #46 assigned to Micheal Ashton
+Ballot #47 assigned to Jimmy Donaldson
+Ballot #48 assigned to Micheal Ashton
+Ballot #49 assigned to Robot Iam
+Ballot #50 assigned to Andrew Hero
+Ballot #51 assigned to Mark Suckerberg
+Ballot #52 assigned to John Kennedy
+Ballot #53 assigned to Jimmy Donaldson
+Ballot #54 assigned to Jimmy Donaldson
+Ballot #55 assigned to Alice Wonder
+Ballot #56 assigned to John Kennedy
+Ballot #57 assigned to Chuck Lancaster
+Ballot #58 assigned to Alice Wonder
+Ballot #59 assigned to Robot Iam
+Ballot #60 assigned to Jimmy Donaldson
+Ballot #61 assigned to Micheal Ashton
+Ballot #62 assigned to Patrick Star
+Ballot #63 assigned to Micheal Ashton
+Ballot #64 assigned to Patrick Star
+Ballot #65 assigned to Alice Wonder
+Ballot #66 assigned to Micheal Ashton
+Ballot #67 assigned to Micheal Ashton
+Ballot #68 assigned to Mark Suckerberg
+Ballot #69 assigned to Robot Iam
+Ballot #70 assigned to Patrick Star
+Ballot #71 assigned to Jimmy Donaldson
+Ballot #72 assigned to Jimmy Donaldson
+Ballot #73 assigned to Andrew Hero
+Ballot #74 assigned to Joe Cool
+Ballot #75 assigned to Chuck Lancaster
+Ballot #76 assigned to Jimmy Donaldson
+Ballot #77 assigned to Alice Wonder
+Ballot #78 assigned to Alice Wonder
+Ballot #79 assigned to Robot Iam
+Ballot #80 assigned to Chuck Lancaster
+Ballot #81 assigned to Mark Suckerberg
+Ballot #82 assigned to Alice Wonder
+Ballot #83 assigned to Mark Suckerberg
+Ballot #84 assigned to Joe Cool
+Ballot #85 assigned to Patrick Star
+Ballot #86 assigned to Patrick Star
+Ballot #87 assigned to Jimmy Donaldson
+Ballot #88 assigned to Jimmy Donaldson
+Ballot #89 assigned to Andrew Hero
+Ballot #90 assigned to John Kennedy
+Ballot #91 assigned to Alice Wonder
+Ballot #92 assigned to Alice Wonder
+Ballot #93 assigned to Andrew Hero
+Ballot #94 assigned to John Kennedy
+Ballot #95 assigned to Chuck Lancaster
+Ballot #96 assigned to Mark Suckerberg
+Ballot #97 assigned to Andrew Hero
+Ballot #98 assigned to Mark Suckerberg
+Ballot #99 assigned to Andrew Hero
+Ballot #100 assigned to Robot Iam
+Ballot #101 assigned to Robot Iam
+Ballot #102 assigned to Robot Iam
+Ballot #103 assigned to Mark Suckerberg
+Ballot #104 assigned to Jimmy Donaldson
+Ballot #105 assigned to Joe Cool
+Ballot #106 assigned to John Kennedy
+Ballot #107 assigned to Robot Iam
+Ballot #108 assigned to Mark Suckerberg
+Ballot #109 assigned to Joe Cool
+Ballot #110 assigned to Jimmy Donaldson
+Ballot #111 assigned to Patrick Star
+Ballot #112 assigned to Jimmy Donaldson
+Ballot #113 assigned to Andrew Hero
+Ballot #114 assigned to Robot Iam
+Ballot #115 assigned to Patrick Star
+Ballot #116 assigned to Robot Iam
+Ballot #117 assigned to Robot Iam
+Ballot #118 assigned to Patrick Star
+Ballot #119 assigned to Andrew Hero
+Ballot #120 assigned to Joe Cool
+Ballot #121 assigned to Alice Wonder
+Ballot #122 assigned to Mark Suckerberg
+Ballot #123 assigned to Micheal Ashton
+Ballot #124 assigned to Alice Wonder
+Ballot #125 assigned to Mark Suckerberg
+Ballot #126 assigned to Patrick Star
+Ballot #127 assigned to Mark Suckerberg
+Ballot #128 assigned to Joe Cool
+Ballot #129 assigned to Alice Wonder
+Ballot #130 assigned to Mark Suckerberg
+Ballot #131 assigned to Mark Suckerberg
+Ballot #132 assigned to Andrew Hero
+Ballot #133 assigned to Alice Wonder
+Ballot #134 assigned to Mark Suckerberg
+Ballot #135 assigned to Joe Cool
+Ballot #136 assigned to Alice Wonder
+Ballot #137 assigned to Micheal Ashton
+Ballot #138 assigned to Joe Cool
+Ballot #139 assigned to Jimmy Donaldson
+Ballot #140 assigned to Alice Wonder
+Ballot #141 assigned to John Kennedy
+Ballot #142 assigned to Chuck Lancaster
+Ballot #143 assigned to Joe Cool
+Ballot #144 assigned to Andrew Hero
+Ballot #145 assigned to Robot Iam
+Ballot #146 assigned to Joe Cool
+Ballot #147 assigned to Patrick Star
+Ballot #148 assigned to Patrick Star
+Ballot #149 assigned to Andrew Hero
+Ballot #150 assigned to Patrick Star
+Ballot #151 assigned to Robot Iam
+Ballot #152 assigned to Andrew Hero
+Ballot #153 assigned to Joe Cool
+Ballot #154 assigned to Jimmy Donaldson
+Ballot #155 assigned to Robot Iam
+Ballot #156 assigned to Joe Cool
+Ballot #157 assigned to Alice Wonder
+Ballot #158 assigned to Robot Iam
+Ballot #159 assigned to Mark Suckerberg
+Ballot #160 assigned to Robot Iam
+Ballot #161 assigned to Andrew Hero
+Ballot #162 assigned to Patrick Star
+Ballot #163 assigned to Andrew Hero
+Ballot #164 assigned to Mark Suckerberg
+Ballot #165 assigned to John Kennedy
+Ballot #166 assigned to Chuck Lancaster
+Ballot #167 assigned to Patrick Star
+Ballot #168 assigned to Robot Iam
+Ballot #169 assigned to Micheal Ashton
+Ballot #170 assigned to Robot Iam
+Ballot #171 assigned to Chuck Lancaster
+Ballot #172 assigned to Robot Iam
+Ballot #173 assigned to Micheal Ashton
+Ballot #174 assigned to Mark Suckerberg
+Ballot #175 assigned to Andrew Hero
+Ballot #176 assigned to Chuck Lancaster
+Ballot #177 assigned to John Kennedy
+Ballot #178 assigned to Jimmy Donaldson
+Ballot #179 assigned to Chuck Lancaster
+Ballot #180 assigned to Joe Cool
+Ballot #181 assigned to Andrew Hero
+Ballot #182 assigned to Alice Wonder
+Ballot #183 assigned to Chuck Lancaster
+Ballot #184 assigned to Jimmy Donaldson
+Ballot #185 assigned to Robot Iam
+Ballot #186 assigned to Joe Cool
+Ballot #187 assigned to Alice Wonder
+Ballot #188 assigned to Andrew Hero
+Ballot #189 assigned to Robot Iam
+Ballot #190 assigned to Robot Iam
+Ballot #191 assigned to Alice Wonder
+Ballot #192 assigned to Chuck Lancaster
+Ballot #193 assigned to Micheal Ashton
+Ballot #194 assigned to John Kennedy
+Ballot #195 assigned to Alice Wonder
+Ballot #196 assigned to Patrick Star
+Ballot #197 assigned to Andrew Hero
+Ballot #198 assigned to Patrick Star
+Ballot #199 assigned to Micheal Ashton
+Ballot #200 assigned to Jimmy Donaldson
+Ballot #201 assigned to Alice Wonder
+Ballot #202 assigned to Robot Iam
+Ballot #203 assigned to Patrick Star
+Ballot #204 assigned to Joe Cool
+Ballot #205 assigned to Mark Suckerberg
+Ballot #206 assigned to Chuck Lancaster
+Ballot #207 assigned to John Kennedy
+Ballot #208 assigned to Micheal Ashton
+Ballot #209 assigned to Alice Wonder
+Ballot #210 assigned to Micheal Ashton
+Ballot #211 assigned to Patrick Star
+Ballot #212 assigned to Chuck Lancaster
+Ballot #213 assigned to Chuck Lancaster
+Ballot #214 assigned to Micheal Ashton
+Ballot #215 assigned to Andrew Hero
+Ballot #216 assigned to Chuck Lancaster
+Ballot #217 assigned to John Kennedy
+Ballot #218 assigned to Joe Cool
+Ballot #219 assigned to Mark Suckerberg
+Ballot #220 assigned to Patrick Star
+Ballot #221 assigned to Andrew Hero
+Ballot #222 assigned to Mark Suckerberg
+Ballot #223 assigned to Robot Iam
+Ballot #224 assigned to Chuck Lancaster
+Ballot #225 assigned to John Kennedy
+Ballot #226 assigned to John Kennedy
+Ballot #227 assigned to John Kennedy
+Ballot #228 assigned to John Kennedy
+Ballot #229 assigned to Robot Iam
+Ballot #230 assigned to John Kennedy
+Ballot #231 assigned to John Kennedy
+Ballot #232 assigned to Jimmy Donaldson
+Ballot #233 assigned to Joe Cool
+Ballot #234 assigned to Jimmy Donaldson
+Ballot #235 assigned to Micheal Ashton
+Ballot #236 assigned to Alice Wonder
+Ballot #237 assigned to John Kennedy
+Ballot #238 assigned to Robot Iam
+Ballot #239 assigned to Andrew Hero
+Ballot #240 assigned to John Kennedy
+Ballot #241 assigned to Micheal Ashton
+Ballot #242 assigned to Robot Iam
+Ballot #243 assigned to Micheal Ashton
+Ballot #244 assigned to Patrick Star
+Ballot #245 assigned to Mark Suckerberg
+Ballot #246 assigned to Patrick Star
+Ballot #247 assigned to Patrick Star
+Ballot #248 assigned to Mark Suckerberg
+Ballot #249 assigned to Mark Suckerberg
+Ballot #250 assigned to John Kennedy
+Ballot #251 assigned to Joe Cool
+Ballot #252 assigned to Joe Cool
+Ballot #253 assigned to Chuck Lancaster
+Ballot #254 assigned to Patrick Star
+Ballot #255 assigned to Mark Suckerberg
+Ballot #256 assigned to Chuck Lancaster
+Ballot #257 assigned to Chuck Lancaster
+Ballot #258 assigned to Micheal Ashton
+Ballot #259 assigned to Chuck Lancaster
+Ballot #260 assigned to Chuck Lancaster
+Ballot #261 assigned to Joe Cool
+Ballot #262 assigned to Robot Iam
+Ballot #263 assigned to Mark Suckerberg
+Ballot #264 assigned to Jimmy Donaldson
+Ballot #265 assigned to Jimmy Donaldson
+Ballot #266 assigned to Alice Wonder
+Ballot #267 assigned to John Kennedy
+Ballot #268 assigned to John Kennedy
+Ballot #269 assigned to Joe Cool
+Ballot #270 assigned to Chuck Lancaster
+Ballot #271 assigned to Andrew Hero
+Ballot #272 assigned to Joe Cool
+Ballot #273 assigned to Chuck Lancaster
+Ballot #274 assigned to Patrick Star
+Ballot #275 assigned to Robot Iam
+Ballot #276 assigned to Robot Iam
+Ballot #277 assigned to Micheal Ashton
+Ballot #278 assigned to Robot Iam
+Ballot #279 assigned to Robot Iam
+Ballot #280 assigned to John Kennedy
+Ballot #281 assigned to Joe Cool
+Ballot #282 assigned to Chuck Lancaster
+Ballot #283 assigned to Robot Iam
+Ballot #284 assigned to Chuck Lancaster
+Ballot #285 assigned to Micheal Ashton
+Ballot #286 assigned to Chuck Lancaster
+Ballot #287 assigned to Jimmy Donaldson
+Ballot #288 assigned to Alice Wonder
+Ballot #289 assigned to Joe Cool
+Ballot #290 assigned to Micheal Ashton
+Ballot #291 assigned to Patrick Star
+Ballot #292 assigned to Patrick Star
+Ballot #293 assigned to Jimmy Donaldson
+Ballot #294 assigned to Andrew Hero
+Ballot #295 assigned to Chuck Lancaster
+Ballot #296 assigned to Andrew Hero
+Ballot #297 assigned to Andrew Hero
+Ballot #298 assigned to Patrick Star
+Ballot #299 assigned to Micheal Ashton
+Ballot #300 assigned to Robot Iam
+Ballot #301 assigned to Micheal Ashton
+Ballot #302 assigned to Chuck Lancaster
+Ballot #303 assigned to Robot Iam
+Ballot #304 assigned to John Kennedy
+Ballot #305 assigned to Mark Suckerberg
+Ballot #306 assigned to Alice Wonder
+Ballot #307 assigned to Micheal Ashton
+Ballot #308 assigned to Chuck Lancaster
+Ballot #309 assigned to Micheal Ashton
+Ballot #310 assigned to Andrew Hero
+Ballot #311 assigned to Patrick Star
+Ballot #312 assigned to Joe Cool
+Ballot #313 assigned to John Kennedy
+Ballot #314 assigned to Patrick Star
+Ballot #315 assigned to Patrick Star
+Ballot #316 assigned to Jimmy Donaldson
+Ballot #317 assigned to Mark Suckerberg
+Ballot #318 assigned to Alice Wonder
+Ballot #319 assigned to Robot Iam
+Ballot #320 assigned to Patrick Star
+Ballot #321 assigned to Chuck Lancaster
+Ballot #322 assigned to Jimmy Donaldson
+Ballot #323 assigned to John Kennedy
+Ballot #324 assigned to John Kennedy
+Ballot #325 assigned to Chuck Lancaster
+Ballot #326 assigned to Andrew Hero
+Ballot #327 assigned to Joe Cool
+Ballot #328 assigned to Patrick Star
+Ballot #329 assigned to Jimmy Donaldson
+Ballot #330 assigned to John Kennedy
+Ballot #331 assigned to Jimmy Donaldson
+Ballot #332 assigned to Andrew Hero
+Ballot #333 assigned to Patrick Star
+Ballot #334 assigned to Robot Iam
+Ballot #335 assigned to Chuck Lancaster
+Ballot #336 assigned to Jimmy Donaldson
+Ballot #337 assigned to Alice Wonder
+Ballot #338 assigned to Patrick Star
+Ballot #339 assigned to John Kennedy
+Ballot #340 assigned to Alice Wonder
+Ballot #341 assigned to Jimmy Donaldson
+Ballot #342 assigned to Andrew Hero
+Ballot #343 assigned to Jimmy Donaldson
+Ballot #344 assigned to Robot Iam
+Ballot #345 assigned to Jimmy Donaldson
+Ballot #346 assigned to Alice Wonder
+Ballot #347 assigned to Robot Iam
+Ballot #348 assigned to Micheal Ashton
+Ballot #349 assigned to Jimmy Donaldson
+Ballot #350 assigned to Jimmy Donaldson
+Ballot #351 assigned to Joe Cool
+Ballot #352 assigned to Mark Suckerberg
+Ballot #353 assigned to Micheal Ashton
+Ballot #354 assigned to Joe Cool
+Ballot #355 assigned to Alice Wonder
+Ballot #356 assigned to Andrew Hero
+Ballot #357 assigned to Patrick Star
+Ballot #358 assigned to Andrew Hero
+Ballot #359 assigned to Micheal Ashton
+Ballot #360 assigned to Micheal Ashton
+Ballot #361 assigned to Patrick Star
+Ballot #362 assigned to Andrew Hero
+Ballot #363 assigned to Micheal Ashton
+Ballot #364 assigned to Patrick Star
+Ballot #365 assigned to Alice Wonder
+Ballot #366 assigned to Jimmy Donaldson
+Ballot #367 assigned to Alice Wonder
+Ballot #368 assigned to Joe Cool
+Ballot #369 assigned to Joe Cool
+Ballot #370 assigned to Patrick Star
+Ballot #371 assigned to Andrew Hero
+Ballot #372 assigned to Jimmy Donaldson
+Ballot #373 assigned to Jimmy Donaldson
+Ballot #374 assigned to Mark Suckerberg
+Ballot #375 assigned to Chuck Lancaster
+Ballot #376 assigned to Chuck Lancaster
+Ballot #377 assigned to Mark Suckerberg
+Ballot #378 assigned to John Kennedy
+Ballot #379 assigned to John Kennedy
+Ballot #380 assigned to Micheal Ashton
+Ballot #381 assigned to Micheal Ashton
+Ballot #382 assigned to Joe Cool
+Ballot #383 assigned to Andrew Hero
+Ballot #384 assigned to John Kennedy
+Ballot #385 assigned to John Kennedy
+Ballot #386 assigned to Robot Iam
+Ballot #387 assigned to Robot Iam
+Ballot #388 assigned to Chuck Lancaster
+Ballot #389 assigned to Mark Suckerberg
+Ballot #390 assigned to Mark Suckerberg
+Ballot #391 assigned to Mark Suckerberg
+Ballot #392 assigned to Jimmy Donaldson
+Ballot #393 assigned to John Kennedy
+Ballot #394 assigned to Robot Iam
+Ballot #395 assigned to Robot Iam
+Ballot #396 assigned to Alice Wonder
+Ballot #397 assigned to Andrew Hero
+Ballot #398 assigned to John Kennedy
+Ballot #399 assigned to Alice Wonder
+Ballot #400 assigned to Joe Cool
+Ballot #401 assigned to Patrick Star
+Ballot #402 assigned to John Kennedy
+Ballot #403 assigned to Robot Iam
+Ballot #404 assigned to Patrick Star
+Ballot #405 assigned to John Kennedy
+Ballot #406 assigned to Robot Iam
+Ballot #407 assigned to Andrew Hero
+Ballot #408 assigned to Andrew Hero
+Ballot #409 assigned to Chuck Lancaster
+Ballot #410 assigned to Patrick Star
+Ballot #411 assigned to Robot Iam
+Ballot #412 assigned to Andrew Hero
+Ballot #413 assigned to Micheal Ashton
+Ballot #414 assigned to Patrick Star
+Ballot #415 assigned to Mark Suckerberg
+Ballot #416 assigned to Jimmy Donaldson
+Ballot #417 assigned to Jimmy Donaldson
+Ballot #418 assigned to John Kennedy
+Ballot #419 assigned to Mark Suckerberg
+Ballot #420 assigned to John Kennedy
+Ballot #421 assigned to Mark Suckerberg
+Ballot #422 assigned to John Kennedy
+Ballot #423 assigned to Micheal Ashton
+Ballot #424 assigned to Jimmy Donaldson
+Ballot #425 assigned to Patrick Star
+Ballot #426 assigned to Andrew Hero
+Ballot #427 assigned to Micheal Ashton
+Ballot #428 assigned to Chuck Lancaster
+Ballot #429 assigned to Micheal Ashton
+Ballot #430 assigned to Jimmy Donaldson
+Ballot #431 assigned to Chuck Lancaster
+Ballot #432 assigned to Jimmy Donaldson
+Ballot #433 assigned to Chuck Lancaster
+Ballot #434 assigned to Andrew Hero
+Ballot #435 assigned to Micheal Ashton
+Ballot #436 assigned to Mark Suckerberg
+Ballot #437 assigned to John Kennedy
+Ballot #438 assigned to Micheal Ashton
+Ballot #439 assigned to Alice Wonder
+Ballot #440 assigned to Robot Iam
+Ballot #441 assigned to John Kennedy
+Ballot #442 assigned to Jimmy Donaldson
+Ballot #443 assigned to Patrick Star
+Ballot #444 assigned to Micheal Ashton
+Ballot #445 assigned to Chuck Lancaster
+Ballot #446 assigned to Andrew Hero
+Ballot #447 assigned to Robot Iam
+Ballot #448 assigned to Andrew Hero
+Ballot #449 assigned to Robot Iam
+Ballot #450 assigned to Robot Iam
+Ballot #451 assigned to Alice Wonder
+Ballot #452 assigned to Chuck Lancaster
+Ballot #453 assigned to Patrick Star
+Ballot #454 assigned to Mark Suckerberg
+Ballot #455 assigned to Robot Iam
+Ballot #456 assigned to Alice Wonder
+Ballot #457 assigned to John Kennedy
+Ballot #458 assigned to Robot Iam
+Ballot #459 assigned to Joe Cool
+Ballot #460 assigned to Alice Wonder
+Ballot #461 assigned to Patrick Star
+Ballot #462 assigned to Patrick Star
+Ballot #463 assigned to Patrick Star
+Ballot #464 assigned to Andrew Hero
+Ballot #465 assigned to Joe Cool
+Ballot #466 assigned to Robot Iam
+Ballot #467 assigned to Andrew Hero
+Ballot #468 assigned to Andrew Hero
+Ballot #469 assigned to Robot Iam
+Ballot #470 assigned to Jimmy Donaldson
+Ballot #471 assigned to John Kennedy
+Ballot #472 assigned to Andrew Hero
+Ballot #473 assigned to Robot Iam
+Ballot #474 assigned to Alice Wonder
+Ballot #475 assigned to Micheal Ashton
+Ballot #476 assigned to Alice Wonder
+Ballot #477 assigned to Micheal Ashton
+Ballot #478 assigned to Robot Iam
+Ballot #479 assigned to Mark Suckerberg
+Ballot #480 assigned to Alice Wonder
+Ballot #481 assigned to Andrew Hero
+Ballot #482 assigned to Chuck Lancaster
+Ballot #483 assigned to Micheal Ashton
+Ballot #484 assigned to Robot Iam
+Ballot #485 assigned to Chuck Lancaster
+Ballot #486 assigned to Alice Wonder
+Ballot #487 assigned to Jimmy Donaldson
+Ballot #488 assigned to Micheal Ashton
+Ballot #489 assigned to Andrew Hero
+Ballot #490 assigned to John Kennedy
+Ballot #491 assigned to Alice Wonder
+Ballot #492 assigned to Andrew Hero
+Ballot #493 assigned to Andrew Hero
+Ballot #494 assigned to Micheal Ashton
+Ballot #495 assigned to Andrew Hero
+Ballot #496 assigned to Jimmy Donaldson
+Ballot #497 assigned to John Kennedy
+Ballot #498 assigned to Andrew Hero
+Ballot #499 assigned to Alice Wonder
+Ballot #500 assigned to Robot Iam
+Ballot #501 assigned to Joe Cool
+Ballot #502 assigned to Andrew Hero
+Ballot #503 assigned to Joe Cool
+Ballot #504 assigned to Joe Cool
+Ballot #505 assigned to Patrick Star
+Ballot #506 assigned to Mark Suckerberg
+Ballot #507 assigned to Alice Wonder
+Ballot #508 assigned to Patrick Star
+Ballot #509 assigned to Chuck Lancaster
+Ballot #510 assigned to Mark Suckerberg
+Ballot #511 assigned to Alice Wonder
+Ballot #512 assigned to Joe Cool
+Ballot #513 assigned to Chuck Lancaster
+Ballot #514 assigned to Mark Suckerberg
+Ballot #515 assigned to Chuck Lancaster
+Ballot #516 assigned to Micheal Ashton
+Ballot #517 assigned to John Kennedy
+Ballot #518 assigned to Patrick Star
+Ballot #519 assigned to Alice Wonder
+Ballot #520 assigned to Alice Wonder
+Ballot #521 assigned to Robot Iam
+Ballot #522 assigned to Chuck Lancaster
+Ballot #523 assigned to Andrew Hero
+Ballot #524 assigned to Robot Iam
+Ballot #525 assigned to Jimmy Donaldson
+Ballot #526 assigned to Andrew Hero
+Ballot #527 assigned to Robot Iam
+Ballot #528 assigned to Chuck Lancaster
+Ballot #529 assigned to Robot Iam
+Ballot #530 assigned to Mark Suckerberg
+Ballot #531 assigned to Joe Cool
+Ballot #532 assigned to Micheal Ashton
+Ballot #533 assigned to Joe Cool
+Ballot #534 assigned to Jimmy Donaldson
+Ballot #535 assigned to Chuck Lancaster
+Ballot #536 assigned to Alice Wonder
+Ballot #537 assigned to Jimmy Donaldson
+Ballot #538 assigned to Micheal Ashton
+Ballot #539 assigned to Patrick Star
+Ballot #540 assigned to Robot Iam
+Ballot #541 assigned to Micheal Ashton
+Ballot #542 assigned to John Kennedy
+Ballot #543 assigned to Chuck Lancaster
+Ballot #544 assigned to Alice Wonder
+Ballot #545 assigned to Andrew Hero
+Ballot #546 assigned to Alice Wonder
+Ballot #547 assigned to Patrick Star
+Ballot #548 assigned to Mark Suckerberg
+Ballot #549 assigned to Micheal Ashton
+Ballot #550 assigned to Andrew Hero
+Ballot #551 assigned to Alice Wonder
+Ballot #552 assigned to Robot Iam
+Ballot #553 assigned to Jimmy Donaldson
+Ballot #554 assigned to Joe Cool
+Ballot #555 assigned to Jimmy Donaldson
+Ballot #556 assigned to Patrick Star
+Ballot #557 assigned to Alice Wonder
+Ballot #558 assigned to John Kennedy
+Ballot #559 assigned to Patrick Star
+Ballot #560 assigned to Robot Iam
+Ballot #561 assigned to Andrew Hero
+Ballot #562 assigned to Patrick Star
+Ballot #563 assigned to Patrick Star
+Ballot #564 assigned to Andrew Hero
+Ballot #565 assigned to Mark Suckerberg
+Ballot #566 assigned to Patrick Star
+Ballot #567 assigned to Patrick Star
+Ballot #568 assigned to Mark Suckerberg
+Ballot #569 assigned to Mark Suckerberg
+Ballot #570 assigned to Mark Suckerberg
+Ballot #571 assigned to Alice Wonder
+Ballot #572 assigned to Jimmy Donaldson
+Ballot #573 assigned to Joe Cool
+Ballot #574 assigned to Robot Iam
+Ballot #575 assigned to Andrew Hero
+Ballot #576 assigned to Micheal Ashton
+Ballot #577 assigned to Patrick Star
+Ballot #578 assigned to Patrick Star
+Ballot #579 assigned to Patrick Star
+Ballot #580 assigned to Patrick Star
+Ballot #581 assigned to Alice Wonder
+Ballot #582 assigned to Alice Wonder
+Ballot #583 assigned to Joe Cool
+Ballot #584 assigned to Mark Suckerberg
+Ballot #585 assigned to Jimmy Donaldson
+Ballot #586 assigned to Robot Iam
+Ballot #587 assigned to Andrew Hero
+Ballot #588 assigned to Robot Iam
+Ballot #589 assigned to Joe Cool
+Ballot #590 assigned to Jimmy Donaldson
+Ballot #591 assigned to Mark Suckerberg
+Ballot #592 assigned to Chuck Lancaster
+Ballot #593 assigned to John Kennedy
+Ballot #594 assigned to Robot Iam
+Ballot #595 assigned to Alice Wonder
+Ballot #596 assigned to Joe Cool
+Ballot #597 assigned to Patrick Star
+Ballot #598 assigned to Robot Iam
+Ballot #599 assigned to Alice Wonder
+Ballot #600 assigned to Patrick Star
+Ballot #601 assigned to Patrick Star
+Ballot #602 assigned to Patrick Star
+Ballot #603 assigned to Patrick Star
+Ballot #604 assigned to Micheal Ashton
+Ballot #605 assigned to Robot Iam
+Ballot #606 assigned to Alice Wonder
+Ballot #607 assigned to Mark Suckerberg
+Ballot #608 assigned to Chuck Lancaster
+Ballot #609 assigned to Alice Wonder
+Ballot #610 assigned to Chuck Lancaster
+Ballot #611 assigned to Robot Iam
+Ballot #612 assigned to Chuck Lancaster
+Ballot #613 assigned to Andrew Hero
+Ballot #614 assigned to Joe Cool
+Ballot #615 assigned to Robot Iam
+Ballot #616 assigned to Mark Suckerberg
+Ballot #617 assigned to Alice Wonder
+Ballot #618 assigned to Robot Iam
+Ballot #619 assigned to Andrew Hero
+Ballot #620 assigned to Chuck Lancaster
+Ballot #621 assigned to Andrew Hero
+Ballot #622 assigned to Robot Iam
+Ballot #623 assigned to Robot Iam
+Ballot #624 assigned to Chuck Lancaster
+Ballot #625 assigned to Micheal Ashton
+Ballot #626 assigned to Robot Iam
+Ballot #627 assigned to Mark Suckerberg
+Ballot #628 assigned to Joe Cool
+Ballot #629 assigned to Mark Suckerberg
+Ballot #630 assigned to Micheal Ashton
+Ballot #631 assigned to Micheal Ashton
+Ballot #632 assigned to Alice Wonder
+Ballot #633 assigned to Joe Cool
+Ballot #634 assigned to Alice Wonder
+Ballot #635 assigned to Chuck Lancaster
+Ballot #636 assigned to Robot Iam
+Ballot #637 assigned to Andrew Hero
+Ballot #638 assigned to Chuck Lancaster
+Ballot #639 assigned to Joe Cool
+Ballot #640 assigned to Chuck Lancaster
+Ballot #641 assigned to Robot Iam
+Ballot #642 assigned to Andrew Hero
+Ballot #643 assigned to Alice Wonder
+Ballot #644 assigned to Joe Cool
+Ballot #645 assigned to Chuck Lancaster
+Ballot #646 assigned to John Kennedy
+Ballot #647 assigned to Jimmy Donaldson
+Ballot #648 assigned to Andrew Hero
+Ballot #649 assigned to Micheal Ashton
+Ballot #650 assigned to Chuck Lancaster
+Ballot #651 assigned to Mark Suckerberg
+Ballot #652 assigned to Patrick Star
+Ballot #653 assigned to Jimmy Donaldson
+Ballot #654 assigned to Jimmy Donaldson
+Ballot #655 assigned to Micheal Ashton
+Ballot #656 assigned to Patrick Star
+Ballot #657 assigned to John Kennedy
+Ballot #658 assigned to Patrick Star
+Ballot #659 assigned to Jimmy Donaldson
+Ballot #660 assigned to Jimmy Donaldson
+Ballot #661 assigned to Patrick Star
+Ballot #662 assigned to Alice Wonder
+Ballot #663 assigned to Jimmy Donaldson
+Ballot #664 assigned to Andrew Hero
+Ballot #665 assigned to Chuck Lancaster
+Ballot #666 assigned to Micheal Ashton
+Ballot #667 assigned to Andrew Hero
+Ballot #668 assigned to Patrick Star
+Ballot #669 assigned to Alice Wonder
+Ballot #670 assigned to Micheal Ashton
+Ballot #671 assigned to Patrick Star
+Ballot #672 assigned to Jimmy Donaldson
+Ballot #673 assigned to Mark Suckerberg
+Ballot #674 assigned to Andrew Hero
+Ballot #675 assigned to Patrick Star
+Ballot #676 assigned to Patrick Star
+Ballot #677 assigned to Robot Iam
+Ballot #678 assigned to Micheal Ashton
+Ballot #679 assigned to Joe Cool
+Ballot #680 assigned to Patrick Star
+Ballot #681 assigned to Patrick Star
+Ballot #682 assigned to Micheal Ashton
+Ballot #683 assigned to John Kennedy
+Ballot #684 assigned to Andrew Hero
+Ballot #685 assigned to Micheal Ashton
+Ballot #686 assigned to Jimmy Donaldson
+Ballot #687 assigned to Alice Wonder
+Ballot #688 assigned to Micheal Ashton
+Ballot #689 assigned to John Kennedy
+Ballot #690 assigned to Chuck Lancaster
+Ballot #691 assigned to Andrew Hero
+Ballot #692 assigned to Chuck Lancaster
+Ballot #693 assigned to Patrick Star
+Ballot #694 assigned to Mark Suckerberg
+Ballot #695 assigned to Micheal Ashton
+Ballot #696 assigned to Patrick Star
+Ballot #697 assigned to John Kennedy
+Ballot #698 assigned to Micheal Ashton
+Ballot #699 assigned to Chuck Lancaster
+Ballot #700 assigned to Mark Suckerberg
+Ballot #701 assigned to Chuck Lancaster
+Ballot #702 assigned to Alice Wonder
+Ballot #703 assigned to Joe Cool
+Ballot #704 assigned to Mark Suckerberg
+Ballot #705 assigned to Alice Wonder
+Ballot #706 assigned to Robot Iam
+Ballot #707 assigned to Jimmy Donaldson
+Ballot #708 assigned to Mark Suckerberg
+Ballot #709 assigned to Mark Suckerberg
+Ballot #710 assigned to Patrick Star
+Ballot #711 assigned to Patrick Star
+Ballot #712 assigned to Andrew Hero
+Ballot #713 assigned to Alice Wonder
+Ballot #714 assigned to Alice Wonder
+Ballot #715 assigned to Robot Iam
+Ballot #716 assigned to Alice Wonder
+Ballot #717 assigned to Robot Iam
+Ballot #718 assigned to Mark Suckerberg
+Ballot #719 assigned to Micheal Ashton
+Ballot #720 assigned to Chuck Lancaster
+Ballot #721 assigned to Alice Wonder
+Ballot #722 assigned to John Kennedy
+Ballot #723 assigned to Jimmy Donaldson
+Ballot #724 assigned to Micheal Ashton
+Ballot #725 assigned to Joe Cool
+Ballot #726 assigned to John Kennedy
+Ballot #727 assigned to Jimmy Donaldson
+Ballot #728 assigned to Patrick Star
+Ballot #729 assigned to Micheal Ashton
+Ballot #730 assigned to Patrick Star
+Ballot #731 assigned to Chuck Lancaster
+Ballot #732 assigned to Jimmy Donaldson
+Ballot #733 assigned to Andrew Hero
+Ballot #734 assigned to Mark Suckerberg
+Ballot #735 assigned to Andrew Hero
+Ballot #736 assigned to Joe Cool
+Ballot #737 assigned to Mark Suckerberg
+Ballot #738 assigned to Chuck Lancaster
+Ballot #739 assigned to Andrew Hero
+Ballot #740 assigned to John Kennedy
+Ballot #741 assigned to Robot Iam
+Ballot #742 assigned to Chuck Lancaster
+Ballot #743 assigned to Robot Iam
+Ballot #744 assigned to Joe Cool
+Ballot #745 assigned to Robot Iam
+Ballot #746 assigned to Joe Cool
+Ballot #747 assigned to Andrew Hero
+Ballot #748 assigned to Joe Cool
+Ballot #749 assigned to Alice Wonder
+Ballot #750 assigned to Joe Cool
+Ballot #751 assigned to Patrick Star
+Ballot #752 assigned to John Kennedy
+Ballot #753 assigned to Andrew Hero
+Ballot #754 assigned to Jimmy Donaldson
+Ballot #755 assigned to John Kennedy
+Ballot #756 assigned to Mark Suckerberg
+Ballot #757 assigned to Alice Wonder
+Ballot #758 assigned to Alice Wonder
+Ballot #759 assigned to Jimmy Donaldson
+Ballot #760 assigned to Patrick Star
+Ballot #761 assigned to Joe Cool
+Ballot #762 assigned to Chuck Lancaster
+Ballot #763 assigned to Jimmy Donaldson
+Ballot #764 assigned to Alice Wonder
+Ballot #765 assigned to Patrick Star
+Ballot #766 assigned to Jimmy Donaldson
+Ballot #767 assigned to Robot Iam
+Ballot #768 assigned to Micheal Ashton
+Ballot #769 assigned to Mark Suckerberg
+Ballot #770 assigned to Joe Cool
+Ballot #771 assigned to Patrick Star
+Ballot #772 assigned to John Kennedy
+Ballot #773 assigned to Joe Cool
+Ballot #774 assigned to Chuck Lancaster
+Ballot #775 assigned to Micheal Ashton
+Ballot #776 assigned to Mark Suckerberg
+Ballot #777 assigned to Alice Wonder
+Ballot #778 assigned to Jimmy Donaldson
+Ballot #779 assigned to Robot Iam
+Ballot #780 assigned to Mark Suckerberg
+Ballot #781 assigned to Chuck Lancaster
+Ballot #782 assigned to Micheal Ashton
+Ballot #783 assigned to Jimmy Donaldson
+Ballot #784 assigned to Andrew Hero
+Ballot #785 assigned to Patrick Star
+Ballot #786 assigned to Jimmy Donaldson
+Ballot #787 assigned to Robot Iam
+Ballot #788 assigned to Robot Iam
+Ballot #789 assigned to Mark Suckerberg
+Ballot #790 assigned to Mark Suckerberg
+Ballot #791 assigned to Andrew Hero
+Ballot #792 assigned to Alice Wonder
+Ballot #793 assigned to John Kennedy
+Ballot #794 assigned to Andrew Hero
+Ballot #795 assigned to Micheal Ashton
+Ballot #796 assigned to Mark Suckerberg
+Ballot #797 assigned to Patrick Star
+Ballot #798 assigned to Chuck Lancaster
+Ballot #799 assigned to Andrew Hero
+Ballot #800 assigned to Chuck Lancaster
+Ballot #801 assigned to Robot Iam
+Ballot #802 assigned to Alice Wonder
+Ballot #803 assigned to Robot Iam
+Ballot #804 assigned to Robot Iam
+Ballot #805 assigned to Patrick Star
+Ballot #806 assigned to Chuck Lancaster
+Ballot #807 assigned to Robot Iam
+Ballot #808 assigned to Alice Wonder
+Ballot #809 assigned to Mark Suckerberg
+Ballot #810 assigned to Robot Iam
+Ballot #811 assigned to Chuck Lancaster
+Ballot #812 assigned to Alice Wonder
+Ballot #813 assigned to Jimmy Donaldson
+Ballot #814 assigned to Joe Cool
+Ballot #815 assigned to Jimmy Donaldson
+Ballot #816 assigned to John Kennedy
+Ballot #817 assigned to Mark Suckerberg
+Ballot #818 assigned to Chuck Lancaster
+Ballot #819 assigned to Micheal Ashton
+Ballot #820 assigned to Mark Suckerberg
+Ballot #821 assigned to Micheal Ashton
+Ballot #822 assigned to Andrew Hero
+Ballot #823 assigned to Mark Suckerberg
+Ballot #824 assigned to Alice Wonder
+Ballot #825 assigned to Joe Cool
+Ballot #826 assigned to Patrick Star
+Ballot #827 assigned to Jimmy Donaldson
+Ballot #828 assigned to Chuck Lancaster
+Ballot #829 assigned to Jimmy Donaldson
+Ballot #830 assigned to Micheal Ashton
+Ballot #831 assigned to Andrew Hero
+Ballot #832 assigned to Andrew Hero
+Ballot #833 assigned to Joe Cool
+Ballot #834 assigned to John Kennedy
+Ballot #835 assigned to Micheal Ashton
+Ballot #836 assigned to Micheal Ashton
+Ballot #837 assigned to Mark Suckerberg
+Ballot #838 assigned to Joe Cool
+Ballot #839 assigned to Patrick Star
+Ballot #840 assigned to Alice Wonder
+Ballot #841 assigned to Micheal Ashton
+Ballot #842 assigned to Alice Wonder
+Ballot #843 assigned to John Kennedy
+Ballot #844 assigned to Mark Suckerberg
+Ballot #845 assigned to Jimmy Donaldson
+Ballot #846 assigned to Joe Cool
+Ballot #847 assigned to John Kennedy
+Ballot #848 assigned to Jimmy Donaldson
+Ballot #849 assigned to Joe Cool
+Ballot #850 assigned to Robot Iam
+Ballot #851 assigned to Alice Wonder
+Ballot #852 assigned to Mark Suckerberg
+Ballot #853 assigned to Micheal Ashton
+Ballot #854 assigned to Robot Iam
+Ballot #855 assigned to Joe Cool
+Ballot #856 assigned to John Kennedy
+Ballot #857 assigned to Micheal Ashton
+Ballot #858 assigned to Patrick Star
+Ballot #859 assigned to Micheal Ashton
+Ballot #860 assigned to Jimmy Donaldson
+Ballot #861 assigned to Jimmy Donaldson
+Ballot #862 assigned to Patrick Star
+Ballot #863 assigned to Alice Wonder
+Ballot #864 assigned to Andrew Hero
+Ballot #865 assigned to Joe Cool
+Ballot #866 assigned to John Kennedy
+Ballot #867 assigned to Joe Cool
+Ballot #868 assigned to Alice Wonder
+Ballot #869 assigned to Robot Iam
+Ballot #870 assigned to John Kennedy
+Ballot #871 assigned to Patrick Star
+Ballot #872 assigned to Micheal Ashton
+Ballot #873 assigned to John Kennedy
+Ballot #874 assigned to Joe Cool
+Ballot #875 assigned to Mark Suckerberg
+Ballot #876 assigned to Robot Iam
+Ballot #877 assigned to Andrew Hero
+Ballot #878 assigned to Jimmy Donaldson
+Ballot #879 assigned to Alice Wonder
+Ballot #880 assigned to Joe Cool
+Ballot #881 assigned to Joe Cool
+Ballot #882 assigned to Patrick Star
+Ballot #883 assigned to Alice Wonder
+Ballot #884 assigned to Jimmy Donaldson
+Ballot #885 assigned to Robot Iam
+Ballot #886 assigned to Micheal Ashton
+Ballot #887 assigned to Alice Wonder
+Ballot #888 assigned to Mark Suckerberg
+Ballot #889 assigned to Patrick Star
+Ballot #890 assigned to Robot Iam
+Ballot #891 assigned to Joe Cool
+Ballot #892 assigned to John Kennedy
+Ballot #893 assigned to Joe Cool
+Ballot #894 assigned to Micheal Ashton
+Ballot #895 assigned to Alice Wonder
+Ballot #896 assigned to Andrew Hero
+Ballot #897 assigned to Patrick Star
+Ballot #898 assigned to Robot Iam
+Ballot #899 assigned to Alice Wonder
+Ballot #900 assigned to John Kennedy
+Ballot #901 assigned to Andrew Hero
+Ballot #902 assigned to Chuck Lancaster
+Ballot #903 assigned to John Kennedy
+Ballot #904 assigned to John Kennedy
+Ballot #905 assigned to Patrick Star
+Ballot #906 assigned to Mark Suckerberg
+Ballot #907 assigned to Jimmy Donaldson
+Ballot #908 assigned to John Kennedy
+Ballot #909 assigned to Joe Cool
+Ballot #910 assigned to Mark Suckerberg
+Ballot #911 assigned to Micheal Ashton
+Ballot #912 assigned to Micheal Ashton
+Ballot #913 assigned to Patrick Star
+Ballot #914 assigned to John Kennedy
+Ballot #915 assigned to Alice Wonder
+Ballot #916 assigned to John Kennedy
+Ballot #917 assigned to John Kennedy
+Ballot #918 assigned to Jimmy Donaldson
+Ballot #919 assigned to Joe Cool
+Ballot #920 assigned to Chuck Lancaster
+Ballot #921 assigned to Alice Wonder
+Ballot #922 assigned to John Kennedy
+Ballot #923 assigned to Alice Wonder
+Ballot #924 assigned to Jimmy Donaldson
+Ballot #925 assigned to Jimmy Donaldson
+Ballot #926 assigned to Chuck Lancaster
+Ballot #927 assigned to Patrick Star
+Ballot #928 assigned to Jimmy Donaldson
+Ballot #929 assigned to Robot Iam
+Ballot #930 assigned to John Kennedy
+Ballot #931 assigned to Andrew Hero
+Ballot #932 assigned to Robot Iam
+Ballot #933 assigned to Patrick Star
+Ballot #934 assigned to Joe Cool
+Ballot #935 assigned to Jimmy Donaldson
+Ballot #936 assigned to Patrick Star
+Ballot #937 assigned to Micheal Ashton
+Ballot #938 assigned to Jimmy Donaldson
+Ballot #939 assigned to Micheal Ashton
+Ballot #940 assigned to Robot Iam
+Ballot #941 assigned to Patrick Star
+Ballot #942 assigned to Jimmy Donaldson
+Ballot #943 assigned to John Kennedy
+Ballot #944 assigned to Mark Suckerberg
+Ballot #945 assigned to Andrew Hero
+Ballot #946 assigned to John Kennedy
+Ballot #947 assigned to Patrick Star
+Ballot #948 assigned to Micheal Ashton
+Ballot #949 assigned to Jimmy Donaldson
+Ballot #950 assigned to John Kennedy
+Ballot #951 assigned to Andrew Hero
+Ballot #952 assigned to John Kennedy
+Ballot #953 assigned to Jimmy Donaldson
+Ballot #954 assigned to Micheal Ashton
+Ballot #955 assigned to Robot Iam
+Ballot #956 assigned to Mark Suckerberg
+Ballot #957 assigned to John Kennedy
+Ballot #958 assigned to Mark Suckerberg
+Ballot #959 assigned to Alice Wonder
+Ballot #960 assigned to Robot Iam
+Ballot #961 assigned to John Kennedy
+Ballot #962 assigned to Alice Wonder
+Ballot #963 assigned to Joe Cool
+Ballot #964 assigned to Chuck Lancaster
+Ballot #965 assigned to Chuck Lancaster
+Ballot #966 assigned to Jimmy Donaldson
+Ballot #967 assigned to Chuck Lancaster
+Ballot #968 assigned to Joe Cool
+Ballot #969 assigned to Chuck Lancaster
+Ballot #970 assigned to Patrick Star
+Ballot #971 assigned to Alice Wonder
+Ballot #972 assigned to Alice Wonder
+Ballot #973 assigned to Alice Wonder
+Ballot #974 assigned to Micheal Ashton
+Ballot #975 assigned to Patrick Star
+Ballot #976 assigned to Robot Iam
+Ballot #977 assigned to Joe Cool
+Ballot #978 assigned to Jimmy Donaldson
+Ballot #979 assigned to Patrick Star
+Ballot #980 assigned to Mark Suckerberg
+Ballot #981 assigned to Patrick Star
+Ballot #982 assigned to John Kennedy
+Ballot #983 assigned to Patrick Star
+Ballot #984 assigned to Mark Suckerberg
+Ballot #985 assigned to Micheal Ashton
+Ballot #986 assigned to Mark Suckerberg
+Ballot #987 assigned to Mark Suckerberg
+Ballot #988 assigned to Robot Iam
+Ballot #989 assigned to Jimmy Donaldson
+Ballot #990 assigned to Joe Cool
+Ballot #991 assigned to Andrew Hero
+Ballot #992 assigned to Joe Cool
+Ballot #993 assigned to Chuck Lancaster
+Ballot #994 assigned to Micheal Ashton
+Ballot #995 assigned to Micheal Ashton
+Ballot #996 assigned to Jimmy Donaldson
+Ballot #997 assigned to John Kennedy
+Ballot #998 assigned to Joe Cool
+Ballot #999 assigned to Joe Cool
+
+Current Vote Assignment Breakdown:
+Chuck Lancaster: 57, 75, 80, 95, 142, 166, 171, 176, 179, 183, 192, 206, 212, 213, 216, 224, 253, 256, 257, 259, 260, 270, 273, 282, 284, 286, 295, 302, 308, 321, 325, 335, 375, 376, 388, 409, 428, 431, 433, 445, 452, 482, 485, 509, 513, 515, 522, 528, 535, 543, 592, 608, 610, 612, 620, 624, 635, 638, 640, 645, 650, 665, 690, 692, 699, 701, 720, 731, 738, 742, 762, 774, 781, 798, 800, 806, 811, 818, 828, 902, 920, 926, 964, 965, 967, 969, 993
+Mark Suckerberg: 13, 18, 19, 21, 43, 51, 68, 81, 83, 96, 98, 103, 108, 122, 125, 127, 130, 131, 134, 159, 164, 174, 205, 219, 222, 245, 248, 249, 255, 263, 305, 317, 352, 374, 377, 389, 390, 391, 415, 419, 421, 436, 454, 479, 506, 510, 514, 530, 548, 565, 568, 569, 570, 584, 591, 607, 616, 627, 629, 651, 673, 694, 700, 704, 708, 709, 718, 734, 737, 756, 769, 776, 780, 789, 790, 796, 809, 817, 820, 823, 837, 844, 852, 875, 888, 906, 910, 944, 956, 958, 980, 984, 986, 987
+Andrew Hero: 25, 31, 50, 73, 89, 93, 97, 99, 113, 119, 132, 144, 149, 152, 161, 163, 175, 181, 188, 197, 215, 221, 239, 271, 294, 296, 297, 310, 326, 332, 342, 356, 358, 362, 371, 383, 397, 407, 408, 412, 426, 434, 446, 448, 464, 467, 468, 472, 481, 489, 492, 493, 495, 498, 502, 523, 526, 545, 550, 561, 564, 575, 587, 613, 619, 621, 637, 642, 648, 664, 667, 674, 684, 691, 712, 733, 735, 739, 747, 753, 784, 791, 794, 799, 822, 831, 832, 864, 877, 896, 901, 931, 945, 951, 991
+Micheal Ashton: 3, 22, 27, 28, 44, 46, 48, 61, 63, 66, 67, 123, 137, 169, 173, 193, 199, 208, 210, 214, 235, 241, 243, 258, 277, 285, 290, 299, 301, 307, 309, 348, 353, 359, 360, 363, 380, 381, 413, 423, 427, 429, 435, 438, 444, 475, 477, 483, 488, 494, 516, 532, 538, 541, 549, 576, 604, 625, 630, 631, 649, 655, 666, 670, 678, 682, 685, 688, 695, 698, 719, 724, 729, 768, 775, 782, 795, 819, 821, 830, 835, 836, 841, 853, 857, 859, 872, 886, 894, 911, 912, 937, 939, 948, 954, 974, 985, 994, 995
+Joe Cool: 2, 4, 33, 37, 40, 41, 42, 74, 84, 105, 109, 120, 128, 135, 138, 143, 146, 153, 156, 180, 186, 204, 218, 233, 251, 252, 261, 269, 272, 281, 289, 312, 327, 351, 354, 368, 369, 382, 400, 459, 465, 501, 503, 504, 512, 531, 533, 554, 573, 583, 589, 596, 614, 628, 633, 639, 644, 679, 703, 725, 736, 744, 746, 748, 750, 761, 770, 773, 814, 825, 833, 838, 846, 849, 855, 865, 867, 874, 880, 881, 891, 893, 909, 919, 934, 963, 968, 977, 990, 992, 998, 999
+Jimmy Donaldson: 16, 17, 20, 26, 34, 35, 36, 47, 53, 54, 60, 71, 72, 76, 87, 88, 104, 110, 112, 139, 154, 178, 184, 200, 232, 234, 264, 265, 287, 293, 316, 322, 329, 331, 336, 341, 343, 345, 349, 350, 366, 372, 373, 392, 416, 417, 424, 430, 432, 442, 470, 487, 496, 525, 534, 537, 553, 555, 572, 585, 590, 647, 653, 654, 659, 660, 663, 672, 686, 707, 723, 727, 732, 754, 759, 763, 766, 778, 783, 786, 813, 815, 827, 829, 845, 848, 860, 861, 878, 884, 907, 918, 924, 925, 928, 935, 938, 942, 949, 953, 966, 978, 989, 996
+John Kennedy: 1, 9, 12, 14, 15, 23, 29, 52, 56, 90, 94, 106, 141, 165, 177, 194, 207, 217, 225, 226, 227, 228, 230, 231, 237, 240, 250, 267, 268, 280, 304, 313, 323, 324, 330, 339, 378, 379, 384, 385, 393, 398, 402, 405, 418, 420, 422, 437, 441, 457, 471, 490, 497, 517, 542, 558, 593, 646, 657, 683, 689, 697, 722, 726, 740, 752, 755, 772, 793, 816, 834, 843, 847, 856, 866, 870, 873, 892, 900, 903, 904, 908, 914, 916, 917, 922, 930, 943, 946, 950, 952, 957, 961, 982, 997
+Patrick Star: 7, 32, 38, 39, 45, 62, 64, 70, 85, 86, 111, 115, 118, 126, 147, 148, 150, 162, 167, 196, 198, 203, 211, 220, 244, 246, 247, 254, 274, 291, 292, 298, 311, 314, 315, 320, 328, 333, 338, 357, 361, 364, 370, 401, 404, 410, 414, 425, 443, 453, 461, 462, 463, 505, 508, 518, 539, 547, 556, 559, 562, 563, 566, 567, 577, 578, 579, 580, 597, 600, 601, 602, 603, 652, 656, 658, 661, 668, 671, 675, 676, 680, 681, 693, 696, 710, 711, 728, 730, 751, 760, 765, 771, 785, 797, 805, 826, 839, 858, 862, 871, 882, 889, 897, 905, 913, 927, 933, 936, 941, 947, 970, 975, 979, 981, 983
+Robot Iam: 6, 10, 11, 24, 49, 59, 69, 79, 100, 101, 102, 107, 114, 116, 117, 145, 151, 155, 158, 160, 168, 170, 172, 185, 189, 190, 202, 223, 229, 238, 242, 262, 275, 276, 278, 279, 283, 300, 303, 319, 334, 344, 347, 386, 387, 394, 395, 403, 406, 411, 440, 447, 449, 450, 455, 458, 466, 469, 473, 478, 484, 500, 521, 524, 527, 529, 540, 552, 560, 574, 586, 588, 594, 598, 605, 611, 615, 618, 622, 623, 626, 636, 641, 677, 706, 715, 717, 741, 743, 745, 767, 779, 787, 788, 801, 803, 804, 807, 810, 850, 854, 869, 876, 885, 890, 898, 929, 932, 940, 955, 960, 976, 988
+Alice Wonder: 0, 5, 8, 30, 55, 58, 65, 77, 78, 82, 91, 92, 121, 124, 129, 133, 136, 140, 157, 182, 187, 191, 195, 201, 209, 236, 266, 288, 306, 318, 337, 340, 346, 355, 365, 367, 396, 399, 439, 451, 456, 460, 474, 476, 480, 486, 491, 499, 507, 511, 519, 520, 536, 544, 546, 551, 557, 571, 581, 582, 595, 599, 606, 609, 617, 632, 634, 643, 662, 669, 687, 702, 705, 713, 714, 716, 721, 749, 757, 758, 764, 777, 792, 802, 808, 812, 824, 840, 842, 851, 863, 868, 879, 883, 887, 895, 899, 915, 921, 923, 959, 962, 971, 972, 973
+
+Winners: 
+Losers: 
+
+[Vote Redistribution Round #1]
+Loser for this redistribution round selected to be Chuck Lancaster, redistributing their ballots.
+	Reassigning ballot #57, Alice Wonder is the #2 choice.
+Ballot #57 assigned to Alice Wonder
+	Reassigning ballot #75, Patrick Star is the #2 choice.
+Ballot #75 assigned to Patrick Star
+	Reassigning ballot #80, Patrick Star is the #2 choice.
+Ballot #80 assigned to Patrick Star
+	Reassigning ballot #95, Alice Wonder is the #2 choice.
+Ballot #95 assigned to Alice Wonder
+	Reassigning ballot #142, Jimmy Donaldson is the #2 choice.
+Ballot #142 assigned to Jimmy Donaldson
+	Reassigning ballot #166, Mark Suckerberg is the #2 choice.
+Ballot #166 assigned to Mark Suckerberg
+	Reassigning ballot #171, Joe Cool is the #2 choice.
+Ballot #171 assigned to Joe Cool
+	Reassigning ballot #176, John Kennedy is the #2 choice.
+Ballot #176 assigned to John Kennedy
+	Reassigning ballot #179, Robot Iam is the #2 choice.
+Ballot #179 assigned to Robot Iam
+	Reassigning ballot #183, Jimmy Donaldson is the #2 choice.
+Ballot #183 assigned to Jimmy Donaldson
+	Reassigning ballot #192, Micheal Ashton is the #2 choice.
+Ballot #192 assigned to Micheal Ashton
+	Reassigning ballot #206, Patrick Star is the #2 choice.
+Ballot #206 assigned to Patrick Star
+	Reassigning ballot #212, Andrew Hero is the #2 choice.
+Ballot #212 assigned to Andrew Hero
+	Reassigning ballot #213, Joe Cool is the #2 choice.
+Ballot #213 assigned to Joe Cool
+	Reassigning ballot #216, Andrew Hero is the #2 choice.
+Ballot #216 assigned to Andrew Hero
+	Reassigning ballot #224, Jimmy Donaldson is the #2 choice.
+Ballot #224 assigned to Jimmy Donaldson
+	Reassigning ballot #253, Joe Cool is the #2 choice.
+Ballot #253 assigned to Joe Cool
+	Reassigning ballot #256, Patrick Star is the #2 choice.
+Ballot #256 assigned to Patrick Star
+	Reassigning ballot #257, Andrew Hero is the #2 choice.
+Ballot #257 assigned to Andrew Hero
+	Reassigning ballot #259, Alice Wonder is the #2 choice.
+Ballot #259 assigned to Alice Wonder
+	Reassigning ballot #260, John Kennedy is the #2 choice.
+Ballot #260 assigned to John Kennedy
+	Reassigning ballot #270, Micheal Ashton is the #2 choice.
+Ballot #270 assigned to Micheal Ashton
+	Reassigning ballot #273, Patrick Star is the #2 choice.
+Ballot #273 assigned to Patrick Star
+	Reassigning ballot #282, Micheal Ashton is the #2 choice.
+Ballot #282 assigned to Micheal Ashton
+	Reassigning ballot #284, Mark Suckerberg is the #2 choice.
+Ballot #284 assigned to Mark Suckerberg
+	Reassigning ballot #286, Robot Iam is the #2 choice.
+Ballot #286 assigned to Robot Iam
+	Reassigning ballot #295, Alice Wonder is the #2 choice.
+Ballot #295 assigned to Alice Wonder
+	Reassigning ballot #302, Jimmy Donaldson is the #2 choice.
+Ballot #302 assigned to Jimmy Donaldson
+	Reassigning ballot #308, Jimmy Donaldson is the #2 choice.
+Ballot #308 assigned to Jimmy Donaldson
+	Reassigning ballot #321, Joe Cool is the #2 choice.
+Ballot #321 assigned to Joe Cool
+	Reassigning ballot #325, John Kennedy is the #2 choice.
+Ballot #325 assigned to John Kennedy
+	Reassigning ballot #335, Patrick Star is the #2 choice.
+Ballot #335 assigned to Patrick Star
+	Reassigning ballot #375, Andrew Hero is the #2 choice.
+Ballot #375 assigned to Andrew Hero
+	Reassigning ballot #376, Mark Suckerberg is the #2 choice.
+Ballot #376 assigned to Mark Suckerberg
+	Reassigning ballot #388, Alice Wonder is the #2 choice.
+Ballot #388 assigned to Alice Wonder
+	Reassigning ballot #409, John Kennedy is the #2 choice.
+Ballot #409 assigned to John Kennedy
+	Reassigning ballot #428, Patrick Star is the #2 choice.
+Ballot #428 assigned to Patrick Star
+	Reassigning ballot #431, John Kennedy is the #2 choice.
+Ballot #431 assigned to John Kennedy
+	Reassigning ballot #433, Patrick Star is the #2 choice.
+Ballot #433 assigned to Patrick Star
+	Reassigning ballot #445, Andrew Hero is the #2 choice.
+Ballot #445 assigned to Andrew Hero
+	Reassigning ballot #452, Jimmy Donaldson is the #2 choice.
+Ballot #452 assigned to Jimmy Donaldson
+	Reassigning ballot #482, Micheal Ashton is the #2 choice.
+Ballot #482 assigned to Micheal Ashton
+	Reassigning ballot #485, Jimmy Donaldson is the #2 choice.
+Ballot #485 assigned to Jimmy Donaldson
+	Reassigning ballot #509, Joe Cool is the #2 choice.
+Ballot #509 assigned to Joe Cool
+	Reassigning ballot #513, Andrew Hero is the #2 choice.
+Ballot #513 assigned to Andrew Hero
+	Reassigning ballot #515, Patrick Star is the #2 choice.
+Ballot #515 assigned to Patrick Star
+	Reassigning ballot #522, Joe Cool is the #2 choice.
+Ballot #522 assigned to Joe Cool
+	Reassigning ballot #528, Jimmy Donaldson is the #2 choice.
+Ballot #528 assigned to Jimmy Donaldson
+	Reassigning ballot #535, John Kennedy is the #2 choice.
+Ballot #535 assigned to John Kennedy
+	Reassigning ballot #543, Alice Wonder is the #2 choice.
+Ballot #543 assigned to Alice Wonder
+	Reassigning ballot #592, John Kennedy is the #2 choice.
+Ballot #592 assigned to John Kennedy
+	Reassigning ballot #608, Joe Cool is the #2 choice.
+Ballot #608 assigned to Joe Cool
+	Reassigning ballot #610, John Kennedy is the #2 choice.
+Ballot #610 assigned to John Kennedy
+	Reassigning ballot #612, Patrick Star is the #2 choice.
+Ballot #612 assigned to Patrick Star
+	Reassigning ballot #620, John Kennedy is the #2 choice.
+Ballot #620 assigned to John Kennedy
+	Reassigning ballot #624, Joe Cool is the #2 choice.
+Ballot #624 assigned to Joe Cool
+	Reassigning ballot #635, Andrew Hero is the #2 choice.
+Ballot #635 assigned to Andrew Hero
+	Reassigning ballot #638, John Kennedy is the #2 choice.
+Ballot #638 assigned to John Kennedy
+	Reassigning ballot #640, Andrew Hero is the #2 choice.
+Ballot #640 assigned to Andrew Hero
+	Reassigning ballot #645, Andrew Hero is the #2 choice.
+Ballot #645 assigned to Andrew Hero
+	Reassigning ballot #650, Patrick Star is the #2 choice.
+Ballot #650 assigned to Patrick Star
+	Reassigning ballot #665, Jimmy Donaldson is the #2 choice.
+Ballot #665 assigned to Jimmy Donaldson
+	Reassigning ballot #690, Alice Wonder is the #2 choice.
+Ballot #690 assigned to Alice Wonder
+	Reassigning ballot #692, Andrew Hero is the #2 choice.
+Ballot #692 assigned to Andrew Hero
+	Reassigning ballot #699, Joe Cool is the #2 choice.
+Ballot #699 assigned to Joe Cool
+	Reassigning ballot #701, Patrick Star is the #2 choice.
+Ballot #701 assigned to Patrick Star
+	Reassigning ballot #720, Patrick Star is the #2 choice.
+Ballot #720 assigned to Patrick Star
+	Reassigning ballot #731, Robot Iam is the #2 choice.
+Ballot #731 assigned to Robot Iam
+	Reassigning ballot #738, Micheal Ashton is the #2 choice.
+Ballot #738 assigned to Micheal Ashton
+	Reassigning ballot #742, Robot Iam is the #2 choice.
+Ballot #742 assigned to Robot Iam
+	Reassigning ballot #762, Andrew Hero is the #2 choice.
+Ballot #762 assigned to Andrew Hero
+	Reassigning ballot #774, Patrick Star is the #2 choice.
+Ballot #774 assigned to Patrick Star
+	Reassigning ballot #781, Mark Suckerberg is the #2 choice.
+Ballot #781 assigned to Mark Suckerberg
+	Reassigning ballot #798, John Kennedy is the #2 choice.
+Ballot #798 assigned to John Kennedy
+	Reassigning ballot #800, Alice Wonder is the #2 choice.
+Ballot #800 assigned to Alice Wonder
+	Reassigning ballot #806, Alice Wonder is the #2 choice.
+Ballot #806 assigned to Alice Wonder
+	Reassigning ballot #811, Joe Cool is the #2 choice.
+Ballot #811 assigned to Joe Cool
+	Reassigning ballot #818, Jimmy Donaldson is the #2 choice.
+Ballot #818 assigned to Jimmy Donaldson
+	Reassigning ballot #828, John Kennedy is the #2 choice.
+Ballot #828 assigned to John Kennedy
+	Reassigning ballot #902, Andrew Hero is the #2 choice.
+Ballot #902 assigned to Andrew Hero
+	Reassigning ballot #920, Jimmy Donaldson is the #2 choice.
+Ballot #920 assigned to Jimmy Donaldson
+	Reassigning ballot #926, Patrick Star is the #2 choice.
+Ballot #926 assigned to Patrick Star
+	Reassigning ballot #964, Andrew Hero is the #2 choice.
+Ballot #964 assigned to Andrew Hero
+	Reassigning ballot #965, Robot Iam is the #2 choice.
+Ballot #965 assigned to Robot Iam
+	Reassigning ballot #967, Joe Cool is the #2 choice.
+Ballot #967 assigned to Joe Cool
+	Reassigning ballot #969, Andrew Hero is the #2 choice.
+Ballot #969 assigned to Andrew Hero
+	Reassigning ballot #993, Jimmy Donaldson is the #2 choice.
+Ballot #993 assigned to Jimmy Donaldson
+
+Current Vote Assignment Breakdown:
+Chuck Lancaster: 
+Mark Suckerberg: 13, 18, 19, 21, 43, 51, 68, 81, 83, 96, 98, 103, 108, 122, 125, 127, 130, 131, 134, 159, 164, 174, 205, 219, 222, 245, 248, 249, 255, 263, 305, 317, 352, 374, 377, 389, 390, 391, 415, 419, 421, 436, 454, 479, 506, 510, 514, 530, 548, 565, 568, 569, 570, 584, 591, 607, 616, 627, 629, 651, 673, 694, 700, 704, 708, 709, 718, 734, 737, 756, 769, 776, 780, 789, 790, 796, 809, 817, 820, 823, 837, 844, 852, 875, 888, 906, 910, 944, 956, 958, 980, 984, 986, 987, 166, 284, 376, 781
+Andrew Hero: 25, 31, 50, 73, 89, 93, 97, 99, 113, 119, 132, 144, 149, 152, 161, 163, 175, 181, 188, 197, 215, 221, 239, 271, 294, 296, 297, 310, 326, 332, 342, 356, 358, 362, 371, 383, 397, 407, 408, 412, 426, 434, 446, 448, 464, 467, 468, 472, 481, 489, 492, 493, 495, 498, 502, 523, 526, 545, 550, 561, 564, 575, 587, 613, 619, 621, 637, 642, 648, 664, 667, 674, 684, 691, 712, 733, 735, 739, 747, 753, 784, 791, 794, 799, 822, 831, 832, 864, 877, 896, 901, 931, 945, 951, 991, 212, 216, 257, 375, 445, 513, 635, 640, 645, 692, 762, 902, 964, 969
+Micheal Ashton: 3, 22, 27, 28, 44, 46, 48, 61, 63, 66, 67, 123, 137, 169, 173, 193, 199, 208, 210, 214, 235, 241, 243, 258, 277, 285, 290, 299, 301, 307, 309, 348, 353, 359, 360, 363, 380, 381, 413, 423, 427, 429, 435, 438, 444, 475, 477, 483, 488, 494, 516, 532, 538, 541, 549, 576, 604, 625, 630, 631, 649, 655, 666, 670, 678, 682, 685, 688, 695, 698, 719, 724, 729, 768, 775, 782, 795, 819, 821, 830, 835, 836, 841, 853, 857, 859, 872, 886, 894, 911, 912, 937, 939, 948, 954, 974, 985, 994, 995, 192, 270, 282, 482, 738
+Joe Cool: 2, 4, 33, 37, 40, 41, 42, 74, 84, 105, 109, 120, 128, 135, 138, 143, 146, 153, 156, 180, 186, 204, 218, 233, 251, 252, 261, 269, 272, 281, 289, 312, 327, 351, 354, 368, 369, 382, 400, 459, 465, 501, 503, 504, 512, 531, 533, 554, 573, 583, 589, 596, 614, 628, 633, 639, 644, 679, 703, 725, 736, 744, 746, 748, 750, 761, 770, 773, 814, 825, 833, 838, 846, 849, 855, 865, 867, 874, 880, 881, 891, 893, 909, 919, 934, 963, 968, 977, 990, 992, 998, 999, 171, 213, 253, 321, 509, 522, 608, 624, 699, 811, 967
+Jimmy Donaldson: 16, 17, 20, 26, 34, 35, 36, 47, 53, 54, 60, 71, 72, 76, 87, 88, 104, 110, 112, 139, 154, 178, 184, 200, 232, 234, 264, 265, 287, 293, 316, 322, 329, 331, 336, 341, 343, 345, 349, 350, 366, 372, 373, 392, 416, 417, 424, 430, 432, 442, 470, 487, 496, 525, 534, 537, 553, 555, 572, 585, 590, 647, 653, 654, 659, 660, 663, 672, 686, 707, 723, 727, 732, 754, 759, 763, 766, 778, 783, 786, 813, 815, 827, 829, 845, 848, 860, 861, 878, 884, 907, 918, 924, 925, 928, 935, 938, 942, 949, 953, 966, 978, 989, 996, 142, 183, 224, 302, 308, 452, 485, 528, 665, 818, 920, 993
+John Kennedy: 1, 9, 12, 14, 15, 23, 29, 52, 56, 90, 94, 106, 141, 165, 177, 194, 207, 217, 225, 226, 227, 228, 230, 231, 237, 240, 250, 267, 268, 280, 304, 313, 323, 324, 330, 339, 378, 379, 384, 385, 393, 398, 402, 405, 418, 420, 422, 437, 441, 457, 471, 490, 497, 517, 542, 558, 593, 646, 657, 683, 689, 697, 722, 726, 740, 752, 755, 772, 793, 816, 834, 843, 847, 856, 866, 870, 873, 892, 900, 903, 904, 908, 914, 916, 917, 922, 930, 943, 946, 950, 952, 957, 961, 982, 997, 176, 260, 325, 409, 431, 535, 592, 610, 620, 638, 798, 828
+Patrick Star: 7, 32, 38, 39, 45, 62, 64, 70, 85, 86, 111, 115, 118, 126, 147, 148, 150, 162, 167, 196, 198, 203, 211, 220, 244, 246, 247, 254, 274, 291, 292, 298, 311, 314, 315, 320, 328, 333, 338, 357, 361, 364, 370, 401, 404, 410, 414, 425, 443, 453, 461, 462, 463, 505, 508, 518, 539, 547, 556, 559, 562, 563, 566, 567, 577, 578, 579, 580, 597, 600, 601, 602, 603, 652, 656, 658, 661, 668, 671, 675, 676, 680, 681, 693, 696, 710, 711, 728, 730, 751, 760, 765, 771, 785, 797, 805, 826, 839, 858, 862, 871, 882, 889, 897, 905, 913, 927, 933, 936, 941, 947, 970, 975, 979, 981, 983, 75, 80, 206, 256, 273, 335, 428, 433, 515, 612, 650, 701, 720, 774, 926
+Robot Iam: 6, 10, 11, 24, 49, 59, 69, 79, 100, 101, 102, 107, 114, 116, 117, 145, 151, 155, 158, 160, 168, 170, 172, 185, 189, 190, 202, 223, 229, 238, 242, 262, 275, 276, 278, 279, 283, 300, 303, 319, 334, 344, 347, 386, 387, 394, 395, 403, 406, 411, 440, 447, 449, 450, 455, 458, 466, 469, 473, 478, 484, 500, 521, 524, 527, 529, 540, 552, 560, 574, 586, 588, 594, 598, 605, 611, 615, 618, 622, 623, 626, 636, 641, 677, 706, 715, 717, 741, 743, 745, 767, 779, 787, 788, 801, 803, 804, 807, 810, 850, 854, 869, 876, 885, 890, 898, 929, 932, 940, 955, 960, 976, 988, 179, 286, 731, 742, 965
+Alice Wonder: 0, 5, 8, 30, 55, 58, 65, 77, 78, 82, 91, 92, 121, 124, 129, 133, 136, 140, 157, 182, 187, 191, 195, 201, 209, 236, 266, 288, 306, 318, 337, 340, 346, 355, 365, 367, 396, 399, 439, 451, 456, 460, 474, 476, 480, 486, 491, 499, 507, 511, 519, 520, 536, 544, 546, 551, 557, 571, 581, 582, 595, 599, 606, 609, 617, 632, 634, 643, 662, 669, 687, 702, 705, 713, 714, 716, 721, 749, 757, 758, 764, 777, 792, 802, 808, 812, 824, 840, 842, 851, 863, 868, 879, 883, 887, 895, 899, 915, 921, 923, 959, 962, 971, 972, 973, 57, 95, 259, 295, 388, 543, 690, 800, 806
+
+Winners: 
+Losers: Chuck Lancaster
+
+[Vote Redistribution Round #2]
+Loser for this redistribution round selected to be Mark Suckerberg, redistributing their ballots.
+	Reassigning ballot #13, Micheal Ashton is the #2 choice.
+Ballot #13 assigned to Micheal Ashton
+	Reassigning ballot #18, Alice Wonder is the #2 choice.
+Ballot #18 assigned to Alice Wonder
+	Reassigning ballot #19, John Kennedy is the #2 choice.
+Ballot #19 assigned to John Kennedy
+	Reassigning ballot #21, Jimmy Donaldson is the #2 choice.
+Ballot #21 assigned to Jimmy Donaldson
+	Reassigning ballot #43, Jimmy Donaldson is the #2 choice.
+Ballot #43 assigned to Jimmy Donaldson
+	Reassigning ballot #51, Jimmy Donaldson is the #2 choice.
+Ballot #51 assigned to Jimmy Donaldson
+	Reassigning ballot #68, Alice Wonder is the #2 choice.
+Ballot #68 assigned to Alice Wonder
+	Reassigning ballot #81, Alice Wonder is the #2 choice.
+Ballot #81 assigned to Alice Wonder
+	Reassigning ballot #83, Patrick Star is the #2 choice.
+Ballot #83 assigned to Patrick Star
+	Reassigning ballot #96, Micheal Ashton is the #2 choice.
+Ballot #96 assigned to Micheal Ashton
+	Reassigning ballot #98, Andrew Hero is the #2 choice.
+Ballot #98 assigned to Andrew Hero
+	Reassigning ballot #103, Andrew Hero is the #2 choice.
+Ballot #103 assigned to Andrew Hero
+	Reassigning ballot #108, Andrew Hero is the #2 choice.
+Ballot #108 assigned to Andrew Hero
+	Reassigning ballot #122, Joe Cool is the #2 choice.
+Ballot #122 assigned to Joe Cool
+	Reassigning ballot #125, John Kennedy is the #2 choice.
+Ballot #125 assigned to John Kennedy
+	Reassigning ballot #127, Patrick Star is the #2 choice.
+Ballot #127 assigned to Patrick Star
+	Reassigning ballot #130, Robot Iam is the #2 choice.
+Ballot #130 assigned to Robot Iam
+	Reassigning ballot #131, Joe Cool is the #2 choice.
+Ballot #131 assigned to Joe Cool
+	Reassigning ballot #134, Jimmy Donaldson is the #2 choice.
+Ballot #134 assigned to Jimmy Donaldson
+	Reassigning ballot #159, Joe Cool is the #2 choice.
+Ballot #159 assigned to Joe Cool
+	Reassigning ballot #164, Patrick Star is the #2 choice.
+Ballot #164 assigned to Patrick Star
+	Reassigning ballot #174, John Kennedy is the #2 choice.
+Ballot #174 assigned to John Kennedy
+	Reassigning ballot #205, Joe Cool is the #2 choice.
+Ballot #205 assigned to Joe Cool
+	Reassigning ballot #219, John Kennedy is the #2 choice.
+Ballot #219 assigned to John Kennedy
+	Reassigning ballot #222, Patrick Star is the #2 choice.
+Ballot #222 assigned to Patrick Star
+	Reassigning ballot #245, Jimmy Donaldson is the #2 choice.
+Ballot #245 assigned to Jimmy Donaldson
+	Reassigning ballot #248, Alice Wonder is the #2 choice.
+Ballot #248 assigned to Alice Wonder
+	Reassigning ballot #249, Robot Iam is the #2 choice.
+Ballot #249 assigned to Robot Iam
+	Reassigning ballot #255, Robot Iam is the #2 choice.
+Ballot #255 assigned to Robot Iam
+	Reassigning ballot #263, John Kennedy is the #2 choice.
+Ballot #263 assigned to John Kennedy
+	Reassigning ballot #305, Jimmy Donaldson is the #2 choice.
+Ballot #305 assigned to Jimmy Donaldson
+	Reassigning ballot #317, Jimmy Donaldson is the #2 choice.
+Ballot #317 assigned to Jimmy Donaldson
+	Reassigning ballot #352, Jimmy Donaldson is the #2 choice.
+Ballot #352 assigned to Jimmy Donaldson
+	Reassigning ballot #374, Jimmy Donaldson is the #2 choice.
+Ballot #374 assigned to Jimmy Donaldson
+	Reassigning ballot #377, John Kennedy is the #2 choice.
+Ballot #377 assigned to John Kennedy
+	Reassigning ballot #389, Andrew Hero is the #2 choice.
+Ballot #389 assigned to Andrew Hero
+	Reassigning ballot #390, John Kennedy is the #2 choice.
+Ballot #390 assigned to John Kennedy
+	Reassigning ballot #391, John Kennedy is the #2 choice.
+Ballot #391 assigned to John Kennedy
+	Reassigning ballot #415, Jimmy Donaldson is the #2 choice.
+Ballot #415 assigned to Jimmy Donaldson
+	Reassigning ballot #419, Andrew Hero is the #2 choice.
+Ballot #419 assigned to Andrew Hero
+	Reassigning ballot #421, Joe Cool is the #2 choice.
+Ballot #421 assigned to Joe Cool
+	Reassigning ballot #436, Robot Iam is the #2 choice.
+Ballot #436 assigned to Robot Iam
+	Reassigning ballot #454, Patrick Star is the #2 choice.
+Ballot #454 assigned to Patrick Star
+	Reassigning ballot #479, Andrew Hero is the #2 choice.
+Ballot #479 assigned to Andrew Hero
+	Reassigning ballot #506, Jimmy Donaldson is the #2 choice.
+Ballot #506 assigned to Jimmy Donaldson
+	Reassigning ballot #510, John Kennedy is the #2 choice.
+Ballot #510 assigned to John Kennedy
+	Reassigning ballot #514, Patrick Star is the #3 choice.
+Ballot #514 assigned to Patrick Star
+	Reassigning ballot #530, Andrew Hero is the #2 choice.
+Ballot #530 assigned to Andrew Hero
+	Reassigning ballot #548, John Kennedy is the #2 choice.
+Ballot #548 assigned to John Kennedy
+	Reassigning ballot #565, Jimmy Donaldson is the #2 choice.
+Ballot #565 assigned to Jimmy Donaldson
+	Reassigning ballot #568, Patrick Star is the #2 choice.
+Ballot #568 assigned to Patrick Star
+	Reassigning ballot #569, Alice Wonder is the #2 choice.
+Ballot #569 assigned to Alice Wonder
+	Reassigning ballot #570, Andrew Hero is the #2 choice.
+Ballot #570 assigned to Andrew Hero
+	Reassigning ballot #584, Robot Iam is the #3 choice.
+Ballot #584 assigned to Robot Iam
+	Reassigning ballot #591, Joe Cool is the #3 choice.
+Ballot #591 assigned to Joe Cool
+	Reassigning ballot #607, John Kennedy is the #2 choice.
+Ballot #607 assigned to John Kennedy
+	Reassigning ballot #616, Jimmy Donaldson is the #2 choice.
+Ballot #616 assigned to Jimmy Donaldson
+	Reassigning ballot #627, Alice Wonder is the #2 choice.
+Ballot #627 assigned to Alice Wonder
+	Reassigning ballot #629, Jimmy Donaldson is the #2 choice.
+Ballot #629 assigned to Jimmy Donaldson
+	Reassigning ballot #651, Patrick Star is the #2 choice.
+Ballot #651 assigned to Patrick Star
+	Reassigning ballot #673, Patrick Star is the #2 choice.
+Ballot #673 assigned to Patrick Star
+	Reassigning ballot #694, Jimmy Donaldson is the #2 choice.
+Ballot #694 assigned to Jimmy Donaldson
+	Reassigning ballot #700, Robot Iam is the #2 choice.
+Ballot #700 assigned to Robot Iam
+	Reassigning ballot #704, Patrick Star is the #2 choice.
+Ballot #704 assigned to Patrick Star
+	Reassigning ballot #708, Jimmy Donaldson is the #2 choice.
+Ballot #708 assigned to Jimmy Donaldson
+	Reassigning ballot #709, Patrick Star is the #2 choice.
+Ballot #709 assigned to Patrick Star
+	Reassigning ballot #718, Joe Cool is the #2 choice.
+Ballot #718 assigned to Joe Cool
+	Reassigning ballot #734, Joe Cool is the #2 choice.
+Ballot #734 assigned to Joe Cool
+	Reassigning ballot #737, Joe Cool is the #2 choice.
+Ballot #737 assigned to Joe Cool
+	Reassigning ballot #756, Micheal Ashton is the #2 choice.
+Ballot #756 assigned to Micheal Ashton
+	Reassigning ballot #769, Alice Wonder is the #3 choice.
+Ballot #769 assigned to Alice Wonder
+	Reassigning ballot #776, Joe Cool is the #2 choice.
+Ballot #776 assigned to Joe Cool
+	Reassigning ballot #780, Alice Wonder is the #2 choice.
+Ballot #780 assigned to Alice Wonder
+	Reassigning ballot #789, Micheal Ashton is the #2 choice.
+Ballot #789 assigned to Micheal Ashton
+	Reassigning ballot #790, Joe Cool is the #2 choice.
+Ballot #790 assigned to Joe Cool
+	Reassigning ballot #796, Patrick Star is the #3 choice.
+Ballot #796 assigned to Patrick Star
+	Reassigning ballot #809, Alice Wonder is the #2 choice.
+Ballot #809 assigned to Alice Wonder
+	Reassigning ballot #817, Jimmy Donaldson is the #2 choice.
+Ballot #817 assigned to Jimmy Donaldson
+	Reassigning ballot #820, Jimmy Donaldson is the #2 choice.
+Ballot #820 assigned to Jimmy Donaldson
+	Reassigning ballot #823, Robot Iam is the #3 choice.
+Ballot #823 assigned to Robot Iam
+	Reassigning ballot #837, Patrick Star is the #2 choice.
+Ballot #837 assigned to Patrick Star
+	Reassigning ballot #844, Andrew Hero is the #2 choice.
+Ballot #844 assigned to Andrew Hero
+	Reassigning ballot #852, Joe Cool is the #3 choice.
+Ballot #852 assigned to Joe Cool
+	Reassigning ballot #875, Jimmy Donaldson is the #2 choice.
+Ballot #875 assigned to Jimmy Donaldson
+	Reassigning ballot #888, John Kennedy is the #2 choice.
+Ballot #888 assigned to John Kennedy
+	Reassigning ballot #906, Jimmy Donaldson is the #2 choice.
+Ballot #906 assigned to Jimmy Donaldson
+	Reassigning ballot #910, Jimmy Donaldson is the #2 choice.
+Ballot #910 assigned to Jimmy Donaldson
+	Reassigning ballot #944, John Kennedy is the #2 choice.
+Ballot #944 assigned to John Kennedy
+	Reassigning ballot #956, Robot Iam is the #2 choice.
+Ballot #956 assigned to Robot Iam
+	Reassigning ballot #958, Andrew Hero is the #2 choice.
+Ballot #958 assigned to Andrew Hero
+	Reassigning ballot #980, Alice Wonder is the #2 choice.
+Ballot #980 assigned to Alice Wonder
+	Reassigning ballot #984, Alice Wonder is the #2 choice.
+Ballot #984 assigned to Alice Wonder
+	Reassigning ballot #986, Micheal Ashton is the #2 choice.
+Ballot #986 assigned to Micheal Ashton
+	Reassigning ballot #987, Micheal Ashton is the #2 choice.
+Ballot #987 assigned to Micheal Ashton
+	Reassigning ballot #166, Jimmy Donaldson is the #3 choice.
+Ballot #166 assigned to Jimmy Donaldson
+	Reassigning ballot #284, Andrew Hero is the #3 choice.
+Ballot #284 assigned to Andrew Hero
+	Reassigning ballot #376, Micheal Ashton is the #3 choice.
+Ballot #376 assigned to Micheal Ashton
+	Reassigning ballot #781, Robot Iam is the #3 choice.
+Ballot #781 assigned to Robot Iam
+
+Current Vote Assignment Breakdown:
+Chuck Lancaster: 
+Mark Suckerberg: 
+Andrew Hero: 25, 31, 50, 73, 89, 93, 97, 99, 113, 119, 132, 144, 149, 152, 161, 163, 175, 181, 188, 197, 215, 221, 239, 271, 294, 296, 297, 310, 326, 332, 342, 356, 358, 362, 371, 383, 397, 407, 408, 412, 426, 434, 446, 448, 464, 467, 468, 472, 481, 489, 492, 493, 495, 498, 502, 523, 526, 545, 550, 561, 564, 575, 587, 613, 619, 621, 637, 642, 648, 664, 667, 674, 684, 691, 712, 733, 735, 739, 747, 753, 784, 791, 794, 799, 822, 831, 832, 864, 877, 896, 901, 931, 945, 951, 991, 212, 216, 257, 375, 445, 513, 635, 640, 645, 692, 762, 902, 964, 969, 98, 103, 108, 389, 419, 479, 530, 570, 844, 958, 284
+Micheal Ashton: 3, 22, 27, 28, 44, 46, 48, 61, 63, 66, 67, 123, 137, 169, 173, 193, 199, 208, 210, 214, 235, 241, 243, 258, 277, 285, 290, 299, 301, 307, 309, 348, 353, 359, 360, 363, 380, 381, 413, 423, 427, 429, 435, 438, 444, 475, 477, 483, 488, 494, 516, 532, 538, 541, 549, 576, 604, 625, 630, 631, 649, 655, 666, 670, 678, 682, 685, 688, 695, 698, 719, 724, 729, 768, 775, 782, 795, 819, 821, 830, 835, 836, 841, 853, 857, 859, 872, 886, 894, 911, 912, 937, 939, 948, 954, 974, 985, 994, 995, 192, 270, 282, 482, 738, 13, 96, 756, 789, 986, 987, 376
+Joe Cool: 2, 4, 33, 37, 40, 41, 42, 74, 84, 105, 109, 120, 128, 135, 138, 143, 146, 153, 156, 180, 186, 204, 218, 233, 251, 252, 261, 269, 272, 281, 289, 312, 327, 351, 354, 368, 369, 382, 400, 459, 465, 501, 503, 504, 512, 531, 533, 554, 573, 583, 589, 596, 614, 628, 633, 639, 644, 679, 703, 725, 736, 744, 746, 748, 750, 761, 770, 773, 814, 825, 833, 838, 846, 849, 855, 865, 867, 874, 880, 881, 891, 893, 909, 919, 934, 963, 968, 977, 990, 992, 998, 999, 171, 213, 253, 321, 509, 522, 608, 624, 699, 811, 967, 122, 131, 159, 205, 421, 591, 718, 734, 737, 776, 790, 852
+Jimmy Donaldson: 16, 17, 20, 26, 34, 35, 36, 47, 53, 54, 60, 71, 72, 76, 87, 88, 104, 110, 112, 139, 154, 178, 184, 200, 232, 234, 264, 265, 287, 293, 316, 322, 329, 331, 336, 341, 343, 345, 349, 350, 366, 372, 373, 392, 416, 417, 424, 430, 432, 442, 470, 487, 496, 525, 534, 537, 553, 555, 572, 585, 590, 647, 653, 654, 659, 660, 663, 672, 686, 707, 723, 727, 732, 754, 759, 763, 766, 778, 783, 786, 813, 815, 827, 829, 845, 848, 860, 861, 878, 884, 907, 918, 924, 925, 928, 935, 938, 942, 949, 953, 966, 978, 989, 996, 142, 183, 224, 302, 308, 452, 485, 528, 665, 818, 920, 993, 21, 43, 51, 134, 245, 305, 317, 352, 374, 415, 506, 565, 616, 629, 694, 708, 817, 820, 875, 906, 910, 166
+John Kennedy: 1, 9, 12, 14, 15, 23, 29, 52, 56, 90, 94, 106, 141, 165, 177, 194, 207, 217, 225, 226, 227, 228, 230, 231, 237, 240, 250, 267, 268, 280, 304, 313, 323, 324, 330, 339, 378, 379, 384, 385, 393, 398, 402, 405, 418, 420, 422, 437, 441, 457, 471, 490, 497, 517, 542, 558, 593, 646, 657, 683, 689, 697, 722, 726, 740, 752, 755, 772, 793, 816, 834, 843, 847, 856, 866, 870, 873, 892, 900, 903, 904, 908, 914, 916, 917, 922, 930, 943, 946, 950, 952, 957, 961, 982, 997, 176, 260, 325, 409, 431, 535, 592, 610, 620, 638, 798, 828, 19, 125, 174, 219, 263, 377, 390, 391, 510, 548, 607, 888, 944
+Patrick Star: 7, 32, 38, 39, 45, 62, 64, 70, 85, 86, 111, 115, 118, 126, 147, 148, 150, 162, 167, 196, 198, 203, 211, 220, 244, 246, 247, 254, 274, 291, 292, 298, 311, 314, 315, 320, 328, 333, 338, 357, 361, 364, 370, 401, 404, 410, 414, 425, 443, 453, 461, 462, 463, 505, 508, 518, 539, 547, 556, 559, 562, 563, 566, 567, 577, 578, 579, 580, 597, 600, 601, 602, 603, 652, 656, 658, 661, 668, 671, 675, 676, 680, 681, 693, 696, 710, 711, 728, 730, 751, 760, 765, 771, 785, 797, 805, 826, 839, 858, 862, 871, 882, 889, 897, 905, 913, 927, 933, 936, 941, 947, 970, 975, 979, 981, 983, 75, 80, 206, 256, 273, 335, 428, 433, 515, 612, 650, 701, 720, 774, 926, 83, 127, 164, 222, 454, 514, 568, 651, 673, 704, 709, 796, 837
+Robot Iam: 6, 10, 11, 24, 49, 59, 69, 79, 100, 101, 102, 107, 114, 116, 117, 145, 151, 155, 158, 160, 168, 170, 172, 185, 189, 190, 202, 223, 229, 238, 242, 262, 275, 276, 278, 279, 283, 300, 303, 319, 334, 344, 347, 386, 387, 394, 395, 403, 406, 411, 440, 447, 449, 450, 455, 458, 466, 469, 473, 478, 484, 500, 521, 524, 527, 529, 540, 552, 560, 574, 586, 588, 594, 598, 605, 611, 615, 618, 622, 623, 626, 636, 641, 677, 706, 715, 717, 741, 743, 745, 767, 779, 787, 788, 801, 803, 804, 807, 810, 850, 854, 869, 876, 885, 890, 898, 929, 932, 940, 955, 960, 976, 988, 179, 286, 731, 742, 965, 130, 249, 255, 436, 584, 700, 823, 956, 781
+Alice Wonder: 0, 5, 8, 30, 55, 58, 65, 77, 78, 82, 91, 92, 121, 124, 129, 133, 136, 140, 157, 182, 187, 191, 195, 201, 209, 236, 266, 288, 306, 318, 337, 340, 346, 355, 365, 367, 396, 399, 439, 451, 456, 460, 474, 476, 480, 486, 491, 499, 507, 511, 519, 520, 536, 544, 546, 551, 557, 571, 581, 582, 595, 599, 606, 609, 617, 632, 634, 643, 662, 669, 687, 702, 705, 713, 714, 716, 721, 749, 757, 758, 764, 777, 792, 802, 808, 812, 824, 840, 842, 851, 863, 868, 879, 883, 887, 895, 899, 915, 921, 923, 959, 962, 971, 972, 973, 57, 95, 259, 295, 388, 543, 690, 800, 806, 18, 68, 81, 248, 569, 627, 769, 780, 809, 980, 984
+
+Winners: 
+Losers: Chuck Lancaster, Mark Suckerberg
+
+[Vote Redistribution Round #3]
+Loser for this redistribution round selected to be Micheal Ashton, redistributing their ballots.
+	Reassigning ballot #3, Patrick Star is the #2 choice.
+Ballot #3 assigned to Patrick Star
+	Reassigning ballot #22, Patrick Star is the #2 choice.
+Ballot #22 assigned to Patrick Star
+	Reassigning ballot #27, Robot Iam is the #2 choice.
+Ballot #27 assigned to Robot Iam
+	Reassigning ballot #28, Alice Wonder is the #2 choice.
+Ballot #28 assigned to Alice Wonder
+	Reassigning ballot #44, Andrew Hero is the #2 choice.
+Ballot #44 assigned to Andrew Hero
+	Reassigning ballot #46, Joe Cool is the #2 choice.
+Ballot #46 assigned to Joe Cool
+	Reassigning ballot #48, Patrick Star is the #4 choice.
+Ballot #48 assigned to Patrick Star
+	Reassigning ballot #61, Robot Iam is the #2 choice.
+Ballot #61 assigned to Robot Iam
+	Reassigning ballot #63, Patrick Star is the #2 choice.
+Ballot #63 assigned to Patrick Star
+	Reassigning ballot #66, Andrew Hero is the #2 choice.
+Ballot #66 assigned to Andrew Hero
+	Reassigning ballot #67, John Kennedy is the #2 choice.
+Ballot #67 assigned to John Kennedy
+	Reassigning ballot #123, Alice Wonder is the #2 choice.
+Ballot #123 assigned to Alice Wonder
+	Reassigning ballot #137, John Kennedy is the #2 choice.
+Ballot #137 assigned to John Kennedy
+	Reassigning ballot #169, Robot Iam is the #2 choice.
+Ballot #169 assigned to Robot Iam
+	Reassigning ballot #173, Robot Iam is the #2 choice.
+Ballot #173 assigned to Robot Iam
+	Reassigning ballot #193, Joe Cool is the #2 choice.
+Ballot #193 assigned to Joe Cool
+	Reassigning ballot #199, Robot Iam is the #3 choice.
+Ballot #199 assigned to Robot Iam
+	Reassigning ballot #208, Jimmy Donaldson is the #2 choice.
+Ballot #208 assigned to Jimmy Donaldson
+	Reassigning ballot #210, Patrick Star is the #2 choice.
+Ballot #210 assigned to Patrick Star
+	Reassigning ballot #214, Patrick Star is the #2 choice.
+Ballot #214 assigned to Patrick Star
+	Reassigning ballot #235, Patrick Star is the #3 choice.
+Ballot #235 assigned to Patrick Star
+	Reassigning ballot #241, Joe Cool is the #2 choice.
+Ballot #241 assigned to Joe Cool
+	Reassigning ballot #243, John Kennedy is the #2 choice.
+Ballot #243 assigned to John Kennedy
+	Reassigning ballot #258, Patrick Star is the #2 choice.
+Ballot #258 assigned to Patrick Star
+	Reassigning ballot #277, Joe Cool is the #2 choice.
+Ballot #277 assigned to Joe Cool
+	Reassigning ballot #285, John Kennedy is the #2 choice.
+Ballot #285 assigned to John Kennedy
+	Reassigning ballot #290, John Kennedy is the #2 choice.
+Ballot #290 assigned to John Kennedy
+	Reassigning ballot #299, Joe Cool is the #2 choice.
+Ballot #299 assigned to Joe Cool
+	Reassigning ballot #301, Patrick Star is the #3 choice.
+Ballot #301 assigned to Patrick Star
+	Reassigning ballot #307, Andrew Hero is the #2 choice.
+Ballot #307 assigned to Andrew Hero
+	Reassigning ballot #309, Andrew Hero is the #2 choice.
+Ballot #309 assigned to Andrew Hero
+	Reassigning ballot #348, John Kennedy is the #2 choice.
+Ballot #348 assigned to John Kennedy
+	Reassigning ballot #353, Andrew Hero is the #2 choice.
+Ballot #353 assigned to Andrew Hero
+	Reassigning ballot #359, Andrew Hero is the #2 choice.
+Ballot #359 assigned to Andrew Hero
+	Reassigning ballot #360, Alice Wonder is the #3 choice.
+Ballot #360 assigned to Alice Wonder
+	Reassigning ballot #363, Jimmy Donaldson is the #2 choice.
+Ballot #363 assigned to Jimmy Donaldson
+	Reassigning ballot #380, John Kennedy is the #3 choice.
+Ballot #380 assigned to John Kennedy
+	Reassigning ballot #381, Robot Iam is the #2 choice.
+Ballot #381 assigned to Robot Iam
+	Reassigning ballot #413, Jimmy Donaldson is the #2 choice.
+Ballot #413 assigned to Jimmy Donaldson
+	Reassigning ballot #423, John Kennedy is the #2 choice.
+Ballot #423 assigned to John Kennedy
+	Reassigning ballot #427, Joe Cool is the #3 choice.
+Ballot #427 assigned to Joe Cool
+	Reassigning ballot #429, Jimmy Donaldson is the #2 choice.
+Ballot #429 assigned to Jimmy Donaldson
+	Reassigning ballot #435, Patrick Star is the #3 choice.
+Ballot #435 assigned to Patrick Star
+	Reassigning ballot #438, Alice Wonder is the #2 choice.
+Ballot #438 assigned to Alice Wonder
+	Reassigning ballot #444, Andrew Hero is the #2 choice.
+Ballot #444 assigned to Andrew Hero
+	Reassigning ballot #475, Joe Cool is the #2 choice.
+Ballot #475 assigned to Joe Cool
+	Reassigning ballot #477, Joe Cool is the #2 choice.
+Ballot #477 assigned to Joe Cool
+	Reassigning ballot #483, Joe Cool is the #2 choice.
+Ballot #483 assigned to Joe Cool
+	Reassigning ballot #488, Andrew Hero is the #2 choice.
+Ballot #488 assigned to Andrew Hero
+	Reassigning ballot #494, Andrew Hero is the #2 choice.
+Ballot #494 assigned to Andrew Hero
+	Reassigning ballot #516, Joe Cool is the #3 choice.
+Ballot #516 assigned to Joe Cool
+	Reassigning ballot #532, Robot Iam is the #2 choice.
+Ballot #532 assigned to Robot Iam
+	Reassigning ballot #538, Andrew Hero is the #2 choice.
+Ballot #538 assigned to Andrew Hero
+	Reassigning ballot #541, Joe Cool is the #2 choice.
+Ballot #541 assigned to Joe Cool
+	Reassigning ballot #549, John Kennedy is the #4 choice.
+Ballot #549 assigned to John Kennedy
+	Reassigning ballot #576, Andrew Hero is the #2 choice.
+Ballot #576 assigned to Andrew Hero
+	Reassigning ballot #604, Joe Cool is the #2 choice.
+Ballot #604 assigned to Joe Cool
+	Reassigning ballot #625, Joe Cool is the #2 choice.
+Ballot #625 assigned to Joe Cool
+	Reassigning ballot #630, Joe Cool is the #2 choice.
+Ballot #630 assigned to Joe Cool
+	Reassigning ballot #631, Joe Cool is the #2 choice.
+Ballot #631 assigned to Joe Cool
+	Reassigning ballot #649, Jimmy Donaldson is the #2 choice.
+Ballot #649 assigned to Jimmy Donaldson
+	Reassigning ballot #655, Patrick Star is the #4 choice.
+Ballot #655 assigned to Patrick Star
+	Reassigning ballot #666, Jimmy Donaldson is the #2 choice.
+Ballot #666 assigned to Jimmy Donaldson
+	Reassigning ballot #670, Andrew Hero is the #2 choice.
+Ballot #670 assigned to Andrew Hero
+	Reassigning ballot #678, Patrick Star is the #2 choice.
+Ballot #678 assigned to Patrick Star
+	Reassigning ballot #682, Alice Wonder is the #2 choice.
+Ballot #682 assigned to Alice Wonder
+	Reassigning ballot #685, Joe Cool is the #2 choice.
+Ballot #685 assigned to Joe Cool
+	Reassigning ballot #688, Jimmy Donaldson is the #2 choice.
+Ballot #688 assigned to Jimmy Donaldson
+	Reassigning ballot #695, John Kennedy is the #2 choice.
+Ballot #695 assigned to John Kennedy
+	Reassigning ballot #698, John Kennedy is the #3 choice.
+Ballot #698 assigned to John Kennedy
+	Reassigning ballot #719, Jimmy Donaldson is the #2 choice.
+Ballot #719 assigned to Jimmy Donaldson
+	Reassigning ballot #724, Andrew Hero is the #2 choice.
+Ballot #724 assigned to Andrew Hero
+	Reassigning ballot #729, Jimmy Donaldson is the #2 choice.
+Ballot #729 assigned to Jimmy Donaldson
+	Reassigning ballot #768, Robot Iam is the #2 choice.
+Ballot #768 assigned to Robot Iam
+	Reassigning ballot #775, Jimmy Donaldson is the #2 choice.
+Ballot #775 assigned to Jimmy Donaldson
+	Reassigning ballot #782, Joe Cool is the #2 choice.
+Ballot #782 assigned to Joe Cool
+	Reassigning ballot #795, Alice Wonder is the #3 choice.
+Ballot #795 assigned to Alice Wonder
+	Reassigning ballot #819, Robot Iam is the #2 choice.
+Ballot #819 assigned to Robot Iam
+	Reassigning ballot #821, Alice Wonder is the #2 choice.
+Ballot #821 assigned to Alice Wonder
+	Reassigning ballot #830, Jimmy Donaldson is the #2 choice.
+Ballot #830 assigned to Jimmy Donaldson
+	Reassigning ballot #835, Robot Iam is the #2 choice.
+Ballot #835 assigned to Robot Iam
+	Reassigning ballot #836, Joe Cool is the #3 choice.
+Ballot #836 assigned to Joe Cool
+	Reassigning ballot #841, Joe Cool is the #2 choice.
+Ballot #841 assigned to Joe Cool
+	Reassigning ballot #853, Jimmy Donaldson is the #2 choice.
+Ballot #853 assigned to Jimmy Donaldson
+	Reassigning ballot #857, Alice Wonder is the #2 choice.
+Ballot #857 assigned to Alice Wonder
+	Reassigning ballot #859, John Kennedy is the #3 choice.
+Ballot #859 assigned to John Kennedy
+	Reassigning ballot #872, John Kennedy is the #2 choice.
+Ballot #872 assigned to John Kennedy
+	Reassigning ballot #886, John Kennedy is the #2 choice.
+Ballot #886 assigned to John Kennedy
+	Reassigning ballot #894, John Kennedy is the #2 choice.
+Ballot #894 assigned to John Kennedy
+	Reassigning ballot #911, Robot Iam is the #2 choice.
+Ballot #911 assigned to Robot Iam
+	Reassigning ballot #912, John Kennedy is the #2 choice.
+Ballot #912 assigned to John Kennedy
+	Reassigning ballot #937, Patrick Star is the #2 choice.
+Ballot #937 assigned to Patrick Star
+	Reassigning ballot #939, Robot Iam is the #2 choice.
+Ballot #939 assigned to Robot Iam
+	Reassigning ballot #948, Alice Wonder is the #2 choice.
+Ballot #948 assigned to Alice Wonder
+	Reassigning ballot #954, John Kennedy is the #2 choice.
+Ballot #954 assigned to John Kennedy
+	Reassigning ballot #974, Jimmy Donaldson is the #2 choice.
+Ballot #974 assigned to Jimmy Donaldson
+	Reassigning ballot #985, Patrick Star is the #3 choice.
+Ballot #985 assigned to Patrick Star
+	Reassigning ballot #994, Robot Iam is the #2 choice.
+Ballot #994 assigned to Robot Iam
+	Reassigning ballot #995, Joe Cool is the #2 choice.
+Ballot #995 assigned to Joe Cool
+	Reassigning ballot #192, Joe Cool is the #3 choice.
+Ballot #192 assigned to Joe Cool
+	Reassigning ballot #270, Andrew Hero is the #3 choice.
+Ballot #270 assigned to Andrew Hero
+	Reassigning ballot #282, Jimmy Donaldson is the #3 choice.
+Ballot #282 assigned to Jimmy Donaldson
+	Reassigning ballot #482, Joe Cool is the #4 choice.
+Ballot #482 assigned to Joe Cool
+	Reassigning ballot #738, Patrick Star is the #3 choice.
+Ballot #738 assigned to Patrick Star
+	Reassigning ballot #13, Andrew Hero is the #3 choice.
+Ballot #13 assigned to Andrew Hero
+	Reassigning ballot #96, Andrew Hero is the #3 choice.
+Ballot #96 assigned to Andrew Hero
+	Reassigning ballot #756, Jimmy Donaldson is the #3 choice.
+Ballot #756 assigned to Jimmy Donaldson
+	Reassigning ballot #789, Joe Cool is the #3 choice.
+Ballot #789 assigned to Joe Cool
+	Reassigning ballot #986, Robot Iam is the #3 choice.
+Ballot #986 assigned to Robot Iam
+	Reassigning ballot #987, Joe Cool is the #3 choice.
+Ballot #987 assigned to Joe Cool
+	Reassigning ballot #376, John Kennedy is the #4 choice.
+Ballot #376 assigned to John Kennedy
+
+Current Vote Assignment Breakdown:
+Chuck Lancaster: 
+Mark Suckerberg: 
+Andrew Hero: 25, 31, 50, 73, 89, 93, 97, 99, 113, 119, 132, 144, 149, 152, 161, 163, 175, 181, 188, 197, 215, 221, 239, 271, 294, 296, 297, 310, 326, 332, 342, 356, 358, 362, 371, 383, 397, 407, 408, 412, 426, 434, 446, 448, 464, 467, 468, 472, 481, 489, 492, 493, 495, 498, 502, 523, 526, 545, 550, 561, 564, 575, 587, 613, 619, 621, 637, 642, 648, 664, 667, 674, 684, 691, 712, 733, 735, 739, 747, 753, 784, 791, 794, 799, 822, 831, 832, 864, 877, 896, 901, 931, 945, 951, 991, 212, 216, 257, 375, 445, 513, 635, 640, 645, 692, 762, 902, 964, 969, 98, 103, 108, 389, 419, 479, 530, 570, 844, 958, 284, 44, 66, 307, 309, 353, 359, 444, 488, 494, 538, 576, 670, 724, 270, 13, 96
+Micheal Ashton: 
+Joe Cool: 2, 4, 33, 37, 40, 41, 42, 74, 84, 105, 109, 120, 128, 135, 138, 143, 146, 153, 156, 180, 186, 204, 218, 233, 251, 252, 261, 269, 272, 281, 289, 312, 327, 351, 354, 368, 369, 382, 400, 459, 465, 501, 503, 504, 512, 531, 533, 554, 573, 583, 589, 596, 614, 628, 633, 639, 644, 679, 703, 725, 736, 744, 746, 748, 750, 761, 770, 773, 814, 825, 833, 838, 846, 849, 855, 865, 867, 874, 880, 881, 891, 893, 909, 919, 934, 963, 968, 977, 990, 992, 998, 999, 171, 213, 253, 321, 509, 522, 608, 624, 699, 811, 967, 122, 131, 159, 205, 421, 591, 718, 734, 737, 776, 790, 852, 46, 193, 241, 277, 299, 427, 475, 477, 483, 516, 541, 604, 625, 630, 631, 685, 782, 836, 841, 995, 192, 482, 789, 987
+Jimmy Donaldson: 16, 17, 20, 26, 34, 35, 36, 47, 53, 54, 60, 71, 72, 76, 87, 88, 104, 110, 112, 139, 154, 178, 184, 200, 232, 234, 264, 265, 287, 293, 316, 322, 329, 331, 336, 341, 343, 345, 349, 350, 366, 372, 373, 392, 416, 417, 424, 430, 432, 442, 470, 487, 496, 525, 534, 537, 553, 555, 572, 585, 590, 647, 653, 654, 659, 660, 663, 672, 686, 707, 723, 727, 732, 754, 759, 763, 766, 778, 783, 786, 813, 815, 827, 829, 845, 848, 860, 861, 878, 884, 907, 918, 924, 925, 928, 935, 938, 942, 949, 953, 966, 978, 989, 996, 142, 183, 224, 302, 308, 452, 485, 528, 665, 818, 920, 993, 21, 43, 51, 134, 245, 305, 317, 352, 374, 415, 506, 565, 616, 629, 694, 708, 817, 820, 875, 906, 910, 166, 208, 363, 413, 429, 649, 666, 688, 719, 729, 775, 830, 853, 974, 282, 756
+John Kennedy: 1, 9, 12, 14, 15, 23, 29, 52, 56, 90, 94, 106, 141, 165, 177, 194, 207, 217, 225, 226, 227, 228, 230, 231, 237, 240, 250, 267, 268, 280, 304, 313, 323, 324, 330, 339, 378, 379, 384, 385, 393, 398, 402, 405, 418, 420, 422, 437, 441, 457, 471, 490, 497, 517, 542, 558, 593, 646, 657, 683, 689, 697, 722, 726, 740, 752, 755, 772, 793, 816, 834, 843, 847, 856, 866, 870, 873, 892, 900, 903, 904, 908, 914, 916, 917, 922, 930, 943, 946, 950, 952, 957, 961, 982, 997, 176, 260, 325, 409, 431, 535, 592, 610, 620, 638, 798, 828, 19, 125, 174, 219, 263, 377, 390, 391, 510, 548, 607, 888, 944, 67, 137, 243, 285, 290, 348, 380, 423, 549, 695, 698, 859, 872, 886, 894, 912, 954, 376
+Patrick Star: 7, 32, 38, 39, 45, 62, 64, 70, 85, 86, 111, 115, 118, 126, 147, 148, 150, 162, 167, 196, 198, 203, 211, 220, 244, 246, 247, 254, 274, 291, 292, 298, 311, 314, 315, 320, 328, 333, 338, 357, 361, 364, 370, 401, 404, 410, 414, 425, 443, 453, 461, 462, 463, 505, 508, 518, 539, 547, 556, 559, 562, 563, 566, 567, 577, 578, 579, 580, 597, 600, 601, 602, 603, 652, 656, 658, 661, 668, 671, 675, 676, 680, 681, 693, 696, 710, 711, 728, 730, 751, 760, 765, 771, 785, 797, 805, 826, 839, 858, 862, 871, 882, 889, 897, 905, 913, 927, 933, 936, 941, 947, 970, 975, 979, 981, 983, 75, 80, 206, 256, 273, 335, 428, 433, 515, 612, 650, 701, 720, 774, 926, 83, 127, 164, 222, 454, 514, 568, 651, 673, 704, 709, 796, 837, 3, 22, 48, 63, 210, 214, 235, 258, 301, 435, 655, 678, 937, 985, 738
+Robot Iam: 6, 10, 11, 24, 49, 59, 69, 79, 100, 101, 102, 107, 114, 116, 117, 145, 151, 155, 158, 160, 168, 170, 172, 185, 189, 190, 202, 223, 229, 238, 242, 262, 275, 276, 278, 279, 283, 300, 303, 319, 334, 344, 347, 386, 387, 394, 395, 403, 406, 411, 440, 447, 449, 450, 455, 458, 466, 469, 473, 478, 484, 500, 521, 524, 527, 529, 540, 552, 560, 574, 586, 588, 594, 598, 605, 611, 615, 618, 622, 623, 626, 636, 641, 677, 706, 715, 717, 741, 743, 745, 767, 779, 787, 788, 801, 803, 804, 807, 810, 850, 854, 869, 876, 885, 890, 898, 929, 932, 940, 955, 960, 976, 988, 179, 286, 731, 742, 965, 130, 249, 255, 436, 584, 700, 823, 956, 781, 27, 61, 169, 173, 199, 381, 532, 768, 819, 835, 911, 939, 994, 986
+Alice Wonder: 0, 5, 8, 30, 55, 58, 65, 77, 78, 82, 91, 92, 121, 124, 129, 133, 136, 140, 157, 182, 187, 191, 195, 201, 209, 236, 266, 288, 306, 318, 337, 340, 346, 355, 365, 367, 396, 399, 439, 451, 456, 460, 474, 476, 480, 486, 491, 499, 507, 511, 519, 520, 536, 544, 546, 551, 557, 571, 581, 582, 595, 599, 606, 609, 617, 632, 634, 643, 662, 669, 687, 702, 705, 713, 714, 716, 721, 749, 757, 758, 764, 777, 792, 802, 808, 812, 824, 840, 842, 851, 863, 868, 879, 883, 887, 895, 899, 915, 921, 923, 959, 962, 971, 972, 973, 57, 95, 259, 295, 388, 543, 690, 800, 806, 18, 68, 81, 248, 569, 627, 769, 780, 809, 980, 984, 28, 123, 360, 438, 682, 795, 821, 857, 948
+
+Winners: 
+Losers: Chuck Lancaster, Mark Suckerberg, Micheal Ashton
+
+[Vote Redistribution Round #4]
+Loser for this redistribution round selected to be Alice Wonder, redistributing their ballots.
+	Reassigning ballot #0, John Kennedy is the #3 choice.
+Ballot #0 assigned to John Kennedy
+	Reassigning ballot #5, Joe Cool is the #2 choice.
+Ballot #5 assigned to Joe Cool
+	Reassigning ballot #8, Joe Cool is the #2 choice.
+Ballot #8 assigned to Joe Cool
+	Reassigning ballot #30, Andrew Hero is the #2 choice.
+Ballot #30 assigned to Andrew Hero
+	Reassigning ballot #55, Jimmy Donaldson is the #2 choice.
+Ballot #55 assigned to Jimmy Donaldson
+	Reassigning ballot #58, Robot Iam is the #2 choice.
+Ballot #58 assigned to Robot Iam
+	Reassigning ballot #65, John Kennedy is the #2 choice.
+Ballot #65 assigned to John Kennedy
+	Reassigning ballot #77, Andrew Hero is the #2 choice.
+Ballot #77 assigned to Andrew Hero
+	Reassigning ballot #78, John Kennedy is the #2 choice.
+Ballot #78 assigned to John Kennedy
+	Reassigning ballot #82, John Kennedy is the #2 choice.
+Ballot #82 assigned to John Kennedy
+	Reassigning ballot #91, Robot Iam is the #2 choice.
+Ballot #91 assigned to Robot Iam
+	Reassigning ballot #92, Andrew Hero is the #2 choice.
+Ballot #92 assigned to Andrew Hero
+	Reassigning ballot #121, John Kennedy is the #3 choice.
+Ballot #121 assigned to John Kennedy
+	Reassigning ballot #124, Joe Cool is the #4 choice.
+Ballot #124 assigned to Joe Cool
+	Reassigning ballot #129, Joe Cool is the #4 choice.
+Ballot #129 assigned to Joe Cool
+	Reassigning ballot #133, Joe Cool is the #3 choice.
+Ballot #133 assigned to Joe Cool
+	Reassigning ballot #136, Joe Cool is the #2 choice.
+Ballot #136 assigned to Joe Cool
+	Reassigning ballot #140, Andrew Hero is the #2 choice.
+Ballot #140 assigned to Andrew Hero
+	Reassigning ballot #157, John Kennedy is the #3 choice.
+Ballot #157 assigned to John Kennedy
+	Reassigning ballot #182, Patrick Star is the #2 choice.
+Ballot #182 assigned to Patrick Star
+	Reassigning ballot #187, Joe Cool is the #2 choice.
+Ballot #187 assigned to Joe Cool
+	Reassigning ballot #191, Robot Iam is the #2 choice.
+Ballot #191 assigned to Robot Iam
+	Reassigning ballot #195, Robot Iam is the #2 choice.
+Ballot #195 assigned to Robot Iam
+	Reassigning ballot #201, John Kennedy is the #2 choice.
+Ballot #201 assigned to John Kennedy
+	Reassigning ballot #209, Jimmy Donaldson is the #2 choice.
+Ballot #209 assigned to Jimmy Donaldson
+	Reassigning ballot #236, Robot Iam is the #5 choice.
+Ballot #236 assigned to Robot Iam
+	Reassigning ballot #266, Joe Cool is the #4 choice.
+Ballot #266 assigned to Joe Cool
+	Reassigning ballot #288, John Kennedy is the #2 choice.
+Ballot #288 assigned to John Kennedy
+	Reassigning ballot #306, Jimmy Donaldson is the #2 choice.
+Ballot #306 assigned to Jimmy Donaldson
+	Reassigning ballot #318, Patrick Star is the #3 choice.
+Ballot #318 assigned to Patrick Star
+	Reassigning ballot #337, Andrew Hero is the #3 choice.
+Ballot #337 assigned to Andrew Hero
+	Reassigning ballot #340, Andrew Hero is the #3 choice.
+Ballot #340 assigned to Andrew Hero
+	Reassigning ballot #346, Robot Iam is the #3 choice.
+Ballot #346 assigned to Robot Iam
+	Reassigning ballot #355, Patrick Star is the #2 choice.
+Ballot #355 assigned to Patrick Star
+	Reassigning ballot #365, Robot Iam is the #2 choice.
+Ballot #365 assigned to Robot Iam
+	Reassigning ballot #367, Jimmy Donaldson is the #2 choice.
+Ballot #367 assigned to Jimmy Donaldson
+	Reassigning ballot #396, Jimmy Donaldson is the #3 choice.
+Ballot #396 assigned to Jimmy Donaldson
+	Reassigning ballot #399, Jimmy Donaldson is the #2 choice.
+Ballot #399 assigned to Jimmy Donaldson
+	Reassigning ballot #439, Jimmy Donaldson is the #5 choice.
+Ballot #439 assigned to Jimmy Donaldson
+	Reassigning ballot #451, Joe Cool is the #2 choice.
+Ballot #451 assigned to Joe Cool
+	Reassigning ballot #456, Jimmy Donaldson is the #2 choice.
+Ballot #456 assigned to Jimmy Donaldson
+	Reassigning ballot #460, Patrick Star is the #5 choice.
+Ballot #460 assigned to Patrick Star
+	Reassigning ballot #474, Robot Iam is the #2 choice.
+Ballot #474 assigned to Robot Iam
+	Reassigning ballot #476, John Kennedy is the #2 choice.
+Ballot #476 assigned to John Kennedy
+	Reassigning ballot #480, Joe Cool is the #2 choice.
+Ballot #480 assigned to Joe Cool
+	Reassigning ballot #486, Joe Cool is the #3 choice.
+Ballot #486 assigned to Joe Cool
+	Reassigning ballot #491, John Kennedy is the #3 choice.
+Ballot #491 assigned to John Kennedy
+	Reassigning ballot #499, Jimmy Donaldson is the #2 choice.
+Ballot #499 assigned to Jimmy Donaldson
+	Reassigning ballot #507, Jimmy Donaldson is the #2 choice.
+Ballot #507 assigned to Jimmy Donaldson
+	Reassigning ballot #511, Andrew Hero is the #2 choice.
+Ballot #511 assigned to Andrew Hero
+	Reassigning ballot #519, Patrick Star is the #2 choice.
+Ballot #519 assigned to Patrick Star
+	Reassigning ballot #520, Andrew Hero is the #4 choice.
+Ballot #520 assigned to Andrew Hero
+	Reassigning ballot #536, Patrick Star is the #2 choice.
+Ballot #536 assigned to Patrick Star
+	Reassigning ballot #544, John Kennedy is the #2 choice.
+Ballot #544 assigned to John Kennedy
+	Reassigning ballot #546, Joe Cool is the #3 choice.
+Ballot #546 assigned to Joe Cool
+	Reassigning ballot #551, John Kennedy is the #2 choice.
+Ballot #551 assigned to John Kennedy
+	Reassigning ballot #557, John Kennedy is the #3 choice.
+Ballot #557 assigned to John Kennedy
+	Reassigning ballot #571, Jimmy Donaldson is the #2 choice.
+Ballot #571 assigned to Jimmy Donaldson
+	Reassigning ballot #581, Patrick Star is the #3 choice.
+Ballot #581 assigned to Patrick Star
+	Reassigning ballot #582, Joe Cool is the #2 choice.
+Ballot #582 assigned to Joe Cool
+	Reassigning ballot #595, Andrew Hero is the #2 choice.
+Ballot #595 assigned to Andrew Hero
+	Reassigning ballot #599, Patrick Star is the #2 choice.
+Ballot #599 assigned to Patrick Star
+	Patrick Star hit Droop quota- adding to winners list
+	Reassigning ballot #606, Joe Cool is the #2 choice.
+Ballot #606 assigned to Joe Cool
+	Reassigning ballot #609, Andrew Hero is the #2 choice.
+Ballot #609 assigned to Andrew Hero
+	Reassigning ballot #617, John Kennedy is the #4 choice.
+Ballot #617 assigned to John Kennedy
+	Reassigning ballot #632, Joe Cool is the #2 choice.
+Ballot #632 assigned to Joe Cool
+	Reassigning ballot #634, Joe Cool is the #2 choice.
+Ballot #634 assigned to Joe Cool
+	Reassigning ballot #643, Robot Iam is the #2 choice.
+Ballot #643 assigned to Robot Iam
+	Reassigning ballot #662, Andrew Hero is the #4 choice.
+Ballot #662 assigned to Andrew Hero
+	Reassigning ballot #669, Robot Iam is the #2 choice.
+Ballot #669 assigned to Robot Iam
+	Reassigning ballot #687, Robot Iam is the #6 choice.
+Ballot #687 assigned to Robot Iam
+	Reassigning ballot #702, John Kennedy is the #3 choice.
+Ballot #702 assigned to John Kennedy
+	Reassigning ballot #705, Robot Iam is the #2 choice.
+Ballot #705 assigned to Robot Iam
+	Reassigning ballot #713, Jimmy Donaldson is the #2 choice.
+Ballot #713 assigned to Jimmy Donaldson
+	Reassigning ballot #714, Andrew Hero is the #2 choice.
+Ballot #714 assigned to Andrew Hero
+	Reassigning ballot #716, John Kennedy is the #2 choice.
+Ballot #716 assigned to John Kennedy
+	Reassigning ballot #721, Jimmy Donaldson is the #3 choice.
+Ballot #721 assigned to Jimmy Donaldson
+	Reassigning ballot #749, Andrew Hero is the #2 choice.
+Ballot #749 assigned to Andrew Hero
+	Reassigning ballot #757, Joe Cool is the #2 choice.
+Ballot #757 assigned to Joe Cool
+	Reassigning ballot #758, Jimmy Donaldson is the #4 choice.
+Ballot #758 assigned to Jimmy Donaldson
+	Jimmy Donaldson hit Droop quota- adding to winners list
+	Reassigning ballot #764, Robot Iam is the #3 choice.
+Ballot #764 assigned to Robot Iam
+	Reassigning ballot #777, John Kennedy is the #2 choice.
+Ballot #777 assigned to John Kennedy
+	Reassigning ballot #792, Robot Iam is the #2 choice.
+Ballot #792 assigned to Robot Iam
+	Reassigning ballot #802, Robot Iam is the #3 choice.
+Ballot #802 assigned to Robot Iam
+	Reassigning ballot #808, Joe Cool is the #2 choice.
+Ballot #808 assigned to Joe Cool
+	Reassigning ballot #812, Robot Iam is the #3 choice.
+Ballot #812 assigned to Robot Iam
+	Reassigning ballot #824, Andrew Hero is the #2 choice.
+Ballot #824 assigned to Andrew Hero
+	Reassigning ballot #840, John Kennedy is the #3 choice.
+Ballot #840 assigned to John Kennedy
+	Reassigning ballot #842, Robot Iam is the #2 choice.
+Ballot #842 assigned to Robot Iam
+	Reassigning ballot #851, John Kennedy is the #4 choice.
+Ballot #851 assigned to John Kennedy
+	Reassigning ballot #863, Robot Iam is the #3 choice.
+Ballot #863 assigned to Robot Iam
+	Reassigning ballot #868, Andrew Hero is the #2 choice.
+Ballot #868 assigned to Andrew Hero
+	Reassigning ballot #879, Andrew Hero is the #2 choice.
+Ballot #879 assigned to Andrew Hero
+	Reassigning ballot #883, John Kennedy is the #4 choice.
+Ballot #883 assigned to John Kennedy
+	Reassigning ballot #887, Joe Cool is the #2 choice.
+Ballot #887 assigned to Joe Cool
+	Reassigning ballot #895, Andrew Hero is the #2 choice.
+Ballot #895 assigned to Andrew Hero
+	Reassigning ballot #899, Joe Cool is the #3 choice.
+Ballot #899 assigned to Joe Cool
+	Reassigning ballot #915, Robot Iam is the #4 choice.
+Ballot #915 assigned to Robot Iam
+	Reassigning ballot #921, Andrew Hero is the #2 choice.
+Ballot #921 assigned to Andrew Hero
+	Reassigning ballot #923, Robot Iam is the #2 choice.
+Ballot #923 assigned to Robot Iam
+	Reassigning ballot #959, John Kennedy is the #3 choice.
+Ballot #959 assigned to John Kennedy
+	Reassigning ballot #962, Joe Cool is the #3 choice.
+Ballot #962 assigned to Joe Cool
+	Reassigning ballot #971, Andrew Hero is the #4 choice.
+Ballot #971 assigned to Andrew Hero
+	Reassigning ballot #972, Joe Cool is the #3 choice.
+Ballot #972 assigned to Joe Cool
+	Reassigning ballot #973, Andrew Hero is the #4 choice.
+Ballot #973 assigned to Andrew Hero
+	Reassigning ballot #57, John Kennedy is the #3 choice.
+Ballot #57 assigned to John Kennedy
+	Reassigning ballot #95, John Kennedy is the #4 choice.
+Ballot #95 assigned to John Kennedy
+	Reassigning ballot #259, Andrew Hero is the #4 choice.
+Ballot #259 assigned to Andrew Hero
+	Reassigning ballot #295, John Kennedy is the #4 choice.
+Ballot #295 assigned to John Kennedy
+	Reassigning ballot #388, John Kennedy is the #5 choice.
+Ballot #388 assigned to John Kennedy
+	Reassigning ballot #543, Joe Cool is the #4 choice.
+Ballot #543 assigned to Joe Cool
+	Reassigning ballot #690, Andrew Hero is the #3 choice.
+Ballot #690 assigned to Andrew Hero
+	Reassigning ballot #800, Robot Iam is the #3 choice.
+Ballot #800 assigned to Robot Iam
+	Reassigning ballot #806, Joe Cool is the #3 choice.
+Ballot #806 assigned to Joe Cool
+	Reassigning ballot #18, Robot Iam is the #6 choice.
+Ballot #18 assigned to Robot Iam
+	Reassigning ballot #68, Joe Cool is the #4 choice.
+Ballot #68 assigned to Joe Cool
+	Reassigning ballot #81, Andrew Hero is the #3 choice.
+Ballot #81 assigned to Andrew Hero
+	Reassigning ballot #248, John Kennedy is the #3 choice.
+Ballot #248 assigned to John Kennedy
+	Reassigning ballot #569, Andrew Hero is the #4 choice.
+Ballot #569 assigned to Andrew Hero
+	Reassigning ballot #627, Robot Iam is the #4 choice.
+Ballot #627 assigned to Robot Iam
+	Reassigning ballot #769, John Kennedy is the #4 choice.
+Ballot #769 assigned to John Kennedy
+	Reassigning ballot #780, Robot Iam is the #6 choice.
+Ballot #780 assigned to Robot Iam
+	Reassigning ballot #809, Robot Iam is the #3 choice.
+Ballot #809 assigned to Robot Iam
+	Reassigning ballot #980, Andrew Hero is the #5 choice.
+Ballot #980 assigned to Andrew Hero
+	Reassigning ballot #984, Robot Iam is the #3 choice.
+Ballot #984 assigned to Robot Iam
+	Robot Iam hit Droop quota- adding to winners list
+	Reassigning ballot #28, Andrew Hero is the #3 choice.
+Ballot #28 assigned to Andrew Hero
+	Reassigning ballot #123, Andrew Hero is the #4 choice.
+Ballot #123 assigned to Andrew Hero
+	Reassigning ballot #360, Joe Cool is the #4 choice.
+Ballot #360 assigned to Joe Cool
+	Reassigning ballot #438, Andrew Hero is the #3 choice.
+Ballot #438 assigned to Andrew Hero
+	Reassigning ballot #682, Joe Cool is the #4 choice.
+Ballot #682 assigned to Joe Cool
+	Reassigning ballot #795, Joe Cool is the #4 choice.
+Ballot #795 assigned to Joe Cool
+	Joe Cool hit Droop quota- adding to winners list
+	Reassigning ballot #857, John Kennedy is the #3 choice.
+Ballot #857 assigned to John Kennedy
+	Reassigning ballot #948, John Kennedy is the #3 choice.
+Ballot #948 assigned to John Kennedy
+	John Kennedy hit Droop quota- adding to winners list
+
+Current Vote Assignment Breakdown:
+Chuck Lancaster: 
+Mark Suckerberg: 
+Andrew Hero: 25, 31, 50, 73, 89, 93, 97, 99, 113, 119, 132, 144, 149, 152, 161, 163, 175, 181, 188, 197, 215, 221, 239, 271, 294, 296, 297, 310, 326, 332, 342, 356, 358, 362, 371, 383, 397, 407, 408, 412, 426, 434, 446, 448, 464, 467, 468, 472, 481, 489, 492, 493, 495, 498, 502, 523, 526, 545, 550, 561, 564, 575, 587, 613, 619, 621, 637, 642, 648, 664, 667, 674, 684, 691, 712, 733, 735, 739, 747, 753, 784, 791, 794, 799, 822, 831, 832, 864, 877, 896, 901, 931, 945, 951, 991, 212, 216, 257, 375, 445, 513, 635, 640, 645, 692, 762, 902, 964, 969, 98, 103, 108, 389, 419, 479, 530, 570, 844, 958, 284, 44, 66, 307, 309, 353, 359, 444, 488, 494, 538, 576, 670, 724, 270, 13, 96, 30, 77, 92, 140, 337, 340, 511, 520, 595, 609, 662, 714, 749, 824, 868, 879, 895, 921, 971, 973, 259, 690, 81, 569, 980, 28, 123, 438
+Micheal Ashton: 
+Joe Cool: 2, 4, 33, 37, 40, 41, 42, 74, 84, 105, 109, 120, 128, 135, 138, 143, 146, 153, 156, 180, 186, 204, 218, 233, 251, 252, 261, 269, 272, 281, 289, 312, 327, 351, 354, 368, 369, 382, 400, 459, 465, 501, 503, 504, 512, 531, 533, 554, 573, 583, 589, 596, 614, 628, 633, 639, 644, 679, 703, 725, 736, 744, 746, 748, 750, 761, 770, 773, 814, 825, 833, 838, 846, 849, 855, 865, 867, 874, 880, 881, 891, 893, 909, 919, 934, 963, 968, 977, 990, 992, 998, 999, 171, 213, 253, 321, 509, 522, 608, 624, 699, 811, 967, 122, 131, 159, 205, 421, 591, 718, 734, 737, 776, 790, 852, 46, 193, 241, 277, 299, 427, 475, 477, 483, 516, 541, 604, 625, 630, 631, 685, 782, 836, 841, 995, 192, 482, 789, 987, 5, 8, 124, 129, 133, 136, 187, 266, 451, 480, 486, 546, 582, 606, 632, 634, 757, 808, 887, 899, 962, 972, 543, 806, 68, 360, 682, 795
+Jimmy Donaldson: 16, 17, 20, 26, 34, 35, 36, 47, 53, 54, 60, 71, 72, 76, 87, 88, 104, 110, 112, 139, 154, 178, 184, 200, 232, 234, 264, 265, 287, 293, 316, 322, 329, 331, 336, 341, 343, 345, 349, 350, 366, 372, 373, 392, 416, 417, 424, 430, 432, 442, 470, 487, 496, 525, 534, 537, 553, 555, 572, 585, 590, 647, 653, 654, 659, 660, 663, 672, 686, 707, 723, 727, 732, 754, 759, 763, 766, 778, 783, 786, 813, 815, 827, 829, 845, 848, 860, 861, 878, 884, 907, 918, 924, 925, 928, 935, 938, 942, 949, 953, 966, 978, 989, 996, 142, 183, 224, 302, 308, 452, 485, 528, 665, 818, 920, 993, 21, 43, 51, 134, 245, 305, 317, 352, 374, 415, 506, 565, 616, 629, 694, 708, 817, 820, 875, 906, 910, 166, 208, 363, 413, 429, 649, 666, 688, 719, 729, 775, 830, 853, 974, 282, 756, 55, 209, 306, 367, 396, 399, 439, 456, 499, 507, 571, 713, 721, 758
+John Kennedy: 1, 9, 12, 14, 15, 23, 29, 52, 56, 90, 94, 106, 141, 165, 177, 194, 207, 217, 225, 226, 227, 228, 230, 231, 237, 240, 250, 267, 268, 280, 304, 313, 323, 324, 330, 339, 378, 379, 384, 385, 393, 398, 402, 405, 418, 420, 422, 437, 441, 457, 471, 490, 497, 517, 542, 558, 593, 646, 657, 683, 689, 697, 722, 726, 740, 752, 755, 772, 793, 816, 834, 843, 847, 856, 866, 870, 873, 892, 900, 903, 904, 908, 914, 916, 917, 922, 930, 943, 946, 950, 952, 957, 961, 982, 997, 176, 260, 325, 409, 431, 535, 592, 610, 620, 638, 798, 828, 19, 125, 174, 219, 263, 377, 390, 391, 510, 548, 607, 888, 944, 67, 137, 243, 285, 290, 348, 380, 423, 549, 695, 698, 859, 872, 886, 894, 912, 954, 376, 0, 65, 78, 82, 121, 157, 201, 288, 476, 491, 544, 551, 557, 617, 702, 716, 777, 840, 851, 883, 959, 57, 95, 295, 388, 248, 769, 857, 948
+Patrick Star: 7, 32, 38, 39, 45, 62, 64, 70, 85, 86, 111, 115, 118, 126, 147, 148, 150, 162, 167, 196, 198, 203, 211, 220, 244, 246, 247, 254, 274, 291, 292, 298, 311, 314, 315, 320, 328, 333, 338, 357, 361, 364, 370, 401, 404, 410, 414, 425, 443, 453, 461, 462, 463, 505, 508, 518, 539, 547, 556, 559, 562, 563, 566, 567, 577, 578, 579, 580, 597, 600, 601, 602, 603, 652, 656, 658, 661, 668, 671, 675, 676, 680, 681, 693, 696, 710, 711, 728, 730, 751, 760, 765, 771, 785, 797, 805, 826, 839, 858, 862, 871, 882, 889, 897, 905, 913, 927, 933, 936, 941, 947, 970, 975, 979, 981, 983, 75, 80, 206, 256, 273, 335, 428, 433, 515, 612, 650, 701, 720, 774, 926, 83, 127, 164, 222, 454, 514, 568, 651, 673, 704, 709, 796, 837, 3, 22, 48, 63, 210, 214, 235, 258, 301, 435, 655, 678, 937, 985, 738, 182, 318, 355, 460, 519, 536, 581, 599
+Robot Iam: 6, 10, 11, 24, 49, 59, 69, 79, 100, 101, 102, 107, 114, 116, 117, 145, 151, 155, 158, 160, 168, 170, 172, 185, 189, 190, 202, 223, 229, 238, 242, 262, 275, 276, 278, 279, 283, 300, 303, 319, 334, 344, 347, 386, 387, 394, 395, 403, 406, 411, 440, 447, 449, 450, 455, 458, 466, 469, 473, 478, 484, 500, 521, 524, 527, 529, 540, 552, 560, 574, 586, 588, 594, 598, 605, 611, 615, 618, 622, 623, 626, 636, 641, 677, 706, 715, 717, 741, 743, 745, 767, 779, 787, 788, 801, 803, 804, 807, 810, 850, 854, 869, 876, 885, 890, 898, 929, 932, 940, 955, 960, 976, 988, 179, 286, 731, 742, 965, 130, 249, 255, 436, 584, 700, 823, 956, 781, 27, 61, 169, 173, 199, 381, 532, 768, 819, 835, 911, 939, 994, 986, 58, 91, 191, 195, 236, 346, 365, 474, 643, 669, 687, 705, 764, 792, 802, 812, 842, 863, 915, 923, 800, 18, 627, 780, 809, 984
+Alice Wonder: 
+
+Winners: Patrick Star, Jimmy Donaldson, Robot Iam, Joe Cool, John Kennedy
+Losers: Chuck Lancaster, Mark Suckerberg, Micheal Ashton, Alice Wonder
+
+Final Election Results:
+
+Winners: Patrick Star, Jimmy Donaldson, Robot Iam, Joe Cool, John Kennedy
+Losers: Chuck Lancaster, Mark Suckerberg, Micheal Ashton, Alice Wonder, Andrew Hero
