@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stv_42',['STV',['../classSTV.html',1,'']]]
+  ['plurality_0',['Plurality',['../classPlurality.html',1,'']]]
 ];

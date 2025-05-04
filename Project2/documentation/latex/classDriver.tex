@@ -1,35 +1,35 @@
-\hypertarget{classDriver}{}\doxysection{Driver Class Reference}
-\label{classDriver}\index{Driver@{Driver}}
+\doxysection{Driver Class Reference}
+\hypertarget{classDriver}{}\label{classDriver}\index{Driver@{Driver}}
 
 
-\mbox{\hyperlink{classDriver}{Driver}} of the election that preprocess information and kick start the election.  
+\doxylink{classDriver}{Driver} of the election that preprocess information and kick start the election.  
 
 
 
 
 {\ttfamily \#include $<$Driver.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classDriver_af0658d103e3e810a8e9ef0a53bb2e261}\label{classDriver_af0658d103e3e810a8e9ef0a53bb2e261}} 
-\mbox{\hyperlink{classDriver_af0658d103e3e810a8e9ef0a53bb2e261}{Driver}} ()
+\Hypertarget{classDriver_af0658d103e3e810a8e9ef0a53bb2e261}\label{classDriver_af0658d103e3e810a8e9ef0a53bb2e261} 
+{\bfseries Driver} ()
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classDriver_a34d572acb1098ff5711244969c0fb4b2}{run}} (int argc, char $\ast$$\ast$argv)
+void \mbox{\hyperlink{classDriver_a8ee1147786a1b7e88d8fa6ad53613416}{run}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, \mbox{\hyperlink{classElection}{Election}} \texorpdfstring{$\ast$}{*}\&election, \mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}\&ballots)
 \begin{DoxyCompactList}\small\item\em Start the election process. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classDriver_a9860d1c2e79e796cf6511b7d41a56708}{shuffle\+Off\+Flag}} (int argc, char $\ast$$\ast$argv, bool \&shuffle)
+int \mbox{\hyperlink{classDriver_a9860d1c2e79e796cf6511b7d41a56708}{shuffle\+Off\+Flag}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, bool \&shuffle)
 \begin{DoxyCompactList}\small\item\em Take arguments and check for shuffle-\/off flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\mbox{\hyperlink{classDriver}{Driver}} of the election that preprocess information and kick start the election. 
+\doxylink{classDriver}{Driver} of the election that preprocess information and kick start the election. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classDriver_a34d572acb1098ff5711244969c0fb4b2}\label{classDriver_a34d572acb1098ff5711244969c0fb4b2}} 
+\Hypertarget{classDriver_a8ee1147786a1b7e88d8fa6ad53613416}\label{classDriver_a8ee1147786a1b7e88d8fa6ad53613416} 
 \index{Driver@{Driver}!run@{run}}
 \index{run@{run}!Driver@{Driver}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
-{\footnotesize\ttfamily void Driver\+::run (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Driver\+::run (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv,  }\item[{\mbox{\hyperlink{classElection}{Election}} \texorpdfstring{$\ast$}{*}\&}]{election,  }\item[{\mbox{\hyperlink{classBallots}{Ballots}} \texorpdfstring{$\ast$}{*}\&}]{ballots }\end{DoxyParamCaption})}
 
 
 
@@ -41,12 +41,16 @@ Start the election process.
 \hline
 {\em argv} & Arguments \\
 \hline
+{\em election} & \doxylink{classElection}{Election} object pointer pass by reference \\
+\hline
+{\em ballots} & \doxylink{classBallots}{Ballots} object pointer pass by reference \\
+\hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classDriver_a9860d1c2e79e796cf6511b7d41a56708}\label{classDriver_a9860d1c2e79e796cf6511b7d41a56708}} 
+\Hypertarget{classDriver_a9860d1c2e79e796cf6511b7d41a56708}\label{classDriver_a9860d1c2e79e796cf6511b7d41a56708} 
 \index{Driver@{Driver}!shuffleOffFlag@{shuffleOffFlag}}
 \index{shuffleOffFlag@{shuffleOffFlag}!Driver@{Driver}}
 \doxysubsubsection{\texorpdfstring{shuffleOffFlag()}{shuffleOffFlag()}}
-{\footnotesize\ttfamily int Driver\+::shuffle\+Off\+Flag (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{bool \&}]{shuffle }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Driver\+::shuffle\+Off\+Flag (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv,  }\item[{bool \&}]{shuffle }\end{DoxyParamCaption})}
 
 
 
@@ -68,5 +72,5 @@ Take arguments and check for shuffle-\/off flag.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/users/markf/desktop/repo-\/\+Team11/\+Project2/src/Driver.\+h\item 
-/mnt/c/users/markf/desktop/repo-\/\+Team11/\+Project2/src/Driver.\+cpp\end{DoxyCompactItemize}
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project2/src/Driver.\+h\item 
+/home/dang0196/\+Desktop/csci-\/5801-\/s25/repo-\/\+Team11/\+Project2/src/Driver.\+cpp\end{DoxyCompactItemize}

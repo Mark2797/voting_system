@@ -1,0 +1,31 @@
+\doxysection{File\+Handler.\+h}
+\hypertarget{FileHandler_8h_source}{}\label{FileHandler_8h_source}\index{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project2/src/FileHandler.h@{/home/dang0196/Desktop/csci-\/5801-\/s25/repo-\/Team11/Project2/src/FileHandler.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ FileHandler.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Class\ that\ handle\ the\ input\ file}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Author:\ Mark\ Tsai}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FILEHANDLER\_H\_}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FILEHANDLER\_H\_}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFileHandler}{FileHandler}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFileHandler_a0d1ac8e9911e19255e8b2d99c2d93f43}{FileHandler}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFileHandler_ae02277194e0e40b0db9d42e09b5ee204}{open\_file}}(std::ifstream\&\ file);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFileHandler_a4dfa7cffae952f0d12f6e19b9ca86e28}{read\_file}}(std::ifstream\&\ file,\ std::vector<std::string>\&\ candidates,\ std::vector<std::vector<int>>\&\ ballots\_vector);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFileHandler_a4dfa7cffae952f0d12f6e19b9ca86e28}{read\_file}}(std::ifstream\&\ file,\ std::vector<std::string>\&\ candidates,\ std::vector<std::vector<int>>\&\ ballots\_vector,\ std::string\&\ alg,\ \textcolor{keywordtype}{int}\&\ seatNum,\ \textcolor{keywordtype}{int}\&\ candidateNum,\ \textcolor{keywordtype}{int}\&\ ballotNum);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classFileHandler_aa62827da6e64f1fb43b3b35aafd69527}{multiple\_files}}(std::vector<std::string>\&\ candidates,\ std::vector<std::vector<int>>\&\ ballots\_vector,\ std::string\&\ alg,\ \textcolor{keywordtype}{int}\&\ seatNum,\ \textcolor{keywordtype}{int}\&\ candidateNum,\ \textcolor{keywordtype}{int}\&\ ballotNum);}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

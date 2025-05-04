@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plurality_25',['Plurality',['../classPlurality.html',1,'Plurality'],['../classPlurality.html#ad9d17868be20534155ba3450e1564223',1,'Plurality::Plurality()']]]
+  ['plurality_0',['plurality',['../classPlurality.html',1,'Plurality'],['../classPlurality.html#ad9d17868be20534155ba3450e1564223',1,'Plurality::Plurality()']]]
 ];

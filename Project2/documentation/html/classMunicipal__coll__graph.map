@@ -1,0 +1,7 @@
+<map id="Municipal" name="Municipal">
+<area shape="rect" id="Node000001" title="Perform a municipal election." alt="" coords="5,168,91,193"/>
+<area shape="rect" id="Node000002" href="$classElection.html" title="The abstract class for Plurality and STV algorithm inheritance." alt="" coords="11,93,85,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,133,51,168,45,168,45,133"/>
+<area shape="rect" id="Node000003" href="$classBallots.html" title="Represents the entire information stores in the input ballot file, including candidate names and ball..." alt="" coords="15,5,81,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="51,45,51,93,45,93,45,45"/>
+</map>
