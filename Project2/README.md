@@ -59,3 +59,7 @@ due to invalid files), input ctrl+C to exit the program manually.
 
 Otherwise, the election will automatically exit the program as soon as the results are displayed 
 (and for STV, once the audit file is outputted).
+
+#### Cleaning the System:
+To clean the system, run "make clean" within the src/ folder of the Project. This will clean all of the .o
+and .d files within src, making it portable to download/use on other devices.
